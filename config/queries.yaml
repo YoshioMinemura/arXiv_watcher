@@ -1,0 +1,68 @@
+defaults:
+  max_results: 50
+  start: 0
+  sort_by: submittedDate
+  sort_order: descending
+  request_delay_seconds: 3.1
+  lookback_days: 2
+  timezone: Asia/Tokyo
+  report_top_n: 20
+  user_agent: "arxiv-watcher/0.1 (contact: your_email@example.com)"
+  summarize: true
+  min_relevance_score: 1.0
+
+scoring:
+  title_keyword_weight: 3.0
+  abstract_keyword_weight: 1.5
+  primary_category_weight: 2.0
+  category_weight: 1.0
+  keyword_rules:
+    - keyword: "large language model"
+      weight: 5.0
+    - keyword: "llm"
+      weight: 3.0
+    - keyword: "reasoning"
+      weight: 2.0
+    - keyword: "alignment"
+      weight: 2.0
+    - keyword: "retrieval augmented generation"
+      weight: 4.0
+    - keyword: "rag"
+      weight: 2.5
+  category_rules:
+    - category: "cs.CL"
+      weight: 2.0
+    - category: "cs.LG"
+      weight: 1.5
+    - category: "cs.AI"
+      weight: 1.0
+
+queries:
+  - name: llm_core
+    enabled: true
+    search_query: "(cat:cs.CL OR cat:cs.LG OR cat:cs.AI)"
+    include_keywords:
+      - "large language model"
+      - "llm"
+      - "reasoning"
+      - "alignment"
+      - "instruction tuning"
+      - "retrieval augmented generation"
+      - "rag"
+    exclude_keywords:
+      - "protein"
+      - "molecule"
+      - "materials"
+    max_results: 50
+    min_relevance_score: 2.0
+
+  - name: rag
+    enabled: true
+    search_query: "(cat:cs.CL OR cat:cs.IR OR cat:cs.AI)"
+    include_keywords:
+      - "retrieval"
+      - "rag"
+      - "retrieval augmented generation"
+    exclude_keywords: []
+    max_results: 30
+    min_relevance_score: 1.5

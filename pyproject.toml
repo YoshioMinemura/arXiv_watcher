@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arxiv-watcher"
+version = "0.1.0"
+description = "arXiv新着論文ウォッチャー - 関心分野の論文を自動収集・フィルタ・日本語要約"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "arxiv-watcher developer"},
+]
+
+dependencies = [
+    "httpx>=0.25.0",
+    "feedparser>=6.0.0",
+    "PyYAML>=6.0",
+    "jinja2>=3.1.0",
+    "pydantic>=2.0.0",
+    "typer>=0.9.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+llm = [
+    "openai>=1.0.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-mock>=3.0.0",
+]
+
+[project.scripts]
+arxiv-watcher = "arxiv_watcher.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arxiv_watcher"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

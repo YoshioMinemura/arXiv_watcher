@@ -1,0 +1,55 @@
+# arXiv Daily Digest - {{ date }}
+
+Generated at: {{ generated_at }}
+Run ID: {{ run_id }}
+
+## Summary
+- Queries executed: {{ queries_executed }}
+- New matched papers: {{ total_matched }}
+{% for query in query_results %}
+
+## Query: {{ query.name }}
+{% if query.status == "failed" %}
+> ⚠️ This query failed: {{ query.error_message or "Unknown error" }}
+{% elif query.matches|length == 0 %}
+> No matched papers.
+{% else %}
+{% for m in query.matches %}
+
+### {{ loop.index }}. {{ m.title }}
+- arXiv: [{{ m.paper_id_base }}](https://arxiv.org/abs/{{ m.paper_id_base }})
+- PDF: [link](https://arxiv.org/pdf/{{ m.paper_id_base }}.pdf)
+- Published: {{ m.published_at }}
+- Updated: {{ m.updated_at }}
+- Authors: {{ m.authors }}
+- Categories: {{ m.categories }}
+- Score: {{ "%.2f"|format(m.relevance_score) }}
+- Match reasons:
+{% for reason in m.match_reasons %}  - {{ reason }}
+{% endfor %}
+{% if m.llm_summary_ja %}
+
+**日本語要約**
+{{ m.llm_summary_ja }}
+{% endif %}
+{% if m.llm_novelty_ja %}
+
+**新規性**
+{{ m.llm_novelty_ja }}
+{% endif %}
+{% if m.llm_tags %}
+
+**Tags:** {{ m.llm_tags|join(", ") }}
+{% endif %}
+
+**Abstract**
+{{ m.summary }}
+
+---
+{% endfor %}
+{% if query.omitted > 0 %}
+
+> ... and {{ query.omitted }} more papers (not shown).
+{% endif %}
+{% endif %}
+{% endfor %}

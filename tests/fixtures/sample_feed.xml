@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+      xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <link href="http://arxiv.org/api/query?search_query=cat:cs.CL" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: cat:cs.CL</title>
+  <id>http://arxiv.org/api/query?search_query=cat:cs.CL</id>
+  <updated>2026-03-28T00:00:00-04:00</updated>
+  <opensearch:totalResults>100</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+
+  <entry>
+    <id>http://arxiv.org/abs/2503.12345v2</id>
+    <updated>2026-03-28T17:00:00Z</updated>
+    <published>2026-03-27T12:00:00Z</published>
+    <title>Large Language Models for Reasoning: A Comprehensive Survey</title>
+    <summary>This paper provides a comprehensive survey of large language models (LLMs)
+    for reasoning tasks. We review recent advances in chain-of-thought prompting,
+    instruction tuning, and retrieval augmented generation (RAG). Our analysis covers
+    both theoretical foundations and practical applications across multiple domains.</summary>
+    <author><name>Alice Smith</name></author>
+    <author><name>Bob Johnson</name></author>
+    <author><name>Carol Williams</name></author>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2503.12345v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.12345v2" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 10 figures</arxiv:comment>
+  </entry>
+
+  <entry>
+    <id>http://arxiv.org/abs/2503.67890v1</id>
+    <updated>2026-03-28T15:00:00Z</updated>
+    <published>2026-03-28T15:00:00Z</published>
+    <title>Protein Structure Prediction with Deep Learning</title>
+    <summary>This paper presents a novel approach to protein structure prediction
+    using deep learning techniques. We leverage transformer architectures to predict
+    3D protein structures from amino acid sequences with improved accuracy.</summary>
+    <author><name>David Brown</name></author>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2503.67890v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.67890v1" rel="related" type="application/pdf"/>
+  </entry>
+
+  <entry>
+    <id>http://arxiv.org/abs/2503.11111v1</id>
+    <updated>2026-03-28T10:00:00Z</updated>
+    <published>2026-03-28T10:00:00Z</published>
+    <title>Efficient RAG Systems with Sparse Retrieval</title>
+    <summary>We propose an efficient retrieval augmented generation system that
+    combines sparse retrieval mechanisms with dense embeddings. Our approach achieves
+    state-of-the-art performance on multiple QA benchmarks while reducing latency
+    by 40% compared to existing RAG methods.</summary>
+    <author><name>Eve Davis</name></author>
+    <author><name>Frank Miller</name></author>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2503.11111v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.11111v1" rel="related" type="application/pdf"/>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1234/example.2026</arxiv:doi>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Proceedings of ACL 2026</arxiv:journal_ref>
+  </entry>
+</feed>
