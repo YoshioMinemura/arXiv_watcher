@@ -17,8 +17,8 @@ arXiv の新着論文を定期取得し、関心のある分野・キーワー�
 ### 1. リポジトリのクローン
 
 ```bash
-git clone https://github.com/your-username/arxiv-watcher.git
-cd arxiv-watcher
+git clone https://github.com/YoshioMinemura/arXiv-watcher.git
+cd arXiv_watcher
 ```
 
 ### 2. Python 環境の準備
@@ -52,6 +52,8 @@ pip install -e ".[dev]"
 ```bash
 arxiv-watcher init
 ```
+
+※　パッケージ名はarXiv_watcher、CLIコマンドではarxiv_watcherです
 
 以下が作成されます:
 - `config/queries.yaml` (サンプル設定)
@@ -260,7 +262,7 @@ arxiv-watcher/
 └── .github/workflows/        # GitHub Actions
 ```
 
-## 🔮 将来の拡張案
+## 🔮 将来の拡張予定について
 
 - Slack / Discord 通知
 - Streamlit Web UI
