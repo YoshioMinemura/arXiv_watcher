@@ -192,19 +192,6 @@ python scripts/build_pages.py
 
 ワークフローは毎日 08:10 JST に実行され、`workflow_dispatch` でも手動実行できます。
 
-## Enable GitHub Pages
-
-GitHub Pages 側は、GitHub のリポジトリ設定で一度だけ有効化します。
-
-1. GitHub の `Settings`
-2. `Pages`
-3. `Build and deployment` で `Deploy from a branch`
-4. Branch を `main`
-5. Folder を `/docs`
-6. Save
-
-これで `docs/index.html` が公開トップページになります。
-
 ## Notes
 
 - `reports/` の Markdown は履歴として残ります
