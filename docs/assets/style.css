@@ -1,0 +1,241 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f3eb;
+  --surface: rgba(255, 252, 246, 0.92);
+  --surface-strong: #fffdf9;
+  --text: #1f2933;
+  --muted: #5f6c74;
+  --line: rgba(31, 41, 51, 0.12);
+  --accent: #0f766e;
+  --accent-strong: #134e4a;
+  --shadow: 0 24px 48px rgba(31, 41, 51, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 32%),
+    linear-gradient(180deg, #faf8f1 0%, #f1ece1 100%);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+code {
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+  background: rgba(15, 118, 110, 0.08);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.95em;
+}
+
+.page-shell {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.site-header {
+  margin-bottom: 1.5rem;
+}
+
+.site-home {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-subtitle {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+}
+
+.hero,
+.panel,
+.report-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.hero,
+.panel {
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-compact {
+  grid-template-columns: 1.8fr 1fr;
+  align-items: start;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.panel h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-copy {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.stat-card {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+}
+
+.stat-card strong {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.archive-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.archive-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+
+.archive-item p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+}
+
+.empty-state {
+  margin: 0;
+  color: var(--muted);
+}
+
+.report-card {
+  padding: 1.75rem;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  line-height: 1.25;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.markdown-body h1:first-child,
+.markdown-body h2:first-child,
+.markdown-body h3:first-child {
+  margin-top: 0;
+}
+
+.markdown-body p,
+.markdown-body ul,
+.markdown-body blockquote {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul {
+  padding-left: 1.4rem;
+}
+
+.markdown-body li + li {
+  margin-top: 0.2rem;
+}
+
+.markdown-body blockquote {
+  padding: 0.1rem 1rem;
+  border-left: 4px solid rgba(15, 118, 110, 0.45);
+  background: rgba(15, 118, 110, 0.06);
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.markdown-body hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    width: min(100% - 1rem, 1100px);
+    padding-top: 1rem;
+  }
+
+  .hero-compact,
+  .panel-header,
+  .archive-item {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .archive-item {
+    justify-content: start;
+  }
+}

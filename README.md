@@ -1,91 +1,77 @@
-# 📚 arxiv-watcher
+# arxiv-watcher
 
-arXiv の新着論文を定期取得し、関心のある分野・キーワードで自動フィルタリング＆スコアリングして、日次 Markdown レポートを生成する CLI ツールです。
+arXiv の新着論文を定期取得し、関心のある分野・キーワードでフィルタリングとスコアリングを行い、日次 Markdown レポートを生成するツールです。GitHub Actions で毎日レポートを更新し、その内容を GitHub Pages でブラウザから閲覧できるようにできます。
 
-## ✨ 主な機能
+## What It Does
 
-- **arXiv 論文の自動取得**: arXiv API を使って新着論文を定期取得
-- **キーワードフィルタリング**: include/exclude キーワードで関心分野を絞り込み
-- **関連度スコアリング**: タイトル・要旨・カテゴリに基づく柔軟なスコアリング
-- **日次 Markdown レポート**: 見やすいレポートを自動生成
-- **LLM 日本語要約** (optional): OpenAI 互換 API による日本語要約・新規性分析
-- **SQLite データベース**: 論文メタデータの永続化・重複除去
-- **GitHub Actions 対応**: 毎日自動実行してレポートをコミット
+- arXiv API から新着論文を取得
+- include / exclude キーワードで論文を絞り込み
+- タイトル、abstract、カテゴリに応じて関連度をスコアリング
+- 日次 Markdown レポートを `reports/` に保存
+- 生成済みレポートを `docs/` に静的HTMLとして変換
+- GitHub Actions で日次実行し、GitHub Pages に公開しやすい形で蓄積
 
-## 🚀 セットアップ
+## Project Layout
 
-### 1. リポジトリのクローン
+- `src/arxiv_watcher/`: CLI、本体ロジック、保存、レポート生成
+- `config/queries.yaml`: 監視クエリとスコアリング設定
+- `reports/`: 生成された日次 Markdown レポート
+- `docs/`: GitHub Pages 用の静的サイト出力
+- `scripts/build_pages.py`: `reports/` から `docs/` を生成するスクリプト
+- `.github/workflows/daily.yml`: 毎日の取得・レポート生成・Pagesサイト更新
 
-```bash
-git clone https://github.com/YoshioMinemura/arXiv-watcher.git
-cd arXiv_watcher
-```
-
-### 2. Python 環境の準備
+## Setup
 
 Python 3.11 以上が必要です。
 
 ```bash
 python -m venv .venv
-
-# Windows
-.venv\Scripts\activate
-
-# macOS/Linux
 source .venv/bin/activate
-```
-
-### 3. インストール
-
-```bash
 pip install -e .
 ```
 
-開発用パッケージ（テスト）も含める場合:
+開発用パッケージも入れる場合:
 
 ```bash
 pip install -e ".[dev]"
 ```
 
-### 4. 初期化
+初期化:
 
 ```bash
 arxiv-watcher init
 ```
 
-※　パッケージ名はarXiv_watcher、CLIコマンドではarxiv_watcherです
+作成されるもの:
 
-以下が作成されます:
-- `config/queries.yaml` (サンプル設定)
-- `data/arxiv.db` (SQLite データベース)
-- `logs/`, `reports/`, `templates/` ディレクトリ
+- `config/queries.yaml`
+- `data/arxiv.db`
+- `logs/`
+- `reports/`
+- `templates/`
 
-## ⚙️ 設定 (`queries.yaml`)
+## Configuration
 
-`config/queries.yaml` でクエリとスコアリングルールを設定します。
+`config/queries.yaml` で取得条件とスコアリングを定義します。
 
 ```yaml
 defaults:
-  max_results: 50          # 1クエリあたりの最大取得件数
-  lookback_days: 2         # 何日前まで遡って取得するか
-  timezone: Asia/Tokyo     # レポートのタイムゾーン
-  report_top_n: 20         # レポートに載せる最大件数
-  summarize: true          # LLM要約の有効/無効
-  min_relevance_score: 1.0 # スコア閾値
+  max_results: 50
+  lookback_days: 2
+  timezone: Asia/Tokyo
+  report_top_n: 20
+  summarize: true
+  min_relevance_score: 1.0
 
 scoring:
-  title_keyword_weight: 3.0     # タイトルのキーワードマッチ倍率
-  abstract_keyword_weight: 1.5  # 要旨のキーワードマッチ倍率
+  title_keyword_weight: 3.0
+  abstract_keyword_weight: 1.5
   keyword_rules:
     - keyword: "large language model"
       weight: 5.0
-    - keyword: "rag"
-      weight: 2.5
   category_rules:
     - category: "cs.CL"
       weight: 2.0
-    - category: "cs.LG"
-      weight: 1.5
 
 queries:
   - name: llm_core
@@ -102,175 +88,125 @@ queries:
     min_relevance_score: 2.0
 ```
 
-### 設定のポイント
+ポイント:
 
-- `include_keywords`: 空配列なら全件通過。1つ以上マッチすれば通過。
-- `exclude_keywords`: 1つでもマッチすれば除外。
-- query ごとに `max_results` や `min_relevance_score` をオーバーライド可能。
-- `enabled: false` にしたクエリはスキップされます。
+- `include_keywords` が空なら全件通過
+- `exclude_keywords` は 1 つでも一致したら除外
+- `enabled: false` の query は実行対象外
+- `max_results` と `min_relevance_score` は query ごとに上書き可能
 
-## 📋 CLI コマンド
+## CLI
 
-### 全パイプライン実行
+全パイプライン実行:
 
 ```bash
-# 全 enabled クエリを実行
 arxiv-watcher run --config config/queries.yaml
-
-# 特定のクエリのみ実行
 arxiv-watcher run --config config/queries.yaml --query llm_core
-
-# 要約なしで実行
 arxiv-watcher run --config config/queries.yaml --no-summarize
-
-# 詳細ログ
 arxiv-watcher run --config config/queries.yaml --verbose
 ```
 
-### 取得のみ（フィルタ・レポートなし）
+取得のみ:
 
 ```bash
 arxiv-watcher fetch --config config/queries.yaml
 ```
 
-### レポート再生成
+レポート再生成:
 
 ```bash
-# 最新の run からレポート再生成
 arxiv-watcher report
-
-# 特定の run ID を指定
 arxiv-watcher report --run-id <RUN_ID>
 ```
 
-### 要約のみ実行
+要約のみ:
 
 ```bash
 arxiv-watcher summarize --run-id <RUN_ID>
 ```
 
-### バージョン表示
+## LLM Summaries
 
-```bash
-arxiv-watcher version
-```
-
-## 🤖 LLM 日本語要約の有効化
-
-### 1. 環境変数の設定
-
-`.env.example` を `.env` にコピーして設定:
+要約は optional です。`.env.example` を `.env` にコピーして設定します。
 
 ```bash
 cp .env.example .env
 ```
 
+OpenAI 互換 API を使う場合:
+
 ```env
+LLM_BACKEND=openai
 OPENAI_API_KEY=sk-your-api-key-here
-OPENAI_BASE_URL=https://api.openai.com/v1  # 省略可
+OPENAI_BASE_URL=https://api.openai.com/v1
 OPENAI_MODEL=gpt-4o-mini
 ```
-
-### 2. openai パッケージのインストール
 
 ```bash
 pip install -e ".[llm]"
 ```
 
-### 要約の条件
+ローカル LLM を使う場合:
 
-以下を**すべて満たす**場合のみ要約が実行されます:
-- `config/queries.yaml` の `summarize: true`
-- 環境変数 `OPENAI_API_KEY` が設定済み
-- 環境変数 `OPENAI_MODEL` が設定済み
-
-条件を満たさない場合は要約がスキップされるだけで、エラーにはなりません。
-
-## 🔄 GitHub Actions
-
-`.github/workflows/daily.yml` が同梱されています。
-
-### 設定方法
-
-1. リポジトリの Settings → Secrets and variables → Actions で以下を設定:
-   - `OPENAI_API_KEY` (要約を使う場合)
-   - `OPENAI_MODEL` (要約を使う場合)
-
-2. ワークフローは毎日 08:10 JST (23:10 UTC) に自動実行されます。
-3. `workflow_dispatch` で手動実行も可能です。
-4. 生成されたレポート (`reports/*.md`) が自動的にコミット・プッシュされます。
-
-## 📄 出力例
-
-生成されるレポートの例:
-
-```markdown
-# arXiv Daily Digest - 2026-03-29
-
-Generated at: 2026-03-29 08:05 JST
-Run ID: a1b2c3d4-...
-
-## Summary
-- Queries executed: 2
-- New matched papers: 13
-
-## Query: llm_core
-
-### 1. Large Language Models for Reasoning
-- arXiv: [2503.12345](https://arxiv.org/abs/2503.12345)
-- Score: 25.50
-- Match reasons:
-  - title matched keyword='large language model' (+15.0)
-  - title matched keyword='reasoning' (+6.0)
-  - primary_category matched 'cs.CL' (+4.0)
-
-**日本語要約**
-本論文は大規模言語モデルの推論能力に関する包括的なサーベイである...
+```env
+LLM_BACKEND=local
+LOCAL_LLM_MODEL=gemma4
+LOCAL_LLM_ENDPOINT=http://localhost:11434/api/generate
+LOCAL_LLM_TIMEOUT=60
 ```
 
-## 🧪 テスト
+要約が実行される条件:
+
+- `config/queries.yaml` で `summarize: true`
+- `LLM_BACKEND=openai` の場合は `OPENAI_API_KEY` と `OPENAI_MODEL`
+- `LLM_BACKEND=local` の場合は `LOCAL_LLM_MODEL`
+
+条件がそろわない場合は要約だけスキップされます。
+
+## Build The Pages Site
+
+`reports/` にある Markdown レポートを `docs/` に HTML 化します。
 
 ```bash
-pip install -e ".[dev]"
-pytest
+python scripts/build_pages.py
 ```
 
-## 📁 ディレクトリ構成
+出力されるもの:
 
-```
-arxiv-watcher/
-├── config/queries.yaml      # 設定ファイル
-├── data/arxiv.db             # SQLite DB（自動生成）
-├── logs/                     # ログファイル
-├── reports/                  # 生成レポート
-├── templates/                # Jinja2テンプレート
-├── src/arxiv_watcher/        # ソースコード
-│   ├── cli.py                # CLIエントリポイント
-│   ├── config.py             # 設定読み込み
-│   ├── models.py             # データモデル
-│   ├── arxiv_client.py       # arXiv APIクライアント
-│   ├── parser.py             # Atom XMLパーサー
-│   ├── filters.py            # フィルタリング
-│   ├── scoring.py            # スコアリング
-│   ├── storage.py            # SQLiteストレージ
-│   ├── summarizer.py         # LLM要約
-│   ├── reporter.py           # レポート生成
-│   ├── pipeline.py           # パイプライン統合
-│   ├── logging_utils.py      # ロギング
-│   └── utils.py              # ユーティリティ
-├── tests/                    # テスト
-└── .github/workflows/        # GitHub Actions
-```
+- `docs/index.html`: レポート一覧
+- `docs/reports/*.html`: 各日レポートの詳細
+- `docs/assets/style.css`: サイト用スタイル
 
-## 🔮 将来の拡張予定について
+## GitHub Actions
 
-- Slack / Discord 通知
-- Streamlit Web UI
-- PDF 全文解析
-- Embedding による意味検索
-- 複数ユーザー対応
-- メール通知
+同梱の `.github/workflows/daily.yml` は、毎日レポートを生成し、Pages 用の静的サイトも更新します。
 
-## 📝 ライセンス
+処理内容:
 
-MIT License
+1. リポジトリを checkout
+2. Python 3.11 をセットアップ
+3. `pip install -e ".[llm]"` を実行
+4. `arxiv-watcher run` を実行
+5. `python scripts/build_pages.py` で `docs/` を再生成
+6. `reports/` と `docs/` をコミットして push
+
+ワークフローは毎日 08:10 JST に実行され、`workflow_dispatch` でも手動実行できます。
+
+## Enable GitHub Pages
+
+GitHub Pages 側は、GitHub のリポジトリ設定で一度だけ有効化します。
+
+1. GitHub の `Settings`
+2. `Pages`
+3. `Build and deployment` で `Deploy from a branch`
+4. Branch を `main`
+5. Folder を `/docs`
+6. Save
+
+これで `docs/index.html` が公開トップページになります。
+
+## Notes
+
+- `reports/` の Markdown は履歴として残ります
+- `docs/` は公開用の生成物なので、レポートが増えるたびに更新されます
+- SQLite DB `data/arxiv.db` はローカル保存用で、GitHub には含めません
