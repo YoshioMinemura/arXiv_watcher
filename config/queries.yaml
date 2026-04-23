@@ -20,11 +20,13 @@ scoring:
     - keyword: "large language model"
       weight: 5.0
     - keyword: "llm"
-      weight: 3.0
+      weight: 2.5
     - keyword: "reasoning"
-      weight: 2.0
+      weight: 2.5
     - keyword: "alignment"
       weight: 2.0
+    - keyword: "mathematical"
+      weight: 3.0
   category_rules:
     - category: "cs.CL"
       weight: 2.0
@@ -34,7 +36,7 @@ scoring:
       weight: 1.0
 
 queries:
-  - name: llm_core
+  - name: llm_math
     enabled: true
     search_query: "(cat:cs.CL OR cat:cs.LG OR cat:cs.AI)"
     include_keywords:
@@ -48,4 +50,4 @@ queries:
       - "molecule"
       - "materials"
     max_results: 50
-    min_relevance_score: 3.0
+    min_relevance_score: 10.0
