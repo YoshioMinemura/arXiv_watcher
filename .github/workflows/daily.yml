@@ -38,6 +38,12 @@ jobs:
         run: |
           python scripts/build_pages.py
 
+      - name: Post Japanese digest to Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python scripts/post_to_discord.py --timezone Asia/Tokyo --max-papers 10
+
       - name: Commit and push reports
         run: |
           git config user.name "github-actions[bot]"
