@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 from datetime import datetime
+from typing import Callable
 
 import httpx
 from dotenv import load_dotenv
@@ -15,6 +17,8 @@ from arxiv_watcher.utils import to_local
 
 DISCORD_MAX_CONTENT = 1900
 DEFAULT_MAX_PAPERS = 20
+
+logger = logging.getLogger(__name__)
 
 
 def parse_args() -> argparse.Namespace:
@@ -53,6 +57,7 @@ def main() -> None:
             query_stats=query_stats,
             tz_name=args.timezone,
             max_papers=max(1, args.max_papers),
+            translator=build_abstract_translator(),
         )
     finally:
         storage.close()
@@ -67,6 +72,7 @@ def build_messages(
     query_stats: list,
     tz_name: str,
     max_papers: int,
+    translator: Callable[[str], str | None] | None = None,
 ) -> list[str]:
     now = to_local(datetime.utcnow(), tz_name)
     date_str = now.strftime("%Y-%m-%d %H:%M %Z")
@@ -116,7 +122,10 @@ def build_messages(
         )
 
         for index, match in enumerate(matches[:max_papers], start=1):
-            blocks.append(format_paper_block(index, match))
+            translated_summary = None
+            if not match.get("llm_summary_ja") and translator:
+                translated_summary = translator(match.get("summary") or "")
+            blocks.append(format_paper_block(index, match, translated_summary))
 
         omitted = len(matches) - min(len(matches), max_papers)
         if omitted > 0:
@@ -125,9 +134,20 @@ def build_messages(
     return chunk_blocks(blocks, DISCORD_MAX_CONTENT)
 
 
-def format_paper_block(index: int, match: dict) -> str:
+def format_paper_block(
+    index: int,
+    match: dict,
+    translated_summary: str | None = None,
+) -> str:
     title = sanitize_inline(match.get("title") or "Untitled")
-    summary_ja = sanitize_inline(match.get("llm_summary_ja") or "日本語要約は生成されませんでした。")
+    llm_summary_ja = match.get("llm_summary_ja")
+    summary_ja = sanitize_inline(
+        llm_summary_ja
+        or translated_summary
+        or match.get("summary")
+        or "要約は生成されませんでした。"
+    )
+    summary_max_length = 420 if llm_summary_ja else 220
     novelty_ja = sanitize_inline(match.get("llm_novelty_ja") or "")
     tags = decode_json_list(match.get("llm_tags_json"))
     categories = decode_json_list(match.get("categories_json"))
@@ -135,7 +155,7 @@ def format_paper_block(index: int, match: dict) -> str:
 
     lines = [
         f"**{index}. {truncate_text(title, 180)}**",
-        f"要約: {truncate_text(summary_ja, 420)}",
+        f"要約: {truncate_text(summary_ja, summary_max_length)}",
     ]
 
     if novelty_ja:
@@ -193,6 +213,68 @@ def send_messages(webhook_url: str, messages: list[str]) -> None:
         for content in messages:
             response = client.post(webhook_url, json={"content": content})
             response.raise_for_status()
+
+
+def build_abstract_translator() -> Callable[[str], str | None] | None:
+    api_key = os.environ.get("OPENAI_API_KEY")
+    model = os.environ.get("OPENAI_MODEL")
+    base_url = os.environ.get("OPENAI_BASE_URL")
+
+    if not api_key or not model:
+        return None
+
+    try:
+        from openai import OpenAI
+    except ImportError:
+        logger.warning("openai パッケージが未インストールのため、abstract 翻訳をスキップします。")
+        return None
+
+    client_kwargs: dict = {"api_key": api_key}
+    if base_url:
+        client_kwargs["base_url"] = base_url
+
+    client = OpenAI(**client_kwargs)
+    cache: dict[str, str | None] = {}
+
+    def _translate(abstract_en: str) -> str | None:
+        normalized = sanitize_inline(abstract_en)
+        if not normalized:
+            return None
+        if normalized in cache:
+            return cache[normalized]
+
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "あなたは arXiv 論文のアブストラクト要約アシスタントです。"
+                            "英語 abstract の内容を日本語で 1〜2文に要約してください。"
+                            "重要な貢献・手法・結果のみを残し、冗長な背景説明は省いてください。"
+                            "出力は要約本文のみで、前置きや箇条書きは不要です。"
+                        ),
+                    },
+                    {
+                        "role": "user",
+                        "content": f"Abstract:\n{normalized}",
+                    },
+                ],
+                temperature=0.2,
+                max_tokens=420,
+                timeout=30,
+            )
+            content = response.choices[0].message.content
+            translated = sanitize_inline(content or "") or None
+            cache[normalized] = translated
+            return translated
+        except Exception as e:
+            logger.warning("abstract 翻訳に失敗しました: %s", e)
+            cache[normalized] = None
+            return None
+
+    return _translate
 
 
 def sanitize_inline(text: str) -> str:
