@@ -10,6 +10,8 @@ from datetime import datetime
 from typing import Callable
 
 import httpx
+
+from arxiv_watcher.utils import normalize_openai_base_url
 from dotenv import load_dotenv
 
 from arxiv_watcher.storage import Storage
@@ -218,7 +220,8 @@ def send_messages(webhook_url: str, messages: list[str]) -> None:
 def build_abstract_translator() -> Callable[[str], str | None] | None:
     api_key = os.environ.get("OPENAI_API_KEY")
     model = os.environ.get("OPENAI_MODEL")
-    base_url = os.environ.get("OPENAI_BASE_URL")
+    raw_base_url = os.environ.get("OPENAI_BASE_URL")
+    base_url = normalize_openai_base_url(raw_base_url)
 
     if not api_key or not model:
         return None
@@ -270,6 +273,15 @@ def build_abstract_translator() -> Callable[[str], str | None] | None:
             cache[normalized] = translated
             return translated
         except Exception as e:
+            status_code = getattr(e, "status_code", None)
+            if status_code == 404:
+                logger.warning(
+                    "OpenAI API が 404 を返しました (model=%s, OPENAI_BASE_URL=%s, normalized=%s)。"
+                    " モデル名と base URL を確認してください。",
+                    model,
+                    raw_base_url or "<default>",
+                    base_url or "<default>",
+                )
             logger.warning("abstract 翻訳に失敗しました: %s", e)
             cache[normalized] = None
             return None

@@ -7,6 +7,8 @@ import logging
 import os
 from dataclasses import dataclass
 
+from arxiv_watcher.utils import normalize_openai_base_url
+
 logger = logging.getLogger(__name__)
 
 # 要約結果
@@ -68,7 +70,8 @@ def summarize_paper(
         return SummaryResult()
 
     api_key = os.environ.get("OPENAI_API_KEY", "")
-    base_url = os.environ.get("OPENAI_BASE_URL")
+    raw_base_url = os.environ.get("OPENAI_BASE_URL")
+    base_url = normalize_openai_base_url(raw_base_url)
     model = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
     user_content = f"""\
@@ -121,5 +124,14 @@ Primary Category: {primary_category or 'N/A'}
         logger.warning("LLM レスポンスの JSON パースに失敗: %s", e)
         return SummaryResult()
     except Exception as e:
+        status_code = getattr(e, "status_code", None)
+        if status_code == 404:
+            logger.warning(
+                "LLM API が 404 を返しました (model=%s, OPENAI_BASE_URL=%s, normalized=%s)。"
+                " モデル名が利用可能か、base URL が /v1 を含むかを確認してください。",
+                model,
+                raw_base_url or "<default>",
+                base_url or "<default>",
+            )
         logger.warning("LLM 要約中にエラーが発生しました: %s", e)
         return SummaryResult()
