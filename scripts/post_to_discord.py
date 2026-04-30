@@ -265,7 +265,7 @@ def build_abstract_translator() -> Callable[[str], str | None] | None:
                     },
                 ],
                 temperature=0.2,
-                max_tokens=420,
+                max_completion_tokens=420,
                 timeout=30,
             )
             content = response.choices[0].message.content
