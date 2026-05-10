@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-05-10 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-05-10</h1>
+        <p class="hero-copy">Generated at 2026-05-10 09:00 JST. Run ID: <code>fed9999c-77d2-421c-97d8-c9609209d55b</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>22</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-05-10</h1>
+      <p>Generated at: 2026-05-10 09:00 JST Run ID: fed9999c-77d2-421c-97d8-c9609209d55b</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 22</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Verifier-Backed Hard Problem Generation for Mathematical Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06660">2605.06660</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06660.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:58 JST</li>
+      <li>Updated: 2026-05-08 02:58 JST</li>
+      <li>Authors: Yuhang Lai, Jiazhan Feng, Yee Whye Teh, Ning Miao</li>
+      <li>Categories: cs.LG, cs.AI, cs.CL</li>
+      <li>Score: 42.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='mathematical' (+9.0)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルは科学・数学問題の解答には強い一方で、妥当で難しく新規性のある問題を生成することは苦手であり、従来法では人手コストや報酬ハックによる無効問題が課題だった。本研究は、setter-solver に独立した verifier を加えた三者自己対戦に基づく VHG を提案し、問題の妥当性と難易度の両方で setter の報酬を決めることで、より良い難問生成を実現する。</p>
+      <p><strong>新規性</strong> 独立した verifier を導入して、問題の妥当性と難易度を同時に制約する三者自己対戦型の hard problem generation 枠組み VHG を提案した。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 数学的推論, 問題生成, 自己対戦, 検証器</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) demonstrate strong capabilities for solving scientific and mathematical problems, yet they struggle to produce valid, challenging, and novel problems - an essential component for advancing LLM training and enabling autonomous scientific research. Existing problem generation approaches either depend on expensive human expert involvement or adopt naive self-play paradigms, which frequently yield invalid problems due to reward hacking. This work introduces VHG, a verifier-enhanced hard problem generation framework built upon three-party self-play. By integrating an independent verifier into the conventional setter-solver duality, our design constrains the setter's reward to be jointly determined by problem validity (evaluated by the verifier) and difficulty (assessed by the solver). We instantiate two verifier variants: a Hard symbolic verifier and a Soft LLM-based verifier, with evaluations conducted on indefinite integral tasks and general mathematical reasoning tasks. Experimental results show that VHG substantially outperforms all baseline methods by a clear margin.</p>
+      <hr />
+      <h3>2. UniSD: Towards a Unified Self-Distillation Framework for Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06597">2605.06597</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06597.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:22 JST</li>
+      <li>Updated: 2026-05-08 02:22 JST</li>
+      <li>Authors: Yiqiao Jin, Yiyang Wang, Lucheng Fu, Yijia Xiao, Yinyi Luo, Haoxin Liu, B. Aditya Prakash, Josiah Hester, Jindong Wang, Srijan Kumar</li>
+      <li>Categories: cs.CL, cs.AI, cs.LG</li>
+      <li>Score: 35.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、強い外部教師を使わずに大規模言語モデルを適応させる自己蒸留（self-distillation）を体系的に調べるための統一フレームワークUniSDを提案する。UniSDは、複数教師の合意、EMAによる教師安定化、トークンレベルの対照学習、特徴マッチング、divergence clippingを統合し、6ベンチマーク・6モデルで自己蒸留の有効性や各要素の役割を分析する。</p>
+      <p><strong>新規性</strong> 自己蒸留の個別手法を統合的に比較・組み合わせる枠組みを提示し、どの条件で性能向上するかと各要素の相互作用を明らかにした点。</p>
+      <p><strong>Tags:</strong> self-distillation, large language models, knowledge distillation, training stability, representation learning</p>
+      <p><strong>Abstract</strong> Self-distillation (SD) offers a promising path for adapting large language models (LLMs) without relying on stronger external teachers. However, SD in autoregressive LLMs remains challenging because self-generated trajectories are free-form, correctness is task-dependent, and plausible rationales can still provide unstable or unreliable supervision. Existing methods mainly examine isolated design choices, leaving their effectiveness, roles, and interactions unclear. In this paper, we propose UniSD, a unified framework to systematically study self-distillation. UniSD integrates complementary mechanisms that address supervision reliability, representation alignment, and training stability, including multi-teacher agreement, EMA teacher stabilization, token-level contrastive learning, feature matching, and divergence clipping. Across six benchmarks and six models from three model families, UniSD reveals when self-distillation improves over static imitation, which components drive the gains, and how these components interact across tasks. Guided by these insights, we construct UniSDfull, an integrated pipeline that combines complementary components and achieves the strongest overall performance, improving over the base model by +5.4 points and the strongest baseline by +2.8 points. Extensive evaluation highlights self-distillation as a practical and steerable approach for efficient LLM adaptation without stronger external teachers.</p>
+      <hr />
+      <h3>3. Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06638">2605.06638</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06638.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:48 JST</li>
+      <li>Updated: 2026-05-08 02:48 JST</li>
+      <li>Authors: Tianle Wang, Zhaoyang Wang, Guangchen Lan, Xinpeng Wei, Sipeng Zhang, Guanwen Qiu, Abulhair Saparov</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 34.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMの長期的な推論能力に対するRLの学習スケーリングを調べるため、推論の深さ（horizon）と論理の表現力を独立に制御できる合成環境ScaleLogicを提案する。実験の結果、RLの必要計算量は推論深さに対してべき乗則に従い、さらに論理がより表現豊かになるほどスケーリング指数が大きくなることを示した。加えて、より表現力の高い設定で学習したモデルは、数学や一般推論ベンチマークへの転移性能が高く、計算効率も良い。</p>
+      <p><strong>新規性</strong> 推論深さと論理表現力を独立に制御できる環境を用いて、RLのスケーリング則が表現力に強く依存することを体系的に示した点が新規である。</p>
+      <p><strong>Tags:</strong> reinforcement learning, LLM reasoning, scaling law, logical reasoning, transfer learning</p>
+      <p><strong>Abstract</strong> Reinforcement learning (RL) has been applied to improve large language model (LLM) reasoning, yet the systematic study of how training scales with task difficulty has been hampered by the lack of controlled, scalable environments. We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic. Our proposed framework supports a wide range of logics: from simple implication-only logic ("if-then") towards more expressive first-order reasoning with conjunction ("and"), disjunction ("or"), negation ("not"), and universal quantification ("for all"). Using this framework, we show that the RL training compute $T$ follows a power law with respect to reasoning depth $D$ ($T \propto D^γ$, $R^{2} &gt; 0.99$), and that the scaling exponent $γ$ increases monotonically with logical expressiveness, from $1.04$ to $2.60$. On downstream mathematics and general reasoning benchmarks, more expressive training settings yield both larger performance gains (up to $+10.66$ points) and more compute-efficient transfer compared to less expressive settings, demonstrating that what a model is trained on, not just how much it is trained, shapes downstream transfer. We further show that the power-law relationship holds across multiple RL methods, and curriculum-based training substantially improves scaling efficiency.</p>
+      <hr />
+      <h3>4. Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06635">2605.06635</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06635.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:46 JST</li>
+      <li>Updated: 2026-05-08 02:46 JST</li>
+      <li>Authors: Hailey Onweller, Elias Lumer, Austin Huber, Pia Ramchandani, Vamse Kumar Subbiah, Corey Feld</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 25.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMによる深層リサーチエージェントが生成する引用付きレポートについて、引用の実在性・関連性・事実整合性を評価するための再現可能なソースアトリビューション評価フレームワークを提案している。Markdownレポートからインライン引用をASTパーサで抽出し、実際の参照先コンテンツを取得して人手またはLLM評価で検証することで、引用品質と事実的信頼性の乖離を明らかにした。</p>
+      <p><strong>新規性</strong> 再現可能なASTパーサを用いてLLM生成レポート中の引用を大規模に抽出・評価し、実際の引用先コンテンツまで取得して検証する初のソースアトリビューション評価枠組みを提示した。</p>
+      <p><strong>Tags:</strong> LLM, source attribution, citation evaluation, deep research agents, fact checking</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency. We introduce the first source attribution evaluation framework that uses a reproducible AST parser to extract and evaluate inline citations from LLM-generated Markdown reports at scale. Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source. Citations are evaluated along three dimensions. (1) Link Works verifies URL accessibility, (2) Relevant Content measures topical alignment, and (3) Fact Check validates factual accuracy against source content. We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review. Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting. Ablation studies on research depth show that Fact Check accuracy drops by approximately 42% on average across two frontier models as tool calls scale from 2 to 150, demonstrating that more retrieval does not produce more accurate citations. These findings reveal a critical disconnect between surface-level citation quality and factual reliability, and our framework provides the evaluation infrastructure to assess the disconnect.</p>
+      <hr />
+      <h3>5. MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06623">2605.06623</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06623.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:35 JST</li>
+      <li>Updated: 2026-05-08 02:35 JST</li>
+      <li>Authors: Zhexuan Wang, Xuebo Liu, Li Wang, Zifei Shan, Yutong Wang, Zhenxi Song, Min Zhang</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 25.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMベースのマルチエージェントシステムにおいて、役割別プロンプトを自動的かつ反復的に最適化するフレームワークMASPOを提案している。局所的な妥当性だけでなく、後続エージェントの成功にどれだけ寄与するかを評価する仕組みにより、ラベルなしで局所目標と全体目標のずれを埋める。6つのタスクで既存手法を上回り、平均精度を2.9向上させた。</p>
+      <p><strong>新規性</strong> 後続エージェントの成功を考慮した共同評価機構により、マルチエージェント全体の目的に沿ってプロンプトを最適化する点が新規である。</p>
+      <p><strong>Tags:</strong> multi-agent systems, prompt optimization, LLM, evolutionary beam search, automatic evaluation</p>
+      <p><strong>Abstract</strong> Large language model (LLM)-based Multi-agent systems (MAS) have shown promise in tackling complex collaborative tasks, where agents are typically orchestrated via role-specific prompts. While the quality of these prompts is pivotal, jointly optimizing them across interacting agents remains a non-trivial challenge, primarily due to the misalignment between local agent objectives and holistic system goals. To address this, we introduce MASPO, a novel framework designed to automatically and iteratively refine prompts across the entire system. A core innovation of MASPO is its joint evaluation mechanism, which assesses prompts not merely by their local validity, but by their capacity to facilitate downstream success for successor agents. This effectively bridges the gap between local interactions and global outcomes without relying on ground-truth labels. Furthermore, MASPO employs a data-driven evolutionary beam search to efficiently navigate the high-dimensional prompt space. Extensive empirical evaluations across 6 diverse tasks demonstrate that MASPO consistently outperforms state-of-the-art prompt optimization methods, achieving an average accuracy improvement of 2.9. We release our code at https://github.com/wangzx1219/MASPO.</p>
+      <hr />
+      <h3>6. Crafting Reversible SFT Behaviors in Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06632">2605.06632</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06632.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:44 JST</li>
+      <li>Updated: 2026-05-08 02:44 JST</li>
+      <li>Authors: Yuping Lin, Pengfei He, Yue Xing, Yingqian Cui, Jiayuan Ding, Subhabrata Mukherjee, Hui Liu, Zhen Xiang</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 25.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、SFTで獲得された振る舞いを、推論時に重みを変更せず制御可能な疎なサブネットワーク（carrier）へ意図的に圧縮できるかを検討している。提案手法として、routing mask と重みを効用予算の下で同時最適化する LCDD と、抽出した carrier チャネルに対する activation matching により振る舞いを反転させる SFT-Eraser を示し、複数のモデル群で安全性・固定応答・文体の振る舞いに対して有効性を確認した。</p>
+      <p><strong>新規性</strong> SFT由来の振る舞いを、後付けの相関的解析ではなく、因果的に必要な疎な carrier として構成し、その構造を利用して推論時に振る舞いを反転・抑制できる点が新規である。</p>
+      <p><strong>Tags:</strong> large language models, supervised fine-tuning, mechanistic interpretability, sparse subnetwork, behavior control</p>
+      <p><strong>Abstract</strong> Supervised fine-tuning (SFT) induces new behaviors in large language models, yet imposes no structural constraint on how these behaviors are distributed within the model. Existing behavior interpretation methods, such as circuit attribution approaches, identify sparse subnetworks correlated with SFT-induced behaviors post-hoc. However, such correlations do not imply *causal necessity*, limiting the ability to selectively control SFT-induced behaviors at inference time. We pursue an alternative by asking: can an SFT-induced behavior be deliberately compressed into a sparse, mechanistically necessary subnetwork, termed a *carrier*, while remaining controllable at inference time without weight modification? We propose (a) <strong>Loss-Constrained Dual Descent (LCDD)</strong>, which constructs such carriers by jointly optimizing routing masks and model weights under an explicit utility budget, and (b) <strong>SFT-Eraser</strong>, a soft prompt optimized via activation matching on extracted carrier channels, to reverse the SFT-induced behavior. Across safety, fixed-response, and style behaviors on multiple model families, LCDD yields sparse carriers that preserve target behaviors while enabling strong reversion when triggered by SFT-Eraser. Ablations further establish that the sparse structure is the key precondition for reversal: the same trigger optimization fails on standard SFT models, confirming that structure rather than trigger design is the operative factor. These results provide direct evidence that the learned carriers are causally necessary for the behaviors, pointing to a new direction for systematically localizing and selectively suppressing SFT-induced behaviors in deployed models.</p>
+      <hr />
+      <h3>7. Beyond Negative Rollouts: Positive-Only Policy Optimization with Implicit Negative Gradients</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06650">2605.06650</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06650.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:55 JST</li>
+      <li>Updated: 2026-05-08 02:55 JST</li>
+      <li>Authors: Mingwei Xu, Hao Fang</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 23.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> RLVRにおける従来のGRPOは正例・負例ロールアウトを用いますが、本論文は正例ロールアウトのみで学習するPositive-Only Policy Optimization（POPO）を提案しています。POPOは正例集合への重み付き重要度サンプリングにより、明示的な負例を使わずに学習を進め、LLMの数学ベンチマークでGRPOと同等以上の性能を示しました。</p>
+      <p><strong>新規性</strong> 負例ロールアウトを使わず、正例の再配分から暗黙的な負勾配を生み出すRLVRフレームワークを提案した点が新規です。</p>
+      <p><strong>Tags:</strong> reinforcement learning, LLM, policy optimization, math reasoning, RLVR</p>
+      <p><strong>Abstract</strong> Reinforcement learning with verifiable rewards (RLVR), due to the deterministic verification, becomes a dominant paradigm for enhancing the reasoning ability of large language models (LLMs). The community witnesses the rapid change from the Proximal Policy Optimization (PPO) to Group Relative Policy Optimization (GRPO), in which GRPO reduces the complicated advantage estimation with simple estimation over grouped positive and negative rollouts. However, we note that negative rollouts may admit no gradation of failure severity, and the combinatorial vastness makes penalizing a few sampled negatives unlikely to cover a meaningful reward signal under sparse binary rewards. In this work, we propose Positive-Only Policy Optimization (POPO), a novel RLVR framework in which learning can occur exclusively via online positive rollouts. Specifically, POPO utilizes bounded importance sampling over the positive rollout set. Thus, no disjoint negative rollouts are used for the gradient guidance. We show that implicit negative gradients can emerge naturally through reinforcing the positive probability via rollouts redistribution. Next, POPO stabilizes the policy optimization through two mechanisms. First, it applies a siamese policy network with a momentum-based adaptation law for stabilized policy evolution. Second, we replace the KL-divergence with a bounded similarity penalty term in the siamese representation space. We conduct extensive experiments using publicly available, well-established text-LLM models, e.g., the Qwen family, across all-level mathematical benchmarks. Our experiment demonstrates that POPO achieves performance comparable to, or even superior to GRPO. Notably, we show that POPO can achieve 36.67% in AIME 2025 with Qwen-Math-7B, outperforming GRPO 30.00%. Our ablation and sweep studies further illustrate the necessity and robustness of POPO components.</p>
+      <hr />
+      <h3>8. How Many Iterations to Jailbreak? Dynamic Budget Allocation for Multi-Turn LLM Evaluation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06605">2605.06605</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06605.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:25 JST</li>
+      <li>Updated: 2026-05-08 02:25 JST</li>
+      <li>Authors: Shai Feldman, Yaniv Romano</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 21.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 多ターン対話におけるLLMの評価では、ジャイルブレイクやタスク成功のような事象が反復後に現れるため、計算資源が限られると観測が難しい。本論文は、時間経過での事象発生を下界付きで推定するための動的予算配分手法DAPROを提案し、予算制約を満たしつつ有限標本でのカバレッジ保証を与える。さらに、少ない計算資源下でジャイルブレイク率などの集団評価指標を低分散・不偏に推定できることを示す。</p>
+      <p><strong>新規性</strong> 多ターンLLM評価に対して、静的配分ではなく理論的に妥当な動的予算配分を導入し、打ち切りと事象時刻の条件付き独立を仮定せずに有限標本保証を与えた点が新しい。</p>
+      <p><strong>Tags:</strong> LLM評価, マルチターン対話, 動的予算配分, ジャイルブレイク, 生存解析</p>
+      <p><strong>Abstract</strong> Evaluating and predicting the performance of large language models (LLMs) in multi-turn conversational settings is critical yet computationally expensive; key events -- e.g., jailbreaks or successful task completion by an agent -- often emerge only after repeated interactions. These events might be rare, and under any feasible computational budget, remain unobserved. Recent conformal survival frameworks construct reliable lower predictive bounds (LPBs) on the number of iterations to trigger the event of interest, but rely on static budget allocation that is inefficient in multi-turn setups. To address this, we introduce \emph{Dynamic Allocation via PRojected Optimization} (DAPRO), the first theoretically valid dynamic budget allocation framework for bounding the time-to-event in multi-turn LLM interactions. We prove that DAPRO satisfies the budget constraint and provides distribution-free, finite-sample coverage guarantees without requiring the conditional independence between censoring and event times assumed by prior conformal survival approaches. A key theoretical contribution is a novel coverage bound that scales with the square root of the mean censoring weight rather than the worst-case weight, yielding provably tighter guarantees than prior work. Furthermore, DAPRO can be employed to obtain unbiased, low-variance estimates of population-level evaluation metrics, such as the jailbreak rate, under limited computing resources. Comprehensive experiments across agentic task success, adversarial jailbreaks, toxic content generation, and RAG hallucinations using LLMs such as Llama 3.1 and Qwen 2.5 demonstrate that DAPRO consistently achieves coverage closer to the nominal level with lower variance than static baselines, while satisfying the budget constraint.</p>
+      <hr />
+      <h3>9. FedAttr: Towards Privacy-preserving Client-Level Attribution in Federated LLM Fine-tuning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06596">2605.06596</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06596.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:21 JST</li>
+      <li>Updated: 2026-05-08 02:21 JST</li>
+      <li>Authors: Su Zhang, Junfeng Guo, Heng Huang</li>
+      <li>Categories: cs.CR, cs.LG</li>
+      <li>Score: 20.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、連合学習によるLLM微調整において、セキュア集約のプライバシー保証を保ちながら、どのクライアントがウォーターマーク付き文書で学習したかを特定するためのクライアントレベル属性手法FedAttrを提案する。FedAttrは、2回のSA問い合わせの差分から各クライアント更新を推定し、ウォーターマーク検出器でスコアリングした後、複数ラウンドの結果を統合する。</p>
+      <p><strong>新規性</strong> セキュア集約の下でクライアント更新を差分推定し、ウォーターマーク検出を用いてクライアント単位の属性を可能にする点が新規である。</p>
+      <p><strong>Tags:</strong> federated learning, LLM fine-tuning, privacy-preserving attribution, watermark detection, secure aggregation</p>
+      <p><strong>Abstract</strong> Watermark radioactivity testing type of methods can detect whether a model was trained on watermarked documents, and have become key tools for protecting data ownership in the fine-tuning of large language models (LLMs). Existing works have proved their effectiveness in centralized LLM fine-tuning. However, this type of method faces several challenges and remains underexplored in federated learning (FL), a widely-applied paradigm for fine-tuning LLMs collaboratively on private data across different users. FL mainly ensures privacy through secure aggregation (SA), which allows the server to aggregate updates while keeping clients' updates private. This mechanism preserves privacy but makes it difficult to identify which client trained on watermarked documents. In this work, we propose FedAttr, a new client-level attribution protocol for FL. FedAttr identifies which clients trained on watermarked data via a paired-subset-difference mechanism, while preserving the privacy guarantees of SA and FL performance. FedAttr proceeds in three steps: (i) estimate each client's update by differencing two SA queries, (ii) score the estimate with the watermark detector via differential scoring, and (iii) combine scores across rounds via Stouffer method. We theoretically show that FedAttr produces an unbiased estimator of each client's update with bounded mutual information leakage (i.e., $O(d^*/N)$ per-round update). Moreover, FedAttr empirically achieves 100% TPR and 0% FPR, outperforming all baselines by at least 44.4% in TPR or 19.1% in FPR, with only 6.3% overhead relative to FL training time. Ablation studies confirm that FedAttr is robust to protocol parameters and configurations.</p>
+      <hr />
+      <h3>10. Optimizer-Model Consistency: Full Finetuning with the Same Optimizer as Pretraining Forgets Less</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06654">2605.06654</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06654.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:57 JST</li>
+      <li>Updated: 2026-05-08 02:57 JST</li>
+      <li>Authors: Yuxing Liu, Jianyu Wang, Tong Zhang</li>
+      <li>Categories: cs.LG, cs.AI, math.OC</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの事前学習とSFTで同じ最適化手法を使うと、下流タスク性能を維持しつつ事前学習知識の忘却をより抑えられることを観察し、これを optimizer-model consistency と呼ぶ。制御実験と理論解析により、最適化手法が活性に対する正則化効果を通じて事前学習済みチェックポイント周辺の地形を変え、それに対応した更新構造が忘却低減に重要であることを示す。</p>
+      <p><strong>新規性</strong> 事前学習とSFTで同一の最適化手法を用いることが、忘却を抑える上で有利であるという optimizer-model consistency を提案し、その背景を活性への正則化効果として説明した。</p>
+      <p><strong>Tags:</strong> LLM, fine-tuning, optimizer, catastrophic forgetting, theory</p>
+      <p><strong>Abstract</strong> Optimizers play an important role in both pretraining and finetuning stages when training large language models (LLMs). In this paper, we present an observation that full finetuning with the same optimizer as in pretraining achieves a better learning-forgetting tradeoff, i.e., forgetting less while achieving the same or better performance on the new task, than other optimizers and, possibly surprisingly, LoRA, during the supervised finetuning (SFT) stage. We term this phenomenon optimizer-model consistency. To better understand it, through controlled experiments and theoretical analysis, we show that: 1) optimizers can shape the models by having regularization effects on the activations, leading to different landscapes around the pretrained checkpoints; 2) in response to this regularization effect, the weight update in SFT should follow some specific structures to lower forgetting of the knowledge learned in pretraining, which can be obtained by using the same optimizer. Moreover, we specifically compare Muon and AdamW when they are employed throughout the pretraining and SFT stages and find that Muon performs worse when finetuned for reasoning tasks. With a synthetic language modeling experiment, we demonstrate that this can come from Muon's strong tendency towards rote memorization, which may hurt pattern acquisition with a small amount of data, as for SFT.</p>
+      <hr />
+      <h3>11. PairAlign: A Framework for Sequence Tokenization via Self-Alignment with Applications to Audio Tokenization</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06582">2605.06582</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06582.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:11 JST</li>
+      <li>Updated: 2026-05-08 02:11 JST</li>
+      <li>Authors: Adhiraj Banerjee, Vipul Arora</li>
+      <li>Categories: cs.LG, cs.CL, cs.SD</li>
+      <li>Score: 17.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> PairAlignは、音声を離散トークン列として表現するために、自己整合に基づくシーケンスレベルのトークナイゼーションを学習する枠組みである。2つの内容保持ビュー間で相互にトークン列を予測させることで、長さ制御、終了位置、編集距離の保存、トークンの非退化性を同時に改善する。3秒音声で広い語彙利用と高いビュー間整合性を示し、TIMIT検索では編集距離ベースの検索性能を保ちながらアーカイブのトークン数を55%削減した。</p>
+      <p><strong>新規性</strong> 音声トークナイゼーションを局所的な量子化ではなく、自己整合による条件付き系列生成として定式化し、編集距離保存と長さ制御を直接狙う点が新しい。</p>
+      <p><strong>Tags:</strong> audio tokenization, self-alignment, sequence generation, edit distance, speech representation</p>
+      <p><strong>Abstract</strong> Many operations on sensory data -- comparison, memory, retrieval, and reasoning -- are naturally expressed over discrete symbolic structures. In language this interface is given by tokens; in audio, it must be learned. Existing audio tokenizers rely on quantization, clustering, or codec reconstruction, assigning tokens locally, so sequence consistency, compactness, length control, termination, and edit similarity are rarely optimized directly. We introduce PairAlign, a framework for compact audio tokenization through sequence-level self-alignment. PairAlign treats tokenization as conditional sequence generation: an encoder maps speech to a continuous condition, and an autoregressive decoder generates tokens from BOS, learning token identity, order, length, and EOS placement. Given two content-preserving views, each view's sequence is trained to be likely under the other's representation, while unrelated examples provide competing sequences. This gives a scalable surrogate for edit-distance preservation while discouraging many-to-one collapse. PairAlign starts from VQ-style tokenization and refines it with EMA-teacher targets, cross-paired teacher forcing, prefix corruption, likelihood contrast, and length control. On 3-second speech, PairAlign learns compact, non-degenerate sequences with broad vocabulary usage and strong cross-view consistency. On TIMIT retrieval, it preserves edit-distance search while reducing archive token count by 55%. A continuous-sweep probe shows lower local overlap than a dense geometric tokenizer, but stronger length control and bounded edit trajectories under 100 ms shifts. PairAlign is a sequence-symbolic predictive learner: like JEPA-style objectives, it predicts an abstract target from another view as a learned variable-length symbolic sequence, not a continuous latent.</p>
+      <hr />
+      <h3>12. StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06642">2605.06642</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06642.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:51 JST</li>
+      <li>Updated: 2026-05-08 02:51 JST</li>
+      <li>Authors: Xiangyuan Xue, Yifan Zhou, Zidong Wang, Shengji Tang, Philip Torr, Wanli Ouyang, Lei Bai, Zhenfei Yin</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMを対話的エージェントとして長期的な意思決定に適応させるため、StraTAは初期状態からコンパクトな戦略を抽出し、その戦略に条件づけて後続の行動を生成する階層的な強化学習枠組みを提案する。ALFWorld、WebShop、SciWorldでの実験では、強いベースラインよりもサンプル効率と最終性能の両方が一貫して向上した。</p>
+      <p><strong>新規性</strong> 軌跡全体の方針を明示的な戦略として抽象化し、戦略生成と行動実行を同時に学習する点が新しい。</p>
+      <p><strong>Tags:</strong> LLMエージェント, 強化学習, 長期計画, 階層学習, サンプル効率</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, which weakens both exploration and credit assignment over extended trajectories. In this work, we present Strategic Trajectory Abstraction (StraTA), a simple framework that introduces an explicit trajectory-level strategy into agentic reinforcement learning (RL). StraTA samples a compact strategy from the initial task state, conditions subsequent actions on that strategy, and trains strategy generation and action execution jointly with a hierarchical GRPO-style rollout design, further enhanced by diverse strategy rollout and critical self-judgment. Experiments on ALFWorld, WebShop, and SciWorld show that StraTA consistently improves both sample efficiency and final performance over strong baselines. StraTA reaches success rates of 93.1% on ALFWorld and 84.2% on WebShop. On SciWorld, StraTA attains a 63.5% overall score, outperforming frontier closed-source models.</p>
+      <hr />
+      <h3>13. Algospeak, Hiding in the Open: The Trade-off Between Legible Meaning and Detection Avoidance</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06619">2605.06619</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06619.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:34 JST</li>
+      <li>Updated: 2026-05-08 02:34 JST</li>
+      <li>Authors: Jan Fillies, Ronald E. Robertson, Jeffrey Hancock</li>
+      <li>Categories: cs.CL, cs.CY</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMがコンテンツ生成とモデレーションの両方に関与する状況で、Algospeakによる回避表現が「検出回避」と「意味の理解可能性」の間にトレードオフを生むことを定式化した。COVID-19誤情報を用いた実験では、意味回復と誤情報検出の2つの評価を行い、モジュレーション強度に応じた理解可能性の変化を分析した。</p>
+      <p><strong>新規性</strong> Majority Understandable Modulation (MUM) という、回避性を高めると多数の受け手の理解が失われる閾値概念を導入し、調整可能なAlgospeak変種生成フレームワークと700件のデータセットを提示した。</p>
+      <p><strong>Tags:</strong> Algospeak, LLM, 誤情報検出, 自然言語処理, モデレーション</p>
+      <p><strong>Abstract</strong> As large language models (LLMs) increasingly mediate both content generation and moderation, linguistic evasion strategies known as Algospeak have intensified the coevolution between evaders and detectors. This research formalizes the underlying dynamics grounded in a joint action model: when Algospeak increases, detectability and understandability decrease. Further, the concept of Majority Understandable Modulation (MUM) is introduced and defined as the modulation level at which additional evasive alteration increases detector evasion but loses comprehension for the majority of recipients. To empirically probe this trade-off, we introduce a reproducible framework that can be used to create meaning-preserving, Algospeak-style variants, based on an existing taxonomy and with tunable modulation levels. Using COVID-19 disinformation as a first proof-by-example setting, we construct a reference dataset of 700 modulated items, drawn from twenty base sentences across five modulation levels and seven strategies. We then run two linked evaluations with seven different language models: one testing for interpretation through meaning recovery and one for disinformation detection through classification. Curve fitting over modulation levels yields an estimate of the Majority Understandable Modulation threshold and enables sensitivity analyses across strategies and models, see Figure 1. Results reveal the characteristic relationships between understandability and modulation. This study lays the groundwork for understanding the dynamics behind Algospeak and provides the framework, dataset, and experimental setups described.</p>
+      <hr />
+      <h3>14. The Structural Origin of Attention Sink: Variance Discrepancy, Super Neurons, and Dimension Disparity</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06611">2605.06611</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06611.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:28 JST</li>
+      <li>Updated: 2026-05-08 02:28 JST</li>
+      <li>Authors: Siquan Li, Kaiqi Jiang, Jiacheng Sun, Tianyang Hu</li>
+      <li>Categories: cs.LG, cs.AI, stat.ML</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMにおけるattention sinkの構造的起源を、自己注意のvalue aggregationが生む分散の不一致として説明し、さらにFFN層のsuper neuronの活性化がその不一致を増幅することを示す。加えて、チャネル疎なdown-projectionが先頭トークン表現の次元不均衡を引き起こし、attention sinkが構造的なアンカーとして形成されると論じる。</p>
+      <p><strong>新規性</strong> attention sinkの発生を、分散不一致→super neuronによる増幅→次元不均衡という因果連鎖として機械論的に説明し、head-wise RMSNormによる安定化で収束改善を示した点。</p>
+      <p><strong>Tags:</strong> attention sink, LLM, mechanistic interpretability, self-attention, RMSNorm</p>
+      <p><strong>Abstract</strong> Despite the prevalence of the attention sink phenomenon in Large Language Models (LLMs), where initial tokens disproportionately monopolize attention scores, its structural origins remain elusive. This work provides a \textit{mechanistic explanation} for this phenomenon. First, we trace its root to the value aggregation process inherent in self-attention, which induces a systematic variance discrepancy. We further demonstrate that this discrepancy is drastically amplified by the activation of super neurons within Feed-Forward Network (FFN) layers. Specifically, the channel-sparse down-projections trigger a dimension disparity of the first-token representation, necessitating the formation of attention sinks as a structural anchor. Then, we validate this causal chain through two controlled interventions: (i) isolating the aggregation effect via attention mask modifications and (ii) amplifying the variance of targeted token representations. Both interventions can replicate attention sinks at arbitrary positions. Our mechanistic understanding offers a foundation for the systematic control of sink formation. Finally, as a proof of concept, we propose \textit{head-wise RMSNorm}, an architectural modification that stabilizes value aggregation outputs during pre-training. Our experiments demonstrate that restoring statistical parity across positions significantly accelerates convergence.</p>
+      <hr />
+      <h3>15. Automated Clinical Report Generation for Remote Cognitive Remediation: Comparing Knowledge-Engineered Templates and LLMs in Low-Resource Settings</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06594">2605.06594</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06594.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:20 JST</li>
+      <li>Updated: 2026-05-08 02:20 JST</li>
+      <li>Authors: Yongxin Zhou, Fabien Ringeval, François Portet</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、低資源環境における遠隔認知リハビリテーションの臨床報告を自動生成するため、知識工学に基づくテンプレート方式とゼロショットLLM（GPT-4）を比較した。両手法は同一の構造化変数を用い、8名の評価者による多面的評価の結果、臨床的信頼性と文章の流暢さ・簡潔さの間にトレードオフがあることが示された。</p>
+      <p><strong>新規性</strong> 専門家の知見を反映したテンプレート生成とLLM生成を、参照報告のない低資源環境で同一入力条件のもと比較し、臨床報告システム設計のための8つの提言を導いた点が新規である。</p>
+      <p><strong>Tags:</strong> clinical NLG, report generation, LLM comparison, remote rehabilitation, low-resource settings</p>
+      <p><strong>Abstract</strong> The growing demand for cognitive remediation therapy, combined with limited speech therapist availability, has accelerated the adoption of remote rehabilitation tools. These systems generate large volumes of interaction data that are difficult for clinicians to review efficiently. This paper investigates automated clinical report generation for avatar-guided, home-based cognitive remediation sessions in a low-resource setting with no reference reports. We present and compare two approaches: (1) a rule-based template system encoding speech therapy domain knowledge as explicit decision rules and validated templates, ensuring clinical reliability and traceability; and (2) a zero-shot LLM-based approach (GPT-4) aimed at more fluent and concise output. Both systems use identical pre-extracted, expert-validated structured variables, enabling a controlled factual comparison. Outputs were evaluated by eight speech therapists and final-year students using a nine-criterion questionnaire. Results reveal a clear trade-off between clinical reliability and linguistic quality. The template-based system scored higher on fluidity, coherence, and results presentation, while GPT-4 produced more concise output. Directional differences are consistent across evaluation dimensions, though no comparison reached statistical significance after correction, reflecting the scale constraints of expert clinical evaluation. Based on evaluator feedback, we derive eight design recommendations for clinical reporting systems in remote rehabilitation settings. More broadly, this work contributes a replicable methodology combining expert elicitation, taxonomy-driven generation, and multi-dimensional human evaluation for clinical NLG in low-resource settings, and illustrates how controlled comparisons can inform the responsible adoption of generative AI in healthcare.</p>
+      <hr />
+      <h3>16. Weight-Decay Turns Transformer Loss Landscapes Villani: Functional-Analytic Foundations for Optimization and Generalization</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06599">2605.06599</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06599.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:22 JST</li>
+      <li>Updated: 2026-05-08 02:22 JST</li>
+      <li>Authors: Abhijit Das, Sayantan Dutta</li>
+      <li>Categories: cs.LG, eess.AS</li>
+      <li>Score: 15.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、Transformerのクロスエントロピー損失にL2正則化（weight decay）を加えた目的関数が、Villaniの可縮エネルギー関数の条件を満たすことを示し、その結果として対数ソボレフ不等式やポアンカレ不等式の定数を明示的に導出しています。さらに、これによりノイズ付きSGDの有限時間収束保証やPAC-Bayesian一般化境界との関係を理論的に与え、100M超パラメータ規模のモデルで診断量を用いた実験的検証も行っています。</p>
+      <p><strong>新規性</strong> Transformerの標準的なweight decay付き損失をVillaniの枠組みで厳密に特徴づけ、正則化強度とモデル次元に依存する収束・一般化の理論的保証を導出した点が新規です。</p>
+      <p><strong>Tags:</strong> Transformer, weight decay, functional analysis, generalization, optimization</p>
+      <p><strong>Abstract</strong> Weight decay is widely used as a regularizer in large language models, yet its precise role in shaping Transformer loss landscapes remains theoretically underexplored. This paper provides the first rigorous functional-analytic characterization of the standard Transformer objective--cross-entropy loss with $L^2$ regularization--by proving it satisfies Villani's criteria for coercive energy functions. Specifically, we show that the regularized loss $\mathcal{F}$ is infinitely differentiable, grows at least quadratically, has Gaussian-integrable tails, and satisfies the differential growth condition $-Δ\mathcal{F} + \tfrac{1}{s}\|\nabla\mathcal{F}\|^{2} \to \infty$ as $\|θ\| \to \infty$ for all $s&gt;0$. From this structure, we derive explicit log-Sobolev and Poincaré constants $C_{\mathrm{LS}} \leq λ^{-1} + d/λ^{2}$, linking the regularization strength $λ$ and model dimension $d$ to finite-time convergence guarantees for noisy stochastic gradient descent and PAC-Bayesian generalization bounds that tighten with increasing $λ$. To validate our theory, we introduce a scalable Villani diagnostic $Ψ_s(θ) = -Δ\mathcal{F} + s^{-1}\|\nabla \mathcal{F}\|^2$ and estimate it efficiently using Hutchinson trace probes in models with over 100M parameters. Experiments on GPT-Neo-125M across Penn Treebank and WikiText-103 confirm the predicted quadratic growth of $Ψ_s$, spectral inflation of the Hessian, and exponential convergence behavior consistent with our log-Sobolev analysis. These results demonstrate that weight decay not only improves generalization empirically but also establishes the mathematical conditions required for fast Langevin mixing and theoretically grounded curvature-aware optimization in deep learning.</p>
+      <hr />
+      <h3>17. Why Global LLM Leaderboards Are Misleading: Small Portfolios for Heterogeneous Supervised ML</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06656">2605.06656</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06656.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:57 JST</li>
+      <li>Updated: 2026-05-08 02:57 JST</li>
+      <li>Authors: Jai Moondra, Ayela Chughtai, Bhargavi Lanka, Swati Gupta</li>
+      <li>Categories: cs.LG, cs.DM, cs.ET, math.OC</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、Arenaの約8.9万件・116言語・52モデルの比較データを分析し、グローバルなBradley-Terry順位付けが強い異質性のために誤解を招くことを示した。特に言語が重要な要因であり、言語や言語族ごとに分けると投票の一致度が大きく高まり、グローバル順位では見えない一貫した部分集団が存在することが分かった。</p>
+      <p><strong>新規性</strong> 異質な利用者集団に対して、少数のモデル集合で一定の誤差以内に予測できるユーザー割合を最大化する(λ, ν)-ポートフォリオを提案し、集合被覆問題として定式化して保証を与えた点が新しい。</p>
+      <p><strong>Tags:</strong> LLM leaderboard, Bradley-Terry, heterogeneous data, set cover, portfolio</p>
+      <p><strong>Abstract</strong> Ranking LLMs via pairwise human feedback underpins current leaderboards for open-ended tasks, such as creative writing and problem-solving. We analyze ~89K comparisons in 116 languages from 52 LLMs from Arena, and show that the best-fit global Bradley-Terry (BT) ranking is misleading. Nearly 2/3 of the decisive votes cancel out, and even the top 50 models according to the global BT ranking are statistically indistinguishable (pairwise win probabilities are at most 0.53 within the top 50 models). We trace this failure to strong, structured heterogeneity of opinions across language, task, and time. Moreover, we find an important characteristic - *language* plays a key role. Grouping by language (and families) increases the agreement of votes massively, resulting in two orders of magnitude higher spread in the ELO scores (i.e., very consistent rankings). What appears as global noise is in fact a mixture of coherent but conflicting subpopulations. To address such heterogeneity in supervised machine learning, we introduce the framework of $(λ, ν)$-portfolios, which are small sets of models that achieve a prediction error at most $λ$, "covering" at least a $ν$ fraction of users. We formulate this as a variant of the set cover problem and provide guarantees using the VC dimension of the underlying set system. On the Arena data, our algorithms recover just 5 distinct BT rankings that cover over 96% of votes at a modest $λ$, compared to the 21% coverage by the global ranking. We also provide a portfolio of 6 LLMs that cover twice as many votes as the top-6 LLMs from a global ranking. We further construct portfolios for a classification problem on the COMPAS dataset using an ensemble of fairness-regularized classification models and show that these portfolios can be used to detect blind spots in the data, which might be of independent interest to policymakers.</p>
+      <hr />
+      <h3>18. SoftSAE: Dynamic Top-K Selection for Adaptive Sparse Autoencoders</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06610">2605.06610</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06610.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:28 JST</li>
+      <li>Updated: 2026-05-08 02:28 JST</li>
+      <li>Authors: Jakub Stępień, Marcin Mazur, Jacek Tabor, Przemysław Spurek</li>
+      <li>Categories: cs.LG, cs.CV</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Sparse Autoencoders（SAE）はLLMやViTの内部表現を解釈するために用いられますが、従来のTopK SAEは全入力に対して固定の疎性Kを課していました。本論文は、入力ごとの複雑さに応じて活性化数を変えられるDynamic Top-K選択を備えたSoftSAEを提案し、よりデータ構造に合った表現を学習できることを示します。実験では、意味のある特徴を見つけるだけでなく、概念ごとに適切な特徴数を選択できることが確認されています。</p>
+      <p><strong>新規性</strong> 微分可能なSoft Top-K演算により、入力依存の疎性レベルkを学習して固定Kの制約を解消した点が新規です。</p>
+      <p><strong>Tags:</strong> sparse autoencoder, mechanistic interpretability, dynamic sparsity, top-k selection, LLM/ViT</p>
+      <p><strong>Abstract</strong> Sparse Autoencoders (SAEs) have become an important tool in mechanistic interpretability, helping to analyze internal representations in both Large Language Models (LLMs) and Vision Transformers (ViTs). By decomposing polysemantic activations into sparse sets of monosemantic features, SAEs aim to translate neural network computations into human-understandable concepts. However, common architectures such as TopK SAEs rely on a fixed sparsity level. They enforce the same number of active features (K) across all inputs, ignoring the varying complexity of real-world data. Natural data often lies on manifolds with varying local intrinsic dimensionality, meaning the number of relevant factors can change significantly across samples. This suggests that a fixed sparsity level is not optimal. Simple inputs may require only a few features, while more complex ones need more expressive representations. Using a constant K can therefore introduce noise in simple cases or miss important structure in more complex ones. To address this issue, we propose SoftSAE, a sparse autoencoder with a Dynamic Top-K selection mechanism. Our method uses a differentiable Soft Top-K operator to learn an input-dependent sparsity level k. This allows the model to adjust the number of active features based on the complexity of each input. As a result, the representation better matches the structure of the data, and the explanation length reflects the amount of information in the input. Experimental results confirm that SoftSAE not only finds meaningful features, but also selects the right number of features for each concept. The source code is available at: https://anonymous.4open.science/r/SoftSAE-8F71/.</p>
+      <hr />
+      <h3>19. When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06652">2605.06652</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06652.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:56 JST</li>
+      <li>Updated: 2026-05-08 02:56 JST</li>
+      <li>Authors: Sushant Gautam, Finn Schwall, Annika Willoch Olstad, Fernando Vallecillos Ruiz, Birk Torpmann-Hagen, Sunniva Maria Stordal Bjørklund, Leon Moonen, Klas Pettersen, Michael A. Riegler</li>
+      <li>Categories: cs.LG, cs.AI, cs.CL</li>
+      <li>Score: 13.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、ラベル付きベンチマークが存在しない状況で言語モデルの安全性を比較評価するための「benchmarkless comparative safety scoring」を定式化し、シナリオパック、ルーブリック、監査者、判定器、サンプリング設定、再実行回数を固定したときのみスコアを有効とみなす枠組みを提案する。さらに、正解ラベルとの一致の代わりに、安全/劣化対照への反応、監査者・判定器由来のアーティファクトよりも対象差が支配的であること、再実行間での安定性という因果的検証連鎖を用いて評価する。</p>
+      <p><strong>新規性</strong> グラウンドトゥルースなしで比較的安全性スコアを妥当化するための検証連鎖を明示し、実運用での証拠として解釈可能な条件を定義した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM安全性, ベンチマークなし評価, 比較評価, 監査, 妥当性検証</p>
+      <p><strong>Abstract</strong> Many deployments must compare candidate language models for safety before a labeled benchmark exists for the relevant language, sector, or regulatory regime. We formalize this setting as benchmarkless comparative safety scoring and specify the contract under which a scenario-based audit can be interpreted as deployment evidence. Scores are valid only under a fixed scenario pack, rubric, auditor, judge, sampling configuration, and rerun budget. Because no labels are available, we replace ground-truth agreement with an instrumental-validity chain: responsiveness to a controlled safe-versus-abliterated contrast, dominance of target-driven variance over auditor and judge artifacts, and stability across reruns. We instantiate the chain in SimpleAudit, a local-first scoring instrument, and validate it on a Norwegian safety pack. Safe and abliterated targets separate with AUROC values between 0.89 and 1.00, target identity is the dominant variance component ($η^2 \approx 0.52$), and severity profiles stabilize by ten reruns. Applying the same chain to Petri shows that it admits both tools. The substantial differences arise upstream of the chain, in claim-contract enforcement and deployment fit. A Norwegian public-sector procurement case comparing Borealis and Gemma 3 demonstrates the resulting evidence in practice: the safer model depends on scenario category and risk measure. Consequently, scores, matched deltas, critical rates, uncertainty, and the auditor and judge used must be reported together rather than collapsed into a single ranking.</p>
+      <hr />
+      <h3>20. NeuroAgent: LLM Agents for Multimodal Neuroimaging Analysis and Research</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2605.06584">2605.06584</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2605.06584.pdf">link</a></li>
+      <li>Published: 2026-05-08 02:13 JST</li>
+      <li>Updated: 2026-05-08 02:13 JST</li>
+      <li>Authors: Lujia Zhong, Yihao Xia, Jianwei Zhang, Shuo huang, Jiaxin Yue, Mingyang Xia, Yonggang Shi</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> NeuroAgentは、sMRI・fMRI・dMRI・PETなどの異種脳画像データに対して、前処理から下流の解析までを自然言語で支援するLLM駆動のエージェントフレームワークである。階層的なマルチエージェント構成とGenerate-Execute-Validate機構により、コード生成、実行時エラー回復、出力検証を自動化し、ADNIデータで有効性を評価している。</p>
+      <p><strong>新規性</strong> 複数モダリティの神経画像解析に対し、前処理コードの自動生成・エラー回復・検証を組み込んだ階層型マルチエージェント枠組みを提案し、自然言語クエリによる下流解析も可能にした点が新規である。</p>
+      <p><strong>Tags:</strong> neuroimaging, LLM agents, multimodal analysis, preprocessing automation, Alzheimer's disease</p>
+      <p><strong>Abstract</strong> Multimodal neuroimaging analysis often involves complex, modality-specific preprocessing workflows that require careful configuration, quality control, and coordination across heterogeneous toolchains. Beyond preprocessing, downstream statistical analysis and disease classification commonly require task-specific code, evaluation protocols, and data-format conventions, creating additional barriers between raw acquisitions and reproducible scientific analysis. We present NeuroAgent, an LLM-driven agentic framework that automates key preprocessing and analysis steps for heterogeneous neuroimaging data, including sMRI, fMRI, dMRI, and PET, and supports interactive downstream analysis through natural-language queries. NeuroAgent employs a hierarchical multi-agent architecture with a feedback-driven Generate-Execute-Validate engine: agents autonomously generate executable preprocessing code, detect and recover from runtime errors, and validate output integrity. We evaluate the system on 1,470 subjects pooled across all ADNI phases (CN=1,000, AD=470), where all subjects have sMRI and tabular data, with subsets also having Tau-PET (n=469), fMRI (n=278), and DTI ($n=620$). Pipeline ablation studies across multiple LLM backends show that capable models reach up to 100% intent-parsing accuracy, with the strongest backend (Qwen3.5-27B) reaching 84.8% end-to-end preprocessing step correctness. Automated recovery limits manual intervention to edge cases where human review is required via the Human-In-The-Loop interface. For Alzheimer's Disease classification using automatically preprocessed multimodal data, our agent ensemble achieves an AUC of 0.9518 with four modalities, outperforming all single-modality baselines. These results show that NeuroAgent can reduce the manual effort required for neuroimaging preprocessing and enable end-to-end automated analysis pipelines for neuroimaging research.</p>
+      <hr />
+      <blockquote><p>... and 2 more papers (not shown).</p></blockquote>
+    </article>
+  </main>
+</body>
+</html>
