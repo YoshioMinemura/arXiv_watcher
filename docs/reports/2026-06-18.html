@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-06-18 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-06-18</h1>
+        <p class="hero-copy">Generated at 2026-06-18 10:37 JST. Run ID: <code>dfefd8af-8a3b-4c8e-8965-941eb84fbaa9</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>14</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-06-18</h1>
+      <p>Generated at: 2026-06-18 10:37 JST Run ID: dfefd8af-8a3b-4c8e-8965-941eb84fbaa9</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 14</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Seeing Before Reasoning: Decoupling Perception and Reasoning for Shortcut-Resilient Multimodal On-Policy Self-Distillation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19120">2606.19120</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19120.pdf">link</a></li>
+      <li>Published: 2026-06-17 23:33 JST</li>
+      <li>Updated: 2026-06-17 23:33 JST</li>
+      <li>Authors: Sihan Wang, Xiyao Liu, Lianqing Liu, Zhi Han</li>
+      <li>Categories: cs.LG, cs.CV</li>
+      <li>Score: 25.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> On-policy self-distillationをマルチモーダル大規模言語モデルに直接適用すると、参照テキストに依存したショートカットが生じやすい問題を指摘し、これを抑えるための視覚的に接地した枠組みViGOSを提案している。ViGOSでは、まず画像の記述を生成してから推論を行わせ、正しいロールアウトでは画像のみを使う知覚教師が記述を監督し、推論教師がその後の推論と最終回答を監督する。</p>
+      <p><strong>新規性</strong> 知覚と推論を分離し、画像記述には画像のみの教師、推論には別の教師を使うことで、OPSDの利点を保ちながら画像依存のショートカットを抑える点が新しい。</p>
+      <p><strong>Tags:</strong> multimodal learning, self-distillation, vision-language, reasoning, post-training</p>
+      <p><strong>Abstract</strong> On-policy self-distillation (OPSD) trains a model on its own rollouts and uses a frozen copy to provide dense token-level targets conditioned on a reference target. This works well for LLM reasoning, but a direct extension to multimodal large language models (MLLMs) can create a shortcut: the privileged target may guide tokens mainly based on the text reference target rather than the image. We propose ViGOS, a visually grounded OPSD framework for MLLM post-training. The student first writes a visual description and then reasons toward the final answer. For valid rollouts, an image-only perception teacher supervises the description, while a privileged reasoning teacher supervises the reasoning and final answer on the same student prefix. A reference teacher is used only for invalid rollouts to recover the output format. Across general vision-language, expert reasoning, visual math, spatial grounding, and visual-language-prior benchmarks, ViGOS keeps the main benefits of OPSD and improves image-grounded behavior in shortcut-prone settings.</p>
+      <hr />
+      <h3>2. Beyond Tokenization: Direct Timestep Embedding and Contrastive Alignment for Time-Series Question Answering</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.18986">2606.18986</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.18986.pdf">link</a></li>
+      <li>Published: 2026-06-17 21:07 JST</li>
+      <li>Updated: 2026-06-17 21:07 JST</li>
+      <li>Authors: Yafeng Wu, Huu Hiep Nguyen, Thin Nguyen, Hung Le</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 25.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、時系列を自然言語で問うTSQAにおいて、従来のトークナイズやパッチ分割が連続値の大きさ・スケール・時点情報を損なう問題に着目しています。提案手法CADEは、各タイムステップをLLM埋め込み空間へ直接写像し、さらに時系列表現とクラス名テキストを対比学習で整列させることで、Time-MQAベンチマークの6タスクで性能向上を示しました。</p>
+      <p><strong>新規性</strong> 各タイムステップを直接埋め込む方式によりパッチ化やパディングを不要にし、加えてクラス名テキストをアンカーとする一方向の教師あり対比損失で時系列と言語表現の意味的ギャップを埋めた点が新規です。</p>
+      <p><strong>Tags:</strong> time-series question answering, LLM, contrastive learning, time-series embedding</p>
+      <p><strong>Abstract</strong> Recent advances in large language models (LLMs) have given rise to time-series question answering (TSQA), which formulates time-series analysis as natural-language question answering. However, directly feeding raw numerical series into LLMs suffers from a tokenization bottleneck: Byte Pair Encoding fragments continuous values into unstable tokens whose embeddings lack meaningful metric structure, resulting in the loss of magnitude, scale, and trend information. Prior methods use patch-based encoders that split the series into fixed windows, locking in one granularity that breaks patterns and hides exact timesteps, through a separate module that rarely transfers across datasets with different lengths or sampling rates. To address this challenge, we propose CADE (Contrastive Alignment with Direct Embedding), a novel framework for TSQA built upon two key components: direct timestep embedding and semantic alignment. The proposed framework maps each timestep directly into the LLM embedding space through a point-wise linear encoder and MLP projector, preserving exact index-level access while eliminating the need for patching and padding. To further bridge the semantic gap between time-series and language representations, we introduce a novel one-directional supervised contrastive loss that aligns time-series embeddings with frozen class-name text anchors. Experimental results on the public Time-MQA benchmark demonstrate that our framework consistently improves performance across six TSQA tasks, outperforming both open-source and proprietary LLM baselines.</p>
+      <hr />
+      <h3>3. OpenAnt: LLM-Powered Vulnerability Discovery Through Code Decomposition, Adversarial Verification, and Dynamic Testing</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19149">2606.19149</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19149.pdf">link</a></li>
+      <li>Published: 2026-06-17 23:56 JST</li>
+      <li>Updated: 2026-06-17 23:56 JST</li>
+      <li>Authors: Nahum Korda, Gadi Evron</li>
+      <li>Categories: cs.CR, cs.LG</li>
+      <li>Score: 24.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> OpenAntは、大規模コードベースに対する脆弱性発見のために、静的解析とLLM推論を組み合わせた多段パイプラインを提案する。コードを到達可能性に基づいて分解して解析対象を最大97%削減し、さらに攻撃者視点の検証と動的テストで候補の妥当性を確認することで、誤検出を抑えつつ未知の脆弱性を見つけられることを示した。</p>
+      <p><strong>新規性</strong> コード分解、敵対的検証、動的検証を閉ループで統合し、LLMを用いた脆弱性発見をリポジトリ規模で実用的にした点が新規である。</p>
+      <p><strong>Tags:</strong> 脆弱性発見, LLM, 静的解析, 動的テスト, サイバーセキュリティ</p>
+      <p><strong>Abstract</strong> Automated vulnerability discovery in large codebases remains challenging: traditional static analysis produces high false-positive rates, while dynamic approaches such as fuzzing require substantial infrastructure and often target narrow classes of bugs. Recent advances in large language models (LLMs) enable semantic reasoning about program behavior, but applying LLMs to repository-scale security analysis introduces challenges related to context management, cost, and verification. We present OpenAnt, an open-source vulnerability discovery system that integrates static program analysis with LLM-based reasoning in a multi-stage pipeline. OpenAnt introduces three key techniques. First, codebases are decomposed into self-contained analysis units filtered by reachability from external entry points, reducing the analysis surface by up to 97% while preserving attack-relevant code. Second, candidate vulnerabilities undergo adversarial verification through constrained attacker simulation, where the model evaluates exploitability under realistic attacker capabilities. Third, findings are validated through dynamic verification, in which exploit environments are generated automatically, executed in sandboxed containers, and discarded after use. Evaluation on widely used open-source projects including OpenSSL, WordPress, and Flowise shows that this architecture can identify previously unknown vulnerabilities while maintaining manageable analysis cost and substantially reducing false positives. Our results suggest that closed-loop vulnerability discovery pipelines, combining semantic reasoning with exploit validation, provide a practical path toward scalable automated security analysis. OpenAnt is released as open source under the Apache 2.0 license at https://github.com/knostic/OpenAnt.</p>
+      <hr />
+      <h3>4. Quantifying and Auditing LLM Evaluation via Positive--Unlabeled Learning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19057">2606.19057</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19057.pdf">link</a></li>
+      <li>Published: 2026-06-17 22:26 JST</li>
+      <li>Updated: 2026-06-17 22:26 JST</li>
+      <li>Authors: Zilong Zhang, Yi-Ting Hung, Lei Ding, Chi-Kuang Yeh</li>
+      <li>Categories: stat.ML, cs.LG, stat.CO, stat.ME</li>
+      <li>Score: 23.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMを評価者として用いる際に生じる冗長性バイアスなどの系統的な偏りに対し、人手評価が正例のみを与える選択的監督を正例・未ラベル学習として定式化している。固定埋め込み空間で人手確認済み正例と未ラベル出力の信頼できる部分を部分最適輸送で整合させ、再学習せずに偏った評価器を監査・補正する枠組みを提案する。</p>
+      <p><strong>新規性</strong> LLM評価の監査を正例・未ラベル学習として扱い、Partial Optimal Transportに基づく幾何学的手法で人手整合な選好の抽出とバイアス補正を行う点が新しい。</p>
+      <p><strong>Tags:</strong> LLM evaluation, positive-unlabeled learning, partial optimal transport, bias auditing, human preferences</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) are increasingly used as judges for scalable evaluation, yet such LLM--as--a--Judge systems exhibit systematic biases that are decoupled from semantic quality, most notably verbosity bias. Meanwhile, human supervision is costly and typically selective, yielding reliable positive judgments but leaving most outputs unlabelled and potentially mixed in quality. We formulate LLM evaluation under selective human supervision as a positive--unlabelled learning problem and propose a geometric auditing framework based on Partial Optimal Transport. By aligning a small set of human--verified positives with a reliable subset of unlabelled outputs in a fixed embedding space, our method identifies human--consistent preferences and corrects biased judges without retraining. Experiments demonstrate improved alignment with human preferences, increased robustness to presentation biases, and interpretable confidence estimates, offering a scalable and statistically grounded alternative to existing LLM--as--a--judge pipelines.</p>
+      <hr />
+      <h3>5. IndicContextEval: A Benchmark for Evaluating Context Utilisation in Audio Large Language Models Across 8 Indic Languages</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19157">2606.19157</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19157.pdf">link</a></li>
+      <li>Published: 2026-06-17 23:59 JST</li>
+      <li>Updated: 2026-06-17 23:59 JST</li>
+      <li>Authors: Sakshi Joshi, Dhruv Subhash Rathi, Sanskar Singh, Eldho Ittan George, R J Hari, Kaushal Bhogale, Mitesh M. Khapra</li>
+      <li>Categories: eess.AS, cs.CL</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> AudioLLMが音声認識時に与えられた文脈を本当に利用しているのか、それとも事前学習で得た知識に依存しているのかは既存ベンチマークでは十分に評価できない。本研究は、8つのインド系言語・23分野・555話者からなる56時間の多言語ベンチマークIndicContextEvalを提案し、段階的に文脈情報を増やす7段階のプロンプト枠組みで5つのモデルを評価した。</p>
+      <p><strong>新規性</strong> メタデータ、自然言語説明、英語/現地文字のエンティティ列、誤ったエンティティを含む敵対的プロンプトまで段階的に導入する7段階の評価設計により、AudioLLMの文脈利用を明示的に測定できる点が新しい。</p>
+      <p><strong>Tags:</strong> AudioLLM, 音声認識, 多言語ベンチマーク, 文脈利用, インド系言語</p>
+      <p><strong>Abstract</strong> AudioLLMs enable speech recognition conditioned on textual prompts such as domain descriptions or entity lists. However, it remains unclear whether these models genuinely utilise such context or rely on parametric knowledge learned during pretraining. Existing benchmarks cannot answer this question because they evaluate transcription under fixed prompting conditions and rarely include explicit contextual inputs. We introduce IndicContextEval, a 56-hour multilingual benchmark of natural speech from 555 speakers across 8 Indian languages and 23 professional domains. We design a 7-level prompting framework that progressively introduces contextual signals, including metadata, natural-language descriptions, entity lists in English and native script, and adversarial prompts with incorrect entities. Evaluating five models reveals substantial differences in context utilisation behaviour, highlighting the need for explicit evaluation of contextual grounding in AudioLLMs.</p>
+      <hr />
+      <h3>6. A Technical Taxonomy of LLM Agent Communication Protocols</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19135">2606.19135</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19135.pdf">link</a></li>
+      <li>Published: 2026-06-17 23:45 JST</li>
+      <li>Updated: 2026-06-17 23:45 JST</li>
+      <li>Authors: Linus Sander, Habtom Kahsay Gidey, Alexander Lenz, Alois Knoll</li>
+      <li>Categories: cs.MA, cs.AI, cs.NI</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMエージェント間通信プロトコルの断片化した状況を整理するため、実運用されている9つのオープンソースプロトコルを対象に技術的タクソノミーを構築した。分類軸として、counterparty、payload、interaction state、discovery mechanism、schema flexibility の5次元を定義し、各プロトコルの構造的特徴と共通パターンを分析している。</p>
+      <p><strong>新規性</strong> LLMエージェント通信プロトコルを、実証的・概念的反復に基づく5次元の技術タクソノミーとして体系化し、将来的なプロトコル層の分化・連携の方向性を示した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, multi-agent systems, communication protocols, taxonomy, interoperability</p>
+      <p><strong>Abstract</strong> As large language models (LLMs) advance and multi-agent systems aim to overcome the limits of standalone agents, robust communication protocols are becoming essential infrastructure for distributed agent networks. Nonetheless, the fragmented protocol landscape presents a significant interoperability challenge. This study develops a technical taxonomy to classify and analyze LLM agent communication protocols. Following an established iterative method, we defined the taxonomy's purpose, meta-characteristic, and ending conditions, then performed five iterations, three empirical-to-conceptual and two conceptual-to-empirical, on nine actively maintained open-source protocols with demonstrable adoption. The taxonomy comprises five dimensions: counterparty, payload, interaction state, discovery mechanism, and schema flexibility. Classification reveals recurring architectural patterns: all sampled agent-to-agent protocols combine hybrid payloads with session-state persistence; most protocols support multiple predefined schemas, and two negotiate schemas at runtime, indicating a trend toward schema flexibility; decentralized discovery remains rare. Analysis suggests short-term convergence pressure toward protocols unifying agent-to-agent and agent-to-context (tool and data) communication. Long-term, however, no single protocol is likely to maximize versatility, efficiency, and portability simultaneously. The field will more likely evolve toward a federated, layered protocol stack. The framework guides protocol selection and highlights open research gaps such as privacy and policy enforcement.}</p>
+      <hr />
+      <h3>7. CAPRA: Scaling Feedback on Software Architecture Deliverables with a Multi-Agent LLM System</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.18976">2606.18976</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.18976.pdf">link</a></li>
+      <li>Published: 2026-06-17 21:00 JST</li>
+      <li>Updated: 2026-06-17 21:00 JST</li>
+      <li>Authors: Marco Becattini, Niccolò Caselli, Matteo Minin, Roberto Verdecchia, Enrico Vicario</li>
+      <li>Categories: cs.SE, cs.AI</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> CAPRAは、ソフトウェアアーキテクチャ課題に対して、複数の専門エージェントとマルチモーダル文書抽出を組み合わせ、LaTeX形式の個別フィードバックを生成するLLMシステムである。抽出結果の根拠付けのためにEvidence Anchoringと整合性確認を導入し、幻覚を抑えつつ、構造の完全性や要求トレーサビリティを評価する。10件の学生レポートでの予備評価では、評価基準の88.8%を満たし、人手評価者との一致は中程度だった。</p>
+      <p><strong>新規性</strong> 複数エージェントによる分析に加え、Levenshtein距離に基づく決定的なEvidence Anchoringと整合性検証を組み合わせ、アーキテクチャ成果物への信頼性の高い自動フィードバックを実現した点が新規である。</p>
+      <p><strong>Tags:</strong> software engineering education, LLM, multi-agent system, software architecture, automated assessment</p>
+      <p><strong>Abstract</strong> Automated assessment in software engineering education has advanced significantly for code grading and essay scoring. However, reviewing software architecture deliverables, which requires analyzing structural completeness and requirements traceability, has not yet been fully automated. Applying Large Language Models (LLMs) to this task requires robust architectures to ensure technical feedback is accurate and reliable for students. This paper presents CAPRA (Configurable Architecture Proficiency Report Assessment), a multi-agent LLM system that analyzes software architecture deliverables to generate personalized, template-compliant LaTeX feedback. As a core design choice, CAPRA coordinates multiple specialized agents and employs a Python-based microservice for multi-modal document extraction, utilizing PyMuPDF and vision-enabled LLMs (specifically gpt-4o) to parse text and UML diagrams. To ensure educational reliability and mitigate hallucinations, CAPRA introduces a deterministic Evidence Anchoring step using fuzzy matching via normalized Levenshtein distance, along with a ConsistencyManager agent that cross-verifies, deduplicates, and merges findings. System performance is assessed using a structured eight-criterion binary evaluation taxonomy covering: (i) extraction completeness, (ii) feature validation, (iii) issue grounding and severity detection, (iv) recommendation specificity and traceability, and (v) template and tone compliance. A preliminary empirical evaluation on 10 student reports shows that CAPRA satisfied 88.8% of the evaluated criteria under a strict two-rater aggregation rule, achieved moderate inter-rater agreement with human evaluators (kappa = 0.582), and processed each report in slightly over 4 minutes. While these results support the viability of LLM-supported architectural feedback, human oversight remains essential for subjective assessment dimensions.</p>
+      <hr />
+      <h3>8. G-IdiomAlign: A Gloss-Pivoted Benchmark for Cross-Lingual Idiom Alignment</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.18989">2606.18989</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.18989.pdf">link</a></li>
+      <li>Published: 2026-06-17 21:09 JST</li>
+      <li>Updated: 2026-06-17 21:09 JST</li>
+      <li>Authors: Fengying Ye, Yanming Sun, Runzhe Zhan, Zheqi Zhang, Lidia S. Chao, Derek F. Wong</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 17.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、イディオムの跨言語対応が直訳に引きずられやすい問題に対し、Wiktionary由来の英語グロスを基点とするベンチマークG-IdiomAlignを提案する。さらに、高信頼な参照アラインメント集合を構築し、誤り要因を切り分ける多肢選択評価と、グロス有無の差を比較する生成評価の2つのプロトコルを提供する。</p>
+      <p><strong>新規性</strong> 英語グロスをピボットにしたクロスリンガル・イディオム整合ベンチマークと、高信頼参照集合、ならびに誤り分析可能な2種の評価プロトコルを新たに構築した点が新規である。</p>
+      <p><strong>Tags:</strong> cross-lingual alignment, idioms, benchmark, gloss pivot, LLM evaluation</p>
+      <p><strong>Abstract</strong> Idioms are difficult to transfer across languages due to their non-compositionality and weak surface-form grounding, making literal mappings unreliable. We present G-IdiomAlign, a gloss-pivoted benchmark where each idiom is anchored by an English gloss from Wiktionary. We further construct a high-confidence reference alignment set for reproducible evaluation. G-IdiomAlign supports two protocols: (1) a controlled Multiple-Choice Idiom Equivalence with typed distractors for error attribution; and (2) a Gloss-Contrastive Generation contrasting No-gloss and With-gloss inputs to isolate the effect of an explicit semantic pivot. Across diverse LLMs, a bias to literal translation is a dominant failure mode, especially when the target is a low-resource language. Glosses consistently improve Gloss-Contrastive Generation under an embedding-based semantic proxy, but performance remains modest, indicating substantial headroom in the open output space. Subsequent analysis on Qwen3-8B further suggests that cross-condition differences are concentrated more in attention heads than in layers, while better With-gloss generations coincide with stronger gloss anchoring.</p>
+      <hr />
+      <h3>9. ThinkDeception: A Progressive Reinforcement Learning Framework for Interpretable Multimodal Deception Detection</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.18988">2606.18988</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.18988.pdf">link</a></li>
+      <li>Published: 2026-06-17 21:08 JST</li>
+      <li>Updated: 2026-06-17 21:08 JST</li>
+      <li>Authors: Jinhao Song, Shan Liang, Yiqun Yue, Zhuhuayang Zhang, Tianqi Gao</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 17.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、マルチモーダル欺瞞検出において、従来のブラックボックス型手法の解釈性不足を改善するため、MLLMを用いた明示的な推論過程としての枠組みThinkDeceptionを提案する。ステップごとのマルチモーダルChain of Thoughtデータセットと、段階的な難易度設定に基づく学習戦略を通じて、欺瞞に伴うモダリティ間不整合を捉える。主要ベンチマークで検出精度と根拠品質の両面で既存手法を上回った。</p>
+      <p><strong>新規性</strong> マルチモーダル欺瞞検出にMLLMと段階的な強化学習（VAC-GRPO）を導入し、解釈可能な推論と性能向上を両立させた点が新規である。</p>
+      <p><strong>Tags:</strong> multimodal deception detection, interpretability, multimodal large language model, reinforcement learning, chain of thought</p>
+      <p><strong>Abstract</strong> Multimodal deception detection is critical for identifying fraudulent intentions, yet existing approaches predominantly rely on end to end black--box paradigms. These methods suffer from a severe lack of interpretability failing to provide transparent reasoning trajectories and struggling to explicitly capture the subtle, cross modal inconsistencies inherent in deceptive behaviors. To transcend these limitations, we propose ThinkDeception, a novel and interpretable multimodal deception detection framework. As a pioneering effort, it introduces Multimodal Large Language Models (MLLMs) into this domain, transforming deception detection from a traditional binary classification task into an explicit cognitive reasoning process. Facilitated by the first meticulously annotated step--by--step multimodal Chain of Thought (CoT) dataset, we develop a foundational model, ThinkDeception Base, empirically validating the critical role of modal inconsistency in decoding deception. Building upon this foundation, our core innovation lies in proposing Visual-Audio Consistency Group Relative Policy Optimization(VAC--GRPO) equipped with a progressive training strategy. Distinct from standard GRPO, we stratify the training data into four progressive difficulty tiers, guiding the model through a psychologically grounded easy--to--hard cognitive transition. By innovatively coupling this dynamic curriculum scheduler with a multi dimensional, process aware reward mechanism and a reflective learning paradigm, we significantly elevate the model's overall reasoning quality. Extensive experiments on mainstream benchmarks demonstrate that ThinkDeception establishes a new SOTA, significantly outperforming existing methods in both detection accuracy and rationale quality. Ultimately, this work successfully drives the field of deception detection toward interpretable, multimodal cognitive reasoning.</p>
+      <hr />
+      <h3>10. Leadership as Coordination Control: Behavioral Signatures and the Recovery-Advantage Boundary in Multi-Agent LLM Teams</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19111">2606.19111</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19111.pdf">link</a></li>
+      <li>Published: 2026-06-17 23:27 JST</li>
+      <li>Updated: 2026-06-17 23:27 JST</li>
+      <li>Authors: Haewoon Kwak</li>
+      <li>Categories: cs.CL, cs.AI, cs.MA</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> マルチエージェントLLMチームにおいて、プロセスレベルの協調制御がどの条件で有効かを、行動指標（多数派固定、探索、誤った初期合意からの回復）とアブレーションで検証した研究である。4つのタスク領域と3系列のオープンウェイトモデルで、制御方式は全体として精度面で一貫した優位を示さず、効果は初期多数派が不安定で回復可能な場合に限られた。結果はチーム科学のコンティンジェンシー理論と整合的であり、協調制御は普遍的な性能向上策ではなく条件依存の要素として捉えるべきだと示す。</p>
+      <p><strong>新規性</strong> 同じ行動語彙を共有しつつ理論由来の制御規則と任意規則を比較し、さらに回復優位の境界条件を境界プローブで検証することで、マルチエージェントLLMにおけるリーダーシップの有効条件を定量的に対応づけた点が新しい。</p>
+      <p><strong>Tags:</strong> multi-agent LLM, coordination control, leadership, contingency theory, behavioral signatures</p>
+      <p><strong>Abstract</strong> Team science holds that leadership is contingent: it helps only under specific conditions, and capable, autonomous teams may need none at all. We ask the analogous question for multi-agent LLM teams: under what measurable conditions does process-level coordination control add value, and do those conditions match what team science predicts? We use behavioral signatures (majority lock-in, exploration, recovery from an incorrect round-0 consensus) and per-action ablations, clean because each controller is an explicit action set, not a monolithic prompt. We operationalize three classical leadership styles (transactional, transformational, situational) as controllers over a shared action vocabulary (explore, revise, accept, synthesize). A matched controller with the same actions but an arbitrary rule recovers no better than majority voting, so the theory-derived rule, not the vocabulary, does the work. Across four task regimes and three open-weight model families, no controller dominates by accuracy, as the contingency view predicts: transactional control matches a shared round-0 vote on all 12 (model, regime) combinations to within 1.3pp, and gains appear only on the one combination where the round-0 majority is unreliable (llama-4-scout social; situational +8pp over flat). A recovery-advantage account, tested with four boundary probes, says a controller beats plain interaction only where the round-0 majority is unreliable, the task is recoverable, and undirected interaction does not already repair it. These regions map onto contingency theory (leadership substitutes, path-goal redundancy, the situational readiness gap), so a largely null accuracy result is what the theory predicts, not a failure of the controllers. We read process-level coordination control as a contingency to be measured and theory-mapped, not a leaderboard to be topped.</p>
+      <hr />
+      <h3>11. FoMoE: Breaking the Full-Replica Barrier with a Federation of MoEs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19025">2606.19025</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19025.pdf">link</a></li>
+      <li>Published: 2026-06-17 21:50 JST</li>
+      <li>Updated: 2026-06-17 21:50 JST</li>
+      <li>Authors: Lorenzo Sani, Zeyu Cao, Meghdad Kurmanji, Alex Iacob, Andrej Jovanovic, Yan Gao, Wanru Zhao, Nicholas D. Lane</li>
+      <li>Categories: cs.LG, cs.AI, cs.DC, eess.SY</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、地理的に分散した弱結合なデータセンター間でLLMの事前学習を行う際の制約に対し、MoEの専門家層をワーカー間で分割するFoMoEを提案する。これにより、各拠点でのフルモデル複製を不要にし、通信コストとメモリ負荷を抑えつつ学習を可能にする。</p>
+      <p><strong>新規性</strong> フルモデル複製を前提とする従来の低通信データ並列法に対し、専門家層の部分複製・分割によってその制約を破る点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, Mixture of Experts, 分散学習, 通信削減, データセンター間学習</p>
+      <p><strong>Abstract</strong> Pre-training Large Language Models (LLMs) typically demands large-scale infrastructure with tightly coupled hardware accelerators. While increasing model and dataset scale remains the dominant driver of performance, Mixture-of-Experts (MoEs) architectures have recently achieved state-of-the-art results by decoupling parameter count from computational cost. This efficiency enables training massive models on constrained compute budgets, yet it typically requires the high-speed interconnects of a single datacenter. To overcome these physical limits, recent approaches such as DiLoCo and Photon use low-communication data-parallel methods to enable scaling across geographically distributed, weakly connected data centers. However, these methods suffer from a fundamental inefficiency: they require full model replicas at every site, which imposes prohibitive memory constraints and communication overheads. In this work, we introduce FoMoE, a system that breaks the full-replica paradigm by partitioning expert layers across workers. We demonstrate that FoMoE: (I) reduces communication costs by up to 1.42x over efficient baselines and 45.44x over DDP via partial expert replication in the studied regimes; (II) achieves empirical throughput speedups of up to 1.4x through a novel skip-token mechanism; and (III) shows stable routing in the trained proxy regimes and projects the communication/memory benefits to 100B-scale configurations through system modelling.</p>
+      <hr />
+      <h3>12. Enhancing Multilingual Reasoning via Steerable Model Merging</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19002">2606.19002</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19002.pdf">link</a></li>
+      <li>Published: 2026-06-17 21:28 JST</li>
+      <li>Updated: 2026-06-17 21:28 JST</li>
+      <li>Authors: Zhuoran Li, Rui Xu, Jian Yang, Junnan Liu, Zhijun Chen, Qianren Mao, Hongcheng Guo, Jiaheng Liu, Likang Xiao, Ming Li, Xiaojie Wang</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、多言語モデルと推論モデルを統合するモデルマージにおいて、入力ごとにどの元モデルを重視するかを調整できるSteerable Model Merging（ST-Merge）を提案する。ゲート付きクロスアテンションにより2つのソースモデルの寄与を適応的に重み付け・フィルタリングし、21言語にまたがる4つの多言語推論ベンチマークで強いベースラインを一貫して上回った。</p>
+      <p><strong>新規性</strong> 入力に応じてソースモデルの寄与を制御できる、ゲート付きクロスアテンションを用いた可変的なモデルマージ手法を導入した点。</p>
+      <p><strong>Tags:</strong> multilingual reasoning, model merging, cross-attention, adaptive gating, cs.CL</p>
+      <p><strong>Abstract</strong> Model merging is an effective technique for composing the capabilities of a multilingual model and a reasoning model. It has achieved promising generalization in multilingual reasoning tasks by aligning feature spaces of different models. However, the merged single model often fails to address the conflicts between source models, leading to suboptimal performance. In other words, the one-size-fits-all merging strategy may not align with the characteristics of different inputs which may require prioritizing certain models over others. To this end, we propose a Steerable Model Merging (ST-Merge) framework to modulate the contribution of each source model. To realize this idea, we introduce a gated cross-attention mechanism to weight or filter the two attended source models in an adaptive manner. Extensive experiments demonstrate that ST-Merge consistently outperforms multiple strong baselines on four multilingual reasoning benchmarks across 21 different languages.</p>
+      <hr />
+      <h3>13. AdsMind: A Physics-Grounded Multi-Agent System for Self-Correcting Discovery of Adsorption Configurations on Heterogeneous Catalyst Surfaces</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.19152">2606.19152</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.19152.pdf">link</a></li>
+      <li>Published: 2026-06-17 23:57 JST</li>
+      <li>Updated: 2026-06-17 23:57 JST</li>
+      <li>Authors: Zongmin Zhang, Yuyang Lou, Bowen Zhang, Junwu Chen, Ryo Kuroki, Xuan Vu Nguyen, Edvin Fako, Lixue Cheng, Philippe Schwaller</li>
+      <li>Categories: cond-mat.mtrl-sci, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 異種触媒表面上で最安定な吸着配置を見つけるために、AdsMindはMLFFによる緩和結果をフィードバックとして利用する閉ループ型のマルチエージェント枠組みを提案する。AA20とOCD-GMAE62のベンチマークで高い探索成功率を示し、少ない緩和回数でヒューリスティック列挙より大幅に効率化した。さらにDFT検証では、開ループ手法で見られた吸着エネルギー符号の誤りを回避し、より整合的な結果を示した。</p>
+      <p><strong>新規性</strong> LLMエージェントにMLFF緩和フィードバックを組み込むことで、物理に基づいて誤った初期推定を自己修正できる閉ループ探索を実現した点。</p>
+      <p><strong>Tags:</strong> heterogeneous catalysis, adsorption configuration, multi-agent system, machine-learning force field, self-correction</p>
+      <p><strong>Abstract</strong> Identifying the lowest-energy surface-adsorbate configuration is critical for modeling heterogeneous catalysis, yet exhaustive exploration with ab initio calculations is computationally prohibitive. Machine-learning force fields (MLFFs) accelerate structural relaxation but leave the search over the vast configurational space a major bottleneck, and open-loop large language model (LLM) agents lack a physics-grounded feedback mechanism to correct erroneous initial guesses. We propose AdsMind (Adsorption configuration discovery with Machine intelligence and relaxation feedback), a closed-loop multi-agent framework that enables autonomous error correction through MLFF relaxation feedback. Across four LLM backends, AdsMind achieves consistently high search reliability, with success rates of 100% and 98.8% on the benchmarks AA20 and OCD-GMAE62. Relative to its single-pass (1-Shot) ablation it reduces cross-backend energy dispersion, and it uses only 4.11 and 4.67 MLFF relaxations per case, respectively -- an approximately 14-fold reduction over heuristic enumeration baselines. Density functional theory (DFT) validation using VASP/PBE on six representative AA20 systems shows that the reported open-loop Adsorb-Agent outputs exhibit qualitative adsorption-energy sign errors for molecular adsorbates, whereas AdsMind preserves the correct sign in all tested cases with closer quantitative agreement. AdsMind thus delivers reliability, self-reflection, and interpretability simultaneously, supporting more DFT-informed autonomous chemistry workflows.</p>
+      <hr />
+      <h3>14. EfficientRollout: System-Aware Self-Speculative Decoding for RL Rollouts</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.18967">2606.18967</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.18967.pdf">link</a></li>
+      <li>Published: 2026-06-17 20:51 JST</li>
+      <li>Updated: 2026-06-17 20:51 JST</li>
+      <li>Authors: Minseo Kim, Minjae Lee, Seunghyuk Oh, Kevin Galim, Donghoon Kim, Coleman Hooper, Harman Singh, Amir Gholami, Hyung Il Koo, Wonjun Kang</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 10.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 強化学習におけるLLMのrollout生成は、自己回帰的な逐次サンプリングがボトルネックになりやすく、特に長い生成が全体遅延を支配します。本論文は、固定ドラフタに依存せず、ターゲットモデルから量子化ドラフタを誘導するself-speculative decodingと、システム状態に応じた切り替え・ドラフト長調整を組み合わせたEfficientRolloutを提案し、rolloutおよびエンドツーエンド遅延を削減しつつ最終品質を維持します。</p>
+      <p><strong>新規性</strong> 進化するRL方策に合わせて自己生成した量子化ドラフタを用い、さらに計算集約/メモリ集約の状況に応じてspeculationを切り替えるsystem-awareなself-SDを導入した点が新規です。</p>
+      <p><strong>Tags:</strong> reinforcement learning, LLM, speculative decoding, latency reduction, rollout</p>
+      <p><strong>Abstract</strong> Reinforcement learning (RL) has become a representative post-training paradigm for LLMs, enabling strong reasoning and agentic capabilities. However, rollout generation remains a dominant latency bottleneck because autoregressive sampling decodes responses sequentially and a small number of long-tailed generations often determine completion time. Speculative decoding (SD) offers a natural way to address this bottleneck, as it is a well-established technique for serving fixed LLMs that reduces latency by rapidly drafting tokens and accepting them through parallel verification while preserving the target-model distribution. However, its practical speedups do not directly carry over to RL rollouts: (i) the evolving target policy makes any fixed drafter increasingly mismatched with the policy's output distribution; and (ii) active batch sizes shrink throughout rollout decoding, shifting decoding from compute-bound to memory-bound regimes where parallel verification can exploit underutilized compute. Therefore, accelerating RL rollouts requires both a drafter that remains effective under long, high-temperature generations from an evolving policy and system-aware use of SD that avoids compute-bound regimes. We present EfficientRollout, a system-aware self-SD framework designed to address this gap for RL rollouts. EfficientRollout induces a quantized drafter from the target model (i.e. self-speculative decoding), keeping it coupled to the evolving policy without separate drafter pretraining or online adaptation. It further coordinates a system-aware SD toggle policy with acceptance-aware draft-length adaptation, enabling speculation only in beneficial regimes while matching the drafting budget to evolving drafter quality. EfficientRollout reduces rollout and end-to-end latency by up to 19.6% and 12.7%, respectively, over an accelerated AR rollout baseline, while preserving final model quality.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
