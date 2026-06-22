@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import sys
+import json
 from pathlib import Path
 from typing import Optional
 
@@ -76,7 +76,7 @@ def fetch(
     storage.init_db()
 
     try:
-        ctx = fetch_only(cfg, storage, query_name=query)
+        ctx = fetch_only(cfg, storage, query_name=query, include_disabled=all_queries)
         typer.echo(f"Fetch 完了: run_id={ctx.run_id}, status={ctx.status}")
         if ctx.status == "failed":
             raise typer.Exit(code=1)
@@ -110,6 +110,7 @@ def run(
             cfg,
             storage,
             query_name=query,
+            include_disabled=all_queries,
             no_summarize=no_summarize,
             template_dir=Path("templates"),
         )
@@ -186,7 +187,7 @@ def summarize(
     cfg = load_config(Path(config))
 
     if not is_summarization_available(cfg.defaults.summarize):
-        typer.echo("要約が有効化されていません。環境変数 OPENAI_API_KEY, OPENAI_MODEL を設定してください。")
+        typer.echo("要約が有効化されていません。OpenAI または local LLM の環境変数を設定してください。")
         raise typer.Exit(code=1)
 
     storage = Storage(Path("data/arxiv.db"))
@@ -209,7 +210,7 @@ def summarize(
                 title=m["title"],
                 summary=m["summary"],
                 primary_category=m.get("primary_category"),
-                categories=m.get("categories_json", "[]"),
+                categories=_decode_categories(m.get("categories_json")),
             )
 
             if result.ja_summary:
@@ -232,6 +233,19 @@ def summarize(
 def version() -> None:
     """バージョンを表示する。"""
     typer.echo(f"arxiv-watcher {__version__}")
+
+
+def _decode_categories(value: object) -> list[str]:
+    if isinstance(value, list):
+        return [str(item) for item in value]
+    if isinstance(value, str):
+        try:
+            decoded = json.loads(value)
+        except json.JSONDecodeError:
+            return []
+        if isinstance(decoded, list):
+            return [str(item) for item in decoded]
+    return []
 
 
 def _write_sample_config(path: Path) -> None:

@@ -53,7 +53,8 @@ CREATE TABLE IF NOT EXISTS run_queries (
   matched_count INTEGER NOT NULL DEFAULT 0,
   summarized_count INTEGER NOT NULL DEFAULT 0,
   error_message TEXT,
-  PRIMARY KEY (run_id, query_name)
+  PRIMARY KEY (run_id, query_name),
+  FOREIGN KEY (run_id) REFERENCES runs(run_id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS matches (
@@ -66,7 +67,9 @@ CREATE TABLE IF NOT EXISTS matches (
   llm_novelty_ja TEXT,
   llm_tags_json TEXT,
   created_at TEXT NOT NULL,
-  PRIMARY KEY (run_id, query_name, paper_id_base)
+  PRIMARY KEY (run_id, query_name, paper_id_base),
+  FOREIGN KEY (run_id) REFERENCES runs(run_id) ON DELETE CASCADE,
+  FOREIGN KEY (paper_id_base) REFERENCES papers(paper_id_base) ON DELETE CASCADE
 );
 """
 
@@ -84,6 +87,7 @@ class Storage:
         if self._conn is None:
             self._conn = sqlite3.connect(str(self.db_path))
             self._conn.row_factory = sqlite3.Row
+            self._conn.execute("PRAGMA foreign_keys=ON")
             self._conn.execute("PRAGMA journal_mode=WAL")
         return self._conn
 
@@ -106,6 +110,11 @@ class Storage:
         Returns:
             True: 新規挿入, False: 更新
         """
+        is_new = self._upsert_paper(paper)
+        self.conn.commit()
+        return is_new
+
+    def _upsert_paper(self, paper: Paper) -> bool:
         now_iso = datetime.now(timezone.utc).isoformat()
         authors_json = json.dumps(paper.authors, ensure_ascii=False)
         categories_json = json.dumps(paper.categories, ensure_ascii=False)
@@ -157,7 +166,6 @@ class Storage:
                     paper.paper_id_base,
                 ),
             )
-            self.conn.commit()
             return False
         else:
             # INSERT
@@ -190,20 +198,19 @@ class Storage:
                     now_iso,
                 ),
             )
-            self.conn.commit()
             return True
 
     def upsert_papers(self, papers: list[Paper]) -> int:
-        """複数の論文を UPSERT する。新規挿入件数を返す。"""
+        """複数の論文を1トランザクションで UPSERT する。新規挿入件数を返す。"""
         inserted = 0
-        for paper in papers:
-            try:
-                if self.upsert_paper(paper):
-                    inserted += 1
-            except Exception as e:
-                logger.warning(
-                    "Paper '%s' の保存に失敗: %s", paper.paper_id_base, e
-                )
+        try:
+            with self.conn:
+                for paper in papers:
+                    if self._upsert_paper(paper):
+                        inserted += 1
+        except Exception:
+            logger.exception("papers の一括保存に失敗しました。変更をロールバックします")
+            raise
         return inserted
 
     def get_paper(self, paper_id_base: str) -> Paper | None:
@@ -283,6 +290,10 @@ class Storage:
 
     def save_match(self, run_id: str, match: MatchResult) -> None:
         """マッチ結果を保存する。"""
+        self._save_match(run_id, match)
+        self.conn.commit()
+
+    def _save_match(self, run_id: str, match: MatchResult) -> None:
         now_iso = datetime.now(timezone.utc).isoformat()
         self.conn.execute(
             """INSERT OR REPLACE INTO matches
@@ -301,12 +312,12 @@ class Storage:
                 now_iso,
             ),
         )
-        self.conn.commit()
 
     def save_matches(self, run_id: str, matches: list[MatchResult]) -> None:
-        """複数のマッチ結果を保存する。"""
-        for match in matches:
-            self.save_match(run_id, match)
+        """複数のマッチ結果を1トランザクションで保存する。"""
+        with self.conn:
+            for match in matches:
+                self._save_match(run_id, match)
 
     def get_matches_for_run(
         self, run_id: str, query_name: str | None = None

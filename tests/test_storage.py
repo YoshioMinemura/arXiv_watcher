@@ -1,6 +1,7 @@
 """storage モジュールのテスト"""
 
 import json
+import sqlite3
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -160,6 +161,19 @@ class TestRunsAndMatches:
         assert len(results) == 1
         assert results[0]["relevance_score"] == 15.5
         assert results[0]["title"] == "Test Paper"
+
+    def test_match_requires_existing_run_and_paper(self, storage):
+        """存在しない run/paper への match 保存は失敗する"""
+        match = MatchResult(
+            paper_id_base="missing-paper",
+            query_name="test_query",
+            matched=True,
+            relevance_score=10.0,
+            match_reasons=["matched"],
+        )
+
+        with pytest.raises(sqlite3.IntegrityError):
+            storage.save_match("missing-run", match)
 
     def test_query_stats(self, storage):
         """クエリ統計の保存と取得"""

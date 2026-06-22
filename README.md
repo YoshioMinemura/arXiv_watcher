@@ -1,199 +1,102 @@
 # arxiv-watcher
 
-arXiv の新着論文を定期取得し、関心のある分野・キーワードでフィルタリングとスコアリングを行い、日次 Markdown レポートを生成するツールです。GitHub Actions で毎日レポートを更新し、その内容を GitHub Pages でブラウザから閲覧できるようにできます。
+arxiv-watcher is a small daily batch tool for collecting new arXiv papers, scoring them against configured interests, generating a Markdown digest, publishing a static report site, and optionally posting the digest to Discord.
 
-## What It Does
+The current repository is configured around LLM / reasoning / mathematical topics, but the watched categories, keywords, and scoring rules are all editable in `config/queries.yaml`.
 
-- arXiv API から新着論文を取得
-- include / exclude キーワードで論文を絞り込み
-- タイトル、abstract、カテゴリに応じて関連度をスコアリング
-- 日次 Markdown レポートを `reports/` に保存
-- 生成済みレポートを `docs/` に静的HTMLとして変換
-- GitHub Actions で日次実行し、GitHub Pages に公開しやすい形で蓄積
+## What It Produces
 
-## Project Layout
+- Markdown daily digests in `reports/YYYY-MM-DD.md`
+- A static GitHub Pages site under `docs/`
+- A local SQLite run history in `data/arxiv.db`
+- Optional Japanese LLM summaries and Discord notifications
 
-- `src/arxiv_watcher/`: CLI、本体ロジック、保存、レポート生成
-- `config/queries.yaml`: 監視クエリとスコアリング設定
-- `reports/`: 生成された日次 Markdown レポート
-- `docs/`: GitHub Pages 用の静的サイト出力
-- `scripts/build_pages.py`: `reports/` から `docs/` を生成するスクリプト
-- `.github/workflows/daily.yml`: 毎日の取得・レポート生成・Pagesサイト更新
+## Quick Start
 
-## Setup
-
-Python 3.11 以上が必要です。
+Python 3.11+ is required.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -e .
-```
-
-開発用パッケージも入れる場合:
-
-```bash
-pip install -e ".[dev]"
-```
-
-初期化:
-
-```bash
+pip install -e ".[dev,llm]"
 arxiv-watcher init
+arxiv-watcher run --config config/queries.yaml
+python scripts/build_pages.py
 ```
 
-作成されるもの:
-
-- `config/queries.yaml`
-- `data/arxiv.db`
-- `logs/`
-- `reports/`
-- `templates/`
-
-## Configuration
-
-`config/queries.yaml` で取得条件とスコアリングを定義します。
-
-```yaml
-defaults:
-  max_results: 50
-  lookback_days: 2
-  timezone: Asia/Tokyo
-  report_top_n: 20
-  summarize: true
-  min_relevance_score: 1.0
-
-scoring:
-  title_keyword_weight: 3.0
-  abstract_keyword_weight: 1.5
-  keyword_rules:
-    - keyword: "large language model"
-      weight: 5.0
-  category_rules:
-    - category: "cs.CL"
-      weight: 2.0
-
-queries:
-  - name: llm_core
-    enabled: true
-    search_query: "(cat:cs.CL OR cat:cs.LG OR cat:cs.AI)"
-    include_keywords:
-      - "large language model"
-      - "llm"
-      - "reasoning"
-    exclude_keywords:
-      - "protein"
-      - "molecule"
-    max_results: 50
-    min_relevance_score: 2.0
-```
-
-ポイント:
-
-- `include_keywords` が空なら全件通過
-- `exclude_keywords` は 1 つでも一致したら除外
-- `enabled: false` の query は実行対象外
-- `max_results` と `min_relevance_score` は query ごとに上書き可能
-
-## CLI
-
-全パイプライン実行:
+Common commands:
 
 ```bash
 arxiv-watcher run --config config/queries.yaml
-arxiv-watcher run --config config/queries.yaml --query llm_core
+arxiv-watcher run --config config/queries.yaml --query llm_math
+arxiv-watcher run --config config/queries.yaml --all
 arxiv-watcher run --config config/queries.yaml --no-summarize
-arxiv-watcher run --config config/queries.yaml --verbose
-```
-
-取得のみ:
-
-```bash
 arxiv-watcher fetch --config config/queries.yaml
-```
-
-レポート再生成:
-
-```bash
-arxiv-watcher report
 arxiv-watcher report --run-id <RUN_ID>
+arxiv-watcher summarize --run-id <RUN_ID>
 ```
 
-要約のみ:
+## Configuration
 
-```bash
-arxiv-watcher summarize --run-id <RUN_ID>
+Edit `config/queries.yaml`.
+
+- `queries[].search_query` is passed to the arXiv API.
+- `include_keywords` keeps papers matching at least one keyword. If empty, all papers pass this step.
+- `exclude_keywords` removes papers matching any keyword.
+- `min_relevance_score` controls the score threshold per query.
+- `scoring.keyword_rules` and `scoring.category_rules` define score weights.
+- `enabled: false` queries are skipped unless `--all` is used.
+
+The main pipeline is:
+
+```text
+fetch -> parse -> lookback/filter -> score -> save -> summarize -> report
 ```
 
 ## LLM Summaries
 
-要約は optional です。`.env.example` を `.env` にコピーして設定します。
+Summaries are optional. If no usable LLM configuration is present, the batch still runs and reports are generated without summaries.
 
-```bash
-cp .env.example .env
-```
-
-OpenAI 互換 API を使う場合:
+OpenAI-compatible APIs:
 
 ```env
 LLM_BACKEND=openai
-OPENAI_API_KEY=sk-your-api-key-here
+OPENAI_API_KEY=sk-...
 OPENAI_BASE_URL=https://api.openai.com/v1
 OPENAI_MODEL=gpt-4o-mini
 ```
 
-```bash
-pip install -e ".[llm]"
-```
-
-ローカル LLM を使う場合:
+Local Ollama-style `/api/generate` endpoint:
 
 ```env
 LLM_BACKEND=local
-LOCAL_LLM_MODEL=gemma4
+LOCAL_LLM_MODEL=gemma3
 LOCAL_LLM_ENDPOINT=http://localhost:11434/api/generate
 LOCAL_LLM_TIMEOUT=60
 ```
 
-要約が実行される条件:
-
-- `config/queries.yaml` で `summarize: true`
-- `LLM_BACKEND=openai` の場合は `OPENAI_API_KEY` と `OPENAI_MODEL`
-- `LLM_BACKEND=local` の場合は `LOCAL_LLM_MODEL`
-
-条件がそろわない場合は要約だけスキップされます。
-
-## Build The Pages Site
-
-`reports/` にある Markdown レポートを `docs/` に HTML 化します。
-
-```bash
-python scripts/build_pages.py
-```
-
-出力されるもの:
-
-- `docs/index.html`: レポート一覧
-- `docs/reports/*.html`: 各日レポートの詳細
-- `docs/assets/style.css`: サイト用スタイル
-
 ## GitHub Actions
 
-同梱の `.github/workflows/daily.yml` は、毎日レポートを生成し、Pages 用の静的サイトも更新します。
+`.github/workflows/daily.yml` runs the watcher every day at 08:10 JST and can also be triggered manually. It:
 
-処理内容:
+1. installs the package,
+2. runs `arxiv-watcher`,
+3. rebuilds `docs/`,
+4. commits `reports/` and `docs/`,
+5. posts to Discord if `DISCORD_WEBHOOK_URL` is configured.
 
-1. リポジトリを checkout
-2. Python 3.11 をセットアップ
-3. `pip install -e ".[llm]"` を実行
-4. `arxiv-watcher run` を実行
-5. `python scripts/build_pages.py` で `docs/` を再生成
-6. `reports/` と `docs/` をコミットして push
+Required or optional secrets:
 
-ワークフローは毎日 08:10 JST に実行され、`workflow_dispatch` でも手動実行できます。
+- `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `OPENAI_MODEL`: optional, for OpenAI-compatible summaries
+- `DISCORD_WEBHOOK_URL`: optional, for Discord notification
 
-## Notes
+## Repository Layout
 
-- `reports/` の Markdown は履歴として残ります
-- `docs/` は公開用の生成物なので、レポートが増えるたびに更新されます
-- SQLite DB `data/arxiv.db` はローカル保存用で、GitHub には含めません
+- `src/arxiv_watcher/`: package source
+- `config/queries.yaml`: watch and scoring configuration
+- `templates/daily_report.md.j2`: Markdown report template
+- `reports/`: generated Markdown digests
+- `docs/`: generated static site
+- `scripts/build_pages.py`: builds `docs/` from `reports/`
+- `scripts/post_to_discord.py`: posts the latest run to Discord
+- `tests/`: unit tests

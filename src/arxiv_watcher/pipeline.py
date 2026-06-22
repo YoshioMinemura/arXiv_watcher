@@ -15,7 +15,7 @@ from arxiv_watcher.parser import parse_feed
 from arxiv_watcher.reporter import generate_report
 from arxiv_watcher.scoring import score_papers
 from arxiv_watcher.storage import Storage
-from arxiv_watcher.summarizer import is_summarization_available, summarize_paper
+from arxiv_watcher.summarizer import is_summarization_available
 from arxiv_watcher.utils import now_utc
 
 logger = logging.getLogger(__name__)
@@ -26,6 +26,7 @@ def run_pipeline(
     storage: Storage,
     *,
     query_name: str | None = None,
+    include_disabled: bool = False,
     no_summarize: bool = False,
     report_output_dir: Path | None = None,
     template_dir: Path | None = None,
@@ -36,6 +37,7 @@ def run_pipeline(
         config: アプリケーション設定
         storage: ストレージ
         query_name: 特定 query のみ実行する場合
+        include_disabled: enabled: false の query も実行する場合 True
         no_summarize: 要約をスキップする場合 True
         report_output_dir: レポート出力先
         template_dir: テンプレートディレクトリ
@@ -49,7 +51,7 @@ def run_pipeline(
     logger.info("パイプライン開始: run_id=%s", run_id)
 
     # 対象 query を決定
-    queries = config.get_enabled_queries()
+    queries = config.queries if include_disabled else config.get_enabled_queries()
     if query_name:
         queries = [q for q in queries if q.name == query_name]
         if not queries:
@@ -232,6 +234,7 @@ def fetch_only(
     storage: Storage,
     *,
     query_name: str | None = None,
+    include_disabled: bool = False,
 ) -> RunContext:
     """fetch + parse + DB保存のみ実行する（フィルタ・スコア・レポートは行わない）。"""
     run_id = str(uuid.uuid4())
@@ -239,9 +242,15 @@ def fetch_only(
     storage.create_run(ctx)
     logger.info("Fetch 開始: run_id=%s", run_id)
 
-    queries = config.get_enabled_queries()
+    queries = config.queries if include_disabled else config.get_enabled_queries()
     if query_name:
         queries = [q for q in queries if q.name == query_name]
+        if not queries:
+            logger.error("Query '%s' が見つかりません", query_name)
+            ctx.status = "failed"
+            ctx.finished_at = now_utc()
+            storage.update_run(ctx, error_message=f"Query '{query_name}' not found")
+            return ctx
 
     success_count = 0
 

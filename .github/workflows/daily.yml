@@ -38,12 +38,6 @@ jobs:
         run: |
           python scripts/build_pages.py
 
-      - name: Post Japanese digest to Discord
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: |
-          python scripts/post_to_discord.py --timezone Asia/Tokyo --max-papers 10
-
       - name: Commit and push reports
         run: |
           git config user.name "github-actions[bot]"
@@ -51,3 +45,14 @@ jobs:
           git add reports/*.md docs
           git diff --cached --quiet || git commit -m "📄 Daily arXiv digest $(date +%Y-%m-%d)"
           git push
+
+      - name: Post Japanese digest to Discord
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+            echo "DISCORD_WEBHOOK_URL is not set. Skipping Discord notification."
+            exit 0
+          fi
+          python scripts/post_to_discord.py --timezone Asia/Tokyo --max-papers 10
