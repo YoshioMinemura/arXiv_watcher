@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-06-26 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-06-26</h1>
+        <p class="hero-copy">Generated at 2026-06-26 09:21 JST. Run ID: <code>db7bac09-78da-49c0-b401-f3b80a7d0c65</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>17</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-06-26</h1>
+      <p>Generated at: 2026-06-26 09:21 JST Run ID: db7bac09-78da-49c0-b401-f3b80a7d0c65</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 17</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. InvestPhilBench: A Multi-Layer Dynamic Benchmark for Evaluating Large Language Model Procedural Reasoning in Expert Investment Philosophy</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25984">2606.25984</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25984.pdf">link</a></li>
+      <li>Published: 2026-06-25 00:53 JST</li>
+      <li>Updated: 2026-06-25 00:53 JST</li>
+      <li>Authors: Mingguang Chen, Bo Qu</li>
+      <li>Categories: cs.AI, cs.LG</li>
+      <li>Score: 37.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> InvestPhilBenchは、投資の専門家が用いる手続き的な意思決定フレームワークを大規模言語モデルが正確に再構成・適用できるかを評価するための、多層動的ベンチマークである。8段階の認知層、原典検証済みの原則カード、意思決定フレームワークカード、QAデータに加え、自動採点パイプラインや失敗モード検出を導入している。実験では、総合スコアは高性能モデルで飽和する一方、GRAは手続き的な不足を示し、流暢な文章生成だけではギャップを隠してしまうことが示された。</p>
+      <p><strong>新規性</strong> 投資哲学の手続き的推論を、8層の認知階層と構造化された採点指標で評価する多層動的ベンチマークを提案し、総合スコアでは見えにくい手続き的欠陥をGRAで可視化した点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, benchmark, investment reasoning, procedural reasoning, evaluation</p>
+      <p><strong>Abstract</strong> Large language models are increasingly deployed as investment research assistants, yet no benchmark tests whether they can accurately reconstruct and apply the specific procedural decision frameworks of expert investors. We introduce InvestPhilBench, a multi-layer dynamic benchmark spanning eight cognitive tiers, from principle identification (L1) to novel framework extrapolation (L8). The v0.6 release comprises 118 primary-source-verified investment principle cards, 25 decision framework cards with explicit topology metadata, and 243 QA questions (197 dev / 46 held-out test). For reproducible scoring at scale we introduce the Benchmark Automated Scoring Pipeline (BASP) -- five algorithmic metrics (OGRS, KCCS, SAP@k, IVP, CKCA) -- the Failure Mode Detection Protocol (FMDP) with computable rules for six failure modes, and Gate Reconstruction Accuracy (GRA), a per-gate metric for questions with gold reasoning programs. In this release, InvestPhilBench is primarily a benchmark-and-methodology contribution. A four-model sanity wave on the 188-question development split shows a sharp provider-tier split (BASP 0.906 vs. 0.438); these mixed-judge numbers are confounded upper bounds. The central finding: the BASP composite saturates at the frontier (Claude L4 = 0.932) while GRA still exposes a procedural deficit (frontier L4 GRA approx. 0.77, L7 GRA 0.57-0.62) -- composite scoring rewards fluent prose and hides the procedural gap. v0.6 implements a unified judge and true model-in-the-loop retrieval/oracle conditions; the de-confounded multi-model leaderboard and full three-condition run are v1.0 deliverables. On a 100-item expert-annotated gold set the automated BASP composite tracks the human reference at Pearson r = 0.72 (MAE = 0.10), with attribution (SAP@3) the weakest sub-metric and the failure-mode detector running sensitive-but-over-flagging.</p>
+      <hr />
+      <h3>2. Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26079">2606.26079</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26079.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:53 JST</li>
+      <li>Updated: 2026-06-25 02:53 JST</li>
+      <li>Authors: Akshay Paruchuri, Sanmi Koyejo, Ehsan Adeli</li>
+      <li>Categories: cs.CL, cs.CV, cs.LG</li>
+      <li>Score: 35.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 標準的なマルチモーダルLLMベンチマークは入力順序の違いによる出力変化を十分に評価していないため、本研究ではFacet-Probeという5種類の順序入れ替えを含む監査手法で18個のMLLMを調査した。結果として、調査した全モデルで順序不変性は確認できず、ファセットごとの平均フリップ率は24〜50%に達し、最良モデルでも13.4%の試行で答えが変化した。</p>
+      <p><strong>新規性</strong> 順序に依存しないはずの入力を系統的に並べ替えて評価するFacet-Probeを提案し、さらにBayesian item-response modelと同一順序の対照実験で、順序由来の揺らぎとデコーダの確率的ノイズを分離して定量化した。</p>
+      <p><strong>Tags:</strong> multimodal large language models, robustness, order sensitivity, evaluation, benchmarking</p>
+      <p><strong>Abstract</strong> Standard benchmarks for multimodal large language models (MLLMs) score each item on one canonical ordering and miss whether order-irrelevant shuffling changes the answer, a baseline reliability property called for by emerging AI evaluation guidelines. We introduce Facet-Probe, a five-facet audit (option, evidence-chunk, document-rank, image-set, and mixed-modality ordering) of 18 frontier and open-weight MLLMs. A Bayesian item-response model separates ordering noise from per-facet bias, and a same-ordering control estimates the decoder-stochastic floor for observed flips. We find that none of the 18 MLLMs we audit are order-invariant: screened per-facet panel-mean flip rates span 24-50%. A Gemini same-ordering control at temperature 0 estimates a substantial ordering excess over a same-input decoder-noise floor in verified cells. Capability predicts but does not eliminate flips; the best model still flips on 13.4% of trials. In our Gemini mitigation tests, training-free prompt changes are modality-conditional and do not transfer from text to visual reasoning. These results suggest that prompt-level mitigation alone is unlikely to provide general order robustness, motivating future work on training-time and architectural approaches. We propose cross-ordering flip rate as a standard reporting axis for MLLMs.</p>
+      <hr />
+      <h3>3. TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26029">2606.26029</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26029.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:00 JST</li>
+      <li>Updated: 2026-06-25 02:00 JST</li>
+      <li>Authors: Yu-Yang Chen, Lan-Zhe Guo</li>
+      <li>Categories: cs.CV, cs.AI</li>
+      <li>Score: 31.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> TriViewBenchは、3視点の合成3Dシーンを用いて、物体数と遮蔽の複雑さを段階的に制御した多視点視覚推論ベンチマークである。18個のMLLMを評価した結果、全モデルで Local Decision &gt; Object Counting &gt; Global Recovery という一貫した性能階層が見られ、複雑さの増加に伴って性能が単調に低下した。</p>
+      <p><strong>新規性</strong> 物体数と遮蔽を明示的にパラメータ化した三視点ベンチマークを構築し、単一視点と多視点で異なる誤りモードやCoTの限定的効果を系統的に示した点が新規である。</p>
+      <p><strong>Tags:</strong> multimodal large language models, multi-view reasoning, benchmark, visual question answering, occlusion</p>
+      <p><strong>Abstract</strong> Multimodal Large Language Models (MLLMs) demonstrate strong performance on standard visual question answering benchmarks, yet their scalability under controlled structural complexity remains poorly understood. We introduce TriViewBench, a controlled three-view visual reasoning benchmark constructed from synthetic 3D scenes with explicitly parameterized object count and occlusion. The benchmark contains 1,923 scenes and over 14K Question-Answer (QA) pairs organized into four complexity levels and three reasoning categories: Local Decision, Object Counting, and Global Recovery. We evaluate 18 open- and closed-source MLLMs under a unified prompting protocol. All 18 models exhibit an identical capability hierarchy without exception (Local Decision &gt; Object Counting &gt; Global Recovery), and performance degrades monotonically with complexity: Local Decision tasks decline modestly (12.11% relative drop), while Object Counting degrades substantially (59.14%) and Global Recovery collapses severely (80.02%). Error analysis on Object Counting reveals two mechanistically independent failure modes: single-view tasks are dominated by undercounting due to occlusion blindness, whereas the multi-view task reverses to overcounting due to cross-view identity confusion. Chain-of-Thought (CoT) prompting yields near-zero overall benefit ($Δ= -0.16\%$) and its effect on Global Recovery is strongly capability-gated, suggesting that the bottleneck lies in cross-view spatial representation rather than reasoning strategy. These findings reveal fundamental scalability limitations in current MLLMs and position TriViewBench as a controlled diagnostic framework for analyzing structural reasoning failures.</p>
+      <hr />
+      <h3>4. How Robust is OCR-Reasoning? Evaluating OCR-Reasoning Robustness of Vision-Language Models under Visual Perturbations</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26041">2606.26041</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26041.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:15 JST</li>
+      <li>Updated: 2026-06-25 02:15 JST</li>
+      <li>Authors: Yuxing Cheng, Yuan Wu, Yi Chang</li>
+      <li>Categories: cs.CV, cs.CL</li>
+      <li>Score: 21.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Vision-Language Models（VLMs）のOCR推論における視覚的摂動への頑健性を調べるため、OCR-Robustというベンチマークを提案している。812サンプルからなり、文書・場面文字・レシート・手書き・数式に加え、チャート・図形・表を含む2つのサブセットで構成される。18モデルを評価した結果、クリーン精度が高くても頑健性が高いとは限らず、特にチャートや表は摂動に対して脆弱であることが示された。</p>
+      <p><strong>新規性</strong> OCR推論の頑健性を、複数の視覚摂動と新しい指標（RCR, WCR, CRI）で体系的に評価するベンチマークOCR-Robustを導入した点が新規である。</p>
+      <p><strong>Tags:</strong> Vision-Language Models, OCR, robustness, benchmark, visual perturbation</p>
+      <p><strong>Abstract</strong> Vision-language models (VLMs) have achieved strong performance on OCR-based benchmarks and increasingly focused on text-rich understanding, but their robustness under controlled visual degradation remains insufficiently understood. This gap is critical for OCR reasoning, where visual corruption can induce OCR errors and structural distortions, thereby introducing uncertainty into the reasoning task. To systematically study this problem, we introduce OCR-Robust, a benchmark designed for evaluating OCR reasoning robustness under visual perturbations. It contains 812 samples across two complementary subsets: OCR1.0, covering documents, scene text, receipts, handwriting, and mathematical content, and OCR2.0, focusing on charts, geometry diagrams, and tables. To enable efficient yet informative evaluation, we conduct a pilot study over 18 candidate perturbations and select 5 representative types at 3 severity levels each based on their impact and cross-model discriminability. We evaluate robustness using clean accuracy, Relative Corruption Retention (RCR), Worst-Case Retention (WCR), and a composite Corruption Robustness Index (CRI), and benchmark 18 models spanning proprietary systems, open-source VLMs, and OCR+LLM pipelines. Our results show that higher clean accuracy does not necessarily imply stronger robustness, and that models can suffer pronounced degradation in the worst case on OCR tasks that are sensitive to structure, and charts and tables are substantially more fragile than document-like inputs under perturbation.</p>
+      <hr />
+      <h3>5. Explainable Control Framework (XCF) based on Fuzzy Model-Agnostic Explanation and LLM Agent-Supported Interface</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25941">2606.25941</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25941.pdf">link</a></li>
+      <li>Published: 2026-06-25 00:17 JST</li>
+      <li>Updated: 2026-06-25 00:17 JST</li>
+      <li>Authors: Faliang Yin, Hak-Keung Lam, David Watson</li>
+      <li>Categories: cs.HC, cs.AI, eess.SY</li>
+      <li>Score: 20.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、複雑な制御器の動作を人間が理解しやすい形で説明するための Explainable Control Framework（XCF）を提案する。提案手法では、制御器の振る舞いをモデル非依存に説明し、必要に応じてシステム応答の動力学を用いて局所説明を精緻化できる。</p>
+      <p><strong>新規性</strong> 階層的ファジィモデル非依存説明（HFMAE-C）により、IF-THEN規則と重要度を用いて制御則を多段階で説明し、さらにLLMエージェント支援のUIで自然言語レポート生成と対話的相談を可能にした点が新規である。</p>
+      <p><strong>Tags:</strong> 説明可能制御, ファジィ推論, モデル非依存説明, LLMインターフェース, ヒューマンコンピュータインタラクション</p>
+      <p><strong>Abstract</strong> Increasing demand for precise and reliable control in complex scenarios has led to the development of increasingly sophisticated controllers, including data-driven approaches employing closed box models and mathematically rigorous yet complex designs. This complexity highlights the needs for explainable control that can provide human-understandable insights into controller behavior. In this paper, an explainable control framework (XCF) along with supporting algorithms and user interface are proposed to explain how controllers determine their control actions and their underlying working mechanism. The novel contributions of this work are threefold: First, the XCF is designed to provide model-agnostic explanations for controllers in closed-loop systems and can optionally refine local explanations by system response dynamics. Second, a novel explanation method, hierarchical fuzzy model-agnostic explanation for control systems (HFMAE-C), is proposed based on the designed framework. The HFMAE-C employs a fuzzy logic system to approximate the controller's behavior and system dynamics, providing sample, local, domain and universe level explanations via IF-THEN rules revealing the controller's decision logic and salience values quantifying the contribution of system states to control actions. Third, a large language model agent-supported user interface is developed to automatically analyze user requirements, select appropriate algorithms, interpret the generated explanations to a natural language report, and provide interactive consultation. Case studies on inverted pendulum system and Turtlebot obstacle avoidance demonstrate the effectiveness of the proposed method through simulated user experiments and quantitative comparisons with mainstream explainable control approaches.</p>
+      <hr />
+      <h3>6. Helpful or Harmful? Evaluating LLM-Assisted Vulnerability Patching via a Human Study</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25973">2606.25973</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25973.pdf">link</a></li>
+      <li>Published: 2026-06-25 00:45 JST</li>
+      <li>Updated: 2026-06-25 00:45 JST</li>
+      <li>Authors: Giulian Biolo, Michael Tezza, Yuanjun Gong, Fabio Massacci</li>
+      <li>Categories: cs.SE, cs.AI</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLM支援による脆弱性修正が手作業のデバッグと比べて、修正速度・機能面の正しさ・セキュリティ面の妥当性にどのような影響を与えるかを、人間参加者を対象とした実験で評価することを目的としている。可視の機能テストだけでなく、隠しGhost Testsを用いてパッチの安全性を検証し、参加者の認識も含めて比較する計画である。小規模な予備実験も実施済みである。</p>
+      <p><strong>新規性</strong> 隠しGhost Testsを組み込んだWebApp上で、LLM支援修正と手動修正を人間実験として比較し、機能面だけでなくセキュリティ面の修復品質まで評価しようとしている点が新しい。</p>
+      <p><strong>Tags:</strong> 脆弱性修正, LLM支援, 人間被験者実験, セキュリティ評価, Ghost Tests</p>
+      <p><strong>Abstract</strong> Software vulnerability remediation is a cognitively demanding task that requires specialized security expertise often lacking in general developers. In the meantime, Large Language Models (LLMs) assisted tools show potential in vulnerability detection, location, and repair tasks. [Hypothesis:] While LLM-assistance is hypothesized to accelerate patching, it also risks introducing hallucinations or insecure code, leading to a higher likelihood of generating superficial repairs that bypass the standard functionality checks but fail the security validation. [Objective:] We aim to present an empirical experiment, unveiling the capability of LLM-assisted vulnerability patching compared to manual debugging on human participants in real-world scenarios. [Method:] We plan to conduct a controlled experiment using a Balanced Crossover design. For that, we have developed a WebApp for code execution and integrated hidden Ghost Tests to verify patch integrity beyond visible functional requirements. The experiment involves training and evaluation scenarios. The remediation speed, remediation efficacy for both standard functionality tests and security tests, and participant perception will be evaluated. [Pilot Study:] A pilot experiment with a small sample of participants has been conducted, providing insights for the following study.</p>
+      <hr />
+      <h3>7. Weave of Formal Thought</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25987">2606.25987</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25987.pdf">link</a></li>
+      <li>Published: 2026-06-25 00:58 JST</li>
+      <li>Updated: 2026-06-25 00:58 JST</li>
+      <li>Authors: Alexandre Bouayad</li>
+      <li>Categories: cs.CL, cs.AI, cs.LG</li>
+      <li>Score: 17.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、コード生成において構文的に正しい出力を厳密に保証するため、Tree-sitter仕様に対してsoundかつcompleteな制約付きデコーダを提案している。さらに、LLMに非終端記号を生成過程へ直接織り込ませる潜在変数型の微調整法を導入し、PythonではテキストのみのSFTベースラインよりトークン単位のクロスエントロピーを14.3%削減した。</p>
+      <p><strong>新規性</strong> GLR解析にspeculative lexingを組み合わせてTree-sitter仕様全体に対して完全な制約付きデコードを実現し、加えてRWSで潜在的な文法構造を学習させる点が新規である。</p>
+      <p><strong>Tags:</strong> code generation, constrained decoding, grammar parsing, latent variables, large language models</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) attain remarkable surface fluency on code, yet they neither formally guarantee the syntactic validity of their output nor leverage the hierarchical structure defining the target language. While existing constrained-decoding frameworks address the former, they operate under rigid assumptions that preclude critical lexical mechanisms -- including context-sensitive lexing, maximal-munch tokenization, and keyword extraction -- and only approximate vocabulary masking, sacrificing completeness. For the latter, code LLMs typically inject grammatical structure via predetermined policies rather than learning which structural information to expose. In this work, we introduce Weave of Formal Thought (WoFT), a paradigm uniting rigorous syntactic validation with learned structural representations. First, we present a formal engine and constrained decoder that is sound and complete with respect to the full Tree-sitter specification. By augmenting generalized LR (GLR) parsing with a speculative-lexing construction that maintains concurrent lexer-state hypotheses synchronized with a GLR graph-structured stack, our decoder admits every subword token extending to a valid program prefix and rejects all others. Second, we present a latent-variable fine-tuning method training the language model to interleave non-terminal grammar symbols directly into generation. Utilizing the reweighted wake-sleep (RWS) algorithm to optimize the importance-weighted evidence lower bound (IW-ELBO) of the surface text, the model learns to selectively retain formal derivations as an adaptive structural scratchpad. For Python, fine-tuning StarCoder2-3B with our RWS objective reduces per-token cross-entropy by 14.3% relative to a text-only SFT baseline, demonstrating that discretionary latent syntax recovers critical structural information that flat autoregressive training discards.</p>
+      <hr />
+      <h3>8. Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26027">2606.26027</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26027.pdf">link</a></li>
+      <li>Published: 2026-06-25 01:55 JST</li>
+      <li>Updated: 2026-06-25 01:55 JST</li>
+      <li>Authors: Yupu Hao, Zhuoran Jin, Huanxuan Liao, Kang Liu, Jun Zhao</li>
+      <li>Categories: cs.CL, cs.LG</li>
+      <li>Score: 16.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMのマルチステップなツール使用に対する強化学習が不安定化し、性能が急落する「collapse」の原因を分析している。失敗は特定の制御トークンの確率スパイクによって手続き的な実行が崩れることに起因するが、ツール使用能力自体は残っていることを示した。</p>
+      <p><strong>新規性</strong> SFTをRLと交互に行う学習や、オフポリシー監督・ヒント・誤例など多様な監督信号の効果を体系的に比較し、RLの不安定性を抑える方法を明らかにした点が新しい。</p>
+      <p><strong>Tags:</strong> tool use, reinforcement learning, large language models, supervised fine-tuning, stability</p>
+      <p><strong>Abstract</strong> Tool use enables large language models (LLMs) to perform complex tasks, and recent agentic reinforcement learning (RL) methods show promise for enhancing model capabilities. However, RL alone often leads to instability or limited gains in tool-use tasks. In our experiments, some models exhibit catastrophic collapse, where performance abruptly drops and tool-invocation structures fail. The analysis reveals that these failures stem from unexpected probability spikes in specific control tokens, disrupting structured execution, yet the underlying tool-use capability remains intact, merely obscured by specific formats. To address this, we systematically investigate a diverse set of supervisory signals, including off-policy supervision, hint-based guidance, erroneous example supervision, and others, applied under both synchronous and interleaved training schemes. We find that interleaving supervised fine-tuning (SFT) with RL substantially improves stability, but exhibits degraded performance under format and content out-of-distribution (OOD) evaluation. We also analyze the impact of learning rates and generalization across settings. These results highlight the importance of understanding RL failures and demonstrate how diverse supervisory signals can guide exploratory learning, enabling robust training of LLMs for complex, multi-step tool-use tasks. Our Code is available at https://github.com/hypasd-art/Tool-RL-Box.</p>
+      <hr />
+      <h3>9. Overview of HIPE-2026: Person-Place Relation Extraction from Multilingual Historical Texts</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25935">2606.25935</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25935.pdf">link</a></li>
+      <li>Published: 2026-06-25 00:09 JST</li>
+      <li>Updated: 2026-06-25 00:09 JST</li>
+      <li>Authors: Juri Opitz, Maud Ehrmann, Corina Raclé, Andrianos Michail, Matteo Romanello, Simon Clematide</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> HIPE-2026は、多言語の歴史文書から人物と場所の関係を抽出する評価 अभियानであり、人物がある場所にいたかどうかを、文書の公開日以前か同時点かに分けて扱います。フランス語・ドイツ語・英語の新聞記事に加え、早期近代フランス文学テキストを用いた汎化評価も行い、言語変種、OCRノイズ、間接的な文脈手がかりへの頑健性を検証しました。</p>
+      <p><strong>新規性</strong> 人物と場所の関係を、時間的に整合した2種類の関係（at / isAt）として定義し、精度・計算効率・異分野汎化を同時に評価する枠組みを導入した点が新規です。</p>
+      <p><strong>Tags:</strong> 情報抽出, 歴史文書, 関係抽出, 多言語, 評価ベンチマーク</p>
+      <p><strong>Abstract</strong> Was this person ever at that place, and if so, when? Answering such questions from noisy, multilingual historical documents is the central challenge of HIPE-2026, the third edition of the HIPE evaluation series. Moving from named entity recognition and linking (HIPE-2020, HIPE-2022) to reasoning about relationships between entities, HIPE-2026 targets two temporally grounded relation types: $at$, indicating that a person was present at a location at some point prior to a document's publication date, and $isAt$, indicating presence contemporaneous with that date. This paper presents the results of the evaluation campaign, which confronted 17 participating teams with the challenges of historical language variation, OCR noise, and indirect contextual cues across three languages: French, German, and English. The datasets include historical newspaper text from the nineteenth and twentieth centuries, as well as a surprise-domain generalization set drawn from early modern French literary texts. A distinctive feature of HIPE-2026 is its three-fold evaluation framework, which assesses predictive accuracy, computational efficiency, and cross-domain generalization, reflecting the practical demands of large-scale historical document processing in the cultural heritage domain. Across more than 40 submitted runs, results reveal a wide range of strategies, from state-of-the-art large language models to lightweight task-specific classifiers, and highlight the trade-offs between accuracy, efficiency, and robustness inherent to historical relation extraction at corpus scale. System descriptions, datasets, and findings are presented and discussed, offering a detailed picture of the current state of temporally grounded relation extraction for historical documents.</p>
+      <hr />
+      <h3>10. Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26080">2606.26080</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26080.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:54 JST</li>
+      <li>Updated: 2026-06-25 02:54 JST</li>
+      <li>Authors: Changdae Oh, Wendi Li, Seongheon Park, Samuel Yeh, Tanwi Mallick, Sharon Li</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、エージェント向けの逐次的な評価を行うために、専用のprocess reward modelを学習しなくても、RL post-trainingの結果として得られる情報からステップレベルのスコアリングが可能であることを示す。提案するprogress advantageは、RLで学習した方策と参照方策の対数確率比として定義され、一般の確率的MDPにおいて最適なadvantage関数を回復する。</p>
+      <p><strong>新規性</strong> RL post-trainingの副産物として、注釈不要・領域非依存で利用できるprogress advantageを導出し、専用に学習したreward modelを超える評価信号として示した点。</p>
+      <p><strong>Tags:</strong> LLM agents, reinforcement learning, reward modeling, advantage function, post-training</p>
+      <p><strong>Abstract</strong> Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and stochastic environment feedback make both human annotation and Monte Carlo estimation infeasible at scale. In this work, we show that reinforcement learning (RL) post-training already provides the ingredients for effective step-level scoring, eliminating the need for dedicated reward model training altogether. Concretely, we derive an implicit advantage under a general stochastic Markov decision process, which we term progress advantage -- log-probability ratio between the RL-trained policy and its reference policy exactly recovers the optimal advantage function. This formulation makes the resulting signal annotation-free, domain-agnostic, and available as a byproduct of the standard RL post-training pipeline. We validate the effectiveness of the progress advantage across three different applications: test-time scaling, uncertainty quantification, and failure attribution on five benchmarks and four model families. Across all settings, it consistently outperforms confidence-based baselines and, despite requiring no task-specific training, surpasses dedicated trained reward models. We complement these results with deeper analyses on characteristics of progress advantage, offering practical guidance for adoption in real-world agentic systems.</p>
+      <hr />
+      <h3>11. AI translation of literary texts is "fine", but readers still prefer human translations</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26040">2606.26040</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26040.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:15 JST</li>
+      <li>Updated: 2026-06-25 02:15 JST</li>
+      <li>Authors: Yves Ferstler, Adam Podoxin, Ty Brassington, Roman Grundkiewicz, Maite Taboada, Marzena Karpinska</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> AIによる文学翻訳は内容面では「十分」と評価される一方、15人の読者による比較では、人間翻訳のほうが読みやすさ、明瞭さ、没入感の点で全体的に好まれました。読者は両者を確実には見分けられず、また自動評価指標やLLM-as-a-judgeは読者の嗜好を再現できず、むしろ機械翻訳を高く評価しました。</p>
+      <p><strong>新規性</strong> 文学翻訳を、流暢さや忠実性ではなく読者の没入感・読書体験の観点から比較評価し、そのための読者中心データセットLAITと評価プロトコルを公開した点。</p>
+      <p><strong>Tags:</strong> 機械翻訳, 文学翻訳, 読者評価, 大規模言語モデル, 評価データセット</p>
+      <p><strong>Abstract</strong> AI translation of literary works is increasingly common. While the content may be rendered adequately, we do not know enough about how readers experience it in terms of immersiveness and literary effect, aspects poorly captured by automatic machine translation metrics or human evaluation targeting fluency and adequacy. We ask 15 avid readers to compare recently published human translations (HT) to machine translations (MT) generated with an agentic large language model (LLM)-based pipeline, for 15 recent novels in French, Polish, and Japanese and translated into English. Readers evaluated approximately 8K-word excerpts in two conditions: immersive reading of the whole excerpt (30 comparisons) and close reading of 386 aligned HT-MT chunk pairs (772 comparisons), with two readers per book and in alternating order of presentation. Overall, readers find MT "fine", but prefer HT (slightly at excerpt-level 19/30, more clearly at chunk-level 522/772) for its ease, clarity, and immersive nature. Readers' highlights show that MT's quality varies more within one book than HT's does. Crucially, readers cannot reliably tell the two apart (17/30 guess correctly) and tend to prefer the version they believe to be human. Automatic metrics, including LLM-as-a-judge approaches, fail to recover reader preferences and favor MT. We release LAIT (Literary AI Translation), a reader-centered evaluation dataset with 1K reader comments, 2K judgments and preference ratings, and 7.2K span-level annotations, along with our evaluation protocol and supporting interface.</p>
+      <hr />
+      <h3>12. Detect, Unlearn, Restore: Defending Text Summarization Models Against Data Poisoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26036">2606.26036</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26036.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:12 JST</li>
+      <li>Updated: 2026-06-25 02:12 JST</li>
+      <li>Authors: Poojitha Thota, Shirin Nilizadeh</li>
+      <li>Categories: cs.CL, cs.CR</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、要約モデルの微調整段階で行われるデータポイズニングに対し、検出と修復を行う統一的な事後防御フレームワークを提案する。白箱では influence function と意味的一貫性チェック、黒箱では意味を保つ摂動への感度差を用いて、ポイズニングの検出を可能にする。</p>
+      <p><strong>新規性</strong> 要約モデルのポイズニングに対して、白箱・黒箱の両設定をまたぐ検出法と、gradient-ascent unlearning による復元を一体化した点が新規である。</p>
+      <p><strong>Tags:</strong> text summarization, data poisoning, LLM security, unlearning, behavioral auditing</p>
+      <p><strong>Abstract</strong> Training-time data poisoning during fine-tuning poses a significant threat to large language models (LLMs) deployed for abstractive text summarization, where small task-specific datasets exert disproportionate influence on model behavior. In this setting, adversaries manipulate fine-tuning data to induce persistent summarization failures, such as biased or harmful summaries, while preserving standard evaluation metrics. We present a unified post-hoc defense framework for detecting and remediating fine-tuning-stage poisoning in summarization models across the machine learning supply chain. Our experiments show that in white-box settings, poisoned document-summary pairs exhibit abnormally high training influence, enabling detection via influence-function analysis with semantic consistency checks. In black-box settings, poisoned models display two to three times greater sensitivity to semantics-preserving perturbations, enabling behavioral auditing without training data access. Beyond existing poisoning formulations, we introduce novel attacks targeting factual distortion and representational bias, showing that poisoning alters summarization behavior without triggering conventional alarms. Across nine architectures and six benchmark datasets under adaptive attacks, our defenses achieve 85-92% detection precision, while gradient-ascent unlearning restores up to 96% of original behavior with minimal utility loss (less than 0.6% ROUGE degradation). These results indicate that fine-tuning-time poisoning leaves persistent structural artifacts, enabling practical detection and post-deployment recovery without full retraining.</p>
+      <hr />
+      <h3>13. Autodata: An agentic data scientist to create high quality synthetic data</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25996">2606.25996</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25996.pdf">link</a></li>
+      <li>Published: 2026-06-25 01:08 JST</li>
+      <li>Updated: 2026-06-25 01:08 JST</li>
+      <li>Authors: Ilia Kulikov, Chenxi Whitehouse, Tianhao Wu, Yixin Nie, Swarnadeep Saha, Eryk Helenowski, Weizhe Yuan, Olga Golovneva, Jack Lanchantin, Yoram Bachrach, Jakob Foerster, Xian Li, Han Fang, Sainbayar Sukhbaatar, Jason Weston</li>
+      <li>Categories: cs.AI, cs.CL, cs.LG</li>
+      <li>Score: 13.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Autodataは、AIエージェントをデータサイエンティストとして動かし、高品質な学習・評価データを生成する一般的な手法を提案する。具体的実装としてAgentic Self-Instructを示し、計算機科学、法的推論、数学的対象の推論タスクで従来の合成データ作成法より良い結果を得た。さらに、このデータサイエンティストエージェント自体をメタ最適化すると、より大きな性能向上が得られる。</p>
+      <p><strong>新規性</strong> AIエージェントをデータ生成者として扱うだけでなく、その生成方針自体をメタ最適化して、より高品質な合成データ作成へと改善できる点が新規性である。</p>
+      <p><strong>Tags:</strong> synthetic data, agentic AI, meta-optimization, data generation, machine learning</p>
+      <p><strong>Abstract</strong> We introduce Autodata, a general method that enables AI agents to act as data scientists who build high quality training and evaluation data. We show how to train (meta-optimize) such a data scientist agent, so that it learns to create even stronger data. We describe the overall formulation, and a specific practical implementation, Agentic Self-Instruct. We conduct experiments on computer science research tasks, legal reasoning tasks and reasoning with mathematical objects, where we obtain improved results compared to classical synthetic dataset creation methods. Further, meta-optimizing the data scientist agent itself delivers an even larger performance uplift. Agentic data creation provides a way to convert increased inference compute into higher quality model training. Overall, we believe this direction has the potential to change the way we build AI data.</p>
+      <hr />
+      <h3>14. Model Forensics: Investigating Whether Concerning Behavior Reflects Misalignment</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26071">2606.26071</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26071.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:45 JST</li>
+      <li>Updated: 2026-06-25 02:45 JST</li>
+      <li>Authors: Aditya Singh, Gerson Kroiz, Senthooran Rajamanoharan, Neel Nanda</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 13.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、モデルの「懸念される行動」が単なる混乱ではなく、実際の不整合性に由来するかを調べるための「model forensics」を提案する。具体的には、CoTから仮説を立て、プロンプトや環境を編集してその仮説を検証する2段階の手順を示し、6つのエージェント環境で評価している。</p>
+      <p><strong>新規性</strong> 懸念行動の有無だけでなく、その背後にある意図や動機を仮説検証で調べるための、CoTと介入実験を組み合わせたベースライン手法を提示した点。</p>
+      <p><strong>Tags:</strong> model forensics, safety, chain of thought, misalignment, agentic environments</p>
+      <p><strong>Abstract</strong> A central goal of safety research is determining whether a model is misaligned. Prior work has largely focused on detecting concerning behavior. But behavior alone does not establish misalignment: a concerning action can arise from benign causes such as confusion. This motivates model forensics: investigating whether the action was driven by malign intent. In this paper, we propose a baseline protocol for model forensics consisting of two steps, iterated as needed. First, we read the chain of thought (CoT) to generate hypotheses about what drives model behavior. Second, we make edits to the prompt or environment to test these hypotheses. While the CoT is not always faithful, it is a rich source of unsupervised insight that can guide the collection of more rigorous evidence. To evaluate our protocol, we create a suite of six agentic environments where models exhibit concerning behavior, and apply it to each. We establish that Kimi K2 Thinking takes shortcuts due to a genuine disposition towards low-effort actions, by showing this hypothesis successfully predicts its behavior. Through counterfactual experiments, we show DeepSeek R1 deceives out of a desire to be consistent with a previous instance of itself. Our methods nonetheless leave significant room for refinement. For example, when we test whether Kimi K2 Thinking believes it is violating user intent, we find no evidence of such a belief, but without positive controls we cannot confirm our tests would detect it. Overall, we find our simple protocol provides a strong baseline that we hope future work will improve upon. More broadly, our work is a concrete step in developing the growing field of model forensics.</p>
+      <hr />
+      <h3>15. The Unfireable Safety Kernel: Execution-Time AI Alignment for AI Agents and Other Escapable AI Systems</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.26057">2606.26057</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.26057.pdf">link</a></li>
+      <li>Published: 2026-06-25 02:32 JST</li>
+      <li>Updated: 2026-06-25 02:32 JST</li>
+      <li>Authors: Seth Dobrin, Łukasz Chmiel</li>
+      <li>Categories: cs.AI, cs.CR, cs.LG</li>
+      <li>Score: 12.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、AIエージェントの実行時に外部から強制できる認可層として「Execution-Time AI Alignment」を提案し、エージェント自身の実行空間にある制御は回避されうるという問題を指摘する。Rust実装のUnfireable Safety Kernelを示し、Z3とKaniによる検証でfail-closed性を確認したうえで、自己改変可能なAIシステム上の評価では安全クリティカル部分への自己改変要求をすべて拒否し、逃走を許さなかった。</p>
+      <p><strong>新規性</strong> エージェント内部ではなく外部の信頼境界の外で検証可能な署名付き証拠を用いる、実行時のAIアラインメント層を体系化し、その要件を満たす安全カーネルを実装・検証した点が新しい。</p>
+      <p><strong>Tags:</strong> AI alignment, AI agents, authorization, formal verification, security</p>
+      <p><strong>Abstract</strong> AI agents are granted access to tools, APIs, and other infrastructure, making them active principals in those systems. The dominant approach places controls inside the agent's own runtime: system prompts, output filters, and guardrail libraries. Any control in the agent's address space is reachable by inputs that influence it; this generalizes to any AI system with sufficient reach into its own runtime, a class we term escapable AI systems. We identify four properties that an authorization mechanism must satisfy for architectural control rather than for cooperative requests: process separation, pre-action enforcement on a structurally only path, fail-closed at both the request and system levels, and externalized signed evidence verifiable outside the controlled system's trust boundary. We position this layer as execution-time AI alignment, complementing training-time alignment (RLHF, Constitutional AI) and inference-time alignment. We present the Unfireable Safety Kernel, a Rust reference implementation realizing all four. Its fail-closed invariant is machine-checked at two levels: an SMT theorem (Z3) and an exhaustive bounded-model-checking proof of the production decision function (Kani, 4/4 harnesses). A Python-to-Rust migration was gated on byte-equivalence (1000/1000 fixtures; 17/17 adversarial classes). We evaluate the kernel governing a live, escapable AI system, a deterministic, self-improving world model, against an escape-seeking adversary driving its real self-modification seam: across 1,000 self-modifications, all 704 attempts on the safety-critical core are refused, with no escape; a further 300, under the operator kill switch, are also refused. A separate campaign of 6,240 authorization round-trips had no successful bypass. Against 3 contemporary systems claiming the agent control plane, the agent invokes control; here, it lacks that choice.</p>
+      <hr />
+      <h3>16. Enhancing Brain MRI Anomaly Detection and Reasoning with ROI Rethink and Synthetic Data</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25894">2606.25894</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25894.pdf">link</a></li>
+      <li>Published: 2026-06-24 23:41 JST</li>
+      <li>Updated: 2026-06-24 23:41 JST</li>
+      <li>Authors: Shangkun Li, Jie Xu, Yi Guo, Zeju Li, Yuanyuan Wang</li>
+      <li>Categories: cs.CV, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、脳MRIの診断において、単一回の推論で結論を出す従来型の医用視覚言語モデルの課題に対し、異常候補を仮説として提示し、ROIの明示的なマーキングで根拠を示したうえで再確認する BrReMark を提案する。さらに、構造化された推論軌跡による教師あり学習と、位置特定精度と診断推論を組み合わせた報酬による強化学習、加えて病理合成によるデータ拡張を用いて、OODデータへの汎化と幻覚抑制を改善する。</p>
+      <p><strong>新規性</strong> ROIの明示的マーキングによる仮説生成・根拠付け・再検証の流れを脳MRI診断に組み込み、さらに合成データ拡張でOOD性能と誤陽性抑制を高めた点が新規である。</p>
+      <p><strong>Tags:</strong> brain MRI, medical vision-language model, region grounding, reinforcement learning, OOD generalization</p>
+      <p><strong>Abstract</strong> Medical vision-language models typically generate diagnoses through single-pass inference without indicating which image regions support their conclusions. This lack of spatial grounding limits clinical utility: outputs cannot be audited, and models may hallucinate findings on normal scans. We present BrReMark (Brain Rethink via ROI Marking), a framework that introduces explicit region marking into brain MRI diagnosis. The model first generates hypotheses about potential abnormalities and grounds them through explicit bounding box marking, then verifies conclusions by re-examining the marked evidence. Training combines supervised fine-tuning on structured reasoning trajectories with reinforcement learning using a composite reward over localization accuracy and diagnostic reasoning. Furthermore, we integrate a domain randomization-based pathology synthesis augmentation strategy to improve the model's generalizability to out-of-distribution (OOD) data. On internal benchmark, BrReMark improves mAP50 from 0.74% to 37.54% compared to the base model, while achieving 21.57% Clinical F1 and 45.26% diagnostic accuracy. On NOVA OOD benchmark, it also achieves competitive overall performance with a 45.7% reduction in false positives compared to the state-of-the-art, indicating reduced hallucination on rare pathologies. These findings suggest that explicit hypothesis-verification grounding is a practical path toward trustworthy open-ended brain MRI diagnosis across both in-distribution and OOD settings.</p>
+      <hr />
+      <h3>17. SpeechEQ: Benchmarking Emotional Intelligence Quotient in Socially Aware Voice Conversational Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2606.25990">2606.25990</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2606.25990.pdf">link</a></li>
+      <li>Published: 2026-06-25 01:03 JST</li>
+      <li>Updated: 2026-06-25 01:03 JST</li>
+      <li>Authors: Liang-Yuan Wu, Zih-Ching Chen, Tongshuang Wu, Chao-Han Huck Yang, Hua Shen</li>
+      <li>Categories: cs.CL, cs.AI, cs.SD</li>
+      <li>Score: 11.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、音声対話における感情的・社会的手がかりの理解を評価するためのベンチマーク「SpeechEQ」を提案する。EQ-i 2.0理論に基づく15のEQ下位尺度を含む2,265対話データセットと、複数ターンの対話を評価するSpoken EQ（SEQ）スコアを導入し、既存のSpeech Emotion RecognitionやSpeech-Language Modelsの限界を検証している。</p>
+      <p><strong>新規性</strong> 音声対話における感情知能を、単発のテキストや受動的音声認識ではなく、多ターンのクロスモーダル推論として評価する包括的ベンチマークと指標を提示した点が新規である。</p>
+      <p><strong>Tags:</strong> speech-language models, emotion recognition, benchmark, multimodal dialogue, social reasoning</p>
+      <p><strong>Abstract</strong> As multimodal conversational systems increasingly engage in spoken interaction, their ability to navigate paralinguistic social cues has become a critical bottleneck for natural human-AI communication. However, existing evaluations of machine emotional intelligence assess reasoning exclusively through isolated text or passive acoustic perception, overlooking the complex cross-modal reasoning required for active, multi-turn dialogue. We introduce \textsc{SpeechEQ}, a comprehensive framework designed to evaluate the sociolinguistic reasoning of Speech-Language Models (SLMs). The framework includes a validated dataset of 2,265 dialogues across 15 Emotional Quotient (EQ) subscales grounded in EQ-i 2.0 theory, along with a multi-turn evaluation protocol measured by our proposed Spoken EQ (SEQ) score inspired by human EQ assessments. Experiments show limitations in how both existing Speech Emotion Recognition and end-to-end Speech-Language Models understand and apply paralinguistic cues through speech. While end-to-end architectures outperform cascaded systems, \textsc{SpeechEQ} reveals that current multimodal models remain bottlenecked by a text-reliant `<code>modality shortcut,'' an alignment-induced </code><code>safety trap,'' and </code>`contextual amnesia,'' highlighting the barriers to truly emotionally aware AI. Our benchmark can be accessed at https://huggingface.co/datasets/SpeechEQ/SpeechEQ and demo page at https://binomial14.github.io/speecheq-demo/</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
