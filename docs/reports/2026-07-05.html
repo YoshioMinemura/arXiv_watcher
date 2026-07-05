@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-07-05 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-07-05</h1>
+        <p class="hero-copy">Generated at 2026-07-05 09:11 JST. Run ID: <code>5a5d5ec8-9b8e-472a-aa51-ebdc292db756</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>22</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-07-05</h1>
+      <p>Generated at: 2026-07-05 09:11 JST Run ID: 5a5d5ec8-9b8e-472a-aa51-ebdc292db756</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 22</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02509">2607.02509</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02509.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:59 JST</li>
+      <li>Updated: 2026-07-03 02:59 JST</li>
+      <li>Authors: Yanjun Zhao, Ruizhong Qiu, Tianxin Wei, Yuanchen Bei, Zhining Liu, Lingjie Chen, Ismini Lourentzou, Hanghang Tong, Jingrui He</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 32.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、長文脈推論においてLLMが入力中の関連証拠を十分に活用できない問題に対し、学習不要の推論手法RECONTEXTを提案する。RECONTEXTはモデル内部の関連性信号を用いて質問条件付きの証拠プールを構築し、それを最終生成前に再生することで、元の長文脈を保持したまま証拠利用を改善する。</p>
+      <p><strong>新規性</strong> 外部メモリや文脈削除、追加学習を使わずに、証拠の整理と回答生成を分離するRecursive Evidence Replayを導入した点が新しい。</p>
+      <p><strong>Tags:</strong> 長文脈推論, 大規模言語モデル, 学習不要手法, 証拠利用, 推論時最適化</p>
+      <p><strong>Abstract</strong> Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context utilization. In this work, we propose Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT), a training-free inference method for improving long-context reasoning. RECONTEXT uses model-internal relevance signals to construct a query-conditioned evidence pool and replays it before final generation while preserving the full original context. This recursive selection process separates evidence organization from answer generation without training, external memory, or context pruning. We also provide a theoretical analysis based on associative memory, which characterizes the context as a memory store, the question as a retrieval cue, attention as cue-trace association, and replay as trace reactivation. Experiments on eight long-context datasets with 128K context length show that RECONTEXT consistently improves evidence utilization across Qwen3-4B, Qwen3-8B, and Llama3-8B, achieving the best average rank on all three backbones. Code is available at https://github.com/Yanjun-Zhao/ReContext.</p>
+      <hr />
+      <h3>2. Automated grading of Linux/bash examinations using large language models: a four-level cognitive taxonomy approach</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02432">2607.02432</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02432.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:01 JST</li>
+      <li>Updated: 2026-07-03 02:01 JST</li>
+      <li>Authors: Manuel Alonso-Carracedo, Ruben Fernandez-Boullon, Pedro Celard, Francisco J. Rodriguez-Martinez, Lorena Otero-Cerdeira</li>
+      <li>Categories: cs.AI, cs.CL, cs.CY</li>
+      <li>Score: 30.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Linux/bash の短答式試験の採点を、4つの最先端大規模言語モデルで自動化できるかを検証した研究です。1200件の学生解答を対象に、4段階の認知タクソノミーに基づいて評価した結果、Gemini 3.0 Pro がルーブリック付きプロンプトで最も高い人間との一致を示し、問題の複雑さが上がるほど一致度は低下しました。</p>
+      <p><strong>新規性</strong> 認知複雑度と操作的影響を組み合わせた4段階タクソノミーを用いて、AI採点に適した設問と人手確認が必要な設問を判定する枠組みを提示した点です。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 自動採点, Linux/bash, 計算機教育, 認知タクソノミー</p>
+      <p><strong>Abstract</strong> Scalable and reliable grading of command-line examinations remains a challenge in computing education, where rising enrolments make manual marking difficult and rule-based autograders cannot handle partial credit, equivalent solutions, or syntactic variation. This paper evaluates whether four frontier Large Language Models (GPT, Claude Opus, Gemini, and GLM) can approximate expert judgment when grading short Linux/bash command responses. The study adopts a four-level cognitive taxonomy that combines cognitive complexity and operational impact, ranging from information retrieval (L1) and basic file manipulation (L2) to structural operations (L3) and advanced system management (L4). The models were tested with two prompt variants, a minimal baseline and a rubric-enhanced version, on 1200 real responses from second-year Computer Engineering students independently graded by three expert instructors. Gemini~3.0 Pro with rubric-guided prompting achieved the highest human-AI agreement (ICC(3,1) = 0.888, MAE = 0.10, Bland-Altman bias = -0.014). Agreement declined consistently as taxonomy level increased, with the largest discrepancies at higher levels. Across all models, rubric quality had a larger effect than provider choice, with structured prompts consistently improving agreement. These results show that question complexity is a reliable predictor of the difficulty LLMs face in grading accurately, and they establish a principled, taxonomy-based framework for determining which questions are suitable for AI-assisted grading and which require human review, while also providing a transferable evaluation protocol and prompt templates.</p>
+      <hr />
+      <h3>3. Online Safety Monitoring for LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02510">2607.02510</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02510.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:59 JST</li>
+      <li>Updated: 2026-07-03 02:59 JST</li>
+      <li>Authors: Mona Schirmer, Metod Jazbec, Alexander Timans, Christian Naesseth, Maja Waldron, Eric Nalisnick</li>
+      <li>Categories: cs.AI, cs.CL, cs.LG, stat.AP, stat.ML</li>
+      <li>Score: 28.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMのデプロイ時に安全でない出力が生じうる問題に対し、出力をオンラインで監視して安全性を保証できなくなった時点で警報を出す手法を検討している。外部モデルの verifier 信号をしきい値で判定し、そのしきい値を risk control により較正する単純なリアルタイム監視器を提案し、数学的推論と red teaming のデータセットで評価している。</p>
+      <p><strong>新規性</strong> 外部 verifier の信号をしきい値化し、risk control で較正するだけの単純な設計が、逐次仮説検定に基づくより高度な監視手法と競争力を持つことを示した点。</p>
+      <p><strong>Tags:</strong> LLM安全性, オンライン監視, リスク制御, 外部検証器, 異常検知</p>
+      <p><strong>Abstract</strong> Despite alignment training, LLMs remain prone to generating unsafe outputs at deployment time. Monitoring outputs online and raising an alarm when safety can no longer be assumed is therefore critical. We study a simple real-time monitor that turns a verifier signal from an external model into an alarm decision by thresholding, with the threshold calibrated via risk control. In experiments on mathematical reasoning and red teaming datasets, we show that this simple design is competitive with more advanced monitors based on sequential hypothesis testing.</p>
+      <hr />
+      <h3>4. Will Scaling Improve Social Simulation with LLMs?</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02464">2607.02464</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02464.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:30 JST</li>
+      <li>Updated: 2026-07-03 02:30 JST</li>
+      <li>Authors: Caleb Ziems, William Held, Su Doga Karaca, David Grusky, Tatsunori Hashimoto, Diyi Yang</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 26.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMを用いた社会シミュレーションについて、計算量スケーリングが忠実度の改善につながるかを、意見モデル・行動シミュレーション・長期予測の3領域で検証した。85個のTransformer LLMと35個のより大規模なオープンウェイトモデルを用いた分析から、多くのタスクではスケールに伴って性能が向上する一方、低資源領域や一般知識・推論ベンチマークと相関の弱いタスクでは改善が遅いことが示された。</p>
+      <p><strong>新規性</strong> 社会シミュレーションの忠実度に対して、計算量スケーリング則と損失からの下流性能予測を用いて、一般能力との関係を体系的に評価した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, social simulation, scaling laws, behavior simulation, forecasting</p>
+      <p><strong>Abstract</strong> Large Language Model (LLM) social simulations are a promising research method, but they are not yet faithful enough to be adopted widely. In this work, we investigate whether the current scaling paradigm in language modeling is likely to close these gaps, or whether simulation fidelity is orthogonal to general capabilities and therefore deserving of more research attention. We use scaling laws to study the relationship between LLMs' compute scale, general capability benchmarks, and the fidelity of social simulation in three representative sub-domains: opinion modeling, behavioral simulation, and longitudinal forecasting. Surprisingly, we discover strong compute scaling in all three settings, using a suite of 85 transformer LLMs with the Qwen3 architecture pre-trained on the DCLM web text corpus under fixed-compute budgets from $10^{18}$ to $10^{20}$ FLOPs. Then we evaluate 35 larger and more capable open-weight models up to 70B parameters, allowing us to predict downstream accuracy from loss. This reveals that the majority of behavioral and opinion simulation tasks will rapidly improve with scale, particularly when they involve populations that are well-represented in English web corpora. Longitudinal forecasting and underrepresented opinions scale more slowly, especially when they are less correlated with general knowledge and reasoning benchmarks like MMLU. In behavior simulation, scaling fails to improve model calibration with human cognitive biases like risk aversion, as well as human heuristics like learning correlated rewards from related tasks. On these tasks, even fine-tuned models fail to noticeably scale up performance from 0.5B to 8B parameters. Taken together, we conclude that scale will improve social simulations in most settings, but outliers exist, and improvements will be less reliable in low-resource domains.</p>
+      <hr />
+      <h3>5. Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02504">2607.02504</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02504.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:58 JST</li>
+      <li>Updated: 2026-07-03 02:58 JST</li>
+      <li>Authors: Yuxuan Li, Lingxi Xie, Xinyue Huo, Jihao Qiu, Jiacheng Shao, Pengfei Chen, Jiannan Ge, Kaiwen Duan, Qi Tian</li>
+      <li>Categories: cs.CL, cs.AI, cs.CV</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 長編TVドラマにおける話者認識は、複雑な文脈の中で発話を正しい登場人物に割り当てる重要な課題である。本研究では、53.2万件の対話行を含む大規模ベンチマークDramaSR-532Kを構築し、音声・言語・視覚の手がかりを統合して話者を特定する問題設定を提示した。</p>
+      <p><strong>新規性</strong> 大規模なドラマ向け話者認識ベンチマークを新たに整備し、推論型大規模言語モデルを用いたマルチモーダルなツール利用で話者認識を行うDramaSR-LRMを提案した点が新しい。</p>
+      <p><strong>Tags:</strong> speaker recognition, multimodal learning, large language model, video understanding, TV drama</p>
+      <p><strong>Abstract</strong> Long-form TV dramas present a formidable challenge for comprehensive video understanding, where deciphering complex storyline often relies on \textbf{speaker recognition}, the task of accurately attributing each spoken utterance to its respective character. In this paper, we advance this field through two primary contributions. (1) We introduce \textbf{DramaSR-532K}, a large-scale benchmark comprising 532K annotated dialogue lines across more than 900 unique characters, necessitating the integration of auditory, linguistic, and visual cues for speaker recognition. (2) We propose \textbf{DramaSR-LRM}, a robust approach built upon a large reasoning model (LRM). DramaSR-LRM is designed to autonomously aggregate contextual evidence via multimodal tool-use, synthesizing diverse inputs to achieve high-fidelity attribution. Experimental results demonstrate that DramaSR-LRM significantly outperforms existing baselines, particularly on short utterances where acoustic biometrics are inherently unreliable. \textit{All the data and code will be made publicly available at the project page: https://www.github.com/198808xc/DramaSR-LRM.}</p>
+      <hr />
+      <h3>6. Neuron-Aware Data Selection for Annotation-Free LLM Self-Distillation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02460">2607.02460</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02460.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:27 JST</li>
+      <li>Updated: 2026-07-03 02:27 JST</li>
+      <li>Authors: Zhuowei Chen, Xiang Lorraine Li</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、実世界のフィードバックや人手ラベルを使わずにLLMを自己蒸留するためのデータ中心フレームワークNeuron-OPSDを提案する。内部ニューロン活性を用いて学習データの選択と教師コンテキストの構築を行い、教師分布からのon-policy distillationで学習することで、専門領域での性能向上と汎化性能の維持、較正崩壊の緩和を示す。</p>
+      <p><strong>新規性</strong> 内部ニューロン活性を訓練データ選択と教師コンテキスト構築に利用し、ラベル不要の自己蒸留を支える点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, self-distillation, annotation-free learning, data selection, calibration</p>
+      <p><strong>Abstract</strong> Post-training large language models (LLMs) without real-world interaction feedback or human-labeled supervision remains challenging, particularly in specialized domains where expert annotations are costly to obtain. Recent annotation-free self-evolution methods address this by using the model's own outputs as supervision signals, constructing a teacher via additional context and aggregating predictions across multiple rollouts through majority voting to produce pseudo-labels. However, these approaches are not without drawbacks: SFT- and GRPO-based variants suffer out-of-domain performance degradation, while reward-based on-policy RL inflates calibration error. In this paper, we propose Neuron On-Policy Self-Distillation (Neuron-OPSD), a data-centric framework for annotation-free self-distillation that leverages internal neuron activations to guide both training-data selection and teacher context construction. The model is then trained via on-policy distillation from the teacher distribution, requiring no ground-truth labels at any stage. Across specialized-domain benchmarks, Neuron-OPSD improves in-domain task performance while preserving cross-domain generalization and mitigating calibration collapse over prior annotation-free baselines. This framework is particularly relevant to settings where online interaction or external supervision is costly or infeasible, and is conceptually distinct from offline RL approaches that rely on logged, reward-labeled trajectories.</p>
+      <hr />
+      <h3>7. WattGPU: Predicting Inference Power and Latency on Unseen GPUs and LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02391">2607.02391</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02391.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:25 JST</li>
+      <li>Updated: 2026-07-03 01:25 JST</li>
+      <li>Authors: Mauricio Fadel Argerich, Jonathan Fürst, Marta Patiño-Martínez</li>
+      <li>Categories: cs.DC, cs.LG</li>
+      <li>Score: 20.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> WattGPUは、公開されているLLMメタデータとGPU仕様のみを用いて、LLM推論時の平均GPU消費電力とインタートークン遅延（ITL）を予測する手法である。42個のLLMと8種類のGPUを用いた評価では、未見のGPUやLLMに対しても高い精度を示し、特にサーバー設定での電力・遅延予測とGPU順位付けに有効だった。</p>
+      <p><strong>新規性</strong> ハードウェアへのアクセスや事前プロファイリングなしに、未見のGPUとLLMへ一般化できる電力・遅延予測モデルを提示した点。</p>
+      <p><strong>Tags:</strong> LLM推論, GPU電力予測, 遅延予測, 未見デバイス一般化</p>
+      <p><strong>Abstract</strong> Large Language Model (LLM) inference workloads are a rapidly growing contributor to data center energy consumption. Optimizing these deployments requires matching specific LLMs to the most efficient GPUs, but operators currently lack the tools to do so without exhaustively profiling each combination. While some predictive models exist, they still require profiling data and struggle to generalize to hardware unseen during training. To address this, we introduce \textit{WattGPU}, featuring two predictive models for mean GPU power draw and Inter-Token Latency (ITL). Our approach leverages only publicly available LLM metadata and GPU specifications, eliminating the need for hardware access or profiling while enabling generalization to unseen NVIDIA server-grade GPUs and LLMs. We evaluate our models using rigorous leave-one-GPU-out and leave-one-LLM-out cross-validation on a dataset of 42 open-source LLMs (0.1B--27B parameters) and 8 GPUs under both offline and server scenarios. The mean power draw model achieves a median absolute percentage error of $\leq3.4\%$ for offline and $\leq13.5\%$ for server scenarios on unseen GPUs, while the latency model achieves $\leq8.5\%$ in server mode, both maintaining strong GPU ranking correlations for server scenarios (Kendall $τ\geq0.76$). Compared to standard physically grounded baselines -- Load-Scaled Thermal Design Power (TDP) for power draw and roofline for latency -- our models reduce median absolute percentage error by approximately 4$\times$ on unseen LLM-GPU combinations for server scenarios or approximately 2$\times$ for completely unseen GPUs. WattGPU's data and code are publicly available at https://github.com/maufadel/wattgpu.</p>
+      <hr />
+      <h3>8. What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02507">2607.02507</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02507.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:59 JST</li>
+      <li>Updated: 2026-07-03 02:59 JST</li>
+      <li>Authors: Arman Ghaffarizadeh, Danyal Mohaddes, Aliakbar Izadkhah, Shahriar Noroozizadeh</li>
+      <li>Categories: cs.AI, cs.CL, cs.LG, cs.MA</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMエージェントが社会的に構造化された状況で、公開発話とオフレコ（OTR）発話の間にどのような差を示すかを、二重チャネルの討論枠組みで検証した。10モデル・3シナリオ・各5変種で、整合を促す設定では対象エージェントの公開/OTR間の意思決定差が約3%から約40%まで増大し、立場・意味類似度・自然言語推論・アンケートの4種の分析でも一貫した乖離が確認された。</p>
+      <p><strong>新規性</strong> 明示的な目的を与えなくても、社会的文脈によって潜在的な目的が表出しうることを示し、それを評価するための二重チャネル評価フレームワークと行動指標を提案した。</p>
+      <p><strong>Tags:</strong> LLM agents, multi-agent debate, social context, latent objectives, evaluation framework</p>
+      <p><strong>Abstract</strong> LLM agents will increasingly act in socially structured settings where role, audience, and relational context can shape what is advantageous or costly to say. We study whether such social structure, without any explicit objective in the prompt, changes what an agent expresses publicly relative to an off-the-record (OTR) channel elicited under the same condition. We introduce a dual-channel debate framework in which agents produce public utterances that enter the shared history alongside OTR responses that are recorded but never shown to the other participant. Across 10 models, 3 scenarios, and 5 variations within each scenario, alignment-inducing settings produce systematic public-OTR divergence in the targeted agent, with its decision divergence rising from a $\sim$3% baseline to roughly 40%. The effect is consistent across four aggregate analyses: stance, semantic similarity, natural language inference, and survey responses. In some cases, the OTR response explicitly attributes public accommodation to relational pressures, such as career risk or sponsorship obligation. The findings suggest that agent evaluation should extend beyond explicit goals and detect emergent objectives. We present a dual-channel evaluation framework and complementary behavioral measures that operationalize this assessment.</p>
+      <hr />
+      <h3>9. DemoPSD: Disagreement-Modulated Policy Self-Distillation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02502">2607.02502</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02502.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:58 JST</li>
+      <li>Updated: 2026-07-03 02:58 JST</li>
+      <li>Authors: Yunhe Li, Hao Shi, Wenhao Liu, Mengzhe Ruan, Hanxu Hou, Zhongxiang Dai, Shuang Qiu, Linqi Song</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの推論学習における on-policy self-distillation で、教師の密なトークンレベル監督が過学習や privileged information leakage を招く問題を指摘し、DemoPSD を提案する。DemoPSD は教師と学生の分布の不一致に応じて教師ガイダンスを選択的に取り入れ、探索性を保ちながら学習する。実験では SciKnowEval の4分野で GRPO と SDPO を上回り、OOD の GPQA でも頑健な汎化を示した。</p>
+      <p><strong>新規性</strong> 教師分布をそのまま模倣せず、教師・学生分布の reverse-KL barycenter を不一致に応じて動的に調整することで、情報漏洩の抑制と探索性の維持を両立した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, self-distillation, on-policy learning, generalization, reinforcement learning</p>
+      <p><strong>Abstract</strong> On-policy self-distillation (OPSD) has emerged as a practical method for training large language models (LLMs) to reason, where a single model acts as both the teacher and the student with different levels of information access. However, recent studies have found that the teacher's dense token-level supervision, conditioned on privileged information, can lead to overfitting to in-domain patterns, suppress exploration, and hurt cross-domain generalization, while also introducing a more fundamental issue: *privileged information leakage*, where the student encodes answer-dependent shortcuts that are unavailable at test time. We introduce <strong>DemoPSD</strong>, a novel framework that resolves such problems through the idea of *selective adoption of teacher guidance*. Instead of fitting the full teacher distribution, DemoPSD steers the student toward a *reverse-KL barycenter target*, a weighted geometric combination of the teacher and student distributions, that naturally balances learning from the teacher with preserving the student's own reasoning capacity. We measure the difference between their distributions and use such a discrepancy to adaptively control the blending at each token position. We provably show that DemoPSD achieves <strong>(1)</strong> *leakage attenuation*, i.e., effective mitigation of privileged information leakage; and <strong>(2)</strong> *exploration preservation*, i.e., preservation of exploration capacity under dense token-level distillation. Extensive experiments on SciKnowEval across four scientific fields show that DemoPSD outperforms both GRPO and SDPO while maintaining higher training entropy and robustly generalizing to out-of-distribution GPQA benchmarks.</p>
+      <hr />
+      <h3>10. Neuron-Aware Active Few-Shot Learning for LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02423">2607.02423</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02423.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:51 JST</li>
+      <li>Updated: 2026-07-03 01:51 JST</li>
+      <li>Authors: Zhuowei Chen, Liwei Chen, Christian Schunn, Raquel Coelho, Xiang Lorraine Li</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMを専門領域に適応させるActive Few-Shot Learningにおいて、出力レベルの指標ではなくモデル内部のニューロン活性に基づいて有用な未ラベルサンプルを選ぶNeuFSを提案する。NeuFSは、ニューロンパターンによる多様性確保と、ニューロン合意度に基づく難例・幻覚しやすい例の優先選択を組み合わせ、3つのデータセットで推論とテキスト分類の両方で既存手法を上回った。</p>
+      <p><strong>新規性</strong> サンプル選択の信号として外部埋め込みや出力不確実性ではなく、LLM内部のニューロン活性パターンとその合意度を用いる点が新規である。</p>
+      <p><strong>Tags:</strong> few-shot learning, active learning, LLM, neuron activation, sample selection</p>
+      <p><strong>Abstract</strong> Active Few-Shot Learning (AFSL) adapts LLMs to specialized domains by identifying the most valuable unlabeled samples for annotation and use as few-shot demonstrations, effectively reducing human annotation costs while promoting high performance. However, existing methods typically rely on output-level signals for sample identification, such as predictive entropy or semantic similarities with test-time data based on external embeddings, which often overlook models' internal dynamics, which could pinpoint specific knowledge gaps. To bridge this gap, we propose NeuFS, a Neuron-Aware Active Few-Shot Learning framework that shifts the selection paradigm from output-level proxies to models' internal dynamics. NeuFS utilizes neuron activation patterns to represent sample directly, and includes a dual-criteria selection strategy that: (1) ensures few-shot sample diversity with neuron patterns for broader example coverage, while (2) prioritizing on identifying informative and challenging few-shot samples LLMs tend to hallucinate by quantifying neuron consensus. Experiments on three datasets demonstrate that NeuFS excels in both reasoning and text classification tasks, outperforming existing AFSL baselines. Ablation studies further highlight that internal neuron activations provide a more principled and effective selection signal than external embeddings, validating the superiority of the proposed NeuFS.</p>
+      <hr />
+      <h3>11. Fast Multi-dimensional Refusal Subspaces via RFM-AGOP</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02396">2607.02396</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02396.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:31 JST</li>
+      <li>Updated: 2026-07-03 01:31 JST</li>
+      <li>Authors: Thomas Winninger</li>
+      <li>Categories: cs.AI, cs.LG</li>
+      <li>Score: 18.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルにおける拒否挙動は単一方向ではなく多次元部分空間に表現されるとされるが、既存手法は計算コストが高く、長い推論トレースを持つモデルでは特に扱いにくい。本研究はRecursive Feature Machine (RFM) をプローブ情報で初期化して適用することで、推論モデルと非推論モデルの両方で拒否部分空間を数秒で抽出でき、さらにアブレーション課題でも既存手法より良い性能を示した。</p>
+      <p><strong>新規性</strong> RFMをプローブ情報で初期化して用いることで、拒否の多次元部分空間を高速かつ低コストに抽出できる手法を提案した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, representation learning, subspace extraction, safety, interpretability</p>
+      <p><strong>Abstract</strong> Steering and monitoring activations in Large Language Models (LLMs) are increasingly used for both safety and interpretability. Early work assumed behaviours are encoded along single linear directions, but recent findings suggest complex behaviours, such as the refusal to answer harmful queries, live in multi-dimensional subspaces. However, existing methods for extracting these subspaces are computationally expensive, which becomes prohibitive on reasoning models who produce long reasoning traces. By adapting the Recursive Feature Machine (RFM) algorithm -- which can be computed efficiently -- with a probe-informed initialization, we are able to identify the multi-dimensional refusal subspace in seconds, on reasoning (Qwen 3) and non-reasoning (Qwen 2.5) models. While RFM allows for faster subspace identification, it also showed better performances on the ablation task than its alternatives. More work is planned to better understand the relations between subspaces found by different methods. If confirmed, RFM could be a cheap and scalable complement to existing subspace-extraction methods in LLMs.</p>
+      <hr />
+      <h3>12. LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02513">2607.02513</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02513.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:59 JST</li>
+      <li>Updated: 2026-07-03 02:59 JST</li>
+      <li>Authors: Matteo Boglioni, Thibault Rousset, Siva Reddy, Marius Mosbach, Verna Dankers</li>
+      <li>Categories: cs.CL, cs.AI, cs.LG</li>
+      <li>Score: 17.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの学習データに含まれるPIIを後から削除するunlearningについて、出力レベルだけでなくパラメータレベルで本当に知識が消えているかを評価する必要性を示す。著者らは、PIIを既知のパラメータに注入したテストベッドLACUNAを提案し、既存のSOTA手法は出力性能が高くても局所化が不正確で、resurfacing attackに脆弱であることを示した。</p>
+      <p><strong>新規性</strong> PIIを特定の重みに注入して真のパラメータレベルの正解を持つ、初のunlearning評価用テストベッドLACUNAを構築した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM unlearning, parameter localization, PII, benchmark, resurfacing attack</p>
+      <p><strong>Abstract</strong> LLMs memorize sensitive training data, including personally identifiable information (PII), creating a pressing need for reliable post hoc removal methods. Unlearning has emerged as a promising solution, with state-of-the-art(SOTA) methods often following a localize-first, unlearn-second paradigm that targets specific model parameters. However, existing benchmarks evaluate unlearning solely at the output level, leaving open the question of whether unlearning truly erases knowledge from a model's parameters or merely obfuscates it, a concern reinforced by the success of resurfacing attacks. To bridge this gap, we introduce LACUNA: the first unlearning testbed with ground-truth parameter-level localization. LACUNA injects PII of synthetic individuals into predefined parameters of 1B and 7B OLMo-based models via masked continual pretraining, enabling direct evaluation of whether unlearning targets the weights responsible for knowledge storage. We use LACUNA to benchmark current SOTA unlearning methods and find that, despite strong output-level performance, existing methods are highly imprecise and susceptible to resurfacing attacks. We further show that when localization is successful, even a simple gradient-based unlearning method achieves strong erasure and robustness to resurfacing attacks, highlighting the importance of precise unlearning. We release LACUNA to complement behavioral evaluations and drive further advances in robust, localization-based unlearning.</p>
+      <hr />
+      <h3>13. DRIFTLENS: Measuring Memory-Induced Reasoning Drift in Personalized Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02374">2607.02374</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02374.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:15 JST</li>
+      <li>Updated: 2026-07-03 01:15 JST</li>
+      <li>Authors: Xi Fang, Weijie Xu, Yingqiang Ge, Yuhui Xu, Stephanie Eckman, Chandan K. Reddy</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 17.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、ユーザ属性や過去文脈をメモリとして注入することで、個人化されたLLMの応答内容だけでなく推論の軌跡自体が変化するかを調べている。ground-truth不要の枠組みDRIFTLENSを提案し、4つのLLMと10種類のユーザ属性で、最終回答が自然で妥当でも推論ドリフトが有意に生じることを示した。</p>
+      <p><strong>新規性</strong> DRIFTLENSにより、個人化メモリが引き起こす推論ドリフトを正解なしで定量化し、さらにGRPO/DPOによる抑制効果を比較評価した点が新しい。</p>
+      <p><strong>Tags:</strong> personalized language models, reasoning drift, memory injection, evaluation framework, LLM post-training</p>
+      <p><strong>Abstract</strong> Personalization changes what a model says to a user; we show that it can also change the reasoning trajectory used to justify the response. Modern LLMs personalize interactions by storing user attributes, preferences, and prior context, then injecting this information into future prompts. We study whether such memory reshapes reasoning on open-ended questions where no single ground-truth answer exists. To quantify this effect, we introduce DRIFTLENS, a ground-truth-free framework that maps each expressed reasoning step to a value category and measures divergence between a question's no-memory trajectory and its trajectory under injected user-attribute memory. We first validate that DRIFTLENS distinguishes content-free pragmatic noise from substantive reasoning changes. Across four LLMs and 10 user-attribute categories, including age, occupation, and disability, user-attribute memory induces medium-to-large reasoning drift above each model's pragmatic-noise floor, even when final answers remain fluent, on-topic, and plausible. We then evaluate GRPO- and DPO-based post-training methods for reducing drift. Both reduce drift, but neither uniformly dominates; effects on downstream capability, helpfulness, and instruction following are model-and reward-dependent. These results suggest that memory-induced reasoning drift is a measurable and only partly mitigated failure mode of personalized language models.</p>
+      <hr />
+      <h3>14. Bringing Agentic Search to Earth Observation Data Discovery</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02387">2607.02387</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02387.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:24 JST</li>
+      <li>Updated: 2026-07-03 01:24 JST</li>
+      <li>Authors: Minghan Yu, Youran Sun, Chugang Yi, Yixin Wen, Haizhao Yang</li>
+      <li>Categories: cs.IR, cs.LG</li>
+      <li>Score: 16.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> NASAの地球観測データ探索を対象に、自然言語の研究クエリから関連するデータセットやツールを返すエージェント型検索システムを提案している。NASA EO Knowledge Graphから47k件のクエリ-データセット対を含むベンチマークNASA-EO-Benchを構築し、公開サービスとして運用している。</p>
+      <p><strong>新規性</strong> 知識グラフを基盤にした検索に、学習済みスコアリング、BM25とのスコア融合、さらに追加学習なしのゼロショットなエージェント再ランキングを組み合わせ、検索性能を大きく向上させた点が新しい。</p>
+      <p><strong>Tags:</strong> 情報検索, 知識グラフ, 大規模言語モデル, 地球観測, エージェント検索</p>
+      <p><strong>Abstract</strong> NASA and its data centers hold thousands of geoscience datasets and tools like Worldview, Giovanni, the Science Discovery Engine, and Harmony. Finding the right one is hard even for domain experts. We present an agentic search system, deployed as a public service for the geoscience community, that takes a natural-language research query and returns the matching datasets and tools. We demonstrate that, in the era of large language models, the latent value of knowledge graphs (KGs) can be substantially amplified through agentic search. From the NASA Earth Observation Knowledge Graph (NASA EO-KG) we derive NASA-EO-Bench, an open benchmark of 47k query-dataset pairs (21k task-based queries). A neural scorer fine-tuned on NASA-EO-Bench beats cosine and BM25 baselines. Further combining it with BM25 via score fusion raises both Recall@10 (R@10) and MRR by over 5x. On top of this supervised pipeline, we add a zero-shot agentic reranking stage that, without any additional training, lifts MRR by 28% on a stratified N=200 subset, showing that LLM reasoning is complementary to supervised retrieval.</p>
+      <hr />
+      <h3>15. The Future of NLP may not be at NLP Conferences: Scholarly Migration Patterns in Natural Language Processing</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02416">2607.02416</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02416.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:47 JST</li>
+      <li>Updated: 2026-07-03 01:47 JST</li>
+      <li>Authors: David Jurgens</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、2010年から2026年のNLP研究出版データを用いて、LLM時代にNLP研究の発表先が従来のACL中心から変化しているかを分析した。結果として、既存著者はACL本会議での比率を下げる一方でFindingsや一般ML系会議での比率を高め、新規著者でも*ACL中心から一般ML中心へ移る傾向が確認された。</p>
+      <p><strong>新規性</strong> 既存著者と新規著者の両方について、会場分布の変化を比較し、さらに因果推論により一般ML会場の引用優位が会場選択に影響することを推定した点が新しい。</p>
+      <p><strong>Tags:</strong> NLP, ACL, Large Language Models, 学術出版動向, 機械学習</p>
+      <p><strong>Abstract</strong> Natural Language Processing (NLP) has traditionally been published in its core disciplinary venues like ACL. However, advances in Large Language Models (LLMs) has led to a blurring of the disciplinary lines between NLP and general Machine Learning (ML), with authors regularly publishing in venues from both fields. Here, we ask whether the disciplinary center of gravity is shifting. Using NLP research published from 2010 to 2026 and studies of both established and new authors, we find that a migration is taking place. First, comparing the pre- and post-LLM eras, established authors lost 19.2pp of share at flagship *ACL main-conference tracks while gaining 14.8pp in the newer Findings tracks, and general ML venues rose 8.6pp, even when adjusting for parallel growth in the fields. Second, among newer authors who debut with at least three first-author NLP-topic papers, the share whose work appears mostly at *ACL venues fell from 84% (2019) to 74% (2024), while the share appearing mostly at general ML venues rose from 5% to 21%. Using causal inference techniques, we estimate that these general ML venues confer a significant citation premium, which influences venue selection. Together, these results point to a significant shift in where NLP research is published.</p>
+      <hr />
+      <h3>16. DecompRL: Solving Harder Problems by Learning Modular Code Generation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02390">2607.02390</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02390.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:25 JST</li>
+      <li>Updated: 2026-07-03 01:25 JST</li>
+      <li>Authors: Juliette Decugis, Fabian Gloeckle, Francis Bach, Taco Cohen, Gabriel Synnaeve</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルが解けない難問に対し、単純な反復サンプリングや通常の強化学習ではなく、問題を独立に解ける小さなサブ関数へ分解して解きやすくする方法を提案する。DecompRLは階層的なコード構造の分解と実装を強化学習で学習し、複数モジュールの再結合によって候補解を大きく増やすことで、GPU推論コストを抑えつつ性能を向上させる。</p>
+      <p><strong>新規性</strong> 問題を「より多くサンプルする」のではなく「分解して再結合する」方向に変え、モジュール型コード生成を学習するDecompRLを導入した点。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 強化学習, コード生成, 問題分解, モジュール化</p>
+      <p><strong>Abstract</strong> How can Large Language Models (LLMs) solve problems they currently cannot? Repeated sampling scales test-time compute but GPU cost grows linearly with attempts, while reinforcement learning (RL) with verifiable rewards improves single-attempt accuracy at the expense of sample diversity. Both strategies ultimately fail when the base policy has near-zero probability of producing a correct solution: no amount of sampling or gradient signal can overcome a search space that is simply too large. We take a different approach: rather than sampling harder, we make the task easier by decomposing problems into smaller, independently solvable sub-functions whose implementations can be recombined. Since off-the-shelf models are not trained for this modular generation, we introduce DecompRL, an RL algorithm that explicitly learns to decompose and implement hierarchical code structures. Recombining $k$ implementations of $n$ modules yields up to $k^{n}$ candidate solutions, shifting the bottleneck from GPU inference to cheap CPU evaluation and cutting GPU token cost by $\sim$50$\times$. On LiveCodeBench and CodeContests (Qwen~2.5~7B, Code World Model~32B), DecompRL outperforms standard and diversity-optimized RL baselines beyond $10^5$ tokens per problem, solving problems that standard generation cannot reach.</p>
+      <hr />
+      <h3>17. Program-as-Weights: A Programming Paradigm for Fuzzy Functions</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02512">2607.02512</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02512.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:59 JST</li>
+      <li>Updated: 2026-07-03 02:59 JST</li>
+      <li>Authors: Wentao Zhang, Liliana Hotsko, Woojeong Kim, Pengyu Nie, Stuart Shieber, Yuntian Deng</li>
+      <li>Categories: cs.LG, cs.AI, cs.CL</li>
+      <li>Score: 13.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、自然言語仕様から局所実行可能な小型のニューラル成果物を生成する「fuzzy-function programming」を提案し、その具体化として Program-as-Weights (PAW) を示す。PAWでは、4BのコンパイラがFuzzyBench上で学習され、凍結した軽量インタプリタ向けのパラメータ効率的アダプタを出力する。</p>
+      <p><strong>新規性</strong> 基盤モデルを入力ごとの問題解決器ではなく、関数定義時に一度だけ呼び出して再利用可能な小型アーティファクトを作る「ツールビルダー」として再定義した点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, program synthesis, neural compilation, parameter-efficient fine-tuning, local inference</p>
+      <p><strong>Abstract</strong> Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from a natural-language specification into a compact, locally-executable neural artifact. We instantiate this paradigm with Program-as-Weights (PAW), in which a 4B compiler trained on FuzzyBench, a 10M-example dataset we release, emits parameter-efficient adapters for a frozen, lightweight interpreter. A 0.6B Qwen3 interpreter executing PAW programs matches the performance of direct prompting of Qwen3-32B, while using roughly one fiftieth of the inference memory and running at 30 tokens/s on a MacBook M3. PAW reframes the foundation model from a per-input problem solver into a tool builder: invoked once per function definition, it produces a small reusable artifact whose subsequent calls per function application are cheap and offline.</p>
+      <hr />
+      <h3>18. G-RRM: Guiding Symbolic Solvers with Recurrent Reasoning Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02491">2607.02491</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02491.pdf">link</a></li>
+      <li>Published: 2026-07-03 02:53 JST</li>
+      <li>Updated: 2026-07-03 02:53 JST</li>
+      <li>Authors: Timo Bertram, Sidhant Bhavnani, Richard Freinschlag, Erich Kobler, Andreas Mayr, Günter Klambauer</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、SE-RRMを用いて制約充足問題の古典的シンボリックソルバを誘導する神経記号的手法G-RRMを提案する。SE-RRMは解候補全体を生成してバックトラッキングやSATソルバ（Glucose 4.1、CaDiCaL 3.0.0）をガイドし、探索効率の改善条件を検討する。実験では、探索空間が広く、かつ分岐選択を動的に上書きできるソルバで特に有効であることが示された。</p>
+      <p><strong>新規性</strong> 再帰的推論モデルをシンボリックソルバの探索ガイドとして統合し、どの条件で神経的ヒントが実際の高速化につながるかを体系的に示した点が新しい。</p>
+      <p><strong>Tags:</strong> neuro-symbolic, constraint satisfaction, symbolic solver, SAT, recurrent reasoning model</p>
+      <p><strong>Abstract</strong> In this work, we focus on SE-RRMs, a symbol-equivariant instantiation of RRMs that exhibits improved extrapolation to larger problem sizes. We propose a neuro-symbolic approach, ``Guiding with Recurrent Reasoning Models'' (G-RRM), which integrates SE-RRMs with symbolic solvers for constraint satisfaction problems. SE-RRMs act as neural solvers that generate full solution proposals and guide classical symbolic solvers, such as backtracking or SAT-based methods like Glucose 4.1 and CaDiCaL 3.0.0, that produce globally correct solutions. Centrally, we investigate when neural guidance with G-RRM improves the search efficiency of symbolic solvers. % Our experiments show that the efficacy of G-RRM depends on two conditions: first, the problem instances must have an expansive combinatorial search space to expose potential gains, and second, the solver architecture must be capable of dynamically overwriting its branching choices to recover when neural hints are imperfect. When these conditions hold, guidance drives median conflict counts to zero and yields significant wall-clock speedups: on $9\times9$ Sudoku, where the SE-RRM correctly solves $91.1\%$ of instances, backtracking accelerates by $33.3\times$ and Glucose 4.1 by $1.70\times$ (median, $p&lt;0.001$), with Glucose 4.1 retaining a $1.17\times$ speedup on perfect-hint $25\times25$ grids. In contrast, CaDiCaL 3.0.0, whose runtime is overhead-dominated and which always respects the injected branching hints rather than overwriting them, shows no significant speedup (median $1.02\times$, n.s.) and even a small significant mean slowdown ($0.90\times$) on $9\times9$. These results delineate the regimes in which neural guidance translates into practical speedups.</p>
+      <hr />
+      <h3>19. Text-Driven 3D Indoor Scene Synthesis in Non-Manhattan Environments</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02407">2607.02407</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02407.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:40 JST</li>
+      <li>Updated: 2026-07-03 01:40 JST</li>
+      <li>Authors: Xianhui Meng, Zirui Song, Yuchen Zhang, Li Zhang, Yongxuan Lv, Xiuying Chen, Kun Wang, Yan Luo, Kai Chen, Hangjun Ye, Long Chen, Jun Liu, Xiaoshuai Hao</li>
+      <li>Categories: cs.AI, cs.CV</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、非直交な空間関係を含む非Manhattan環境において、テキスト駆動で物理的に妥当な3D室内シーンを生成するためのフレームワークSPG-Layoutを提案する。統計的な物体分布の事前知識と、大きな物体を優先する階層的レイアウト戦略を組み合わせることで、レイアウト違反を抑えつつ意味的妥当性と物理的整合性の両立を目指す。</p>
+      <p><strong>新規性</strong> 非Manhattan環境向けに、物体分布の統計的事前知識と階層的レイアウト戦略を組み合わせたテキスト駆動3D室内シーン生成手法を提案した点が新しい。</p>
+      <p><strong>Tags:</strong> 3D scene synthesis, text-driven generation, indoor layout, non-Manhattan environments</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) have demonstrated remarkable capabilities in 3D indoor synthesis for Manhattan environments. However, existing methods often fail to capture plausible object layout patterns in non-Manhattan settings, primarily because they struggle to model non-orthogonal spatial relationships, leading to high geometric violations and low physical fidelity. To address this challenge, we propose SPG-Layout, a novel text-driven framework designed to generate physically plausible indoor scenes within complex non-Manhattan environments. Specifically, we first utilize statistical priors of object distributions to guide the training process, enhancing environmental understanding and fidelity. Furthermore, mirroring human design workflows, we adopt a hierarchical layout strategy that prioritizes the placement of large objects, thereby substantially minimizing layout violations. By synergizing these components, SPG-Layout achieves a balanced optimization of semantic realism and physical plausibility. To evaluate performance in these complex settings, we constructed a new benchmark comprising 500 diverse non-Manhattan environments. Extensive experiments demonstrate that SPG-Layout consistently and significantly outperforms existing methods across both Manhattan and non-Manhattan environments. The code will be publicly released.</p>
+      <hr />
+      <h3>20. Hardware-Enforced Semantic Coordination for Safety-Critical Real-Time Autonomous Systems</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.02376">2607.02376</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.02376.pdf">link</a></li>
+      <li>Published: 2026-07-03 01:16 JST</li>
+      <li>Updated: 2026-07-03 01:16 JST</li>
+      <li>Authors: Uwe M. Borghoff, Paolo Bottoni, Remo Pareschi</li>
+      <li>Categories: cs.AI, cs.MA</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、複数の異種コンポーネントが並行動作する安全性重視のリアルタイム自律システムにおいて、ソフトウェア媒介の協調には遅延や保証の面で限界があると指摘し、FPGAを用いて協調セマンティクスの一部をハードウェアに直接実装するアーキテクチャを提案する。TB-CSPNフレームワークを基盤に、意味推論はソフトウェアで適応的に行い、同期・セマンティックゲーティング・認可制約などの協調制御をハードウェアで決定的に実行する。</p>
+      <p><strong>新規性</strong> TB-CSPNの協調機構をFPGAプリミティブへ写像し、推論と協調管理を分離しつつ、協調セマンティクスをハードウェアで強制する点が新規である。</p>
+      <p><strong>Tags:</strong> real-time systems, FPGA, autonomous systems, safety-critical, coordination</p>
+      <p><strong>Abstract</strong> Recent advances in agentic AI are producing increasingly complex autonomous systems that integrate large language models, world models, optimization engines, specialized neural architectures, autonomous platforms, and human operators. While much current research focuses on improving reasoning capabilities, safety-critical real-time deployment also requires bounded and verifiable coordination among heterogeneous components operating concurrently under uncertainty. Software-mediated coordination presents fundamental limitations in domains where bounded latency, deterministic coordination, and enforceable safety guarantees are essential. Hence, we propose a hardware-enforced semantic coordination architecture in which selected coordination semantics are implemented directly at the hardware level via field-programmable gate arrays (FPGAs). The approach builds on the Topic-Based Communication Space Petri Net (TB-CSPN) framework, which separates semantic reasoning from interaction management. In this approach, selected TB-CSPN coordination mechanisms are mapped onto FPGA primitives, creating a hardware-native semantic coordination layer. Focus is not on acceleration, but on enforcing temporal synchronization, semantic gating, authorization constraints, and bounded coordination behavior directly in hardware. Semantic reasoning remains adaptive and software-driven, while embedded coordination semantics become deterministic.</p>
+      <hr />
+      <blockquote><p>... and 2 more papers (not shown).</p></blockquote>
+    </article>
+  </main>
+</body>
+</html>
