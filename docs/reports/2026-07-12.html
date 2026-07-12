@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-07-12 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-07-12</h1>
+        <p class="hero-copy">Generated at 2026-07-12 09:06 JST. Run ID: <code>a1d7532d-0909-4994-ab14-830ca2d9a6f6</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>15</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-07-12</h1>
+      <p>Generated at: 2026-07-12 09:06 JST Run ID: a1d7532d-0909-4994-ab14-830ca2d9a6f6</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 15</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. BiSCo-LLM: Lookup-Free Binary Spherical Coding for Extreme Low-Bit Large Language Model Compression</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08643">2607.08643</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08643.pdf">link</a></li>
+      <li>Published: 2026-07-10 01:17 JST</li>
+      <li>Updated: 2026-07-10 01:17 JST</li>
+      <li>Authors: Yuantian Shao, Peisong Wang, Zhilei Liu, Chuangyi Li, Yuanteng Chen, Pengcheng Xie, Yiwu Yao, Zhihui Wei, Jian Cheng</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 36.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> BiSCo-LLMは、LLMの重み圧縮において、コードブックを使わないbinary spherical codingを用いる極低ビット圧縮手法です。局所的な重みチャンクを単位超球面上で二値化してビット列として保持し、さらに残差BSQとカテゴリ別のrecovery distillationを組み合わせて、再構成誤差とモジュール置換後の不整合を抑えます。</p>
+      <p><strong>新規性</strong> 明示的なコードブックやインデックス参照を使わず、binary spherical codingと残差BSQ、カテゴリ別蒸留を組み合わせて極低ビット圧縮を実現している点が新規です。</p>
+      <p><strong>Tags:</strong> LLM圧縮, 低ビット量子化, バイナリ符号化, コードブック不要, 知識蒸留</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are increasingly constrained by memory capacity, weight bandwidth, and checkpoint storage during deployment. Existing low-bit compression methods mainly follow two directions. Scalar or group-wise quantization is simple and compatible with efficient low-precision kernels, but its representation capacity becomes limited when the target budget approaches 2 bits per weight. Vector-quantized weight compression provides a richer block-level representation, but usually introduces explicit codebooks, index lookup, and additional storage accounting. This paper presents BiSCo-LLM, a codebook-free binary spherical coding framework for extreme low-bit LLM weight compression. The core pipeline is built on three components. First, local weight chunks are mapped onto a unit hypersphere and binarized into compact spherical codes, so that the main payload is a bit-packed sign stream rather than explicit VQ centroids. Second, a residual BSQ stage encodes the reconstruction error left by the base spherical codec, providing an explicit rate-distortion path without stored codebooks. Third, category-wise recovery distillation is performed after replacing each Transformer module category, reducing the mismatch between local weight reconstruction and assembled model behavior. A small 8-bit protected-channel path is used as an auxiliary stabilization mechanism for sensitive channels and is counted separately from the BSQ payload. The reported storage budget includes binary codes, neural decoders, protected-channel payloads, LoRA adapters, and metadata.</p>
+      <hr />
+      <h3>2. Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08665">2607.08665</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08665.pdf">link</a></li>
+      <li>Published: 2026-07-10 01:34 JST</li>
+      <li>Updated: 2026-07-10 01:34 JST</li>
+      <li>Authors: Teng-Ruei Chen</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 29.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMのテスト時モデル選択において、同一モデルの再サンプリングと別モデルへの再ルーティングを、1クエリあたりの単一予算の競合する使い方として定式化している。さらに、推定された単位コスト当たりの正解率改善に基づくオンラインなRoR（resample-or-reroute）方策を提案し、複数ベンチマークでコストと品質の良いトレードオフを示した。</p>
+      <p><strong>新規性</strong> 再サンプリングと再ルーティングを別々ではなく、単一の予算配分問題として扱い、検証器の品質を考慮したオンライン方策を提案した点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, model routing, test-time selection, budget-aware optimization, resampling</p>
+      <p><strong>Abstract</strong> Routing among large language models (LLMs) trades response quality against serving cost, motivated by the reported gap between deployed routers and a per-instance oracle. Recent analysis shows that test-time resampling can recover per-instance selection headroom that no single-commit router captures; however, that guarantee holds only under an idealized oracle equipped with correctness labels and an unconstrained budget, neither of which a deployed system has. To the best of our knowledge, no previous work treats resampling the committed model and rerouting to an alternative model as competing uses of a single per-query cost budget. Therefore, this work formulates budget-aware test-time model selection: given a per-query budget and an imperfect verifier, allocate each unit of budget between resampling and rerouting so that expected correctness is maximized. An online resample-or-reroute (RoR) allocation policy driven by estimated marginal correctness per unit cost is proposed, and its behavior is grounded in the recoverability asymmetry between selection and sampling. Replay experiments on newly regenerated multi-draw correctness tensors from an eleven-model open-weight pool over four benchmarks of differing difficulty show that the proposed RoR policy attains a favorable cost-quality Pareto front relative to single-route, one-commit-router, budget-aware best-of-K, cascade, and random-allocation baselines for the tested pools, with the largest gains on the most heterogeneous benchmark; an ablation further shows the gains are verifier-gated, shrinking as verifier quality degrades, and robustness replays under a provider price vector and a label-free agreement verifier delineate where the conclusions carry over.</p>
+      <hr />
+      <h3>3. Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08602">2607.08602</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08602.pdf">link</a></li>
+      <li>Published: 2026-07-10 00:33 JST</li>
+      <li>Updated: 2026-07-10 00:33 JST</li>
+      <li>Authors: Peng Cui, Jitao Wang, Siyan Xue, Yao Huang, Haoming Xia, Dong Li, Dengxiang Liu, Weilin Wang, Liping Liu, Leida Zhang, Yunfu Cui, Tao Peng, Daolin Ji, Haitao Zhao, Wei Zhang, Xiaojuan Wang, Weijie Ma, Zongren Ding, Jinlong Li, Yuan Ding, Jiajing Zhao, Zhiyu Chen, Chengkun Yang, Ziyue Huang, Jiaqi Liu, Fusheng Liu, Yang Zhou, Zhongquan Sun, Shiyun Bao, Xiaojun Wang, Ming Yang, Guangxin Li, Bin Shu, Yong Liao, Hongxuan Li, Yao Tang, Shizhong Yang, Yongyi Zeng, Yufeng Yuan, Yinpeng Dong, Jihui Hao, Jun Zhu, Jiahong Dong</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 28.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> HCC-STARは、電子カルテの記述を入力として、HCCのリスク層別化、ガイドライン整合的な治療候補の順位付け、個別化生存予測を同時に出力する臨床推論LLMです。約3万例のSEER由来データを用いてEMR風の学習データを構築し、中国12施設6,668例の多施設コホートで、治療推奨とリスク層別化において既存のガイドラインや競合モデルを上回りました。</p>
+      <p><strong>新規性</strong> 臨床文脈を反映したEMRナラティブを用い、ステップ検証可能な複合報酬で最適化した、HCC向けの説明可能な推論型LLMを提案した点が新規です。</p>
+      <p><strong>Tags:</strong> hepatocellular carcinoma, large language model, risk stratification, treatment recommendation, electronic medical records</p>
+      <p><strong>Abstract</strong> Hepatocellular carcinoma (HCC) is a common malignancy and a leading cause of cancer-related mortality. Current guidelines and staging systems provide coarse categories, but often miss within-stage heterogeneity and the clinical context in electronic medical records (EMRs). We present HCC-STAR (Hepatocellular Carcinoma Staging, Treatment And pRognosis), a clinically aligned large language model that reads routine EMR narratives and jointly outputs risk score-based staging, ranked guideline-consistent treatments with evidence-based rationales, and individualized survival estimates. We curated about 30,000 HCC cases from SEER and expanded them into EMR-style narrative training data using a clinician-validated, prompt-based augmentation workflow. On this corpus, we developed a knowledge-aligned reasoning framework optimized with a step-verifiable composite reward, moving beyond text-level memorization of clinical guidelines. In a multi-center cohort of 6,668 patients from 12 hospitals in China, HCC-STAR achieved state-of-the-art performance in treatment recommendation and risk stratification compared with clinical guidelines and competitive models, including GPT-5 and Gemini-2.5 Pro. Hypothetical overall-survival analysis showed a median survival of 51 months under adherence to HCC-STAR recommendations, compared with 29 and 32 months under BCLC and CNLC. In clinician-centric evaluations, blinded hepatobiliary specialists rated HCC-STAR's reasoning and evidence-based justifications as trustworthy. The model surpassed resident and attending physicians in treatment accuracy and helped physicians make more accurate decisions faster when used as an assistant. These findings support HCC-STAR as a reliable and verifiable decision-support system for risk stratification and precision therapy in HCC.</p>
+      <hr />
+      <h3>4. Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08740">2607.08740</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08740.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:40 JST</li>
+      <li>Updated: 2026-07-10 02:40 JST</li>
+      <li>Authors: Emanuele Quinto, Carlo Andrea Rozzi, Francesco Zanitti</li>
+      <li>Categories: cs.AI, cs.PL, cs.SE</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMを用いたワークフローでは、ツール利用、検索、分岐、チェックポイント、人手承認などを含む明示的な実行手順が増えている。本論文は、ワークフロー定義や実行インスタンス、推論記録、文脈スナップショット、依存関係を共有知識基盤上の永続的な知識オブジェクトとして扱う概念モデルを提案し、ワークフローを検査・再開・レビュー可能な対象として捉える。</p>
+      <p><strong>新規性</strong> deterministicなderiveと、LLM判断を伴うinferを区別し、ワークフローそのものを知識として表現する「semantic persistence」の概念を提示した点。</p>
+      <p><strong>Tags:</strong> LLM workflows, knowledge representation, semantic persistence, workflow systems, conceptual model</p>
+      <p><strong>Abstract</strong> Large language model (LLM) applications increasingly use explicit workflows for tool use, retrieval, branching, checkpointing, and human approval. Existing workflow systems already address many execution concerns. This paper proposes a Lisp-inspired but language-independent conceptual model: symbolic forms, object identity, and live-image thinking are used as explanatory lenses, not implementation commitments. In this model, workflow definitions, workflow instances, inference records, context snapshots, and dependency relations are represented as persistent knowledge objects in a shared knowledge substrate. Its central semantic distinction is between derive and infer: derive is deterministic computation over available state; infer is mediated LLM judgment under declared context and executor-controlled capability policy. The result is a preliminary conceptual account of semantic persistence: workflows do not merely produce knowledge and leave traces, but can themselves be represented as inspectable, resumable, and reviewable knowledge objects, while formal transition semantics remain future work.</p>
+      <hr />
+      <h3>5. UltraX: Refining Pre-Training Data at Scale with Adaptive Programmatic Editing</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08646">2607.08646</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08646.pdf">link</a></li>
+      <li>Published: 2026-07-10 01:18 JST</li>
+      <li>Updated: 2026-07-10 01:18 JST</li>
+      <li>Authors: Xinlong Zhao, Dongsheng Liu, Hengyu Zhao, Zixuan Fu, Zheng Wang, Jie Cai, Jie Zhou, Qiang Ma, Xuanhe Zhou, Xu Han, Yudong Wang, Zhiyuan Liu</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 19.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模な事前学習データの品質向上を目的として、UltraXは削除・修正に加えて挿入も扱える関数呼び出し型のデータ精製フレームワークを提案する。データセット適応型のプロンプト最適化と、整列・置換に基づくプログラム監督生成により、細粒度の編集を可能にしつつ、大規模処理に必要な効率性と信頼性を高める。実験では、複数コーパスで平均性能が最良となり、より少ない学習トークンでも同等以上の性能を示した。</p>
+      <p><strong>新規性</strong> 削除・修正だけでなく挿入操作まで含めた編集空間を導入し、原文-精製文対から構造化されたプログラム監督を生成して大規模データ精製を実現した点が新規である。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 事前学習データ, データ精製, 関数呼び出し, プログラム監督</p>
+      <p><strong>Abstract</strong> As available training data approaches its physical limit, gains from Scaling Laws have begun to diminish. Consequently, improving Large Language Models (LLMs) now depends less on data expansion and more on higher-quality data utilization. However, in the context of large-scale corpora, existing refinement methodologies face significant limitations in quality, efficiency, and reliability: Rule-based approaches are constrained by fixed heuristics and struggle with instance-level variations; LLM-based approaches improve quality but fail to meet the efficiency and reliability requirements of large-scale data processing. To address these challenges, we propose UltraX, a function-calling refinement framework for large-scale pre-training data that completes the editing function space by introducing insertion in addition to deletion and modification, enabling fine-grained instance-level editing. Specifically, UltraX builds a reliable program-supervision generation pipeline. In this pipeline, dataset-adaptive prompt optimization first guides an expert LLM to produce high-quality end-to-end refined texts, and Line Alignment Mapping and Dynamic Context Replacement then convert original-refined text pairs into structured program supervision. Meanwhile, UltraX improves supervision quality and stabilizes the training distribution with low-confidence example filtering and ratio-controlled sampling by operation combination. During inference and execution, it normalizes and validates model outputs through sliding-window prediction, global operation aggregation, and systematic post-processing, improving the stability and reliability of large-scale execution. Experiments show that UltraX achieves the highest average performance across all corpora and also matches or surpasses baselines with fewer training tokens, demonstrating stronger data efficiency and refinement reliability.</p>
+      <hr />
+      <h3>6. Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08758">2607.08758</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08758.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:55 JST</li>
+      <li>Updated: 2026-07-10 02:55 JST</li>
+      <li>Authors: Yifan Zhou, Qihao Yang, Yan Li, Donggang Li, Xiru Hu, Hokin Deng, Ziyang Gong, Xuanyi Zhou, Huacan Wang, Xiangchao Yan, Wanghan Xu, Wenlong Zhang, Shaofeng Zhang, Yue Zhou, Yifan Yang, Zhihang Zhong, Xue Yang</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 17.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、科学的アイデアの系譜構造を扱うベンチマーク「IdeaGene-Bench（IG-Bench）」を提案し、論文や提案をIdea GenomeオブジェクトとGenomeDiffで表現して、継承・変異・喪失・外部導入・新規挿入を記録できる枠組みを示す。IG-Examでは系譜推論を、IG-Arenaでは系譜に条件づけたアイデア生成を評価し、10分野にわたるデータで14種類のLLM科学者を検証している。</p>
+      <p><strong>新規性</strong> 科学的アイデアの「系譜」を明示的に表現し、推論と生成の両方を同一の lineage-grounded 枠組みで評価するベンチマークを構築した点が新しい。</p>
+      <p><strong>Tags:</strong> benchmark, scientific reasoning, idea generation, lineage, LLM</p>
+      <p><strong>Abstract</strong> Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and lineage-grounded idea generation. IG-Bench is organized around the IdeaGene framework: each paper or proposal is represented as a set of minimal, typed, evidence-grounded Idea Genome objects, and a GenomeDiff aligns these objects to record inheritance, mutation, loss, external import, and novel insertion under six operational evolutionary dynamics. The benchmark contains 1,961 golden lineage traces, 1,085 curated Idea Genome objects, and 920 pairwise GenomeDiff records across 10 scientific domains. It supports two evaluations. IG-Exam (42 task types, 1,029 instances) tests closed-form lineage reasoning across Idea Genome abstraction, inheritance tracing, evolutionary reasoning, and lineage verification. IG-Arena evaluates generation with a lineage-conditioned Population-Evolution Score(PES), asking whether a proposal can be inserted as a coherent descendant of a given lineage population: it should inherit the right Idea Genome objects, vary meaningfully from nearby work, and offer selection value for future research. Experiments on 14 LLM-based scientists expose a compositional bottleneck. The strongest system reaches only 27.3% exact accuracy on lineage reasoning, and structured lineage context reshuffles system rankings rather than helping every participant uniformly.</p>
+      <hr />
+      <h3>7. The Illusion of Equivalency: Statistical Characterization of Quantization Effects in LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08734">2607.08734</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08734.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:35 JST</li>
+      <li>Updated: 2026-07-10 02:35 JST</li>
+      <li>Authors: Baha Rababah, Cuneyt Gurcan Akcora, Carson K. Leung</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 17.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの事後量子化評価が精度やperplexityだけでは不十分であり、量子化によって生じる振る舞いの変化を捉えられないことを示す。著者らは correctness agreement という決定レベルの指標を導入し、8-bitから2-bitまでの複数モデル・量子化手法で、見かけ上の性能が保たれていても予測の一致が崩れることを報告する。</p>
+      <p><strong>新規性</strong> 量子化モデルと元モデルの正解予測の重なりを測る correctness agreement を提案し、注意重みの層別歪み解析により、低ビット幅での非線形な分岐と query/key 投影の高い感度を明らかにした。</p>
+      <p><strong>Tags:</strong> LLM, quantization, evaluation, attention, statistical analysis</p>
+      <p><strong>Abstract</strong> Post-training quantization is widely used to deploy large language models in resource-constrained settings, yet its evaluation relies almost exclusively on accuracy and perplexity. We show that these metrics fail to capture behavioral changes induced by quantization. We introduce correctness agreement, a decision-level metric that measures overlap in correct predictions between a base model and its quantized variants, independent of absolute accuracy. Across multiple models and quantization schemes from 8-bit to 2-bit, we find that behavioral divergence emerges under moderate quantization even when task performance appears preserved. To explain this effect, we analyze quantization as a structural operator on attention weights and quantify layer-wise distortions using statistical and distributional measures. Our results reveal non-linear breakpoints at low bit-widths and show that query and key projections are consistently more sensitive than value and output projections. These findings expose an illusion of equivalence between base and quantized models and motivate behavioral evaluation beyond conventional performance metrics.</p>
+      <hr />
+      <h3>8. Validity of LLMs as data annotators: AMALIA on authority</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08731">2607.08731</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08731.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:34 JST</li>
+      <li>Updated: 2026-07-10 02:34 JST</li>
+      <li>Authors: Manuel Pita</li>
+      <li>Categories: cs.CL, cs.AI, cs.CY</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> ポルトガルの国産LLM AMALIA-9Bが、道徳基盤の「権威」を人手コーダーと高い一致で符号化できるかを検証したが、一致は妥当性を保証しないことを示した。理論に基づく分解プロンプトで再評価すると性能は約半分まで低下し、表層的な手がかり、特に権威者周辺の道徳的怒りに依存している可能性が示唆された。</p>
+      <p><strong>新規性</strong> 単なる人手一致ではなく、理論的な分解・再構成による「recovery gap」を用いて、LLMの注釈が構成概念を本当に捉えているかを検証した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, data annotation, validity, moral foundations, multilingual</p>
+      <p><strong>Abstract</strong> A national language model offers a linguistic community its own instrument for measuring what its citizens say and value. Portugal's AMALIA, a publicly funded 9B-parameter model for European Portuguese, appears competitive on agreement alone: asked to code the moral foundation of authority, it agrees with trained human coders to within six F1 points of open models eight to thirteen times its size. Yet agreement is reliability, not validity. For theoretical constructs that must be inferred rather than read from surface features, the question is whether the model follows the construct's theory or reaches the right code by correlated shortcuts. We test this with the recovery gap: the loss in performance when a holistic prompt is decomposed into the codebook's atomic clauses and recombined by the theory's explicit rule. If calibration closes that gap, some portability should survive across models and languages; where it does not, the construct-model instrument is the likely locus of failure. We ask whether a calibrated English instrument transfers to AMALIA-9B and to European Portuguese. For one construct and one corpus, it does not. Decomposition recovers only about half of AMALIA's holistic performance, and error analysis suggests reliance on surface correlates, especially moral outrage near authority figures. An open multilingual LLM closes the gap on the same Portuguese corpus under the same instructions, pointing away from the corpus as the main explanation. AMALIA can still screen and pre-code at scale, but it cannot yet measure this construct well enough to stand alone. The study is a single counterexample, not a verdict on national models; it argues that sovereign-LLM benchmark batteries should test not only agreement with human coders, but the evidential route by which that agreement is warranted.</p>
+      <hr />
+      <h3>9. WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08662">2607.08662</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08662.pdf">link</a></li>
+      <li>Published: 2026-07-10 01:28 JST</li>
+      <li>Updated: 2026-07-10 01:28 JST</li>
+      <li>Authors: Xiaoshuai Song, Liancheng Zhang, Kangzhi Zhao, Yutao Zhu, Zhongyuan Wang, Guanting Dong, Jinghan Yang, Han Li, Kun Gai, Ji-Rong Wen, Zhicheng Dou</li>
+      <li>Categories: cs.CL, cs.AI, cs.MA</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMベースのWeb検索エージェントは、深さと広さの両方を要する調査タスクに有効だが、単一エージェントは長い探索軌跡と文脈制約があり、既存のマルチエージェントも再帰的な深掘りや柔軟な協調に限界がある。WebSwarmは、推論時にタスク分解・再帰的拡張・エージェント協調を動的に行う枠組みで、各ノードが自己解決または子ノードへの委譲を行い、証拠を上位へ返すことで探索を段階的に拡張する。</p>
+      <p><strong>新規性</strong> Web上の情報構造を事前に探ってノード拡張を根拠づけ、同種の兄弟ノード間でプロセス経験を再利用する再帰的マルチエージェント編成を提案した。</p>
+      <p><strong>Tags:</strong> LLM, web search, multi-agent, recursive delegation, information retrieval</p>
+      <p><strong>Abstract</strong> Large language model (LLM)-based web search agents are transforming information seeking from simple factoid question answering into complex, deep-and-wide search and research-oriented tasks. A single ReAct-style agent is constrained by one long trajectory and limited context, making it difficult to handle depth and coverage simultaneously. Existing multi-agent systems improve search coverage through parallel execution and aggregation, but still exhibit clear limitations in recursive depth, collaboration adaptability, and evidence-grounded expansion. We propose WebSwarm, a progressive recursive delegation framework that jointly constructs task decomposition, recursive expansion, and agent collaboration during inference. WebSwarm dynamically instantiates agentic search nodes, each coupling a local objective with a search mode that specifies how the node should organize search and collaboration. Each node can either solve its objective itself or further delegate child nodes; after solving, it returns evidence and results upward, enabling parent nodes to further expand, revise, or aggregate the search process. To guide this process, WebSwarm first probes how task-relevant information is organized on the web to ground subsequent node expansion, and reuses process-level experience across homogeneous sibling nodes. Experiments on BrowseComp-Plus, WideSearch, DeepWideSearch, and GISA show that WebSwarm consistently outperforms single-agent and multi-agent baselines on deep, wide, and interleaved deep-and-wide tasks. Further analyses of ablation, task difficulty, web tool efficiency, and model generalization explain WebSwarm's effectiveness and provide insights for multi-agent search systems.</p>
+      <hr />
+      <h3>10. UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08768">2607.08768</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08768.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:59 JST</li>
+      <li>Updated: 2026-07-10 02:59 JST</li>
+      <li>Authors: Zhekai Chen, Chengqi Duan, Kaiyue Sun, Bohao Li, Yuqing Wang, Manyuan Zhang, Xihui Liu</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> UniClawBenchは、実世界の動的な環境で能動的エージェントを評価するための、能力駆動型ベンチマークです。5つの基礎能力に基づく400件のバイリンガル課題を用い、Docker上でのライブ実行と段階的な完了チェックポイントにより評価します。さらに、実行エージェント・隠れた監督エージェント・ユーザーエージェントからなる閉ループ評価で、現実的な多ターンフィードバックを再現します。</p>
+      <p><strong>新規性</strong> シナリオ中心ではなく能力中心の設計を採用し、ライブ環境と閉ループ評価を組み合わせて、モデル能力とエージェントフレームワーク設計の影響を切り分けて評価できる点が新しいです。</p>
+      <p><strong>Tags:</strong> benchmark, proactive agents, real-world tasks, multimodal, evaluation</p>
+      <p><strong>Abstract</strong> The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to evaluate such agents effectively, as they often rely on sandboxed environments and single-turn evaluation paradigms. Moreover, their scenario-based task taxonomies mix multiple model capabilities within the same task category, making it difficult to identify the root causes of agent failures. To address these limitations, we introduce UniClawBench, the first capability-driven benchmark designed to evaluate proactive agents in dynamic, real-world settings. UniClawBench is built around five foundational model capabilities: Skill Usage, Exploration, Long-Context Reasoning, Multimodal Understanding, and Cross-Platform Coordination. Based on these capabilities, we design 400 bilingual real-world tasks. Unlike previous benchmarks that rely on static, pre-recorded answers, our benchmark evaluates agents in live Docker containers using fine-grained, step-by-step completion checkpoints. Furthermore, we design a closed-loop evaluation strategy comprising an executor agent, a hidden supervisor agent, and a user agent to simulate realistic multi-turn human feedback without leaking grading criteria. To disentangle base model capabilities from framework-level design choices, we evaluate state-of-the-art models under multiple agent frameworks. Through comprehensive comparisons across both models and frameworks, we show how base model capabilities and agent framework designs jointly shape performance in real-world environments. To facilitate future research, we make our benchmark and code publicly available at https://github.com/HKU-MMLab/UniClawBench.</p>
+      <hr />
+      <h3>11. Do You Need a Frontier Model as a Citation Verifier? Benchmarking Rubric LLMs for Deep-Research Source Attribution</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08700">2607.08700</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08700.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:01 JST</li>
+      <li>Updated: 2026-07-10 02:01 JST</li>
+      <li>Authors: Ethan Leung, Elias Lumer, Corey Feld, Austin Huber, Vamse Kumar Subbiah, Kevin Paul</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、deep-research 系システムにおける引用品質の判定を対象に、LLM judge の能力とバイアスを評価したベンチマーク研究である。8種類の既製LLM judgeを1,248件のルーブリック判定で比較し、source relevance と factual support の両面で、必ずしも高価な最先端モデルが最良とは限らないことを示した。</p>
+      <p><strong>新規性</strong> 引用品質のルーブリック判定において、F1だけでは見えない pass-rate drift や false positive/negative の偏りを明示的に比較し、報酬信号として使う前に judge の較正が必要であることを示した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM judge, citation quality, benchmark, reinforcement learning, source attribution</p>
+      <p><strong>Abstract</strong> Reinforcement learning increasingly relies on an LLM judge to score each rubric criterion, and that judge acts as the reward model during training. Before such a signal can be trusted, we need to know how capable the judge must be and how biased it is. We study this calibration question for citation quality in deep-research systems, where a search-grounded LLM must support each claim it writes with a cited source. Citation quality is a structured rubric task in which each attribution-citation pair is judged along two dimensions that require an LLM, source relevance and factual support. On an adversarial long-form benchmark, we score 8 off-the-shelf LLM judges from 3 model families against gold labels over 1,248 rubric decisions, all of which were human-reviewed and 378 of which were hard cases adjudicated from judge disagreements. Cheaper judges remain competitive across both dimensions, with GPT-5-mini attaining the strongest source-relevance pass-class F1 at 0.908 ($κ$=0.636), while on factual support the judges are statistically indistinguishable (overlapping confidence intervals), so no single model dominates. At comparable F1, the judges still differ substantially in pass-rate drift, false positive rate, and false negative rate. Scalar F1 obscures this directional bias, yet it is exactly what a downstream reinforcement learning loop would reinforce. Calibrating the judge is therefore a prerequisite for using citation rubrics as reward signals, and our results show that this calibration does not require the most expensive available model.</p>
+      <hr />
+      <h3>12. The complexities of patient-centred conversational artificial intelligence</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08625">2607.08625</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08625.pdf">link</a></li>
+      <li>Published: 2026-07-10 00:56 JST</li>
+      <li>Updated: 2026-07-10 00:56 JST</li>
+      <li>Authors: João Matos, Olivia Buege, Donny Cheung, Gary S. Collins, Paula Dhiman, Nan Li, Bingyu Mao, Benjamin W. Nelson, Michail Ouroutzoglou, Paul Varghese, Jonathan Amar</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 消費者向けの健康チャットボットにおける症状評価では、従来の開発・評価が協力的で明瞭な模擬患者に依存してきたが、本研究は2,053件の実際の患者-チャットボット対話を分析し、ユーザごとにコミュニケーション様式や感情表現が大きく異なることを示した。さらに、臨床内容・感情状態・会話戦略・コミュニケーションスタイルを別々にモデル化する患者シミュレータを構築し、リアルさ評価では人間判定者の正解率が55%と、実対話とほぼ区別できない水準を達成した。</p>
+      <p><strong>新規性</strong> 臨床内容だけでなく感情、会話戦略、コミュニケーションスタイルを分離してモデル化する患者シミュレータを提案し、対話スタイルがトリアージ結果を有意に変えうることを示した。</p>
+      <p><strong>Tags:</strong> health chatbot, patient simulation, LLM evaluation, triage, conversational AI</p>
+      <p><strong>Abstract</strong> Consumer-facing health chatbots powered by large language models (LLMs) are increasingly used for symptom assessment. However, chatbot development and evaluation often rely on cooperative, articulate, simulated patients. We analysed 2,053 real patient-chatbot conversations and found that communication patterns and expression of emotions vary widely across users. We developed a patient simulator that separately models clinical content, emotional state, conversational strategy, and communication style. In a Turing-inspired evaluation of realism with 15 human graders, simulated conversations were nearly indistinguishable from real ones, with human graders achieving an accuracy of 55%. We used five distinct patient personae, across 1,164 clinician-graded cases, to evaluate the performance of four LLMs in urgency assessment. We found that communication style can significantly alter triage outcomes. Patient-centred conversational artificial intelligence must accommodate communication diversity: systems designed for idealised, rather than realistic, interactions risk underperforming and amplifying health disparities when deployed in the real world.</p>
+      <hr />
+      <h3>13. Super Weights in LLMs and the Failure of Selective Training</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08733">2607.08733</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08733.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:35 JST</li>
+      <li>Updated: 2026-07-10 02:35 JST</li>
+      <li>Authors: Shreyas Subramanian, Adewale Akinfaderin, Akarsha Sehwag</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMで重要とされるSuper Weightsを削除すると性能が大きく落ちる一方で、それらの重みだけを選択的に学習しても有効に適応できないことを示した。OLMo-1B/7Bでは、Super Weights周辺の少数パラメータのみを更新すると精度がランダムレベルまで低下し、同数のランダム位置の更新や通常のLoRAは成功することから、重要性と学習可能性は一致しないと結論づけている。</p>
+      <p><strong>新規性</strong> Super Weightsの「重要性」は、そこだけを学習すればよいことを意味しないことを実験的に示し、効果的な微調整には個別座標ではなく層全体にまたがる構造化された更新が必要だと明らかにした。</p>
+      <p><strong>Tags:</strong> LLM, fine-tuning, parameter importance, LoRA, sparsity</p>
+      <p><strong>Abstract</strong> Recent work identified Super Weights, individual parameters whose removal degrades model performance by orders of magnitude. We show that this degradation due to pruning Super Weights does not universally apply to all LLMs. Furthermore, if these parameters are so important, Super Weight-aware training should be effective. We show the opposite. Training Super Weights in isolation (100 to 8,192 parameters) drops accuracy to random-guessing levels on both OLMo-1B and OLMo-7B, and expanding to local neighborhoods of up to 36K parameters provides no improvement. The failure is specific to Super Weight coordinates: training an equal number of randomly chosen positions in the same down_proj layers instead improves over the baseline, so the collapse comes from targeting Super Weights, not from sparsity itself. Vanilla LoRA, updating every position in attention weight matrices through low-rank structure, succeeds with only 0.16% of parameters, and applying the same low-rank update to down_proj succeeds as well. A 10-seed ablation confirms that constraining LoRA updates at positions corresponding to Super Weight coordinates yields statistically indistinguishable results. These findings establish that parameter importance does not imply parameter trainability in isolation, and that effective fine-tuning relies on structured decompositions over entire layers rather than targeting individually important weights.</p>
+      <hr />
+      <h3>14. Latent Memory Palace: Reasoning for Control as Autoregressive Variational Inference</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08724">2607.08724</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08724.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:30 JST</li>
+      <li>Updated: 2026-07-10 02:30 JST</li>
+      <li>Authors: Chuning Zhu, Eva Xu, Jose Barreiros, Krishnan Srinivasan, Paarth Shah, Abhishek Gupta</li>
+      <li>Categories: cs.LG, cs.RO</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、連続制御における推論を、自己回帰的な潜在空間上での反復的・適応的な情報検索として定式化する Latent Memory Palace（LMP）を提案する。変分推論として推論を扱い、その下界を最適化する潜在空間強化学習手法を導出することで、シミュレーションと実機の両方で高い性能と、テスト時計算の適応的な配分を示した。</p>
+      <p><strong>新規性</strong> 推論を自己回帰的潜在分布を用いた変分推論として制御に導入し、さらに可変長の行動トークナイザ LMP-tok も同一枠組みから得られる点が新規である。</p>
+      <p><strong>Tags:</strong> 強化学習, 連続制御, 変分推論, 潜在表現, 自己回帰モデル</p>
+      <p><strong>Abstract</strong> Human decision-making is highly flexible -- some actions are taken immediately; others require longer deliberation. Language models have exhibited a similar capacity for adaptive "reasoning." However, transferring this capability to continuous control policies has been challenging, as directly reasoning in language space may lack the granularity for spatial understanding and precise motions. In this work, we show that reasoning for control policies can emerge by organizing information in an autoregressive latent space reminiscent of a memory palace, where retrieval is iterative and adaptive. Our method, Latent Memory Palace (LMP), formulates reasoning as variational inference with an autoregressive latent distribution. We derive a latent-space reinforcement learning technique to tractably optimize its variational lower bound. The resulting policy, LMP-$π$, achieves strong empirical performance in simulation and real-world domains while exhibiting interpretable, adaptive allocation of test-time compute. We further show that the same framework yields a variable-length action tokenizer, LMP-$\texttt{tok}$, which significantly improves the performance of downstream autoregressive policies. Together, these results present a new perspective on latent reasoning for control through the lens of variational inference.</p>
+      <hr />
+      <h3>15. AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2607.08745">2607.08745</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2607.08745.pdf">link</a></li>
+      <li>Published: 2026-07-10 02:46 JST</li>
+      <li>Updated: 2026-07-10 02:46 JST</li>
+      <li>Authors: Siddharth Damodharan, Radhika Gupta, Ali Alshami, Ryan Rabinowitz, Jugal Kalita</li>
+      <li>Categories: cs.AI, cs.CV</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、ダッシュカム動画における安全クリティカルな事故・ニアミスの理解を評価するための incident-centric VQA ベンチマーク「AUTOPILOT-VQA」を提案する。天候、照明、交通環境、道路状況、標識、関与物体、事故発生、衝突位置、回避可能性などを含む構造化質問により、文脈理解とイベントレベルの推論を評価する。</p>
+      <p><strong>新規性</strong> 物体認識中心の評価ではなく、実世界の運転インシデントに基づく時間的に根拠づけられた安全志向の推論を測る点が新しい。</p>
+      <p><strong>Tags:</strong> Vision-Language Models, VQA, autonomous driving, dashcam video, benchmark</p>
+      <p><strong>Abstract</strong> Recent advances in Vision-Language Models, Large Language Models, and Multimodal Large Language Models have improved autonomous driving tasks such as scene understanding, decision making, trajectory prediction, and visual question answering. However, evaluating whether these models can reliably reason about safety-critical incidents remains challenging. To address this gap, we present AUTOPILOT-VQA, an incident-centric visual question answering benchmark for dashcam video understanding. The dataset evaluates different systems through structured questions designed around real-world driving incidents and near-incidents. The benchmark covers diverse safety-relevant categories, including weather and lighting conditions, traffic environment, road layout, road surface state, signage, involved entities, accident occurrence, impact location, and avoidability-related reasoning. By requiring models to answer grounded questions about both contextual scene properties and event-level incident details, AUTOPILOT-VQA moves beyond object recognition toward temporally grounded, safety-aware reasoning. The dataset is released as part of the AUTOPILOT CVPR 2026 competition and provides a standardized benchmark for assessing the reliability of autonomous driving systems in different scenarios. Our benchmark support developments for more interpretable, robust, and safety-conscious vision-language systems for real-world autonomous driving.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
