@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-08-12 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-08-12</h1>
+        <p class="hero-copy">Generated at 2026-08-12 08:53 JST. Run ID: <code>ad6df7f0-fad0-414c-b025-021d229c9181</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>19</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-08-12</h1>
+      <p>Generated at: 2026-08-12 08:53 JST Run ID: ad6df7f0-fad0-414c-b025-021d229c9181</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 19</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Fusion Training for Mathematical Generalization in Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09893">2608.09893</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09893.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:41 JST</li>
+      <li>Updated: 2026-08-11 02:41 JST</li>
+      <li>Authors: Congfeng Cao, Pengyu Zhang, Jelke Bloem</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 44.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='mathematical' (+9.0)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、Large Language ModelsにおけるThinking Mode Fusion（TMF）について、thinkingモードとnon-thinkingモードのデータ比率と学習スケジュールが数学問題解決性能に与える影響を体系的に調べた。実験の結果、non-thinking supervisionを増やすとthinkingモードの精度が下がる非対称な相互作用が確認され、学習スケジュールによってこのトレードオフが変化することが示された。</p>
+      <p><strong>新規性</strong> thinkingモードとnon-thinkingモードの間にある負の相関と、そのトレードオフを左右する最適な学習スケジュールがデータ比率に依存することを定量的に示した点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, mathematical reasoning, training schedule, data ratio, thinking mode fusion</p>
+      <p><strong>Abstract</strong> Thinking Mode Fusion (TMF) enables large language models to support both concise responses and long-form reasoning by unifying a non-thinking mode and a thinking mode within a single model. However, its training dynamics, including the \emph{data ratio} and \emph{training schedule} between the two modes, remain underexplored. In this work, we present a systematic study of TMF by analyzing the effects of the training schedule and data ratio between thinking and non-thinking modes. Focusing on mathematical problem solving, we construct a benchmark with multiple thinking-to-non-thinking data ratios and three training schedules. Our results reveal an asymmetric interaction between the two modes: increasing the ratio of non-thinking supervision reduces the accuracy of the thinking mode. We further show that different training schedules modulate this trade-off and that the optimal schedule depends on the data ratio. Finally, we quantify a negative correlation between non-thinking and thinking mode supervision, highlighting an inherent tension between these two modes. These findings provide practical guidance for designing effective TMF training settings. All code and data are released to support further research at: \href{https://github.com/caocongfeng/Fusion-Bench.git}{\textbf{Fusion Bench}}.</p>
+      <hr />
+      <h3>2. From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09925">2608.09925</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09925.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:59 JST</li>
+      <li>Updated: 2026-08-11 02:59 JST</li>
+      <li>Authors: Laurens Samson, Iva Gornishka, Gossa Lô, Yuki M. Asano, Sennay Ghebreab</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 31.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、オランダの行政利用を想定した大規模言語モデル評価フレームワーク「Grip on LLMs」を提案し、公共行政の価値観と非英語環境での言語要件を同時に反映するベンチマークを構築した。6つの評価次元（事実性、誠実性、社会的バイアス、エネルギー消費、コスト、学習データ透明性）を定義し、30以上の多言語・オランダ語特化モデルを評価した結果、全次元で優れた単一モデルは存在せず、性能・環境負荷・費用の間にトレードオフがあることを示した。</p>
+      <p><strong>新規性</strong> 事実性と誠実性を別個の性質として扱い、さらに行政の価値観に基づく評価軸をオランダ語の文脈で実運用可能なベンチマークとして具体化した点が新規である。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 行政利用, ベンチマーク, オランダ語, 評価フレームワーク</p>
+      <p><strong>Abstract</strong> Large language models are increasingly being deployed in governmental settings, yet few existing evaluation frameworks jointly reflect the values of public administration and the linguistic requirements of non-English contexts. We present the "Grip on LLMs" framework, a systematic evaluation suite for Dutch governmental use developed in collaboration with domain experts from a major Dutch municipal organisation. Through an advisory board process, user research, and a survey of the users of a civil-servant chatbot, we identify six evaluation dimensions (factuality, honesty, social bias, energy consumption, cost, and training data transparency) and operationalise them into a benchmark suite covering more than 30 multilingual and Dutch-specific models. Our results reveal that no single model excels across all dimensions, and that trade-offs are unavoidable: higher quality consistently comes at greater environmental impact and financial cost, while bias remains largely independent of both. We further find that factuality (whether a model answers correctly) and honesty (whether a model acknowledges what it does not know) are governed by distinct properties, with high factuality not implying high honesty. To make these findings actionable for non-technical audiences, we release a publicly accessible, user-friendly model overview designed for the full range of stakeholders involved in governmental LLM selection, from engineers to policymakers.</p>
+      <hr />
+      <h3>3. Stealing Reasoning Traces from Proprietary LLM APIs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09867">2608.09867</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09867.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:24 JST</li>
+      <li>Updated: 2026-08-11 02:24 JST</li>
+      <li>Authors: Alexander Panfilov, David Schmotz, Ilia Shumailov, Luca Beurer-Kellner, Joachim Schaeffer, Ameya Prabhu, Jonas Geiping, Maksym Andriushchenko</li>
+      <li>Categories: cs.CR, cs.AI, cs.LG</li>
+      <li>Score: 28.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 主要LLMプロバイダが推論過程（chain-of-thought）をクライアント側で暗号化ブロックとして返す設計に着目し、同一プロバイダ内でセッション・ユーザ・モデル間で互換に扱える点が脆弱性になることを示している。著者らは、この互換性を利用して弱いモデルに暗号化された推論トレースを注入し、平文として復号・出力させるスケーラブルな攻撃を提案した。さらに、公開ログからのPIIや認証情報の抽出、有害情報の露出、不可視のprompt injectionにもつながることを示している。</p>
+      <p><strong>新規性</strong> 暗号化された推論ブロックの“モデル間互換性”を利用して、より弱いモデル経由で他モデルの推論トレースを平文抽出する新しい脱獄攻撃を示した点が新規である。</p>
+      <p><strong>Tags:</strong> LLMセキュリティ, chain-of-thought, prompt injection, 情報漏えい, 暗号化</p>
+      <p><strong>Abstract</strong> Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.</p>
+      <hr />
+      <h3>4. KGCaRe: Explainable Complex Conditional Question Answering using Automatic Knowledge Graph Construction and Context Retrieval with LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09779">2608.09779</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09779.pdf">link</a></li>
+      <li>Published: 2026-08-11 01:05 JST</li>
+      <li>Updated: 2026-08-11 01:05 JST</li>
+      <li>Authors: Ghanshyam Verma, Simanta Sarkar, Devishree Pillai, Hotaka Shiokawa, Yourong Xu, Fiona Veazey, Peter Hubbert, Hui Su, Paul Buitelaar</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 27.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> KGCaReは、文書から自動構築した知識グラフとベクトル検索を組み合わせ、LLMによる反復的なグラフトラバーサルとテキスト検索で複雑な条件付き質問応答を行う手法です。2つのデータセットで評価し、複数のLLMにおいて既存手法より一貫して高い性能を示しました。さらに、回答生成時に関連トリプルと根拠文を用いることで、説明可能性も確保しています。</p>
+      <p><strong>新規性</strong> LLM生成の知識グラフに対して、LLM誘導の反復的なグラフトラバーサルと追加手がかりによる再探索を組み合わせ、構造知識と非構造知識を統合して条件付きQAを解く点が新規です。</p>
+      <p><strong>Tags:</strong> knowledge graph, RAG, question answering, LLM, explainable AI</p>
+      <p><strong>Abstract</strong> Answering complex conditional questions using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) remains a challenge, particularly in domain-specific contexts where general-purpose LLMs and RAG tend to underperform. We hypothesize that augmenting RAG with unstructured and structured knowledge, extracted from both documents and knowledge graphs (KGs), can improve reasoning and answer accuracy for such tasks. To test this, we propose KGCaRe, a hybrid approach that combines neural retrieval with symbolic reasoning over LLM-generated KGs. KGCaRe constructs a KG from documents using a multi-prompt extraction strategy and stores it in a graph database. Simultaneously, the documents are embedded into a vector store to enable neural retrieval. KGCaRe performs innovative iterative graph traversal guided by the LLM to extract relevant triples, prune irrelevant information, and uses additional clue entities to traverse the graph again if the initial traversal does not provide satisfactory context to generate the answer. The relevant triples extracted from the KG in path form, along with semantically retrieved text passages, are then fed into custom KGCaRe prompts to generate answers to the complex conditional questions with explanations. We evaluate KGCaRe on two complex conditional QA datasets. Our results on these datasets show that KGCaRe consistently outperforms existing baselines, including Vanilla LLM, Code Prompt, Text Prompt, Think-on-Graph, Vanilla RAG, and HybridContextQA, across multiple LLMs such as Mistral, Mixtral, GPT-3.5, and GPT-4o. We publicly release the software pipeline that we developed to implement the proposed KGCaRe approach.</p>
+      <hr />
+      <h3>5. Decoding-Level Taboo: A Diagnostic Stress Test for LLM Robustness</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09900">2608.09900</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09900.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:47 JST</li>
+      <li>Updated: 2026-08-11 02:47 JST</li>
+      <li>Authors: Tadanobu Chuyo Kamijo, Ori Rottenstreich, Javier Conde, Gonzalo Martínez, Pedro Reviriego</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 22.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、通常条件での評価だけでは実運用時の性能を捉えきれないという問題意識から、推論時にログit空間へ介入してモデルを通常の生成経路から外すゼロプロンプト診断テスト「Decoding-Level Taboo」を提案する。単語境界で主要候補トークンを動的にマスクすることで迂回表現を強制し、複数のオープンウェイトモデルで頑健性を評価した結果、オフパス頑健性はモデル規模と指示調整の影響を受け、一般に大きいモデルほど高いことが示された。</p>
+      <p><strong>新規性</strong> 推論時にログit空間へ直接介入して生成経路を外させる、ゼロプロンプトの診断ストレステストを導入した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM robustness, stress test, logit space, instruction alignment, diagnostic evaluation</p>
+      <p><strong>Abstract</strong> Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corridor. In real-world deployments, however, complex system prompts, safety guardrails, and structural constraints continuously force models off this nominal path, driving a divergence between benchmark scores and deployment performance. To address this issue, we introduce Decoding-Level Taboo, a zero-prompt diagnostic stress test that intervenes directly in logit space at runtime, forcing models out of their nominal paths. By dynamically masking primary candidate tokens at word boundaries, Taboo forces machine circumlocution. Evaluating Taboo across several open-weight model families reveals that off-path robustness is heavily influenced by both parameter scale and post-training instruction alignment, with robustness generally improving with model size and alignment. Beyond the results presented in this paper, Taboo provides a novel primitive for generating diverse synthetic datasets, stress-testing runtime safety guardrails, and auditing model reliability prior to real-world deployment.</p>
+      <hr />
+      <h3>6. SHE: Trajectory-driven Safety Harness Evolution for LLM Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09885">2608.09885</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09885.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:35 JST</li>
+      <li>Updated: 2026-08-11 02:35 JST</li>
+      <li>Authors: Wanying Qu, Qinghua Mao, Yu Li, Jiyao Liu, Xin Zhang, Dadi Guo, Yanxu Zhu, Qingyu Liu, Leitao Yuan, Xi Lin, Shanfeng Zhu, Yanwei Fu, Jing Shao, Xia Hu, Dongrui Liu</li>
+      <li>Categories: cs.AI, cs.CV</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMエージェントの安全性がモデル重みだけでなく、コンテキスト・記憶・ツール・権限・実行制御を担うハーネスにも依存すると指摘し、ロールアウト軌跡から安全な境界を学習して更新するSafety Harness Evolution（SHE）を提案する。SHEはハーネスをSystem Prompt、Rule Bank、Safety Memory、Tool Policyの4要素に分解し、失敗軌跡を診断して要素ごとの境界を局所的に改良することで、安全性と有用性の両立を図る。Agent-SafetyBenchでは静的なSafeHarnessよりASRを3.1倍低減し、未見リスクや他エージェントモデルへの転移も確認した。</p>
+      <p><strong>新規性</strong> ハーネスを4つの安全責任を持つ要素に分解し、軌跡ベースの失敗診断から要素別に安全境界を進化させる枠組みを導入した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM agents, safety, harness evolution, trajectory learning, tool policy</p>
+      <p><strong>Abstract</strong> The safety of large language model (LLM) agents depends not only on model weights but also on the agent harness that manages context, memory, tools, permissions, and runtime control. Existing safety mechanisms often treat the harness as a fixed deployment artifact, limiting their ability to evolve with emerging risks. Moreover, coupled functions across harness components obscure safety responsibility attribution, making localized evolution difficult. We propose Safety Harness Evolution (SHE), a framework that learns evolving safe boundaries from rollout trajectories. SHE decomposes the harness into four artifacts with explicit safety responsibilities, including the System Prompt, Rule Bank, Safety Memory, and Tool Policy, defining clear functional boundaries for localized evolution. Based on this decomposition, SHE introduces an attribution-guided evolution loop that converts trajectory failures into structured diagnoses, learns artifact-specific boundary refinements, and selects evolved harnesses through safety-utility validation. Experiments on Agent-SafetyBench demonstrate that SHE effectively enhances safety through harness evolution, achieving a 3.1x ASR reduction compared with static SafeHarness, while also improving benign utility. The evolved harness further generalizes to unseen risks on the held-out AgentHarm benchmark and transfers across agent models without additional evolution.</p>
+      <hr />
+      <h3>7. Consilience for Verifier-Free Test-Time Scaling</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09898">2608.09898</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09898.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:45 JST</li>
+      <li>Updated: 2026-08-11 02:45 JST</li>
+      <li>Authors: Lecheng Kong, Like Hui, Haitao Mao, Jun Huan</li>
+      <li>Categories: cs.CL, cs.LG</li>
+      <li>Score: 20.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、外部の検証器を使わずに推論候補を選ぶ verifier-free test-time scaling のうち、信頼度ベース手法が複雑なタスクで破綻しうることを示す。特に、全体に高い信頼度は探索不足を意味し、誤答を過度に選びやすいことを観察した。</p>
+      <p><strong>新規性</strong> 信頼度の時間的な非対称性に着目し、初期は低信頼・最終は高信頼という軌跡を評価する選択枠組み consilience を提案した。</p>
+      <p><strong>Tags:</strong> test-time scaling, verifier-free, confidence-based selection, LLM reasoning, code generation</p>
+      <p><strong>Abstract</strong> Test-time scaling often uses an external verifier, such as compilers and test cases in coding or trained value functions in robotics applications, to obtain high-quality rollouts. Verifier-free test-time scaling (or VF-TTS) is gaining extensive attention as a mechanism to enhance Large Language Model (LLM) reasoning, primarily because we do not have access to such high-quality verifiers in many real-world applications. Among existing VF-TTS methods, confidence-based VF-TTS methods, which compute and rank rollouts solely by confidence, are particularly promising. Such methods introduce near-zero overhead for sample evaluation and require minimal access to internal model states, making the methods highly flexible across models and tasks. In this paper, we demonstrate a critical limitation of existing confidence-based VF-TTS methods by showing that such methods catastrophically break down on complex tasks. We observe a very interesting phenomenon: uniformly high confidence frequently indicates a failure to explore, favoring confidently wrong answers. To address this, our core insight is that robust cognitive search requires a specific confidence trajectory pattern: such methods perform exploratory branching at the beginning, as manifested by low initial confidence, and converge to a high final confidence solution. To implement this insight, we introduce consilience, a novel selection framework that explicitly evaluates the temporal asymmetry of confidence in reasoning. We operationalize this via a combinatorial metric that actively penalizes high initial confidence while strictly demanding final certainty. Extensive experiments covering both graduate-level mathematics problems and free-form code generation demonstrate that consilience effectively outperforms existing baselines, validating our novel perspective on completion confidence.</p>
+      <hr />
+      <h3>8. SR-OPSD: Self-Referenced On-Policy Self-Distillation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09745">2608.09745</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09745.pdf">link</a></li>
+      <li>Published: 2026-08-11 00:40 JST</li>
+      <li>Updated: 2026-08-11 00:40 JST</li>
+      <li>Authors: Zhuo Sun, Entong Li, Yanlong Zhao, Xiaoyuan Cheng, Wenxuan Yuan, Kaiyu Li, Che Liu, Huihang Liu, Harrison Bo Hua Zhu, Li Zeng</li>
+      <li>Categories: cs.LG, cs.AI, stat.ML</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、オンポリシー自己蒸留（OPSD）における移動する自己教師ターゲットを安定に扱うため、Self-Referenced On-Policy Self-Distillation（SR-OPSD）を提案する。固定された学生生成コンテキスト上で、蒸留ターゲットを自己教師と参照方策の幾何学的補間として定式化し、さらにRényi divergence により投影幾何を一般化する。科学評価、数学推論、コード生成の複数モデル実験で、SR-OPSDは最先端または競争力のある性能を示した。</p>
+      <p><strong>新規性</strong> 蒸留ターゲットの位置付け（補間係数）と学生の投影幾何（Rényi次数）を分離して制御できるようにした点が新しい。</p>
+      <p><strong>Tags:</strong> self-distillation, on-policy learning, Rényi divergence, large language models</p>
+      <p><strong>Abstract</strong> On-policy self-distillation (OPSD) converts feedback into dense token-level supervision on trajectories generated by the policy to be optimized, providing a useful complement to reinforcement learning with sparse outcome rewards. However, the self-teacher policy used in OPSD is typically a stop-gradient or exponential-moving-average copy of the policy conditioned on additional context information, and thus co-evolves with both the student policy and its on-policy context distribution. Directly matching such a moving target with a fixed projection objective can lead to unstable optimization or excessive distributional concentration. This nature of OPSD motivates the proposed \emph{Self-Referenced On-Policy Self-Distillation (SR-OPSD)}. At fixed student-generated contexts, a token-level variational characterization identifies the effective distillation target as a geometric interpolation between the self-teacher policy and a reference policy. Meanwhile, we use the Rényi divergence family to generalize the projection geometry. This formulation separates \emph{where} the adaptive target is placed from \emph{how} the student is projected toward it: the interpolation coefficient controls underlying target, while the Rényi order controls the projection geometry and its sensitivity to token-level density ratios. Extensive experiments across scientific evaluation, mathematical reasoning, and coding generation tasks with multiple large language models show that SR-OPSD achieves the state-of-the-art or competitive performance across various settings.</p>
+      <hr />
+      <h3>9. Parameter Exploration for RLVR via Variational Learning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09805">2608.09805</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09805.pdf">link</a></li>
+      <li>Published: 2026-08-11 01:28 JST</li>
+      <li>Updated: 2026-08-11 01:28 JST</li>
+      <li>Authors: Vatsal Venkatkrishna, Nico Daheim, Iryna Gurevych</li>
+      <li>Categories: cs.LG, cs.AI, cs.CL</li>
+      <li>Score: 18.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMの強化学習における探索を行動空間ではなくパラメータ空間で行う方法を検討し、異なる方策をサンプリングしてロールアウトを生成する枠組みを提案する。提案手法3POは、報酬推定のためのサンプリング戦略やグルーピングを変えることで、数理推論とコード生成タスクにおいて標準的なGRPOより平均性能を改善し、学習中の不正・不完全なロールアウトも減少した。</p>
+      <p><strong>新規性</strong> 行動空間の温度調整ではなく、方策パラメータのサンプリングによる探索をLLM強化学習に導入し、複数のパラメータサンプルを用いる3PO系列の手法を提案した点が新規である。</p>
+      <p><strong>Tags:</strong> reinforcement learning, LLM, exploration, parameter-space, optimization</p>
+      <p><strong>Abstract</strong> Exploration has been a focus of reinforcement learning research for a long time. Recently, there has been growing evidence that it is also an important ingredient in LLM reinforcement learning recipes that can significantly impact downstream performance. Many existing methods control exploration in the action-space, for example, using temperature scaling. However, these methods cannot reorder tokens but only influence the variance in the output distribution. This limits exploration and can lead to divergence or stalled training. Here, we investigate parameter-space exploration, where rollouts are generated by sampling different policies from a posterior that may each explore different rollouts. Sampling less or more diverse policies is then a complementary control lever over exploration. We introduce a family of methods called Perturbed Parameter Policy Optimization (3PO) which use different sampling strategies and different rollout grouping for reward estimation. Experiments on OLMo-3-1025-7B and Qwen2.5-Math-7B across mathematical reasoning and code generation tasks show that these approaches consistently improve average downstream performance over standard GRPO at a near-identical FLOPs cost. Moreover, using multiple parameter samples consistently produces fewer zero-advantage groups and malformed or incorrect rollouts during training than GRPO and action-space baselines. Overall, our work presents evidence that parameter-space exploration can improve reinforcement learning for LLMs.</p>
+      <hr />
+      <h3>10. Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09873">2608.09873</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09873.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:27 JST</li>
+      <li>Updated: 2026-08-11 02:27 JST</li>
+      <li>Authors: Diandian Zhang, Tingyu Song, Lin Fu, Zheyuan Yang, Yilun Zhao</li>
+      <li>Categories: cs.CV, cs.AI</li>
+      <li>Score: 16.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Sci-VBenchは、科学分野における知識・推論集約型の動画生成を評価するためのベンチマークで、60 विषयにまたがる1,253件の専門家注釈付き例と、ルーブリックに基づく評価手順を含みます。16の最先端モデルを評価した結果、見た目の品質指標は概ね近い一方で、プロンプトの反映や科学的・因果的正確性には大きな差があり、特に商用モデルとオープンソースモデルの間に差が見られました。</p>
+      <p><strong>新規性</strong> 科学分野の動画生成に対して、知識・因果推論を要する課題を体系的に評価できる大規模ベンチマークと、専門家評価と整合しやすいルーブリック型評価法を提示した点が新しいです。</p>
+      <p><strong>Tags:</strong> video generation, benchmark, scientific reasoning, evaluation, multimodal models</p>
+      <p><strong>Abstract</strong> We introduce Sci-VBench, a comprehensive benchmark for evaluating knowledge- and reasoning-intensive video generation across scientific domains. It contains 1,253 expert-annotated examples spanning 60 subjects across four core disciplines: Natural Science, Healthcare, Humanities &amp; Social Sciences, and Engineering. Each example requires models to generate temporally rich videos that demand scientific reasoning and knowledge-grounded synthesis, going beyond surface-level visual plausibility. We further establish a rubric-based evaluation protocol. Our analysis shows that, under this protocol, both non-expert human evaluators and MLLM-as-Judge systems can achieve relatively high agreement with expert judgments, supporting reproducible evaluation at scale. We benchmark 16 frontier proprietary and open-source models and find that, while automatic perceptual-quality scores cluster tightly across systems, performance on Prompt Grounding and Scientific and Causal Correctness varies substantially, with a pronounced proprietary-open-source gap. These findings show that advances in visual realism have not yet translated into reliable modeling of scientific and causal dynamics.</p>
+      <hr />
+      <h3>11. Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09857">2608.09857</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09857.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:15 JST</li>
+      <li>Updated: 2026-08-11 02:15 JST</li>
+      <li>Authors: Rohan Bhagra, Mahantesh Halapannavar, Uddhav Bhattarai</li>
+      <li>Categories: cs.RO, cs.AI</li>
+      <li>Score: 16.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、ロボット自律システムにおいて、計画モデルが提案した行動の実行前にその許容性を検証するためのLLM駆動の検証層を提案する。提案手法は、計画と実行の間に中間層を置き、行動を承認・再構成のために却下・人間レビューへエスカレーションのいずれかに振り分ける。</p>
+      <p><strong>新規性</strong> LLM-as-a-Judgeのアンサンブルを用いて、複数モデルの推論を統合しながらロボット計画の安全性・許容性を事前判定する中間検証層を導入した点が新規である。</p>
+      <p><strong>Tags:</strong> robot autonomy, LLM, verification, safety, adversarial attacks</p>
+      <p><strong>Abstract</strong> Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: biased toward user-specified goals, they may suggest actions misaligned with scientific ethics, they may be unsafe due to an inability to "remember" prior safety risks, or they may be vulnerable to adversarial attacks on the autonomy ecosystem. We propose a LLM-driven verification layer between planning and execution to evaluate action permissibility. Our LLM-as-a-Judge ensemble combines chain-of-thought reasoning across models and synthesizes those expert judge outputs, mirroring a combination of a mixture of experts and self-consistency approach. This layer serves as middleware, gating plans from the server's planning module before they reach the MCP server and therefore the robot's low-level controls: plans are approved, rejected for reformulation, or escalated for human review. With this system, we achieve near 85% precision across accept/escalate/reject categories 97% containment of adversarial attacks, with negligible errors between accepting and rejecting tasks, and errors mostly manifesting at the escalate boundary.</p>
+      <hr />
+      <h3>12. Mismatch Matters: On-Policy Distillation Beyond Token Agreement</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09836">2608.09836</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09836.pdf">link</a></li>
+      <li>Published: 2026-08-11 01:53 JST</li>
+      <li>Updated: 2026-08-11 01:53 JST</li>
+      <li>Authors: Zichao Yu, Chengzhi Yu, Shengze Xu, Yujin Han, Bingqing Jiang, Xu Wang, Difan Zou</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 16.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、on-policy distillation（OPD）において、学生が反復ループを用いてトークン一致率だけを高める「degenerate agreement」という失敗モードを指摘し、教師と学生の不一致に着目して分析している。不一致トークンを学生過剰トークンと学生不足トークンに分け、それぞれが学習の不安定化や推論パターンの伝達阻害を引き起こすことを示す。</p>
+      <p><strong>新規性</strong> Token-level Independent Deficit-Excess correction（TIDE）を提案し、過剰トークンにはbounded Hellinger shaping、不足トークンには教師のtop-K注入を用いて、サンプリングに依存せず不一致方向を補正する点が新しい。</p>
+      <p><strong>Tags:</strong> on-policy distillation, large language models, knowledge distillation, reasoning, token-level correction</p>
+      <p><strong>Abstract</strong> On-policy distillation (OPD) has emerged as a core component of modern LLM post-training pipelines, yet we reveal a failure mode: degenerate agreement, where students exploit repetitive loops to achieve near-perfect token agreement with the teacher despite globally flawed responses. We therefore shift our focus from agreement to teacher-student mismatch, and find that mismatch tokens can be mainly categorized into two types: student-excess tokens and student-deficit tokens. Student-excess tokens are generated by the student but assigned near-zero probability by the teacher; their log-ratio corrections grow unbounded and destabilize the update. Student-deficit tokens, in contrast, are preferred by the teacher but rarely sampled by the student; their absence blocks the transfer of the teacher's reasoning patterns. To tackle these mismatch directions, we propose TIDE (Token-level Independent Deficit-Excess correction), which applies bounded Hellinger shaping to suppress the most severe sampled excesses and an analytic teacher top-$K$ injection to restore deficient probability mass without requiring deficit tokens to be sampled. Across mathematical reasoning benchmarks with multiple Qwen3 teacher-student pairs, TIDE consistently outperforms standard OPD and recent token-selection and reward-shaping baselines. Moreover, the gains of TIDE are more pronounced under strong teacher-student mismatch, where it improves Avg@8 from 6.9% to 20.3%, reduces average response length by a factor of 3.6, and substantially reduces formatting failures. Code is available at https://github.com/yzc-666/TIDE</p>
+      <hr />
+      <h3>13. MedPixel: A Unified Pixel-Language Model for Medical Reasoning and Segmentation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09818">2608.09818</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09818.pdf">link</a></li>
+      <li>Published: 2026-08-11 01:37 JST</li>
+      <li>Updated: 2026-08-11 01:37 JST</li>
+      <li>Authors: Haoyu Yang, Meixing Shi, Zengjie Chen, Haoran Sun, Haitao Leng, Xiaoming Shi, Yuxiang Cai, Yankai Jiang</li>
+      <li>Categories: cs.CV, cs.AI</li>
+      <li>Score: 16.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> MedPixelは、臨床言語と視覚的推論をピクセルレベルの位置特定に結びつけるための、医療向け統一ピクセル・言語モデルである。約44万件のピクセル言語タスクからなるMedPLG-440Kを用いて学習し、明示的なグラウンディング、暗黙的推論、空間的対話、根拠付き説明、医療VQAなどを扱う。</p>
+      <p><strong>新規性</strong> 地上真値マスクをオフライン検証器として用いて応答選好を導くPixel-Level Preference Optimizationを導入し、言語生成とマスク品質を結びつけた点が新しい。</p>
+      <p><strong>Tags:</strong> medical imaging, vision-language model, segmentation, grounding, preference optimization</p>
+      <p><strong>Abstract</strong> Reliable medical image understanding requires models to connect clinical language and visual reasoning with pixel-level grounding. Yet medical vision-language models often lack precise localization, whereas medical segmenters typically rely on explicit target categories or precise spatial prompts. This divide is reinforced by a supervision mismatch: segmentation datasets provide precise masks but little language supervision, whereas medical vision-language data rarely pair language with dense spatial annotations. To address this gap, we present MedPixel, a unified medical pixel-language model built around a shared language--mask interface. To provide scalable supervision, we introduce MedPLG-440K, comprising approximately 440K pixel-language task samples constructed through a clinically motivated synthesis process without external LLM annotation. MedPixel is trained with joint multi-task supervised fine-tuning followed by Pixel-Level Preference Optimization, which uses ground-truth masks as offline verifiers to derive response preferences from mask quality. MedPixel supports a broad spectrum of tasks spanning explicit grounding, implicit reasoning, spatial interaction, grounded explanation, and medical VQA. Across this task spectrum, MedPixel achieves strong performance in both pixel-level prediction and response generation, together with effective zero-shot transfer to external grounding benchmarks and robustness to imperfect spatial prompts. Code and model checkpoints will be released at https://github.com/yhy-whu/Medpixel.</p>
+      <hr />
+      <h3>14. Multimodal Model Diffing for Feature Discovery and Control</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09928">2608.09928</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09928.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:59 JST</li>
+      <li>Updated: 2026-08-11 02:59 JST</li>
+      <li>Authors: Hunar Batra, Lachin Naghashyar, Ashkan Khakzar, Philip Torr, Christian Schroeder de Witt, Constantin Venhoff, Ronald Clark</li>
+      <li>Categories: cs.CV, cs.AI, cs.CL, cs.LG</li>
+      <li>Score: 15.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、マルチモーダル大規模言語モデル（MLLM）の内部特徴を解析・制御するためのフレームワークMMDiffを提案する。マルチモーダルSAEを用いて、マルチモーダル学習で変化した特徴の同定、タスク特異的な因果特徴の検出、そして特徴方向の除去・誘導による制御を行う。</p>
+      <p><strong>新規性</strong> ベースLMとマルチモーダル適応後モデルのSAEを差分比較し、さらにトークン単位の対照的発火解析を組み合わせて、解釈可能な特徴をそのまま監査・制御インターフェースとして使える点が新規である。</p>
+      <p><strong>Tags:</strong> multimodal LLM, sparse autoencoder, model diffing, interpretability, feature control</p>
+      <p><strong>Abstract</strong> Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing framework that trains multimodal SAEs and turns them into feature-level interfaces for discovering and controlling multimodal behavior. MMDiff supports three uses: (i) feature isolation, by diffing a base-LM SAE against its multimodal-adapted counterpart to identify features altered by multimodal training; (ii) task-specific feature detection, via per-token contrastive firing analysis that isolates causal features; and (iii) feature-level control, by causally removing or steering the discovered feature directions. We train multimodal SAEs for three MLLM families, LLaVA-MORE, PaliGemma 2, and InternVL3.5, and evaluate on visual-spatial understanding, multimodal safety, and OCR. MMDiff discovers sparse, causally specific features whose removal selectively degrades target behaviors by an average of 12% on spatial tasks and 17% on OCR, and reduces attack success rate by 24% on multimodal safety attacks, with no impact on VQA performance. Steering these features improves spatial and OCR accuracy by +3.6% and +1.8% on average over a standard single-layer steering baseline. These results show that multimodal SAEs can serve not only as interpretability tools, but as mechanisms for auditing, steering, and controlling MLLMs behavior toward safer and more capable generations.</p>
+      <hr />
+      <h3>15. Rethinking Factor Sharing in Federated LoRA: A Rank-Aware Adaptive Approach</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09742">2608.09742</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09742.pdf">link</a></li>
+      <li>Published: 2026-08-11 00:38 JST</li>
+      <li>Updated: 2026-08-11 00:38 JST</li>
+      <li>Authors: Xinyi Xu, Bingnan Xiao, Shuang Qin, Gang Feng, Tony Q. S. Quek</li>
+      <li>Categories: cs.LG, cs.AI, cs.DC</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LoRAを用いた連合学習において、因子Aを共有してBを各クライアント固有にする場合と、Bを共有してAを各クライアント固有にする場合を比較し、それぞれが要求する共通部分空間の条件と投影残差の違いを理論的に整理している。さらに、学習前にどちらを共有するかを選ぶためのRank-Aware Shared-Subspace Sufficiency (RSS)指標を提案し、凍結したLLM表現を用いて局所データ分布に対する共有部分空間の十分性を評価する。</p>
+      <p><strong>新規性</strong> LoRAの因子共有方向を事前に適応的に選択する枠組みを提案し、RSS指標によって共有側の適否を学習前に判定できるようにした点が新規である。</p>
+      <p><strong>Tags:</strong> federated learning, LoRA, large language models, adaptive factor sharing</p>
+      <p><strong>Abstract</strong> Low-rank adaptation (LoRA) represents large language model (LLM) updates with two compact matrix factors, i.e., $A$ and $B$, providing an efficient way to fine-tune large models in federated learning paradigm. Inspired by the asymmetric roles of the LoRA factors, we study whether $A$ should be shared across clients while $B$ remains client-specific (Share-A/Local-B), or whether $B$ should instead be shared while $A$ remains client-specific (Share-B/Local-A). With a least-squares surrogate, we reveal that Share-A/Local-B requires the client-specific LoRA update matrices to use a common rank-$r$ input-side space, whereas Share-B/Local-A requires a common rank-$r$ output-side space. The two strategies therefore incur different projection residuals, indicating that the preferred strategy is the one with the smaller aggregate residual across clients. With this insight, we propose Federated Adaptive Factor Sharing Low-Rank Adaptation (FedAS-LoRA), which selects the sharing side before training to enhance fine-tuning performance. To enable adaptive factor selection before training, we design a Rank-Aware Shared-Subspace Sufficiency (RSS) metric, which effectively assesses whether a shared rank-$r$ input subspace is sufficient for the local data distributions using representations extracted from a frozen LLM backbone. Experiments across different tasks, data distributions, LoRA ranks, and participation settings confirm the effectiveness of RSS and the superior performance of FedAS-LoRA.</p>
+      <hr />
+      <h3>16. Beyond Naturalness: Probing Automated Text-To-Speech Evaluators on Linguistically Grounded Dimensions</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09930">2608.09930</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09930.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:59 JST</li>
+      <li>Updated: 2026-08-11 02:59 JST</li>
+      <li>Authors: Oluwanifemi Bamgbose, Simon Rosen, Jash Shah, Lindsay Devon Brin, Hoang H Nguyen, Anke Koelzer, Rachel Hansen, Tara Bogavelli, Fanny Riols</li>
+      <li>Categories: cs.SD, cs.AI, cs.CL</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 自動TTS評価手法（MOS予測器とAudio-LLM判定器）が、人間が知覚する音声のどの側面をどれだけ捉えられるかを検証した研究である。自然さを10個の言語学的に基づく知覚次元に分解し、訓練済み言語学者による860発話の注釈から、次元レベルのメタ評価ベンチマークを構築した。実験では、MOS予測器は主に音響信号品質に収束し、Audio-LLM判定器はプロンプト依存で一部の次元のみを検出し、広範な言語構造的誤りを十分に捉えられないことが示された。</p>
+      <p><strong>新規性</strong> 自然さを言語学的に定義された10次元へ分解し、TTS評価器を次元レベルで比較する初のメタ評価ベンチマークを提示した点が新規である。</p>
+      <p><strong>Tags:</strong> TTS評価, MOS予測, Audio-LLM, 自然さ, メタ評価</p>
+      <p><strong>Abstract</strong> Automated Text-to-Speech (TTS) evaluation methods (Mean Opinion Score (MOS) predictors and Audio Large Language Models (Audio-LLM) judges) are expected to reflect human perception, yet it is unclear how well they capture the distinct aspects of speech that listeners actually perceive. We deconstruct "naturalness" into a linguistically grounded annotation schema spanning 10 distinct perceptual dimensions, and use it to construct the first dimension-level meta-evaluation benchmark for TTS, comprising 860 utterances annotated by trained linguist raters. Results from benchmarking four MOS predictors and four Audio-LLM judges reveal that MOS predictors collapse onto acoustic signal quality, while Audio-LLM judges show selective, prompt-dependent detection that does not generalise across all dimensions. Neither class reliably captures a breadth of linguistically structured speech errors. Our dataset, annotation schema, and evaluation code are publicly released to support more targeted and interpretable TTS evaluation.</p>
+      <hr />
+      <h3>17. BDH-CQ: In-Context Learning with Recurrent Latent Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09888">2608.09888</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09888.pdf">link</a></li>
+      <li>Published: 2026-08-11 02:39 JST</li>
+      <li>Updated: 2026-08-11 02:39 JST</li>
+      <li>Authors: Björn Engdahl, Adrian Kosowski, Jan Chorowski, Zuzanna Stamirowska, Przemysław Uznański, Junlin Jiang, Rohan Phadke, Remigiusz Kinas, Richard Zhong</li>
+      <li>Categories: cs.NE, cs.AI, cs.LG, stat.ML</li>
+      <li>Score: 13.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> BDH-CQは、インコンテキスト学習と再帰的な潜在推論を組み合わせた推論モデルであり、推論時に入力が再帰メモリを更新しつつ、高次元の潜在空間で反復計算してクエリを解きます。ARC-AGI-1で評価し、150Mパラメータ構成でpass@2 29.5%、1タスクあたり推論コスト$0.0007を達成しました。</p>
+      <p><strong>新規性</strong> 中間推論を言語化せずに潜在空間で反復推論を行う設計により、ARC-AGI-1で既報のコスト-精度パレートフロンティアを更新した点が新規です。</p>
+      <p><strong>Tags:</strong> in-context learning, latent reasoning, recurrent memory, ARC-AGI-1, cost efficiency</p>
+      <p><strong>Abstract</strong> We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verbalizing its intermediate reasoning. We evaluate the model on the public ARC-AGI-1 evaluation set and use controlled ARC-like interventions to study what it learns from demonstrations, how consistently it applies an inferred transformation, and which concepts remain difficult. A 150M-parameter configuration reaches 29.5% pass@2 at a computed inference cost of \$0.0007 per task. This operating point breaks through the previously reported ARC-AGI-1 cost-accuracy Pareto frontier, establishing a new state of the art in benchmark cost efficiency.</p>
+      <hr />
+      <h3>18. PragMatch: Separating Pragmatic Incongruity from Cross-Modal Mismatch in Large Vision-Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09772">2608.09772</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09772.pdf">link</a></li>
+      <li>Published: 2026-08-11 01:00 JST</li>
+      <li>Updated: 2026-08-11 01:00 JST</li>
+      <li>Authors: Zhanna Mukhametsharip, Vera Demberg, Varsha Suresh</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 10.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Large Vision-Language Models（LVLMs）はマルチモーダルベンチマークで高性能を示す一方、画像とテキストの関係を本当に推論しているのか、それとも表層的な相関に依存しているのかは不明だった。本研究は、マルチモーダル皮肉検出において重要な「語用論的な不整合」と単なる画像テキスト不一致を切り分けるため、MMSD2.0由来の3,000組からなる制御ベンチマークPragMatchを提案する。</p>
+      <p><strong>新規性</strong> PragMatchは、元の皮肉例に加えて字義通りの例とハードネガティブを含む制御データを構築し、マスキングと注入実験でLVLMが手がかりにどれだけ依存するかを系統的に評価できる点が新しい。</p>
+      <p><strong>Tags:</strong> vision-language models, sarcasm detection, multimodal benchmark, shortcut learning, pragmatic reasoning</p>
+      <p><strong>Abstract</strong> Large Vision-Language Models (LVLMs) have demonstrated strong performance on multimodal benchmarks, yet it remains unclear whether they genuinely reason about relationships between images and text or rely on superficial correlations, known as shortcut learning. This question is particularly important for multimodal sarcasm detection, where successful prediction depends on recognizing pragmatic incongruity rather than treating sarcasm as simple image-text mismatch. We introduce PragMatch, a controlled benchmark of 3,000 image-text pairs derived from MMSD2.0, including original sarcastic examples and constructed literal and hard-negative pairs. We identify influential shortcut cues through systematic masking and evaluate their impact through targeted injection experiments. Our results show that LVLM predictions are sensitive to lexical, OCR-derived and stylistic cues, with injected surface signals causing substantial changes in model predictions despite unchanged underlying image-text relationships. Our findings reveal limitations in current LVLMs while PragMatch provides a systematic testbed for evaluating multimodal pragmatic reasoning beyond surface-level image-text alignment.</p>
+      <hr />
+      <h3>19. REFRAMED: Towards Realistic Audio Description Generation for Movies</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.09765">2608.09765</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.09765.pdf">link</a></li>
+      <li>Published: 2026-08-11 00:55 JST</li>
+      <li>Updated: 2026-08-11 00:55 JST</li>
+      <li>Authors: Igor Sterner, Mirella Lapata, Alex Lascarides, Frank Keller</li>
+      <li>Categories: cs.CL, cs.CV</li>
+      <li>Score: 10.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、映画のAudio Description（AD）生成を、内容とタイミングを同時に決める現実的な設定として再定義し、従来のクリップ単位のキャプション化とは異なる枠組みを提案している。あわせて、206本の映画にまたがる2,023本の動画と、専門家によるAD・字幕・脚本の整合データからなる高品質データセットREFRAMED、および評価用チャレンジセットと評価手順を提示する。</p>
+      <p><strong>新規性</strong> AD生成を「何を述べるか」と「いつ述べるか」を同時に扱う新しい問題設定にし、それを支える大規模で高品質な映画ADデータセットと評価ベンチマークを構築した点が新規である。</p>
+      <p><strong>Tags:</strong> audio description, video understanding, dataset, benchmark, multimodal</p>
+      <p><strong>Abstract</strong> Audio Description (AD) is a verbal narration of key visual content in videos, enabling access for visually impaired audiences. Unlike standard video captioning, AD is a structured editorial task: descriptions must be inserted into gaps in dialogue and must convey only what is needed to understand the narrative being told. However, existing approaches formulate AD generation in an artificial setting where both the content and timing of descriptions are pre-specified, reducing the task to clip-level captioning. They further rely on noisy transcription and alignment pipelines, and lack the rich parallel data required for modeling narrative context. We introduce a new formulation of AD generation in which models must jointly decide what to describe and when to do it. To support this, we present REFRAMED, a high-quality dataset of 2,023 videos that span 3,302 scenes from 206 movies, with professional AD transcripts (both American and British versions), professional subtitles and aligned screenplays. We also provide a manually curated challenge set that pairs full movies with multiple AD references, together with evaluation protocols that leverage dialogue gaps and multi-reference comparisons. Experiments with state-of-the-art AD systems and multimodal LLMs show that they outperform trivial baselines but fall far short of expert human performance. Our dataset and benchmark establish a new foundation for research on video understanding.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
