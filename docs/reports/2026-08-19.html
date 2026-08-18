@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-08-19 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-08-19</h1>
+        <p class="hero-copy">Generated at 2026-08-19 08:32 JST. Run ID: <code>3f1abf59-3187-47ff-9c4e-70a3b0813357</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>8</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-08-19</h1>
+      <p>Generated at: 2026-08-19 08:32 JST Run ID: 3f1abf59-3187-47ff-9c4e-70a3b0813357</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 8</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Le Critique: Privileged Value Functions for LLM Reinforcement Learning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16739">2608.16739</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16739.pdf">link</a></li>
+      <li>Published: 2026-08-18 00:49 JST</li>
+      <li>Updated: 2026-08-18 00:49 JST</li>
+      <li>Authors: Siddarth Venkatraman, Matthieu Dinot, Laurence Aitchison</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 25.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの強化学習における分散低減とクレジット割り当ての課題に対し、学習済み価値関数を用いる手法を検討している。特に、トークンレベルの信号を追加できるPrivileged Value Functions（PVF）と、価値関数の精度に応じて群平均との差分ベースラインと価値ベースラインを切り替えるTETHERを提案し、複数の推論タスクで既存の価値関数ベースラインを一貫して上回ることを示した。</p>
+      <p><strong>新規性</strong> PVFにより方策目的を偏らせずにタスク関連のトークンレベル信号を注入できる点と、TETHERが価値関数の精度に応じてベースラインを適応的に補間する点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, reinforcement learning, value function, variance reduction, reasoning tasks</p>
+      <p><strong>Abstract</strong> Reinforcement learning algorithms for Large Language Models (LLMs) are largely distinguished by their variance reduction strategy. Group-relative methods like GRPO reduce gradient variance by sampling multiple rollouts per prompt, but provide only sequence-level credit. Training is also blocked by straggler rollouts, reducing throughput and increasing off-policyness. Learned value functions theoretically address both problems, providing token-level advantages without requiring large groups. However, additional infrastructure engineering challenges combined with the practical success of critic-free methods have made it difficult to justify their inclusion in RL pipelines. We propose two complementary strategies to improve the performance of value function RL: 1) Privileged Value Functions (PVF) which provide an elegant mechanism to inject additional task-relevant token-level signal without biasing the policy objective; 2) TETHER, a baseline that adaptively interpolates between group-relative and value baselines depending on the value function accuracy. Across several reasoning tasks, both strategies consistently improve over the standard value function baseline, and are competitive with or outperform mean-baseline GRPO.</p>
+      <hr />
+      <h3>2. When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16806">2608.16806</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16806.pdf">link</a></li>
+      <li>Published: 2026-08-18 02:02 JST</li>
+      <li>Updated: 2026-08-18 02:02 JST</li>
+      <li>Authors: Jiawei Liu, Jiacheng Guo, Tian Zhang, Yiwei Xu, Juan Wang, Jinlin Fan, Bowen Xiao, Chi Guo, Keyan Guo, Hongxin Hu</li>
+      <li>Categories: cs.RO, cs.AI</li>
+      <li>Score: 23.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLM駆動の具現化エージェントでは、言語モデルが環境状態、物体属性、空間関係、実行フィードバックを統合してタスクを地に足のついた形で遂行し、生成した行動計画をスキルライブラリやモーションプランナ、コントローラに渡して実行します。従来のLLMエージェントがWebページや文書、外部ツールを主な情報源としていたのに対し、本論文はロボットシステムへの統合により、状態理解と高レベル計画が重要になることを背景として述べています。</p>
+      <p><strong>新規性</strong> LLM駆動の具現化エージェントにおいて、状態そのものが攻撃面になりうるという観点から、state-semantic injection という新たな脅威を提示している点です。</p>
+      <p><strong>Tags:</strong> LLMエージェント, 具現化AI, ロボティクス, セキュリティ, 状態注入</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) have demonstrated capabilities in in-context learning, task decomposition, step-by-step reasoning, and code generation, driving their gradual evolution from text generation models into the core of agents capable of perceiving environments, invoking tools, and executing tasks. Traditional LLM Agents typically obtain information through webpages, documents, databases, or external tools and generate corresponding invocation sequences according to user goals; when this technology is further integrated with robotic systems, large language models begin to undertake functions such as task understanding, high-level planning, and behavioral decision-making. SayCan combines the task reasoning capability of language models with the affordances of robotic skills, while Code as Policies and ProgPrompt generate robot task plans through policy code and programmatic prompting, respectively, and VoxPoser uses language models and vision-language models to construct three-dimensional value maps to guide robotic manipulation \cite{6,7,8,9}. Vision-language-action models such as PaLM-E, RT-2, and GR00T N1 further strengthen the connection among language, visual perception, and robotic actions \cite{10,11,12}. In such LLM-driven embodied agents, the model not only needs to understand user instructions, but also needs to combine scene states, object attributes, spatial relations, and execution feedback to complete task grounding, and then hand the generated action plan to skill libraries, motion planners, or controllers for execution.</p>
+      <hr />
+      <h3>3. TDD-Agent: Test-Driven Reasoning for Code Generation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16742">2608.16742</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16742.pdf">link</a></li>
+      <li>Published: 2026-08-18 00:52 JST</li>
+      <li>Updated: 2026-08-18 00:52 JST</li>
+      <li>Authors: Hongyue Yu, Kefan Li, Jiakun Li, Hongzheng Chai, Yuan Yuan, Rui He, Junyi Wei</li>
+      <li>Categories: cs.SE, cs.AI</li>
+      <li>Score: 23.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルによるコード生成では、特にリポジトリ規模の課題で正しさを保証することが難しいため、本論文はテスト駆動開発をコード生成に適用するTDD-Agentを提案する。まず実行可能なテストを生成して期待動作を明確化し、その後、実行フィードバックを用いてコードとテストの両方を反復的に改善する。LiveCodeBenchではtest-firstなプロンプトが改善を示し、RepoEvalでは既存のretrieval-basedおよびagent-based手法より一貫して高い性能を示した。</p>
+      <p><strong>新規性</strong> テストを固定的な検証器ではなく、コードとともに反復的に改善される推論アーティファクトとして扱い、test-first生成と双方向の反復改善を組み合わせた点。</p>
+      <p><strong>Tags:</strong> code generation, test-driven development, large language models, repository-level tasks</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) have achieved remarkable progress in code generation, yet ensuring correctness in complex, repository-level tasks remains challenging. Existing approaches often use generated tests as static post-hoc validators, which limits their ability to guide implementation and may introduce misleading feedback when the tests themselves are incomplete or incorrect. In this paper, we introduce TDD-Agent, which operationalizes the test-driven development paradigm for code generation. TDD-Agent first prompts the model to generate executable tests, encouraging it to clarify expected behaviors before implementation, and then performs iterative dual-track refinement over both the generated code and tests using execution feedback. We first isolate the effect of test-first reasoning through a prompt variant TDD-prompt on LiveCodeBench, where it consistently improves upon reasoning-based prompting baselines. Building on this finding, we evaluate the full TDD-Agent framework on RepoEval, a repository-level benchmark, and show that it consistently outperforms retrieval-based and agent-based baselines. Additional analyses show that iterative refinement improves not only code correctness but also the effectiveness of the generated tests, yielding higher pass rates, coverage, and mutation scores, suggesting that tests can serve as evolving reasoning artifacts rather than fixed validators. Our source code is available at https://anonymous.4open.science/r/TDD-Agent-Framework-6370/.</p>
+      <hr />
+      <h3>4. Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16775">2608.16775</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16775.pdf">link</a></li>
+      <li>Published: 2026-08-18 01:21 JST</li>
+      <li>Updated: 2026-08-18 01:21 JST</li>
+      <li>Authors: Reza Fayyazi, Michael Zuzak, Shanchieh Jay Yang</li>
+      <li>Categories: cs.CR, cs.AI</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、サイバーインシデントログ分析におけるLLM出力の信頼性向上を目的に、検索されたログと生成応答の幾何学的関係を捉える Topological Attribution Distance (TAD) を提案する。TADは、セグメント単位のアブレーション帰属を用いて、実際のサイバー攻撃ログに対してどのログが出力に強く影響したかを適応的に特定し、証拠検証と出所追跡を支援する。</p>
+      <p><strong>新規性</strong> トポロジーに着想を得て、検索証拠とLLM出力の「全体的な幾何学的形状」の変化から、セグメントレベルで重要なログを特定する点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, サイバーセキュリティ, RAG, 説明可能AI, 証拠帰属</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) are increasingly being deployed in cybersecurity operations to assist cybersecurity analysts with rapid decision-making against emerging threats. However, there is a main criteria that must be met when using LLMs in cybersecurity, that is, trust in the generated outputs. As Agentic AI is integrated into operational systems, a robust evidence attribution and provenance tracking technique is essential to trace the origins of model generations. When autonomous agents make a decision (right or wrong), the ability to trace back through the decision chain is critical, as without it, teams cannot identify which segment of the data caused the model generation. Existing methods often struggle to distinguish among complex and highly similar evidence sources, such as cyber incident logs. This reveals a key gap: current approaches do not adequately capture the holistic geometric relationship between the retrieved evidence and the generated response for reliable evidence verification. To bridge this gap, we propose Topological Attribution Distance (TAD), inspired by Topology, to characterize and capture the global geometric shape of an output and its changes against its retrieved logs. In other words, if the embeddings of a specific source log drastically changes the geometry of the model's response in the embedding space, this suggests that such log is a critical source for the model's generated response. Therefore, TAD is powered by segment-level ablation attribution to investigate incident logs of an actual cyberattack. We demonstrate how TAD finds the most attributed logs on LLM outputs in an adaptive manner. This can provide an explainable and trustworthy tracing based on each LLM's hidden state to understand how geometrically different retrieved logs influence the model generation, and provide evidence verification in cybersecurity and Agentic-AI workflows.</p>
+      <hr />
+      <h3>5. GRIP: Grounded Reasoning via Information-Restricted Premises</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16776">2608.16776</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16776.pdf">link</a></li>
+      <li>Published: 2026-08-18 01:23 JST</li>
+      <li>Updated: 2026-08-18 01:23 JST</li>
+      <li>Authors: Lirui Teng</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> RAGにおいて高容量エンコーダがクエリを潜在状態で支配してしまい、検索した証拠が実質的に無視される「query dominance」という失敗モードを指摘している。提案手法GRIPは、クエリには十分な容量を残しつつ証拠側に強い確率的ボトルネックを課すことで、証拠をクエリから得られない残差情報のみに制限する。5つの推論ベンチマークで強い反復ベースラインを上回り、幻覚を73%削減した。</p>
+      <p><strong>新規性</strong> クエリと検索証拠の情報容量を非対称に設計し、証拠側を情報制限することでquery dominanceを抑えるGRIPを提案した点が新規である。</p>
+      <p><strong>Tags:</strong> retrieval-augmented generation, reasoning, hallucination reduction, information bottleneck, grounded generation</p>
+      <p><strong>Abstract</strong> High-capacity encoders in retrieval-augmented generation (RAG) can let the query dominate the latent state, leaving retrieved evidence functionally irrelevant. We call this failure mode query dominance. To address it, we introduce \textbf{GRIP} (Grounded Reasoning via Information-Restricted Premises), which imposes capacity asymmetry: the decoder keeps full-dimensional access to the query, while retrieved evidence passes through a severe stochastic bottleneck. This forces the evidence channel to encode only the residual information unavailable from the query. Across five reasoning benchmarks, GRIP outperforms strong iterative baselines, cuts a query--latent mutual-information diagnostic by roughly 30$\times$ (14.8 $\to$ 0.47 bits), and reduces hallucination by 73\%. Residual-alignment analysis further shows that the bottleneck output occupies subspaces less aligned with the query than baseline representations.</p>
+      <hr />
+      <h3>6. Semantic Bandits: In-Context Exploration-Exploitation is Biased by Semantic Priors</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16707">2608.16707</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16707.pdf">link</a></li>
+      <li>Published: 2026-08-18 00:25 JST</li>
+      <li>Updated: 2026-08-18 00:25 JST</li>
+      <li>Authors: David Eric Austin, Kaheer Suleman, Jackie Chi Kit Cheung</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、行動ラベルの意味情報を明示的に考慮した「semantic bandit」を導入し、LLMエージェントの探索・活用バランスが自然言語由来の意味的事前分布に影響されることを調べた。実験の結果、意味的に情報を持つラベルは整合的な場合に性能を改善する一方、ずれる場合には探索を抑えて性能を大きく悪化させることが示された。</p>
+      <p><strong>新規性</strong> 多腕バンディットに行動ラベルの意味を組み込んだsemantic banditを提案し、LLMの探索行動が事前学習由来の意味的バイアスで系統的に偏ることを示した。</p>
+      <p><strong>Tags:</strong> LLM, 探索と活用, マルチアームドバンディット, 意味的バイアス, 意思決定</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are increasingly deployed as decision-making agents in settings that require sophisticated environmental exploration. However, existing work has raised questions about how LLMs actually balance exploration and exploitation. Unlike classical agents, LLM agents engage with tasks through natural language, exposing them to semantic information with no formal counterpart in the task structure. We introduce the semantic bandit, an extension of the multi-armed bandit setting that explicitly considers the textual labels assigned to actions, and use it to study how semantic priors --- inductive biases arising from associations between language and expected reward learned during pre-training, shape LLM exploration behaviour. We find that semantically informative action labels reduce exploration in favour of exploitation, improving performance when aligned with the reward structure and severely degrading it when misaligned. We further find that negative rewards trigger substantially more exploration than equivalent positive rewards, consistent with an expected-scale bias induced by reward conventions common in pre-training data. Overall, we argue that the use of language to define the environment and rewards introduces unavoidable biases derived from the fact that the model is trained on word co-occurence, with implications for the reliability and robustness of LLM agents in real-world decision-making settings.</p>
+      <hr />
+      <h3>7. Would this change your answer? Evaluating Explanations of LLM Behavior In The Wild with Counterfactual Experiments</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16747">2608.16747</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16747.pdf">link</a></li>
+      <li>Published: 2026-08-18 00:57 JST</li>
+      <li>Updated: 2026-08-18 00:57 JST</li>
+      <li>Authors: Adam Karvonen, Euan Ong, Subhash Kantamneni, Samuel Marks</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMの振る舞いに対する説明の良し悪しを、関連する反事実入力での予測可能性（counterfactual simulatability）という観点から評価する。自然発生的なモデル挙動を見つけて反事実的なプロンプト編集で検証するエージェント型パイプラインCHIVEを提案し、これにより高品質な説明と反事実証拠を大量に生成する。</p>
+      <p><strong>新規性</strong> 自然に起きるLLMの挙動を自動発見し、反事実実験で説明を検証するCHIVEを導入した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM解釈性, 反事実実験, 説明評価, プロンプト編集, エージェント</p>
+      <p><strong>Abstract</strong> Many areas of AI research, such as language model interpretability and chain of thought faithfulness, seek to explain model behaviors. But what constitutes a "good" explanation? In this work, we evaluate explanations through the lens of counterfactual simulatability-whether the explanation is useful for predicting model behaviors on related counterfactual inputs. To this end, we introduce CHIVE (Counterfactual Hypothesis Investigation Via Edits), a novel agentic pipeline that identifies unexpected model behaviors in the wild and investigates them with counterfactual prompt edits. This yields thousands of high-quality explanations for naturally-occurring model behaviors along with supporting counterfactual evidence. We apply CHIVE in two ways. First, we evaluate whether common LLM interpretability techniques improve an agent's ability to predict counterfactual model behaviors. Surprisingly, we find no uplift from any of the interpretability techniques studied. Second, we use CHIVE to generate training data. We find that training models to predict outcomes of CHIVE-generated counterfactual experiments generalizes to various out-of-distribution settings. Overall, CHIVE automatically discovers explanations of naturally-occurring LLM behaviors, enabling us to evaluate and improve methods for explaining LLM behaviors.</p>
+      <hr />
+      <h3>8. MIRROR: Multimodal Intelligent Radiology Reasoning and Observation Reporter</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.16709">2608.16709</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.16709.pdf">link</a></li>
+      <li>Published: 2026-08-18 00:25 JST</li>
+      <li>Updated: 2026-08-18 00:25 JST</li>
+      <li>Authors: Vignesh Nagarajan, Sriram Venkatapathy</li>
+      <li>Categories: cs.CV, cs.AI, cs.LG</li>
+      <li>Score: 10.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> MIRRORは、放射線科モデルの出力を「分類器」「Grad-CAMによる局在化」「画像を見ない報告文生成」に分離することで、モデルが示していない所見を文章側が勝手に付け足す問題を抑える研究プロトタイプである。胸部X線、脳MRI、頭部CTに対応する共通レジストリを用意し、所見の確率ベクトルに対して報告文の内容を監査可能にしている。ChestMNISTではmacro AUROC 0.729を達成した一方、クラス不均衡下ではBrier scoreのような集計指標が実態を過大評価しうることも示した。</p>
+      <p><strong>新規性</strong> 画像を見ない言語生成器に分類結果と局在情報だけを渡す構成により、報告文が分類器の出力を超えて所見を捏造しにくいようにした点が新規である。</p>
+      <p><strong>Tags:</strong> medical imaging, radiology report generation, multimodal learning, interpretability</p>
+      <p><strong>Abstract</strong> A radiologist reading a model's output faces two problems. The model returns a number and no reason, and any system that turns that number into readable prose can quietly add claims the model never made. MIRROR is a research prototype built to separate those failures. It chains a multi-label classifier, a Grad-CAM localizer that turns each positive finding into a named anatomical region, and a report writer that receives the labels, probabilities, and regions but never the image. Because the language layer cannot see pixels, it cannot assert a finding the classifier did not make. We are precise about what that buys: a MIRROR report's findings are auditable against the probability vector, while the sentences framing them are ordinary generated text, and we show one stating a cardiothoracic ratio the system never measured. One registry holds the taxonomy, anatomy, and phrasing for chest X-ray, brain MRI, and head CT, so adding a modality is a data change; all three are routed and tested, one is trained. On ChestMNIST that classifier reaches macro AUROC 0.729 and ranks better than chance on all 14 labels, at 1.6 to 6.8 times the precision a random ranker would get. Yet at the default 0.5 threshold it emits no positive prediction at all for 11 of them, and its excellent-looking Brier score of 0.045 sits beside the 0.047 earned by a predictor that ignores the image. The discrimination is real; the decisions are not. Under the class imbalance normal in radiology, aggregate metrics flatter models that do nothing, and should be reported against that floor.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
