@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-08-21 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-08-21</h1>
+        <p class="hero-copy">Generated at 2026-08-21 08:35 JST. Run ID: <code>d5df5c42-01e1-40b0-8d20-c44cfe47e145</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>6</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-08-21</h1>
+      <p>Generated at: 2026-08-21 08:35 JST Run ID: d5df5c42-01e1-40b0-8d20-c44cfe47e145</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 6</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Grading the Graders: Verification Autonomy Levels (L0-L5) for LLM Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.19009">2608.19009</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.19009.pdf">link</a></li>
+      <li>Published: 2026-08-20 00:10 JST</li>
+      <li>Updated: 2026-08-20 00:10 JST</li>
+      <li>Authors: Yajie Yin</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 30.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMの検証手法で「level」という語が複数の意味で使われている問題に対し、著者らは検証仕様の出所と保証内容に基づく単一軸のメタ標準「Verification Autonomy Levels (VAL)」を提案する。VALはL0からL5までを定義し、特に完全性の限界として、候補の正しさは確認できても見落としがないことは一般には証明できない点を指摘する。4つの応用領域と17本の論文を通じて、粒度やリスクなどの概念とVALが直交することを示す。</p>
+      <p><strong>新規性</strong> 検証スキームを「仕様の出所」と「保証の種類」で整理するVALを提案し、既存研究で混同されていた粒度・階層・リスク・システム層と独立な軸として位置づけた点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, verification, formal methods, reasoning, benchmarking</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are increasingly paired with verifiers (step checkers, self-consistency filters, tool-based fact checkers, formal proof assistants) that claim to detect the model's errors. Yet the verification literature uses the word "level" to mean at least five different things: verification granularity, concept abstraction, risk tier, system-stack layer, and the epistemic source of the ground truth. We propose Verification Autonomy Levels (VAL), a meta-standard classifying verification schemes along a single axis: where does the verification spec come from, and what does the verdict guarantee? VAL ranges from L0 (LLM self-declaration, no deterministic anchor) through L2 (objective ground truth, correctness only) to L3/L4 (decidable systems with single-property or domain-level completeness), with L5 impossible in the unrestricted case. Central to VAL is the completeness blind spot: substitution- and sampling-based verifiers can confirm that proposed candidates hold, but cannot prove that no candidate was missed. We further identify a dichotomy the literature has not stated: completeness is reachable only for formally specifiable properties, while empirical open-world verification (fact-checking, diagnosis) caps at anchored correctness (L2). We document this across four domains (symbolic mathematics, behavior monitoring, medical diagnosis, and code generation) and in the strongest existing formal-verification baseline, whose authors note the verifier "focuses on the correctness of each step." We show the levels of granularity, concept hierarchy, risk, and system stack are orthogonal to VAL, resolving a systematic conflation across 17 surveyed papers. Code and full assessment are released as supplementary material.</p>
+      <hr />
+      <h3>2. Self-prompting and cross-model consensus enable reproducible data extraction from scientific literature with large language models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.19025">2608.19025</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.19025.pdf">link</a></li>
+      <li>Published: 2026-08-20 00:20 JST</li>
+      <li>Updated: 2026-08-20 00:20 JST</li>
+      <li>Authors: Valentin Romanov, Monique Bax, Steven Niederer</li>
+      <li>Categories: cs.AI, cs.DB</li>
+      <li>Score: 28.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、ブラウザベースの最先端LLMを用いて、科学論文から文脈依存の詳細なデータを抽出する性能を検証した。専門家作成プロンプトでは高い性能を示す一方、科学的文脈やニュアンスの解釈には課題があり、簡単な指示からLLM自身にプロンプトを生成させる方法や、複数モデルの反復抽出による人間の監督を組み合わせた運用が有効であることを示した。</p>
+      <p><strong>新規性</strong> LLMが自律的にプロンプトを生成し、複数モデルの合意で抽出結果を照合することで、専門家の基準を保ちながら再現可能な科学データ抽出を実現する実践的な分業枠組みを提示した。</p>
+      <p><strong>Tags:</strong> large language models, data extraction, scientific literature, prompting, human-in-the-loop</p>
+      <p><strong>Abstract</strong> Accurately extracting nuanced, contextualized data from research articles is laborious and time intensive. Here, we investigate the performance of frontier, browser-based large language models (LLMs) to extract highly contextualized information. We demonstrate four escalating workflows, 1) given an expert curated prompt and research articles, most frontier LLMs perform well at data extraction, however can struggle with interpreting scientific context and nuance, 2) given simple instructions, LLMs can author their own prompts which were almost as eNective as expert-written prompts, 3) autonomous discovery of research literature was diNicult, agents either missed or hallucinated references, and 4) LLMs can create new datasets from published guidelines that closely match human-expert judges, but still require a human-in-the-loop. Together, these findings define an auditable division of labour in which experts specify the evidence standard, models cross-check repeated extractions and researchers resolve disputed cases, providing a practical route to scaling scientific data curation without relinquishing expert oversight.</p>
+      <hr />
+      <h3>3. What is Missing from AI Post-Training AI: An Empirical Analysis</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.19072">2608.19072</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.19072.pdf">link</a></li>
+      <li>Published: 2026-08-20 01:17 JST</li>
+      <li>Updated: 2026-08-20 01:17 JST</li>
+      <li>Authors: Joy Jia Yin Lim, Xin Huang, Hao Peng, Yaxi Lu, Xin Cong, Zhong Zhang, Maosong Sun, Yankai Lin</li>
+      <li>Categories: cs.AI, cs.CL, cs.LG</li>
+      <li>Score: 20.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルのpost-trainingにおけるエージェントの振る舞いを実証的に分析し、訓練戦略の選択とその後の実行を区別して検討している。公開された多数のpost-training軌跡を調べた結果、戦略は初期段階で固定され、その後は選択済み戦略内での局所的な調整に終始することが示された。</p>
+      <p><strong>新規性</strong> 経験、指示、推論計算を増やしても戦略の再評価は起こらず、実行中に戦略を自発的に見直す仕組みが欠けていることを示した点。</p>
+      <p><strong>Tags:</strong> LLM agents, post-training, empirical analysis, strategy revision, AI-for-AI</p>
+      <p><strong>Abstract</strong> Large language model (LLM) agents can now post-train an LLM end-to-end. They can write code, launch training, evaluate checkpoints, and improve downstream performance, raising the prospect of AI-for-AI. We argue that this picture conflates two distinct capabilities: execution-level capability, iterating within a selected training strategy; and strategy-level capability, revising the high-level judgment as experimental evidence accumulates. Analyzing a large corpus of publicly released post-training trajectories, we find that across different tasks, the agent's training strategy is locked in at the very beginning, and the entire remaining budget is spent on local adjustments within the selected strategy. We then examine three natural explanations--missing experience, missing guidance, and insufficient reasoning--with escalating interventions. Extensive experiments show that (1) an experience-driven scaffold improves execution across the board (+12.6 points on GSM8K and +40.8 on HumanEval) but leaves the strategy static; (2) human guidance effectively redirects the initial strategy, yet the agent falls back into local adjustment loops once training starts; and (3) additional inference compute pays off on easier tasks but yields almost no gain on the hardest one. In conclusion, what agents lack is neither experience, guidance, nor reasoning compute, but a mechanism for spontaneously reevaluating their strategy during execution.</p>
+      <hr />
+      <h3>4. Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.19181">2608.19181</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.19181.pdf">link</a></li>
+      <li>Published: 2026-08-20 02:54 JST</li>
+      <li>Updated: 2026-08-20 02:54 JST</li>
+      <li>Authors: Zhu Zhang, Jixun Wang, Xiaoang Xu, Xiaorong Wang, Zihan Zhou, Zhiyuan Wang, Shuo Wang, Chaojun Xiao, Yuezhi Zhou</li>
+      <li>Categories: cs.LG, cs.AI, cs.CL</li>
+      <li>Score: 13.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 長文脈推論タスクにおけるon-policy distillationでは、トークンレベルの教師信号が局所的にもっともらしいが全体整合性を欠く応答を促しうることを示し、これが検証器の報酬とずれる問題を診断している。提案手法GC-OPDは、ロールアウト群内で検証器報酬とtrajectory-level OPDスコアを正規化してその差分を残差として用い、さらにRACAでその残差をトークンへ配分することで、5つの長文脈ベンチマークで性能を改善した。</p>
+      <p><strong>新規性</strong> グループ内で正規化した検証器報酬とOPDスコアの差分を「教師-検証器不一致残差」として扱い、これを相対的なトークン割当てで密な教師信号に統合する点が新しい。</p>
+      <p><strong>Tags:</strong> on-policy distillation, long-context reasoning, verifier reward, knowledge distillation, token-level guidance</p>
+      <p><strong>Abstract</strong> On-policy distillation (OPD) trains a student on its own responses using dense token-level guidance from a stronger teacher. In long-context tasks, however, token-level teacher support can favor locally plausible responses that omit evidence distributed across the input or violate global task constraints. Task-specific verifiers, in contrast, evaluate task completion at the response level and may return graded rewards that reflect partial success. We diagnose this mismatch on fixed responses from two representative long-context evidence-aggregation tasks. Across longer input ranges, trajectory-level OPD scores become progressively less aligned with verifier rewards, indicating teacher-verifier disagreement. Motivated by this observation, we introduce Group-Calibrated On-Policy Distillation (GC-OPD). GC-OPD separately normalizes verifier rewards and trajectory-level OPD scores within each rollout group and uses their difference as a signed teacher-verifier disagreement residual. Relative-advantage-based credit assignment (RACA) distributes this trajectory-level residual across tokens according to their relative OPD advantages while preserving the original OPD signal. Across five long-context benchmarks, post-training with GC-OPD raises the five-benchmark averages of the official Qwen3-4B and Qwen3-8B checkpoints from 29.08 to 40.47 and from 35.12 to 44.65, respectively. Vanilla OPD reaches 39.31 and 43.56 under the same setup. Controlled ablations show that the signed residual is more effective than either an additional OPD-derived term or direct group-normalized verifier reward addition, while RACA further improves over uniform token allocation. Together, these results demonstrate that group-relative residual calibration can incorporate verifier outcomes without discarding dense token-level guidance. Code is available at https://github.com/SolereZhang/GC-OPD.</p>
+      <hr />
+      <h3>5. SPADE: Self-Play in Adaptive Synthetic Executable Environments</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.19197">2608.19197</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.19197.pdf">link</a></li>
+      <li>Published: 2026-08-20 02:58 JST</li>
+      <li>Updated: 2026-08-20 02:58 JST</li>
+      <li>Authors: Bo Liu, Simon Yu, Yiding Jiang, Ao Qu, Andrew Zhao, Zichen Liu, Junsu Kim, Zijian Zhou, Seungone Kim, Tongzheng Ren, Mickel Liu, Hanfei Yu, Zhaorun Chen, Weiyan Shi, Paul Pu Liang, Luke Zettlemoyer, Yejin Choi, Natasha Jaques</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 12.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> SPADEは、1つのLLMが環境設計者と推論エージェントの両方を担う自己対戦型RLフレームワークで、OpenAI Gym風のreset()/step()を持つ実行可能コードとして長期的な学習環境を生成します。推論エージェントの報酬差から後悔を推定し、その信号を最適化することで、環境設計者がエージェント能力の限界付近にありつつ解ける課題を作るよう学習します。</p>
+      <p><strong>新規性</strong> 環境設計そのものを学習可能な要素として組み込み、固定された環境プールではなく適応的に自己生成される実行可能環境で自己改善を進める点が新規です。</p>
+      <p><strong>Tags:</strong> self-play, reinforcement learning, language agents, synthetic environments, tool use</p>
+      <p><strong>Abstract</strong> Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self-Play in Adaptive Synthetic Executable Environments), a self-play RL framework in which a single LLM plays two roles: an Environment Designer that writes complete, long-horizon training environments as executable code with an OpenAI Gym-style reset()/step() interface, and a Reasoning Agent that learns to act in them. Each is a stateful, multi-turn environment (state transitions, reward functions, and verification code), so one interface spans reasoning problems and multi-step agentic tool use. The Reasoning Agent's regret is estimated using the gap between its reward with and without privileged hints; in optimizing this regret signal the Environment Designer learns to target environments at the edge of the agent's capabilities while keeping them feasible. Through extensive experimentation, we find several components critical to success: grounding the Environment Designer on documents sampled from a large pretraining corpus, and giving it an accumulated environment memory. Scaling to 30B-parameter models, SPADE improves over the strongest fixed-environment baseline by +5.3 on average across eight held-out math, science, code, and reasoning benchmarks, and lifts the tool-use setting by +5.7 on BFCL-v4 multi-turn and +13.9 on ACEBench-Agent; on the games setting, the margin over the strongest baseline grows with model scale. By making environment design itself a learnable component, SPADE takes a concrete step toward open-ended self-improvement.</p>
+      <hr />
+      <h3>6. Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.19147">2608.19147</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.19147.pdf">link</a></li>
+      <li>Published: 2026-08-20 02:33 JST</li>
+      <li>Updated: 2026-08-20 02:33 JST</li>
+      <li>Authors: Tate Berenbaum, Muthaiah Venkatachalam</li>
+      <li>Categories: cs.DC, cs.AI, cs.SE</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Intel AI PCの内蔵GPU/NPUと共有メモリを持つ複数台を用い、70B級のLLMを分散推論するためのパイプライン並列手法を提案している。モデルを層ごとに事前コンパイル済みのOpenVINOシャードへ分割し、推論最適化の回復、speculative decoding、マイクロバッチングを組み合わせることで、複数ユーザ対応と大規模モデル実行を実現した。</p>
+      <p><strong>新規性</strong> 各ステージを事前コンパイルしたOpenVINOグラフとして分割し、beam_idx Gatherの注入でGPU最適化を再有効化することで、分散パイプライン推論を実用速度まで引き上げた点が新しい。</p>
+      <p><strong>Tags:</strong> distributed inference, LLM, pipeline parallelism, OpenVINO, Intel AI PC</p>
+      <p><strong>Abstract</strong> Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, working together over an ordinary network, can serve models beyond the capability of any single one. We use pipeline parallelism: a model is split by layer into per-stage shards, each pre-compiled into an OpenVINO graph, so that every machine runs one shard and passes activations to the next. Three techniques make this fast enough to be useful. First, we recover the speed of the unsplit model: a naive per-stage export runs well below monolithic inference because it misses an OpenVINO GPU optimization, and injecting a beam_idx Gather into each shard triggers that optimization (the IndirectKVCache fusion) and brings the shards to parity. Second, we leverage speculative decoding on stateful OpenVINO models. Third, the pipeline serves several users at once by interleaving their requests across the stages, each request carrying its own cache (micro-batching). Together, a two-node Llama 3.1 8B INT4 pipeline serves two concurrent users at 1.79x the single-user throughput of the unsplit model on the same hardware, and the gap widens under simulated wide-area latency. The same design scales to a 70B model that no single fleet member can hold: a four-node deployment of Lunar Lake AI PCs on Intel Tiber Cloud serves a single user at interactive speed, with output token-for-token identical to the same four-node pipeline decoding without speculation. Code, raw benchmark logs, and reproduction scripts ship as a self-contained package at https://github.com/labscommunity/pipeline-sharded-inference-paper (in the top-level reproduction/ directory).</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
