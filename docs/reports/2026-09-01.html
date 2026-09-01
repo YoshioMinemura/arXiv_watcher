@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-09-01 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-09-01</h1>
+        <p class="hero-copy">Generated at 2026-09-01 10:48 JST. Run ID: <code>6ee7ea23-eccf-4c34-9777-c20bfd5a379e</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>25</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-09-01</h1>
+      <p>Generated at: 2026-09-01 10:48 JST Run ID: 6ee7ea23-eccf-4c34-9777-c20bfd5a379e</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 25</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Cross-lingual Functional Vectors for Emotion Detection in Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29613">2608.29613</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29613.pdf">link</a></li>
+      <li>Published: 2026-08-30 16:08 JST</li>
+      <li>Updated: 2026-08-30 16:08 JST</li>
+      <li>Authors: Jieying Xue, Phuong Minh Nguyen, Minh Le Nguyen, Shogo Okada</li>
+      <li>Categories: cs.CL, cs.LG</li>
+      <li>Score: 31.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMの挙動を制御するfunction vectors（FVs）が、感情認識という意味的に複雑な多ラベル分類タスクにおいて、言語をまたいで転移可能かを検証している。ソース言語で抽出したFVsを別言語のゼロショット設定に適用すると性能が大きく向上し、FVsが言語固有の表層パターンではなく、タスクに関係する言語非依存の信号を捉えていることが示唆された。</p>
+      <p><strong>新規性</strong> 感情認識を用いて、FVsのクロスリンガル転移性を体系的に評価し、少数ショット推論に近い効果を追加デモなしで実現できることを示した点が新規である。</p>
+      <p><strong>Tags:</strong> large language models, function vectors, cross-lingual transfer, emotion recognition, multilingual NLP</p>
+      <p><strong>Abstract</strong> Function vectors (FVs) have recently emerged as a promising mechanism for steering the behavior of large language models (LLMs) by injecting task-specific latent direction representations derived from in-context demonstrations. While prior studies have shown that FVs can recover task behavior in structured in-context learning settings, their effectiveness on semantically complex tasks and their ability to generalize across languages remain underexplored. We investigate the cross-lingual transferability of FVs using multilingual multi-label emotion recognition as a challenging semantic classification benchmark. Specifically, we examine whether FVs extracted from a source language can steer task behavior in another language under both standard clean and perturbed zero-shot settings without providing demonstrations during inference. Across diverse cross-lingual settings, applying FVs substantially improves performance, suggesting that FVs capture language-agnostic, task-relevant signals rather than purely language-specific lexical patterns, and highlighting their potential as a lightweight and transferable mechanism for multilingual task adaptation. We observe that each LLM exhibits a relatively stable optimal range of attention heads for constructing effective FVs, and the pattern remains consistent across languages. In addition, FVs can partially replicate the task-steering effects of standard few-shot in-context learning while avoiding the computational overhead of processing multiple demonstrations, making them effective for large-scale practical applications. Our code is available at https://github.com/yingjie7/cross_lingual_fvs.</p>
+      <hr />
+      <h3>2. Beyond Surface Alignment: Grounding the Dynamics of Situational Understanding and Generative Control in LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29610">2608.29610</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29610.pdf">link</a></li>
+      <li>Published: 2026-08-30 16:04 JST</li>
+      <li>Updated: 2026-08-30 16:04 JST</li>
+      <li>Authors: Chenghao Yang</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 31.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの現行のアライメント調整が流暢さや安全性などの表層的な振る舞いに偏っており、状況理解や生成過程の基盤が十分に整っていないと主張する。SitTestやReCodeで状況的グラウンディングの失敗を、Branching FactorやHindsightで生成のグラウンディング不足を評価し、動的制御の枠組みとしてcontext engineeringや協調的生成手法を提案する。</p>
+      <p><strong>新規性</strong> 状況理解と生成制御をそれぞれグラウンディングの観点から分解して評価し、表層的アライメントを超える「Grounded Alignment」の枠組みを提示した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, alignment, grounding, generation control, situational understanding</p>
+      <p><strong>Abstract</strong> The current alignment tuning paradigm for Large Language Models (LLMs) prioritizes surface-level behaviors -- fluency, safety, and tonal consistency. While effective for casual chat, this thesis argues that such surface alignment masks a lack of grounding, creating models that are stylistically confident but situationally brittle. We propose a framework of Grounded Alignment, analyzing how models process context (Input) and structure generation (Output), then aligning these grounded behaviors to human needs. First, we evaluate failures in Situational Grounding. SitTest shows that despite large context windows, state-of-the-art models struggle to maintain a consistent "mental model" of a changing environment. ReCode further shows that models rely on surface heuristics rather than deep syntactic dependencies: they "read" extensive histories without truly "understanding" the evolving situation. Second, we evaluate Generative Grounding. We introduce the Branching Factor (BF) to map LLM generation, finding that standard alignment tuning constricts this landscape into premature stylistic collapse. Hindsight further shows that models often fail to understand their own generations. Finally, we propose Dynamic Control for grounded interaction. AI Realtor demonstrates context engineering to compensate for poor situational grounding. Base-Aligned Model Collaboration decouples exploration from stylistic constraints. We also present Annealed Sampling for verifiable reinforcement learning and apply these ideas to Addiction Support, where model-generated rationalization offers a communication interface for high-stakes domains. Collectively, this work moves beyond surface alignment toward agents anchored in both context and generation.</p>
+      <hr />
+      <h3>3. SUP-MIMIC: A Multi-Task Clinical Diagnosis Benchmark for Evaluating LLMs' Robustness to Contradictory Evidence</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29582">2608.29582</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29582.pdf">link</a></li>
+      <li>Published: 2026-08-30 14:59 JST</li>
+      <li>Updated: 2026-08-30 14:59 JST</li>
+      <li>Authors: Yi Yu, Bo Wang, Chong Feng, Ge Shi, Xia Liu, Ziyi Yang, Xuewen Shi</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 27.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、MIMIC-IV-v3.1を用いた多タスク臨床診断ベンチマークSUP-MIMICを提案し、LLMが診断の曖昧性や異なる症状から同一疾患に至る状況にどれだけ頑健に対応できるかを評価する。Basic Assessmentに加え、類似症例の識別を行うDiagnostic Divergence Taskと、異なる病態経路から同一診断を見つけるDiagnostic Convergence Taskを導入している。評価の結果、最先端LLMはこれらのタスクで性能が大きく低下し、臨床推論における脆弱性と「健康」予測への保守的バイアスが示された。</p>
+      <p><strong>新規性</strong> 診断の一対多・多対一の両方の曖昧性を評価するために、MIMIC-IV上でDDTとDCTを含む多タスクベンチマークを構築した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, clinical diagnosis, benchmark, robustness, MIMIC-IV</p>
+      <p><strong>Abstract</strong> Current evaluations of large language models (LLMs) primarily focus on factual knowledge retrieval, overlooking the fundamental challenge of navigating the complex, non-bijective mappings between clinical indicators and diagnoses. Existing benchmarks fail to assess whether large language models truly possess the reasoning capability required for diagnostic ambiguity scenarios, where identical clinical presentations may correspond to different etiologies, and diagnostic convergence scenarios, where heterogeneous symptoms ultimately indicate the same disease. To address this issue, we propose SUP-MIMIC, a multi-task framework utilizing MIMIC-IV-v3.1 that comprises Basic Assessment (BA), Diagnostic Divergence Task (DDT), and Diagnostic Convergence Task (DCT). Specifically, DDT is designed to evaluate the model's "one-to-many" disambiguation capability among phenotypically similar cases, while DCT assesses the model's ability to identify "many-to-one" diagnostic patterns across different pathophysiological pathways. Comprehensive evaluation of state-of-the-art LLMs reveals substantial performance degradation on DDT and DCT compared to baseline tasks, exposing a systemic reliance on statistical shortcuts over genuine causal reasoning. Our findings further highlight a conservative bias toward "healthy" predictions, implying non-trivial risks for missed diagnoses in realistic medical settings. This work establishes a rigorous methodology for quantifying clinical reasoning robustness and provides a roadmap for enhancing the safety of language models in clinical medicine.</p>
+      <hr />
+      <h3>4. Integrating adaptive human behavior into epidemic models with large language models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29535">2608.29535</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29535.pdf">link</a></li>
+      <li>Published: 2026-08-30 12:46 JST</li>
+      <li>Updated: 2026-08-30 12:46 JST</li>
+      <li>Authors: Yicheng Mao, Haoyang Li, Rob Deardon, Hongru Du</li>
+      <li>Categories: physics.soc-ph, cs.AI</li>
+      <li>Score: 27.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 感染症の伝播は人々の行動変化に強く依存するが、その文脈依存的な行動を疫学モデルに組み込むことは難しい。本研究は、LLMを用いて行動応答を推定し、それを年齢構造化接触行列として機械論的疫学モデルに結合するGABLEを提案した。フランスのCOVID-19に適用した結果、接触構造の再現と短期予測で有効であり、将来の政策評価にも利用できた。</p>
+      <p><strong>新規性</strong> LLMを「行動層」として疫学モデルに組み込み、感染状況や政策条件に応じた適応的な接触行列を生成して予測と政策評価を可能にした点が新しい。</p>
+      <p><strong>Tags:</strong> 感染症モデル, 大規模言語モデル, 行動モデリング, COVID-19, 政策評価</p>
+      <p><strong>Abstract</strong> Infectious disease transmission is shaped by patterns of human interaction, which adapt as epidemic conditions change. Capturing these context-dependent behaviors remains a fundamental challenge for epidemic models. Here, we recast this challenge by using large language models (LLMs) to represent adaptive human behavior within mechanistic epidemic models. We operationalize this idea through Generative Adaptive Behavioral Layer for Epidemics (GABLE), which adapts LLMs to infer behavioral responses to epidemic and policy conditions and translates them into age-structured contact matrices coupled to a mechanistic epidemic model. Applied to COVID-19 in France, GABLE reproduced responses in population mixing and age-specific contact structures that remained epidemiologically informative. In short-term forecasting, LLM-generated contact matrices outperformed mobility-driven matrices derived from real-world mobility data, with the largest gains at longer horizons. GABLE also extends beyond forecasting to prospective policy evaluation by projecting behavioral and epidemic responses to candidate interventions before implementation. When supplied with subsequently implemented policies, GABLE reproduced epidemic trajectories and generated distinct responses to alternative policy timing and composition. By leveraging LLMs as a flexible behavioral layer, GABLE provides a framework for coupling context-sensitive behavioral generation with epidemic dynamics.</p>
+      <hr />
+      <h3>5. LLMODE: Aligning ODEs with LLMs via Gated Token Injection for Irregular Spatio-Temporal Forecasting</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29640">2608.29640</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29640.pdf">link</a></li>
+      <li>Published: 2026-08-30 17:02 JST</li>
+      <li>Updated: 2026-08-30 17:02 JST</li>
+      <li>Authors: Di Zhang, Jingyang Zhang, Ziqian Wang, Chi Zhang, Yikun Ban, Ziwei Zhang, Ruijie Wang</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 25.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMODEは、不規則に観測される時空間データに対して、凍結したLLMを用いた予測を行うためのトークン効率の高い枠組みです。グラフ対応のODEエンコーダで不規則観測を連続時間の潜在軌道に復元し、それを固定数の動的メモリトークンと文脈メモリトークンに圧縮してLLMへ注入します。</p>
+      <p><strong>新規性</strong> 不規則時空間予測のために、ODE表現と固定予算のリサンプリング、さらにゲート付きクロスアテンションを組み合わせて、凍結LLMへ外部時空間情報を制御的に注入する点が新規です。</p>
+      <p><strong>Tags:</strong> 時空間予測, 不規則観測, 大規模言語モデル, ODE, クロスアテンション</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) have shown promise for spatio-temporal forecasting, but existing approaches often rely on regularly sampled token sequences and struggle with irregular observations because of temporal asynchrony, representation-space misalignment, and limited context windows. We propose LLMODE, a token-efficient framework for irregular spatio-temporal forecasting with a frozen LLM backbone. LLMODE first uses a graph-aware ODE encoder to reconstruct irregular graph observations as a continuous-time latent trajectory. A Fixed-Budget Perceiver Resampler then compresses this variable-length trajectory into a fixed number of dynamic memory tokens. In parallel, compact statistical descriptors are encoded and resampled into context memory tokens. A dual-source gated cross-attention module injects both memories into the frozen LLM, enabling controlled utilization of external spatio-temporal evidence. Experiments on three real-world urban datasets and two physical-dynamics benchmarks show competitive overall performance, with clearer advantages under sparse or dynamically complex irregular sampling. Additional evaluations on unseen urban regions further demonstrate strong zero-shot generalization without adaptation.</p>
+      <hr />
+      <h3>6. Evaluating LLMs on Conversational Text-to-SQL under Chain Ambiguity and Intent Drift</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29543">2608.29543</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29543.pdf">link</a></li>
+      <li>Published: 2026-08-30 13:24 JST</li>
+      <li>Updated: 2026-08-30 13:24 JST</li>
+      <li>Authors: Yujia Liu, Jiayan Lin, Zijin Hong, Zheng Yuan, Shengyuan Chen, Hao Chen, Qinggang Zhang, Xiao Huang, Feiran Huang</li>
+      <li>Categories: cs.CL, cs.AI, cs.DB</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、会話型Text-to-SQLにおけるユーザ意図の変化を評価するため、chain ambiguity と intent drift に着目したベンチマーク TIDE-Bench を提案する。BIRD由来の514本のanchor SQLを基に1,542サンプルを構築し、実行精度だけでなく chain identification と drift recognition-resolution を測る専用指標を導入した。12種類のLLM評価では、chain identification のボトルネックや intent drift の認識・解決の難しさが確認された。</p>
+      <p><strong>新規性</strong> 会話中の曖昧さの連鎖と意図の撤回・置換を対象に、実行精度以外の専用評価指標を備えたベンチマーク TIDE-Bench を新たに構築した点。</p>
+      <p><strong>Tags:</strong> text-to-SQL, conversational AI, LLM evaluation, benchmark, intent drift</p>
+      <p><strong>Abstract</strong> Recent advances in large language models (LLMs) have established conversational text-to-SQL as a practical interface between users and databases, often involving multiple turns of clarification and revision. However, existing benchmarks primarily evaluate execution accuracy, leaving the unfolding and shifting of user intent across turns largely uncovered. To address this, we introduce TIDE-Bench, a benchmark for conversational text-to-SQL under chain ambiguity and intent drift evaluation, targeting two recurring patterns: chain ambiguity, where an underspecified question triggers layered clarification with conditional dependencies, and intent drift, where the user retracts and replaces a previously committed request element. Built on 514 anchor SQLs from BIRD, TIDE-Bench comprises 1,542 samples and introduces dedicated metrics for chain identification and drift recognition-resolution beyond execution accuracy. Evaluating 12 advanced LLMs reveals a persistent chain identification bottleneck unaffected by clarification frequency, a wide drift recognition-resolution gap, and overlap between failure modes when jointly activated. The corresponding code of TIDE-Bench is released for further research.</p>
+      <hr />
+      <h3>7. AgenticRag-R1: Agentic Reinforcement Learning with Stack Memory for Multi-Step Reasoning, Retrieval and Memorizing</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29622">2608.29622</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29622.pdf">link</a></li>
+      <li>Published: 2026-08-30 16:31 JST</li>
+      <li>Updated: 2026-08-30 16:31 JST</li>
+      <li>Authors: Xinke Jiang, Yue Fang, Zhibang Yang, Jiaran Gao, Zhixin Zhang, Tao Feng, Rihong Qiu, Wentao Zhang, Hongxin Ding, Ruizhe Zhang, Yongxin Xu, Yuheng Huang, Xu Chu, Junfeng Zhao, Yasha Wang</li>
+      <li>Categories: cs.MA, cs.AI</li>
+      <li>Score: 23.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Retrieval-Augmented Generation（RAG）の既存手法は、複雑な多段推論において適応的な検索や中間文脈の更新が難しいという課題がある。本論文は、推論・検索・記憶をメモリスタックと細粒度の行動空間で統合し、階層的な報酬設計と情報量に基づく軌跡選別によって長期的学習を促すAgenticRag-R1を提案する。多様な多段・オープンドメイン・エージェント推論ベンチマークで、強いベースラインを一貫して上回ることを示した。</p>
+      <p><strong>新規性</strong> メモリスタックと細粒度アクション空間を用いて、推論・検索・記憶を深く統合し、長期的なRL学習を可能にした点が新しい。</p>
+      <p><strong>Tags:</strong> RAG, reinforcement learning, multi-step reasoning, memory, agentic reasoning</p>
+      <p><strong>Abstract</strong> Retrieval-Augmented Generation (RAG) improves the factuality of large language models (LLMs), yet existing RAG systems often struggle with complex, multi-step reasoning that requires adaptive retrieval and continuous revision of intermediate contexts. Recent reinforcement learning (RL)-based agentic RAG methods partially alleviate this issue, but typically rely on coarse-grained action spaces and trajectory-level rewards, resulting in weak reward assignment and a bias toward short-horizon, stereotyped reasoning template. To address, we propose AgenticRag-R1, a RL framework that deeply integrates reasoning, retrieval, and memory via a memory stack and fine-grained action space, supported by hierarchical action-aware rewards and an information-aware trajectory rejection strategy to enable effective long-horizon learning. Experiments across a diverse set of multi-hop, open-domain, and agentic reasoning benchmarks, spanning multiple backbone model sizes, demonstrate that AgenticRag-R1 consistently outperforms strong baselines. Moreover, AgenticRag-R1 learns more robust, interpretable, and memory-aware reasoning behaviors, highlighting the effect of fine-grained action modeling and information-aware optimization for long-horizon reasoning. Our code is anonymous available at https://github.com/jiangxinke/Harness-RL/tree/AgenticRAG-R1-Whitebox.</p>
+      <hr />
+      <h3>8. Agent Zero Memory: Provenance-Aware Long-Term Memory for LLM Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29606">2608.29606</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29606.pdf">link</a></li>
+      <li>Published: 2026-08-30 15:55 JST</li>
+      <li>Updated: 2026-08-30 15:55 JST</li>
+      <li>Authors: Ming Wu, Pengyuan Zhu</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMエージェント向けに、会話・ファイル・接続ソースから得た情報を3つの並列メモリ（エピソード、知識グラフ、引用固定の階層文書メモリ）として保持する、出典追跡可能な長期記憶システムAgent Zero Memoryを提案している。各学習項目に由来・時刻・証拠を持たせ、回答時は開いた証拠にのみ基づいて引用することで、幻覚を構造的に抑え、根拠がない場合は推測せず棄却する。</p>
+      <p><strong>新規性</strong> 単一の記憶構造に依存せず、3種類のメモリを並列に用いるうえ、証拠を開いたものだけ引用できるcitation lockを導入して、出典付きの忠実な長期記憶を実現した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM agents, long-term memory, provenance, knowledge graph, retrieval</p>
+      <p><strong>Abstract</strong> Large language model (LLM) agents need durable, faithful memory of everything a user or organization has said and stored, yet most memory systems commit to a single organizing structure (a fact store, a vector index, or a knowledge graph) and inherit its blind spots. We present Agent Zero Memory, a provenance-aware long-term memory system that distils a user's conversations, files, and connected sources into three parallel memory systems, each capturing a different facet of the same history: an episodic Memory Events timeline that makes when and what changed first-class, an associative entity-event knowledge graph that links people and projects across sessions, and a semantic, curated, citation-locked Hierarchical Documentary Memory (HDM) of durable facts. A retrieval turn runs an intent gate (so self-contained turns add no latency), a source router, and three concurrent agentic searches, one per system, each a tool-using loop over hybrid (embedding + lexical) search under agent-controlled filters; their grounded, cited answers are integrated into one answer with a single confidence. We formalize the reading discipline: every learned item is a provenanced item carrying its origin, timestamp, and evidence pointer, and every answer is read under a citation lock, so it may cite only evidence its reader actually opened; fabrication is structurally excluded and the system abstains rather than guesses. On two public benchmarks the system sets a new state of the art: 95.60% on LongMemEval and 93.60% on LoCoMo, improving over the strongest prior systems by +0.73 and +1.10 points. A controlled study across eight backbone LLMs characterizes the accuracy-cost-latency frontier: accuracy varies by only 3.4 points while per-query cost varies by ~30x, with near-state-of-the-art quality at up to 20x lower cost per query, the signature of memory-driven, rather than model-driven, quality.</p>
+      <hr />
+      <h3>9. LLM Judges as Raters: A Pre-Registered Audit of Severity, Halo, Reliability, and Version Instability in LLM Essay Scoring on Public Corpora</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29517">2608.29517</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29517.pdf">link</a></li>
+      <li>Published: 2026-08-30 11:45 JST</li>
+      <li>Updated: 2026-08-30 11:45 JST</li>
+      <li>Authors: Veerendra Kumar Sunkavalli</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMをエッセイ採点者として扱い、事前登録した評価で、厳しさ、ハロー効果、信頼性、バージョン間の不安定性を公開コーパス上で検証した研究である。ENEMとASAPの2言語・計2,377件のエッセイ、12のLLM judge、4社のモデルを用い、LLM間で採点の厳しさや版差が大きく、自己整合性は高い一方で人間採点者並みの精度には達しないことを示した。</p>
+      <p><strong>新規性</strong> LLM judgeを「採点者」とみなし、many-facet Raschやgeneralizability analysisなどの測定論的手法で、厳しさ・ハロー・版不安定性を事前登録ベースで体系的に監査した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM evaluation, essay scoring, rater effects, educational measurement, reliability</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are increasingly used as essay graders in learning analytics, evaluated almost exclusively with agreement statistics. Educational measurement warns that raters also differ in severity, show halo, and drift as instruments. We treat LLM judges as raters and run a pre-registered rater-effects battery (many-facet Rasch severity, residual halo, generalizability/decision studies, cross-version shifts, differential functioning) on public corpora in two languages (ENEM/Essay-BR; ASAP): 2,377 essays, 12 judges, 4 providers, 5 version contrasts, replicated cells, released as a score tensor. Judge severity spans 219 points on ENEM's 0-1000 scale; on ASAP the panel spread is 15-33% of the score range against a between-trained-human gap near 1%. Judge-human correlations sit in an undiscriminating .47-.56 band. All five version contrasts shift severity beyond a family-wise permutation null (up to 133 points), and one judge was deprecated mid-study, caught by identity canaries. Two pre-registered tests returned honest nulls: severity-adjusted leaderboard reversals did not survive a permutation null, and "silent drift" was refuted: agreement moved with severity in four of five contrasts. Replication yields self-consistency (phi&gt;=.80 at k&lt;=2) but not human-level accuracy, and a same-instrument check overturned our own halo comparison: matched on instrument and calibration, we find no credible evidence that judge halo exceeds the trained-human range.</p>
+      <hr />
+      <h3>10. Predicting the Unpredictable: LLM-powered Long-term Chaotic Time Series Forecasting under Short-term Observations</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29579">2608.29579</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29579.pdf">link</a></li>
+      <li>Published: 2026-08-30 14:56 JST</li>
+      <li>Updated: 2026-08-30 14:56 JST</li>
+      <li>Authors: Yuhang Yao, Bohan Jiang</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 21.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、短期観測しか得られない状況でのカオス時系列の長期予測に取り組み、LLMを用いた予測枠組みPAC-LLMを提案する。提案手法は、位相空間特徴とテキスト情報を融合し、補助特徴モジュールとゲート付き重み付け機構により多変量の結合情報を選択的に統合する。代表的なカオス系での実験では、既存のfine-tunedおよびzero-shot手法より短期・長期予測の両方で優れた性能を示した。</p>
+      <p><strong>新規性</strong> LLMの時系列予測能力を、カオス系の位相空間構造に合わせて拡張するために、位相空間認識型の適応的融合フレームワークPAC-LLMを導入した点が新規である。</p>
+      <p><strong>Tags:</strong> chaotic time series, long-term forecasting, LLM, phase-space, time series prediction</p>
+      <p><strong>Abstract</strong> Chaotic time series forecasting is a challenging task due to its sensitivity to initial conditions and long-term unpredictability. Traditional methods typically rely on sufficient temporal trajectories to learn long-term dynamics, which limits their applicability when only short-term observations are available. While recent Large Language Models (LLMs) have shown great potential for time series forecasting, their temporal representations are not explicitly tailored to the phase-space structure and nonlinear evolution of chaotic systems. To address these issues, we propose PAC-LLM, a phase-space-aware adaptive fusion framework for long-term chaotic time series forecasting powered by LLMs. PAC-LLM leverages learned phase-space features and textual information to fully enable LLM's time series forecasting capacity. In particular, we design an auxiliary feature module and a gated weighting mechanism for multivariate coupling information fusion and selection. Extensive experiments on representative chaotic systems demonstrate that our method outperforms existing fine-tuned and zero-shot baselines in both short-term and long-term predictions. Our ablation study further confirms the effectiveness of each key component in PAC-LLM.</p>
+      <hr />
+      <h3>11. Which LLM for Which Work? Budgeted Model Allocation under Uncertain Evaluation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29560">2608.29560</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29560.pdf">link</a></li>
+      <li>Published: 2026-08-30 14:00 JST</li>
+      <li>Updated: 2026-08-30 14:00 JST</li>
+      <li>Authors: Hamed Khosravi, Xiaoming Huo</li>
+      <li>Categories: cs.LG, math.OC, stat.ML</li>
+      <li>Score: 21.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 固定AI予算の下で、各LLMをどの反復業務に割り当てるべきかを考える問題を扱い、性能表が不確実でも最適割り当てが一意に定まるかを検証する枠組みを提案する。推定された性能表と最悪ケースの性能表の2回の最適化結果が一致すれば割り当てを証明でき、不一致なら追加評価が有効な組合せを特定できる。実データと実験では、評価情報の不足が割り当て最適化より大きな損失要因であることが示された。</p>
+      <p><strong>新規性</strong> 不確実な性能表の下で、最適割り当ての頑健性を「2回解く」ことで証明する厳密な判定法と、必要な箇所に評価を集中するCASEを提案した。</p>
+      <p><strong>Tags:</strong> LLM割り当て, 予算制約最適化, 不確実性下の意思決定, 因果推論, アクティブ評価</p>
+      <p><strong>Abstract</strong> A company with a fixed artificial intelligence (AI) budget must decide which large language model (LLM) handles each recurring workload. What it lacks is the quality table, how well each model performs on each workload. Given that table, the decision is a multiple-choice knapsack problem and is routine to solve, so estimating it is the difficulty, and that estimation fails in two ways. Models are rarely compared on the same work, and the recorded score is usually a proxy rather than the outcome the company values. Causal and off-policy methods repair the first but condition on the second, while evaluator-validation methods estimate the second but stop short of the decision. Worse, buying more re-evaluation cannot settle the second: randomization governs which requests are scored, not how a score is produced, so the table stays uncertain however much evaluation is purchased. Yet the deployment decision may still be determined even when the table is not. We therefore ask whether one assignment stays optimal across every quality table consistent with the evidence. For the fixed-budget problem, this admits an exact two-solve certificate: solve once at the estimated table and once at a least-favourable table. Agreement certifies the assignment; disagreement identifies the model-workload pairs where further evidence can matter. We propose CASE (causal active sequential experimentation), which targets evaluation to those pairs and repeats the test as evidence accumulates. On a production log, the measurement failure is the larger of the two: correcting assignment exactly still leaves most of the loss, and randomized re-evaluation does not remove it. In our experiments, the available evidence often does not determine the assignment. On paid software tasks, better information about model quality yields more savings than further optimization of the assignment on the same estimates.</p>
+      <hr />
+      <h3>12. Argument-Aware Semantic Alignment of Normative Texts: A Toulmin-Based Neuro-Symbolic Approach</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29529">2608.29529</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29529.pdf">link</a></li>
+      <li>Published: 2026-08-30 12:30 JST</li>
+      <li>Updated: 2026-08-30 12:30 JST</li>
+      <li>Authors: William Schroeder</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 21.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 専門的な規範テキストの意味対応付けでは、用語や構文が異なるため、単純な語彙的・分散表現ベースの類似度だけでは不十分である。本研究は、Toulminの議論構造（claim, grounds, warrant, qualifier, backing）をLLMで明示化し、神経記号的なアラインメントモデルに組み込むことで、要求事項の対応付けを行う手法を提案する。NERC-CIPとNIST-CSFのマッピングベンチマークでは、議論由来の特徴量が既存の神経記号的ベースラインを上回り、特にwarrant関連特徴が有効だった。</p>
+      <p><strong>新規性</strong> 規範テキストのアラインメントにToulmin型の議論構造を中間表現として導入し、LLMによる議論明示化と神経記号的特徴統合で性能向上を示した点が新規である。</p>
+      <p><strong>Tags:</strong> semantic alignment, normative texts, Toulmin model, neuro-symbolic, cybersecurity standards</p>
+      <p><strong>Abstract</strong> Semantic alignment between specialized normative texts is challenging when equivalent requirements use different terms, syntax, and levels of abstraction. Lexical overlap, distributional embeddings, and semantic similarity capture topical relatedness but often miss the argumentative structure by which normative claims are supported, qualified, and justified. This paper asks whether explicit argument structure adds information complementary to neural semantics for aligning requirements. We treat cross-standard control mapping as argument-aware semantic alignment and build a neuro-symbolic pipeline that combines neural text representations with Toulmin features. An LLM explicitation step identifies claims, grounds, warrants, qualifiers, and backing and reconstructs enthymemes. These feed an alignment model via argument-aware similarity and structural features. On a NERC-CIP to NIST-CSF mapping benchmark, argument-derived features improve alignment over a neuro-symbolic semantic baseline. Feature selection shows especially strong signal from warrant-related features, indicating that the link between a claim and its supporting reasoning is not captured by conventional similarity alone. A compact claim--grounds--warrant subset remains competitive with the full Toulmin feature set. The results give preliminary evidence that argument structure is a useful intermediate representation for aligning specialized normative texts. Cybersecurity standards are used as a controlled testbed, not as proof of domain-independent generalization. The argument graphs produced by LLM explicitation may also support later work on retrieval, reasoning, and explanation over normative text.</p>
+      <hr />
+      <h3>13. MI-Distillation: Selecting from Model-Interpolated Instruct-Reasoning Data Spectrum for Chain-of-Thought Distillation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29623">2608.29623</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29623.pdf">link</a></li>
+      <li>Published: 2026-08-30 16:32 JST</li>
+      <li>Updated: 2026-08-30 16:32 JST</li>
+      <li>Authors: Yangsong Lan, Renkai Hu, HongKai Zheng, Bo Zhang, Renzhi Wang, Hongliang Dai, Piji Li</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 19.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模推論モデルの長いChain-of-Thoughtを小型学生モデルへ蒸留する際、直接の長文監督は短い推論より効果が低い場合があることを、勾配の大きさと更新方向の観点から分析している。これに基づき、推論情報量と学生モデルへの分布整合性の両立を目指すMI-Distillationを提案し、実験で長文CoT蒸留の性能向上を示した。</p>
+      <p><strong>新規性</strong> モデル補間によりInstruct-Reasoningデータの連続スペクトルを構成し、SeqLSSで学生にとって情報的かつ学習可能な推論経路を選択する点が新しい。</p>
+      <p><strong>Tags:</strong> chain-of-thought, distillation, reasoning models, model interpolation, small models</p>
+      <p><strong>Abstract</strong> Recent advances in large reasoning models (LRMs) have shown strong performance on complex problems through long chain-of-thought (Long CoT) reasoning. However, distilling such trajectories into smaller student models remains challenging: direct Long CoT supervision often provides limited gains and can be less effective than concise Short CoT rationales. In this work, we investigate this phenomenon from a gradient-centric perspective. Our analysis shows that Long CoT induces larger gradient magnitudes and more concentrated update directions than Short CoT, with this effect becoming more pronounced as student model capacity increases. These findings suggest that effective Long CoT distillation requires balancing the reasoning information density of reasoning trajectories with their distributional alignment to the student model. Motivated by this insight, we propose \textbf{M}odel \textbf{I}nterporlation \textbf{Distillation} (\textbf{MI-Distillation}), a framework that constructs a continuous Instruct-Reasoning data spectrum through model interpolation. To select suitable trajectories from this spectrum, we further introduce \textbf{Seq}uential \textbf{L}earnable \textbf{S}urprisal \textbf{S}core (\textbf{SeqLSS}), which favors reasoning paths that are both informative and learnable for the student. Extensive experiments on reasoning benchmarks show that MI-Distillation consistently improves small model CoT distillation over strong Long CoT baselines.</p>
+      <hr />
+      <h3>14. JPO: Juris Policy Optimization for Structured Legal Reasoning in Criminal Judgment Prediction</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29616">2608.29616</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29616.pdf">link</a></li>
+      <li>Published: 2026-08-30 16:14 JST</li>
+      <li>Updated: 2026-08-30 16:14 JST</li>
+      <li>Authors: Zhaolu Kang, Yantao Liu, Tailong Luo, Leqi Zheng, Lei Wei, Chenghua Zhu, Junhao Gong, Jiachen Qian, Eric Hanchen Jiang, Jiaxin Liu, Yuan Wang, Hao Zhang, Zixia Wang, Rong Fu, Zheng Lin, Richeng Xuan, Zhichao Hu</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、中国の刑事判決予測において、法条文・罪名・量刑を単なる最終ラベルではなく、法的に整合した段階的推論として扱うための後学習フレームワークJPOを提案する。教師生成の根拠文で4段階の標準化推論を学習させた後、予測品質、推論構造の完全性、段階間整合性を組み合わせた報酬で強化学習を行う。複数のオープンソースモデルと3つの中国法ベンチマークで、判決予測性能と推論品質の両方が改善した。</p>
+      <p><strong>新規性</strong> 法的推論を4段階の標準化プロセスとして明示的に学習し、構造・整合性を含む複合報酬で最適化する点が新しい。</p>
+      <p><strong>Tags:</strong> 刑事判決予測, 法的推論, 強化学習, 中国法, 大規模言語モデル</p>
+      <p><strong>Abstract</strong> Criminal judgment prediction requires models to infer statutory articles, charges, and sentencing outcomes from case facts. Unlike standard classification tasks, it involves a structured reasoning process in which statutes should be matched with facts, charges should be justified by statutes, and sentencing outcomes should remain consistent with charges. Existing approaches optimize final labels, and while some have attempted to evaluate reasoning quality, their evaluations are indirect, often relying on LLM-generated rubrics that reflect model-internal preferences rather than the inherent logical structure of legal adjudication. We propose Juris Policy Optimization (JPO), a post-training framework for structured legal reasoning in Chinese criminal judgment prediction. JPO first uses teacher-generated rationales to supervise a standardized four-step reasoning process, and then applies reinforcement learning with a composite reward over legal prediction quality, reasoning structure completeness, and cross-step consistency. JPO further introduces token-level advantage reweighting and adaptive clipping for legally salient reasoning segments. Experiments on multiple open-source language models and three Chinese legal benchmarks show that JPO consistently improves both judgment prediction and reasoning quality over supervised fine-tuning and reinforcement learning baselines.</p>
+      <hr />
+      <h3>15. Call Neighbours Yourself: Graph Walks with Destination-Conditioned On-Policy Self-Distillation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29588">2608.29588</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29588.pdf">link</a></li>
+      <li>Published: 2026-08-30 15:19 JST</li>
+      <li>Updated: 2026-08-30 15:19 JST</li>
+      <li>Authors: Yilun Liu, Boyu Luo, Yanran Tang, Ruihong Qiu, Zi Huang</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> テキスト属性付きグラフ（TAG）上の推論では、ノードのテキストと近傍から得られる証拠を組み合わせる必要がありますが、既存手法は事前に選んだ固定近傍に基づいて推論するため、推論中に不足情報を補うことができません。本論文は、LLMがトポロジー制約付きのグラフウォーク行動を通じて近傍探索を能動的に行うフレームワークCall Neighbours Yourself（CNY）を提案し、標準TAGベンチマークで固定コンテキストの後処理ベースラインより一貫して高い性能を示しました。</p>
+      <p><strong>新規性</strong> 近傍選択自体を推論過程に組み込み、destination-conditioned on-policy self-distillation により、探索後の選好変化を行動レベルの学習信号として利用した点が新しいです。</p>
+      <p><strong>Tags:</strong> text-attributed graphs, LLM reasoning, graph walks, self-distillation, neighbour exploration</p>
+      <p><strong>Abstract</strong> Reasoning over text-attributed graphs (TAGs) requires large language models (LLMs) to combine a node's text with evidence distributed across its neighbourhood. Existing methods fix the set of accessible neighbours before generation, forcing reasoning to operate over a static context and preventing the model from acquiring missing evidence during inference. We argue that neighbour selection should itself be part of the reasoning process. To this end, we propose Call Neighbours Yourself (CNY), a framework that enables LLMs to proactively explore graph neighbourhoods through topology-constrained graph-walk actions. Instead of reasoning over a pre-selected neighbour set, CNY exposes lightweight neighbour previews and learns when to expand candidate neighbours for additional evidence. To address the delayed-credit challenge of neighbour exploration, we introduce destination-conditioned on-policy self-distillation, which retrospectively evaluates a selected neighbour after its content is revealed and converts the resulting change in action preference into an action-level training signal. Experiments on standard TAG reasoning benchmarks under a unified raw-text setting show that CNY consistently outperforms fixed-context post-training baselines. Furthermore, the learned exploration policy transfers to unseen graphs and to a graph-level task not encountered during training. Code is available at https://github.com/superallen13/CNY.</p>
+      <hr />
+      <h3>16. SemTrace: Source-Grounded Semantic Signatures for Tracing LLM Exposure to Protected Documents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29575">2608.29575</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29575.pdf">link</a></li>
+      <li>Published: 2026-08-30 14:41 JST</li>
+      <li>Updated: 2026-08-30 14:41 JST</li>
+      <li>Authors: Junyan Zhang, Yudong Zeng, Yongwei Huang, Zuhao Ouyang, Hong Chen, Xuming Hu</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> SemTraceは、保護された文書コピーに対してLLMが影響を受けたかどうかを検出するための、ソースに根ざした意味的ウォーターマーク手法です。文書内で直接支持される事実命題から文書固有の二値シグネチャを作り、レビュー生成後に自然言語推論モデルでそのビットを復号して照合します。</p>
+      <p><strong>新規性</strong> 表層的なトークン操作ではなく、文書由来の事実命題に基づく意味的シグネチャを用いて、モデル非依存の露出検出を行う点が新規です。</p>
+      <p><strong>Tags:</strong> LLM, watermarking, provenance, semantic signature, document tracing</p>
+      <p><strong>Abstract</strong> Large language models are increasingly used to read documents and produce downstream text, creating a provenance problem when the document owner cannot control or inspect the model that performs the generation. We introduce SemTrace, a source-grounded semantic watermark for detecting whether a generated review was influenced by a known protected manuscript copy. Rather than biasing token probabilities or imposing surface-form patterns, SemTrace constructs a document-specific binary signature from factual propositions that are directly supported by the manuscript itself. A protected PDF invisibly carries a content contract that selects one fact from each binary pair and asks an instruction-following reviewer to express those facts in fixed review slots without changing its independent evaluation. A frozen natural language inference model then decodes the resulting semantic evidence with explicit erasures and scores the recovered bits against the codeword assigned to that copy. This design targets model-agnostic, assigned-copy exposure detection while keeping the watermark semantically tied to the source document.</p>
+      <hr />
+      <h3>17. Conducting Stylistic Analysis of Paintings through an Art-History Agent</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29644">2608.29644</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29644.pdf">link</a></li>
+      <li>Published: 2026-08-30 17:10 JST</li>
+      <li>Updated: 2026-08-30 17:10 JST</li>
+      <li>Authors: Marc S. Walton, Astrid Harth</li>
+      <li>Categories: cs.CV, cs.AI, cs.CL</li>
+      <li>Score: 18.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、絵画の様式分析を自動化するAIフレームワークを提案する。大規模な絵画データで学習したViTの埋め込みを疎辞書学習で共通特徴に分解し、LLMが関連作品とキュレーター文を参照して特徴を解釈し、最終的に作品の記述や比較を生成する。</p>
+      <p><strong>新規性</strong> 視覚特徴をそのまま分類するのではなく、疎辞書学習とLLMを組み合わせて、絵画の様式を人文学的な記述へ変換する点が新しい。</p>
+      <p><strong>Tags:</strong> 絵画分析, 様式分析, Vision Transformer, 大規模言語モデル, 計算美術史</p>
+      <p><strong>Abstract</strong> Attributing an artwork to an artist has traditionally relied on detailed visual observations and descriptions, known as stylistic analysis in art history. By contrast, current artificial intelligence (AI) models used in the field offer only unexplained probabilistic classifications. To bridge this methodological gap, we present an AI framework that automates stylistic analysis of paintings, providing a foundation for enhancing evidence collection, discovery, and verification. By training a vision transformer (ViT) on a large corpus of paintings with metadata, our system encodes this art history-specific data as embeddings. These representations are factorized via sparse dictionary learning into a shared set of features that recur across the training set. A large language model (LLM) then interprets each feature by retrieving associated artworks and their accompanying curator-written texts, and synthesizes them into descriptions that reflect their stylistic attributes. Finally, an autonomous coordinator LLM applies a reasoning-and-action (ReAct) framework to weight, test, and refine these features into cohesive descriptions of an artwork, or comparisons of artworks. This approach converts detailed visual features into descriptive terms, addressing a key challenge in art history. It thus connects the use of images as data with the semantic concerns of humanists, establishing vision-based computational art history as an area for future growth.</p>
+      <hr />
+      <h3>18. Detect Before You Attribute: Cascade Failure Attribution for Multi-Agent Systems</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29646">2608.29646</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29646.pdf">link</a></li>
+      <li>Published: 2026-08-30 17:17 JST</li>
+      <li>Updated: 2026-08-30 17:17 JST</li>
+      <li>Authors: Jiayi Zhang, Zexin Wang, Degang Sun, Changhua Pei, Fei Sun, Gaogang Xie, Jingjing Li</li>
+      <li>Categories: cs.AI, cs.MA</li>
+      <li>Score: 17.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMベースのエージェントは複雑なタスクを解ける一方で実行失敗に弱く、失敗原因の特定が重要です。本研究は、まず異常な実行を検出してから、その結果を基に下流の属性推定を行うプラグイン型フィルタDUOTRACEを提案し、長い軌跡での文脈劣化を抑えつつ失敗属性推定を支援します。</p>
+      <p><strong>新規性</strong> 検出先行の枠組みを導入し、VAEベースの異常検出に双視点の意味・構造表現、Tree-LSTM、データ拡張を組み合わせて、長いエージェント軌跡から有効な証拠を絞り込む点が新規です。</p>
+      <p><strong>Tags:</strong> LLMエージェント, 失敗原因推定, 異常検出, マルチエージェント, 軌跡解析</p>
+      <p><strong>Abstract</strong> Large language model (LLM)-based agents have shown strong potential in solving complex tasks through multi-step reasoning, yet they remain vulnerable to execution failures. Accurate failure attribution is therefore critical for improving agent reliability. Existing topology- and spectrum-based methods exploit trajectory structures but often overlook fine-grained semantics, while LLM-based attribution methods capture semantic cues but suffer from long-context degradation over lengthy trajectories. To address these challenges, we propose DUOTRACE, a plug-and-play detection filter for LLM-based failure attribution. DUOTRACE follows a detect-before-attribute paradigm: it first detects anomalous executions and then supplies focused trajectory evidence to downstream LLM-based attribution methods. For effective VAE-based anomaly detection on agent trajectories, DUOTRACE integrates dual-view semantic-structural node representations, a Tree-LSTM-based trajectory encoder, and prefix-chain- and LLM-based data augmentation to handle heterogeneous nodes, hierarchical execution structures, and limited failure data. Experiments with six LLM-based attribution baselines show that DUOTRACE improves agent-level and step-level attribution accuracy by 8.7% and 7.0%, respectively.</p>
+      <hr />
+      <h3>19. The Emergent Symbolic Structure of Artificial Neural Networks</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29530">2608.29530</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29530.pdf">link</a></li>
+      <li>Published: 2026-08-30 12:32 JST</li>
+      <li>Updated: 2026-08-30 12:32 JST</li>
+      <li>Authors: R. Thomas McCoy, Paul Soulos, Tal Linzen, Paul Smolensky</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、ニューラルネットワークの内部表現が見かけ上は連続ベクトルであっても、実際には記号的な構造で近似できる可能性を示す。小規模なリスト操作ネットワークから大規模言語モデルまで、算術・論理・コード・言語の各領域で、閉形式の記号構造による近似に置き換えても挙動が大きく変わらないことを示した。</p>
+      <p><strong>新規性</strong> ニューラルネットワークの表現生成過程全体を、閉形式の記号構造を与える式で置き換えられることを示し、さらに内部表現への精密な介入でLLMの挙動を局所的に変更できる点が新規である。</p>
+      <p><strong>Tags:</strong> neural networks, symbolic structure, large language models, representation learning, interpretability</p>
+      <p><strong>Abstract</strong> Modern systems in artificial intelligence (AI) somehow excel in domains for which they seem poorly suited. Intelligence has traditionally been modeled as operating over structured combinations of symbols, such as logical formulas. However, the strongest modern AI systems are based on neural networks, which instead represent information in continuous vectors. Vectors seem inadequate for capturing the structure of language, logic, and other cognitive domains, yet neural networks achieve impressive performance in these areas. How do they do it? In this work, we propose a potential answer: Despite appearances, perhaps the internal representations of neural networks implicitly realize symbolic structure. In support of this hypothesis, we show that the vector representations of a variety of neural networks can be closely approximated with symbolic structures: we can replace the network's entire representation-generating process with a closed-form equation instantiating a symbolic structure, and the network's behavior remains largely unchanged. This finding holds for both small-scale neural networks trained to manipulate lists as well as large language models (LLMs) operating in four domains that are central in symbolic traditions: arithmetic, logic, computer code, and language. Further, our symbolic approximation allows us to modify an LLM's behavior in targeted ways via precise interventions on its internal representations, showing that the LLM's behavior is reliant on the symbolic structures we have identified. This work provides a potential way to reconcile longstanding symbolic conceptions of intelligence with the vector-based nature of modern AI.</p>
+      <hr />
+      <h3>20. Towards a Systems Foundation for Agentic Skills: Architecture, Lifecycle, and Security</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2608.29596">2608.29596</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2608.29596.pdf">link</a></li>
+      <li>Published: 2026-08-30 15:36 JST</li>
+      <li>Updated: 2026-08-30 15:36 JST</li>
+      <li>Authors: Sanket Badhe, Deep Shah, Priyanka Tiwari, Nehal Kathrotia</li>
+      <li>Categories: cs.AI, cs.LG, cs.MA</li>
+      <li>Score: 14.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、長期的で複雑なタスクにおけるLLMエージェントの信頼性・文脈消費・実行安定性の課題に対し、「agentic skills」を外部化された手続き知識として捉える統一的なシステム基盤と参照アーキテクチャを提案する。さらに、発見、記述、保存、検索、合成、実行、適応、評価、セキュリティまでを含む9段階のライフサイクルを整理し、実装例や公開レジストリ、脅威と防御、未解決課題を体系的に論じる。</p>
+      <p><strong>新規性</strong> agentic skills を、計画と決定的実行環境をつなぐ再利用可能・可搬な実行可能アーティファクトとして定式化し、そのライフサイクル全体を含む統一的なシステム基盤を提示した点が新規である。</p>
+      <p><strong>Tags:</strong> LLMエージェント, システムアーキテクチャ, 手続き知識, セキュリティ, 継続学習</p>
+      <p><strong>Abstract</strong> Autonomous large language model (LLM) agents increasingly face reliability, context consumption, and execution stability bottlenecks when deployed on complex, long-horizon tasks. While monolithic prompt engineering and stateless tool-calling paradigms struggle to scale, the field is rapidly converging toward \emph{agentic skills}: modular procedural abstractions that externalize execution knowledge into reusable, executable, and portable artifacts. This paper establishes a unified systems foundation and reference architecture for the agentic skills ecosystem. We formalize skills as externalized procedural knowledge bridging high-level cognitive planning with deterministic execution environments, and systematically delineate the architecture across a nine-stage lifecycle: autonomous discovery, authoring and representation formats, memory storage, dynamic retrieval and routing, composition and orchestration, execution and repair, lifelong adaptation, empirical evaluation, and security governance. We further examine marketplace dynamics, public registries, and emerging adversarial threat vectors, alongside runtime verification and defense mechanisms. Finally, we categorize system implementations across software engineering, operating system navigation, embodied robotics, and scientific discovery, while highlighting critical open challenges in continual learning and benchmark realism. This work establishes agentic skills as a foundational paradigm for building scalable, robust, and verifiable autonomous language agents.</p>
+      <hr />
+      <blockquote><p>... and 5 more papers (not shown).</p></blockquote>
+    </article>
+  </main>
+</body>
+</html>
