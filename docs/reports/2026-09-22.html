@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-09-22 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-09-22</h1>
+        <p class="hero-copy">Generated at 2026-09-22 10:35 JST. Run ID: <code>008ef0be-4379-4ccd-8af4-4f037a86b0b5</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>15</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-09-22</h1>
+      <p>Generated at: 2026-09-22 10:35 JST Run ID: 008ef0be-4379-4ccd-8af4-4f037a86b0b5</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 15</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23257">2609.23257</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23257.pdf">link</a></li>
+      <li>Published: 2026-09-20 09:10 JST</li>
+      <li>Updated: 2026-09-20 09:10 JST</li>
+      <li>Authors: Minkyoung Kim, Daeun Ji, Yohan Lee, Beomsoo Kim, Beakcheol Jang</li>
+      <li>Categories: cs.LG, cs.CL</li>
+      <li>Score: 27.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> CTRLは、LLMの推論能力と数値予測を分離した時系列予測フレームワークです。凍結したバックボーンがベース予測を生成し、LLMエージェントがトレンド・季節性・不規則成分に分解した誤差を解析して補正信号を出力し、軽量な残差デコーダが最終予測を修正します。</p>
+      <p><strong>新規性</strong> LLMを直接予測器として使うのではなく、解釈可能な誤差分解に基づくコントローラとして用い、ラベル不要のテスト時適応で分布シフト下の頑健性を高める点が新規です。</p>
+      <p><strong>Tags:</strong> time series forecasting, LLM, residual learning, distribution shift, test-time adaptation</p>
+      <p><strong>Abstract</strong> Time series forecasting underpins critical decision-making across diverse domains. While large language models (LLMs) offer promising reasoning capabilities, existing LLM-based time series forecasting approaches either reduce them to numerical predictors that bypass their strengths, or allow direct forecast generation that destabilizes predictions in non-stationary settings. We introduce CTRL, a framework that decouples semantic reasoning from quantitative prediction. A frozen backbone generates base forecasts, while specialized LLM agents function as controllers that analyze backbone prediction errors through decomposed trend, seasonal, and irregular components, grounding reasoning in interpretable temporal structure. Each agent outputs compact control signals that a lightweight residual decoder translates into forecast corrections. CTRL incorporates label-free test-time adaptation that detects distribution shift from input statistics alone and readapts control signals with only 3-24 LLM calls via caching. CTRL is explicitly designed to improve robustness under non-stationary temporal dynamics and distribution shift, while remaining competitive on highly stationary time series where adaptive correction provides limited additional benefit.</p>
+      <hr />
+      <h3>2. LLMs as Linguistic Chameleons: Decoupling Semantics and Structure for Privacy-Preserving Communication</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23193">2609.23193</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23193.pdf">link</a></li>
+      <li>Published: 2026-09-20 04:41 JST</li>
+      <li>Updated: 2026-09-20 04:41 JST</li>
+      <li>Authors: Yuzhu Mao, Liang Zhao</li>
+      <li>Categories: cs.CR, cs.AI, cs.CL</li>
+      <li>Score: 25.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLM APIを用いるプライバシー حساسな処理において、推論時のプライバシーとタスク性能の両立を目指し、意味内容を別の領域に置き換えつつ構造情報は保持する「semantic decoupling」を検討している。提案手法CROSS-MAPは、入力を別の意味空間へ写像してから推論し、その後出力を復元する双方向フレームワークであり、複数の攻撃設定で復元成功率を下げつつ、既存手法より高い有用性を示した。</p>
+      <p><strong>新規性</strong> 入力の意味を切り離して別の意味領域へ写像し、推論後に復元する双方向フレームワークCROSS-MAPを提案し、意味の乖離と復元時の整合性を多目的最適化で両立させた点。</p>
+      <p><strong>Tags:</strong> LLM privacy, semantic decoupling, privacy-preserving communication, adversarial attack, information security</p>
+      <p><strong>Abstract</strong> As Large Language Model (LLM) APIs become increasingly integrated into privacy-sensitive workflows, ensuring inference-time privacy without compromising task utility remains a major challenge. Existing approaches preserve most of the original semantic content to maintain downstream performance, but this also leaves exploitable cues for reconstructing the original text. This work investigates semantic decoupling, which replaces original semantics with alternative content while preserving the structure needed for LLM reasoning. Based on this idea, we propose CROSS-MAP, a bidirectional framework that maps private inputs into a different semantic domain before inference and recovers the corresponding outputs afterward. Local models are trained with multi-objective optimization to maximize semantic divergence in the mapping stage while minimizing semantic inconsistency in the recovery stage. Experiments show that CROSS-MAP reduces reconstruction success across multiple attack settings while outperforming existing baselines in utility.</p>
+      <hr />
+      <h3>3. LLM-Based FORM Code Generation with Verification-Driven Fine-Tuning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23367">2609.23367</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23367.pdf">link</a></li>
+      <li>Published: 2026-09-20 14:25 JST</li>
+      <li>Updated: 2026-09-20 14:25 JST</li>
+      <li>Authors: Bakar Chargeishvili</li>
+      <li>Categories: hep-ph, cs.CE, cs.CL</li>
+      <li>Score: 24.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> FORMは素粒子物理で広く使われる記号処理言語ですが、既存のLLMは文書なしの単発試行では実行成功率が0%で、ゼロショットでは扱えないことを示しました。そこで、FORM本体を実行オラクルとして用いる検証駆動のデータ生成パイプラインで4,633件の学習例を作成し、Qwen3-8BをQLoRAで微調整することで、複数ベンチマークで大規模フロンティアモデルを上回るFORM特化モデルを実現しました。</p>
+      <p><strong>新規性</strong> FORM実行系をオラクルにした検証駆動データ生成と、それに基づく微調整で、LLMによるFORMコード生成を初めて実用的に改善した点が新規です。</p>
+      <p><strong>Tags:</strong> FORM, LLM, fine-tuning, verification-driven, particle physics</p>
+      <p><strong>Abstract</strong> FORM is a domain-specific symbolic manipulation language widely used in particle physics for processing the very large algebraic expressions arising from multi-loop Feynman diagram calculations. Despite its central role in precision theoretical physics, no artificial-intelligence tooling exists, to our knowledge, for assisting physicists in writing FORM code. We show that contemporary large language models (LLMs), including frontier models with hundreds of billions of parameters, achieve a zero-percent execution pass rate on our instruction-following and tutorial-style FORM tasks without documentation in a single attempt, establishing FORM as a genuine zero-shot language for LLMs at the time of writing. We then present a verification-driven data generation pipeline that uses the FORM binary itself as an execution oracle to produce and validate a corpus of 4,633 training examples spanning deterministic computations, open-ended programs, tutorial code, and knowledge question-answer pairs. Fine-tuning a compact open-weights model (Qwen3-8B) with quantized low-rank adaptation (QLoRA) yields a specialist that, evaluated on four complementary benchmarks (840 tasks, single attempt each), decisively outperforms frontier models with up to 756B parameters in execution rate and in strict, FORM-verified output matching on the larger benchmarks, and remains statistically indistinguishable from them on the smaller, harder ones. General reasoning and coding capabilities are preserved within 2.6 percentage points.</p>
+      <hr />
+      <h3>4. CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23320">2609.23320</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23320.pdf">link</a></li>
+      <li>Published: 2026-09-20 12:16 JST</li>
+      <li>Updated: 2026-09-20 12:16 JST</li>
+      <li>Authors: Yipeng Qian, Pengjie Zhao, Chaoxi Niu</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 21.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMの普及により、テキストだけではソーシャルボット検出が難しくなり、意味的には人間らしい一方でグラフ構造や属性に不整合を持つ「モダリティ間の衝突」が課題となっている。本研究は、簡素化したグラフ専門家、単体制約付きのキャリブレーション融合、軽量な不整合専門家からなるCSCを提案し、複数ベンチマークで較正された意思決定品質の向上を示した。</p>
+      <p><strong>新規性</strong> 複雑化ではなく「簡素化とキャリブレーション」により、モダリティ間の衝突を扱うソーシャルボット検出枠組みCSCを提案した点が新しい。</p>
+      <p><strong>Tags:</strong> social bot detection, LLM, graph neural network, calibration, multimodal fusion</p>
+      <p><strong>Abstract</strong> Social bot detection is essential for protecting online platforms from misinformation amplification, coordinated manipulation, and distorted public discourse. However, large language models have made social bots much harder to detect from text alone because semantic camouflage is now cheap, fluent, and scalable. The resulting challenge is modality conflict: an account may look human-like in semantics while remaining suspicious in graph structure, profile attributes, or cross-modal consistency. Recent graph-based detectors tackle this limitation by adding graph-side complexity, such as sparse prototype selection, adaptive gating, or architecture-specific control logic, yet our experiments suggest that complexity alone is not the most reliable way to resolve such conflict. We therefore propose CSC, a calibrated-simplicity framework for conflict-aware LLM-era social bot detection. The framework combines three design choices: a simplified prototype-guided graph expert that retains useful structural biases while removing unstable graph-side heuristics, calibrated simplex-constrained fusion that aligns heterogeneous confidence spaces before late fusion, and a lightweight inconsistency expert that models cross-modal disagreement. Experiments on TwiBot-22, TwiBot-20, and MGStBot-large show that \textsc{CSC} improves calibrated operating-point decision quality while remaining competitive across external benchmarks. Further analyses show that calibration improves confidence reliability, the inconsistency expert mainly provides localized corrections in high-conflict or near-threshold regions, and simplified graph-side control yields a better stability-cost trade-off. A targeted semantic-camouflage stress test further shows that replacing selected bot text with matched human text sharply degrades the standalone text expert while leaving graph and fused evidence stable on a balanced challenge set.</p>
+      <hr />
+      <h3>5. Euston: Training Away Mathematical Sycophancy Without Losing the Mathematics</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23205">2609.23205</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23205.pdf">link</a></li>
+      <li>Published: 2026-09-20 05:26 JST</li>
+      <li>Updated: 2026-09-20 05:26 JST</li>
+      <li>Authors: Zehua Cheng, Wei Dai, Jiahao Sun</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 21.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='mathematical' (+9.0)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Eustonは、誤った数学的主張に対しても安易に証明を生成してしまう「数学的迎合」を抑えるために訓練された8B規模の検証モデルである。GraphSynthで生成した真偽対応ペアを用いてDeepSeek-R1-8BをGRPOで微調整し、保持評価では真偽判定のbalanced accuracyが29.50%から63.75%に向上した。一方で、一般的な数学能力は大きく損なわれず、AIME 2026の精度は統計的に有意でない範囲でベースラインと近かった。</p>
+      <p><strong>新規性</strong> GraphSynthによる真偽対応データとゼロAPIの報酬設計を組み合わせ、数学的能力を保ったまま誤った命題への迎合を抑える訓練法を示した点が新しい。</p>
+      <p><strong>Tags:</strong> mathematical verification, language model alignment, fine-tuning, synthetic data, cs.CL</p>
+      <p><strong>Abstract</strong> Reasoning language models are trained to produce solutions, not to refuse them, and this bias persists when the problem they are handed is false. Asked to prove a corrupted theorem, a strong model will typically comply and produce a confident derivation of something untrue. We present Euston, an 8B mathematical claim-verification model trained to resist exactly this. Training data were generated with GraphSynth, a probabilistic factor-graph generator that couples attribute-level diversity to decode-time structural masking and span-synchronized verification, yielding 3{,}026 matched true/corrupted statement pairs (6,052 statements) drawn from arXiv papers spanning 2010--2025. We fine-tuned DeepSeek-R1-8B with GRPO under a rule-based, zero-API reward for 189 steps on four H100 GPUs. On a balanced 200-true/200-false held-out split, balanced accuracy rises from 29.50% to 63.75% and the discrimination gap---the difference between the rate of calling false statements false and the rate of calling true statements false moves from -0.5% (z=-0.1) to +27.5% (z=+6.0). Critically, the gain is not purchased with general mathematical ability: AIME 2026 accuracy under official semantics is 65.00% against a 69.17% base, a difference of -4.17% that is not statistically significant, whereas an earlier run of the same recipe on a smaller GraphSynth corpus collapsed to 40.00%. Median response length also falls from 19,217 to 18,296 tokens and the truncation rate from 25.8% to 8.3%, so the improvement does not come from thinking longer. We report the result together with the confounds that bound its interpretation, principally the all-false composition of the official evaluation sets and the low precision implied at realistic error prevalence.</p>
+      <hr />
+      <h3>6. Do Not Trust the Benchmark: Limitations of General LLM Rankings and a Case for Task-Specific Evaluation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23201">2609.23201</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23201.pdf">link</a></li>
+      <li>Published: 2026-09-20 05:02 JST</li>
+      <li>Updated: 2026-09-20 05:02 JST</li>
+      <li>Authors: Danial Amin</li>
+      <li>Categories: cs.AI, cs.HC</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの一般的なベンチマーク順位が、評価対象の構成や評価条件、含まれる質問、利用者のタスクとの対応関係に強く依存するため、そのままモデル選択の根拠にはなりにくいと論じる。特に、公開モデルとの差異、外部評価における商業的制約、ベンチマークの飽和やデータ汚染、スコア操作、タスク適合性の低さという5つの限界を整理し、評価設定の明示やコスト・実行時間の併記、一般化範囲の明確化を提案する。</p>
+      <p><strong>新規性</strong> 一般的なランキングの限界を5点に整理したうえで、タスク固有・利用者提供の評価へ移るべきだと主張し、Isotantaをその実例として位置づけた点が新しい。</p>
+      <p><strong>Tags:</strong> LLM評価, ベンチマーク, タスク特化評価, モデル選択, Isotanta</p>
+      <p><strong>Abstract</strong> Benchmark scores increasingly influence the development, marketing, and selection of large language models (LLMs). Yet an overall score is interpretable only in relation to the system tested, the questions included, and the conditions of evaluation. This perspective examines five connected limitations of general LLM rankings: differences between evaluated and publicly available systems; commercial incentives and dependencies in external evaluation; benchmark saturation, defective tests, and data contamination; models exploiting scoring procedures; and the limited relevance of general scores to users' tasks. Documented cases illustrate why these problems require different responses. I argue for evaluation procedures that disclose the tested configuration, validate questions and successful task completion, report performance alongside cost and execution time, and make the scope of generalization explicit. I then discuss \textbf{Isotanta}, a crowdsourced benchmarking platform, as a practical example of contributed questions and repeated evaluation. A larger question pool may improve task coverage, while repeated sampling can improve the stability of estimates on that pool; neither guarantees validity or personalization. The paper distinguishes the platform's current shared ranking from proposed task-specific and user-provided evaluations. Its central argument is that model selection requires evidence about performance on the intended work, not simply a high position on a general leaderboard.</p>
+      <hr />
+      <h3>7. ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23314">2609.23314</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23314.pdf">link</a></li>
+      <li>Published: 2026-09-20 12:03 JST</li>
+      <li>Updated: 2026-09-20 12:03 JST</li>
+      <li>Authors: Junyoung Park, Jungwook Choi, Mingu Lee</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> QK正規化、gated attention、attention sink、logit softcappingを持つLLMでは、従来のKVキャッシュ削除法が依拠する持続的なattention sinkが弱いことを観察した。著者らは、こうしたモデルではkeyよりもvalueの分散が大きいことに着目し、cache平均との差のL2ノルムでトークンを順位付けするValueDiffを提案する。RULER、LongBench、MATH-500で、sink抑制型モデルに対して既存法より高い性能保持を示した。</p>
+      <p><strong>新規性</strong> valueベクトルの幾何学的分散を用いてKVキャッシュを削除する点が新規であり、同スコアが最大エントロピー仮定下の最小攪乱削除として導かれる。</p>
+      <p><strong>Tags:</strong> KV cache eviction, LLM, value geometry, long-context, attention sink</p>
+      <p><strong>Abstract</strong> Modern LLMs with QK-normalization, gated attention, learned attention sinks, or logit softcapping exhibit weaker persistent attention sinks, on which existing KV cache eviction methods primarily rely. We observe that across these models, weaker sinks co-occur with greater value-vector dispersion relative to key-vector dispersion. Motivated by this value-side dispersion, we present ValueDiff, a value-geometric eviction that ranks tokens by the L2 deviation of their value vectors from the cache mean. The same score arises as the minimal-disturbance eviction under a max-entropy assumption about future attention. We evaluate under fixed cache budgets, with eviction at every block boundary during prefill and at every decoding step during generation. On RULER at a tight 2k token budget, ValueDiff retains 88--99\% of dense across seven sink-suppressed models (best on 6 out of 7). On LongBench at the 4k budget, ValueDiff averages 92\% retention across sink-suppressed models versus 83\% for the strongest prior baseline. On MATH-500, ValueDiff is the strongest non-dense method on every sink-suppressed model tested at the 25\% cache budget, outperforming prior methods by up to $\sim$20 points on gated-attention models. Across all three benchmarks, value geometry emerges as the more reliable query-invariant eviction signal for sink-suppressed models.</p>
+      <hr />
+      <h3>8. Judging a Review by its Cover: A Reliability Analysis of LLM-based Peer Review Evaluation Metrics</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23264">2609.23264</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23264.pdf">link</a></li>
+      <li>Published: 2026-09-20 09:49 JST</li>
+      <li>Updated: 2026-09-20 09:49 JST</li>
+      <li>Authors: Shakiba Amirshahi, Sajad Ebrahimi, Hai Son Le, Negar Arabzadeh, Ebrahim Bagheri</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMを用いた査読評価メトリクスが、レビューの内容そのものではなく、流暢さや整った文章表現に影響されるリスクを検証した研究です。ICLRとNeurIPSの674件の人間レビューから作成した4,044件の意味保持リライトを用い、29個の評価メトリクスをテストした結果、多くが表層的な書き換えに対して有意にスコアを変えることが分かりました。これは、人間・AI支援・AI生成レビューを比較する前に、意味を保った書き換えへの頑健性を確認すべきだと示しています。</p>
+      <p><strong>新規性</strong> 意味を保つLLMリライトに対する表層感度と頑健性を比較する統計的枠組みを提案し、査読評価メトリクスの信頼性を体系的に検証した点です。</p>
+      <p><strong>Tags:</strong> peer review, LLM-as-a-judge, evaluation metrics, robustness, cs.CL</p>
+      <p><strong>Abstract</strong> Peer-review evaluation is increasingly being automated with LLM-as-a-judge metrics, but this creates a measurement risk. A review may receive a high score because it is fluent, organized, and polished, rather than because it provides a strong evaluation of the paper. This risk is especially important in AI-assisted reviewing, where reviewers may use LLMs to improve clarity or presentation while preserving the underlying judgments. We propose a statistical framework for testing whether peer-review evaluation metrics capture substantive review quality beyond surface-level linguistic form. The framework compares original human reviews with faithful LLM rewrites that preserve the same evaluative content while changing wording and presentation. Using a dataset comprising 4,044 meaning-preserving rewrites derived from 674 human reviews from ICLR and NeurIPS, we evaluate 29 content-oriented peer-review evaluation metrics drawn from four prior works through complementary tests of surface sensitivity and robustness. Although these metrics are intended to capture review properties beyond surface-level, writing-dependent characteristics, we find that sensitivity to rewriting is widespread. Under our primary analysis, 23 metrics assign significantly different scores to reviews whose evaluative content is preserved, while only six satisfy our robustness criterion. The patterns are largely consistent across two LLM judge models, suggesting that the issue is not specific to a single judge. These findings show that many peer-review evaluation metrics partially conflate review quality with linguistic presentation, and indicate that robustness to meaning-preserving rewriting should be validated before such metrics are used to compare human-written, AI-assisted, and AI-generated reviews.</p>
+      <hr />
+      <h3>9. Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23215">2609.23215</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23215.pdf">link</a></li>
+      <li>Published: 2026-09-20 06:10 JST</li>
+      <li>Updated: 2026-09-20 06:10 JST</li>
+      <li>Authors: Param Raval, Rohit Shenoy, Archana Vaidheeswaran</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、Active Inferenceエージェントに接続されたLLM説明器が、実際の内部状態や誤りを正しく反映できるかを監査した。German grid demand を扱うエージェントに対し、観測改ざん・誤行動・メタデータ注入の3つのブラックボックス・トリガーを与えたところ、説明は一貫して流暢だが誤っており、誤った信念の正当化や情報漏えいが観測された。</p>
+      <p><strong>新規性</strong> エージェント本体ではなく、運用時に提示されるLLM説明そのものを監査対象とし、複数の失敗モードを体系的に示した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM interpretability, active inference, agent auditing, explanation failure, runtime oversight</p>
+      <p><strong>Abstract</strong> LLM explainers are increasingly attached to autonomous agents as runtime oversight, with operators reading a generated account of the agent's beliefs and actions rather than its internal state. We audit the account itself, pairing an Active Inference (AIF) agent that tracks German grid demand and adjusts generation with an LLM explainer on three backends (GPT-4o, Claude-3-Opus, Gemini), and probing the pair with three black-box triggers. Corrupting the observation stream by 600 MW per step moves the agent's posterior by 490 MW, roughly 0.9% of grid capacity. None of the 30 explanations produced during the injection flag anything under a stated rubric, and each narrates the corrupted belief fluently. On timesteps where the agent takes an objectively wrong action, all three explainers produce a sycophantic rationalization 80-95% of the time (n = 20 per backend). Attacker-controlled text in the observation metadata field steers the explainer, with susceptibility differing by provider and data exfiltration succeeding on all three. We propose mitigations for each failure but do not evaluate them. In every failure we observed, the explanation was fluent and wrong. Moreover, nothing in the explainer architecture checks whether an explanation is true before an operator acts on it. Testing the explainer therefore belongs in any audit of an agentic deployment.</p>
+      <hr />
+      <h3>10. Knowing When to Trust Images: Reliability-Aware Multi-modal Entity Alignment</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23267">2609.23267</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23267.pdf">link</a></li>
+      <li>Published: 2026-09-20 09:55 JST</li>
+      <li>Updated: 2026-09-20 09:55 JST</li>
+      <li>Authors: Chenxiao Li, Yunhe Feng, Dongfang Liu, Dong Nie, Yan Huang, Heng Fan</li>
+      <li>Categories: cs.CL, cs.AI, cs.CV</li>
+      <li>Score: 14.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、多モーダル実体アライメントにおいて画像がノイズや意味的不一致を含む場合があることに着目し、画像の信頼性を評価しながら融合するReliability-Aware framework（RA-MMEA）を提案する。提案法は、エンティティ内の多モーダル依存関係を用いて画像の信頼性を予測し、テキスト側の意味に条件づけた代替視覚表現を生成することで、より頑健な実体アライメントを実現する。</p>
+      <p><strong>新規性</strong> 画像の信頼性を明示的に予測し、信頼できない場合にはテキスト意味に基づく代替視覚表現へ置き換えて融合する点が新規である。</p>
+      <p><strong>Tags:</strong> multi-modal entity alignment, image reliability, visual embedding, multi-modal fusion, robustness</p>
+      <p><strong>Abstract</strong> The visual modality, i.e., images, plays a key role in multi-modal entity alignment (MMEA). Existing approaches often directly fuse the image with other modalities to align different entities. Although simple, such strategies overlook the potential noise in the images and their semantic misalignment with corresponding entities, resulting in suboptimal fusion and degraded performance. Addressing this, we propose a novel Reliability-Aware framework for MMEA (RA-MMEA), which assesses visual reliability and adaptively improves unreliable visual representations for robust entity alignment. The core lies in two modules, including dependency-aware visual reliability prediction (DA-VRP) and stability-regularized visual embedding generation (SR-VEG). The former aims to estimate the reliability of an image by leveraging multi-modal dependency within the entity, while the latter focuses on producing alternative visual representation conditioned on semantics encoded in textual modalities for multi-modal fusion. Compared to current methods, RA-MMEA enables more reliable visual representations for modality fusion, thereby improving performance. In extensive experiments, RA-MMEA achieves state-of-the-art results, verifying the importance of reliable visual modality for entity alignment and the effectiveness of RA-MMEA. The code and results will be released.</p>
+      <hr />
+      <h3>11. TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23363">2609.23363</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23363.pdf">link</a></li>
+      <li>Published: 2026-09-20 14:17 JST</li>
+      <li>Updated: 2026-09-20 14:17 JST</li>
+      <li>Authors: Bowei Wang, Zhigang Fang, Zhijie Yang, Renzhi Chen, Shanshan Li, Lei Wang</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、RTL設計におけるタイミングクロージャ能力を評価するためのベンチマークTicTacBenchを提案する。30件の多様なタスクに対して、post-PnRでの評価、機能等価性検証、タイミングレポートを用い、8つの最先端LLM駆動コードエージェントを300回以上評価した結果、最良でも53.3%のタスクしかクロージャできず、タイミングクロージャには依然として大きな改善余地があることを示した。</p>
+      <p><strong>新規性</strong> RTLレベルのタイミングクロージャをpost-PnR条件で評価する専用ベンチマークTicTacBenchを新たに構築し、さらに標準的なタイミングクロージャ手順を促すTicTacSkillで成功率を9%改善した。</p>
+      <p><strong>Tags:</strong> RTL設計, タイミングクロージャ, ベンチマーク, コードエージェント, LLM</p>
+      <p><strong>Abstract</strong> Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly evaluate functional correctness and performance, power, and area (PPA) of the generated RTL designs, leaving agents' ability for \emph{timing closure} under-evaluated. We propose TicTacBench, a benchmark specifically designed to evaluate coding agents' capabilities for RTL-level timing closure under post-place-and-route (post-PnR) evaluation. TicTacBench contains 30 diverse tasks, each provided with a suboptimal RTL design, realistic timing constraints, functional equivalence verification, and timing reports. With over 300 runs of coding agents driven by 8 frontier LLMs, we find that even the best agent can only close 53.3\% of tasks with 7.18\% area-delay product (ADP) degradation and 8.83\% energy-delay-squared product (EDDP) improvement on average. We identify common failure categories that explain why agents fail to close timing. Then we propose TicTacSkill, a new method that guides agents to follow standard timing-closure procedures and improves the Timing Closure Rate by 9\%. These results suggest that while coding agents have made significant progress in RTL design, their timing-closure capability still has substantial room for improvement.</p>
+      <hr />
+      <h3>12. Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23371">2609.23371</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23371.pdf">link</a></li>
+      <li>Published: 2026-09-20 14:43 JST</li>
+      <li>Updated: 2026-09-20 14:43 JST</li>
+      <li>Authors: Yifan Wang, Dejing Dou</li>
+      <li>Categories: cs.CL, cs.LG</li>
+      <li>Score: 13.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、長文ドキュメントを検索・推論・復元に使える固定長の状態へコンパイルする「Machine-Interpretable Information (MII)」を提案する。Writerが文書を56トークンの標準化された状態に圧縮し、Translatorが任意の凍結済みReaderの埋め込み空間へ写像することで、クエリ時コストを抑えつつ異なるLLM間での相互運用を可能にする。</p>
+      <p><strong>新規性</strong> 文書を検索可能で可読な転送可能状態として扱うA2Aの文書→状態プロトコルを提案し、さらにResidual-MIIで固定帯域のグローバル記憶と疎な局所証拠を組み合わせた点が新しい。</p>
+      <p><strong>Tags:</strong> 長文文書処理, 検索拡張生成, 状態空間モデル, モデル間相互運用, 文書圧縮</p>
+      <p><strong>Abstract</strong> Long-context language models interface with external knowledge through raw natural language. In retrieval-augmented systems, this creates a persistent index-payload schism: dense vectors enable searchable routing, but models must re-ingest lengthy text payloads for reasoning at O(N^2) attention cost. Existing compression methods further produce private states tied to specific architectures. We introduce Machine-Interpretable Information (MII), the first agent-to-agent (A2A) document-to-state protocol. A dual-timescale state-space Writer compiles documents into a canonical, fixed-bandwidth state (56 tokens), and a lightweight Translator maps it into any frozen Reader's embedding space, reducing query-time cost to O(K). The resulting .mii artifact unifies Retrieval (searchable geometry), Reasoning (global memory), and Reconstruction (grounded details) in a single transferable medium. We demonstrate strong cross-model interoperability across heterogeneous LLMs (e.g., Llama, Qwen, Mistral) -- despite the Writer using a legacy GPT-2 vocabulary, forcing genuine semantic translation rather than token-level memorization. Mechanistic probes reveal modular latent structure: entity representations can be causally traced and zero-shot transplanted between unrelated document states while remaining decodable. To address lexical reconstruction under fixed bandwidth, we propose Residual-MII, a cache hierarchy combining compiled global memory with sparse local evidence. On HotpotQA (7,405 queries), Residual-MII exceeds full-context Exact Match at approximately 7% of the attention FLOPs, suggesting a paradigm shift toward compiled, transferable neural document formats.</p>
+      <hr />
+      <h3>13. Low resource cross-modal alignment using HGNN to enhance speech representation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23191">2609.23191</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23191.pdf">link</a></li>
+      <li>Published: 2026-09-20 04:31 JST</li>
+      <li>Updated: 2026-09-20 04:31 JST</li>
+      <li>Authors: Yannick Yomie Nzeuhang, Marie Tahon, Paulin Melatagia Yonta</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 13.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、音声とテキストを共通空間に整列させて音声表現を意味的に強化する手法を、低資源・低計算量の条件で実現することを目的としている。Heterogeneous Graph Neural Networks と link prediction を用いてテキスト側の情報を音声側へメッセージパッシングで伝達し、単語レベルの speech-text alignment を TIMIT と Yemba で評価した。</p>
+      <p><strong>新規性</strong> 学生/教師型の大規模学習に依存せず、Heterogeneous Graph Neural Networks によるデータ効率的なクロスモーダル整列を提案し、特に低資源言語で既存手法に匹敵または上回る結果を示した点。</p>
+      <p><strong>Tags:</strong> speech-text alignment, low-resource language, heterogeneous graph neural network, cross-modal representation learning</p>
+      <p><strong>Abstract</strong> Speech-text space alignment is a multimodal representation learning method consisting to map different speech and text into a shared representation space, leading to enrichment of the representation of each modality. Proposed architectures, such as SAMU-XLSR, typically follow a student/teacher framework, with the goal of fine-tuning an audio encoder to produce representations that closely match those of the text. In this way a speech representation is semantically enriched. However, such systems generally require large amounts of training data and considerable computational resource, making them difficult to apply to low resources languages under frugal constraints. The present work proposes a data-efficient space alignment method based on Heterogeneous Graph Neural Networks and link prediction. The core idea is to leverage message passing to explicitly transfer information from the text modality to the speech modality, thereby reducing the need for large training datasets and intrinsically enriching the acoustic representations, all in a more interpretable manner. Although thoroughly explored for high-resource languages, word-level tasks in speech remain relevant for certain low-resource languages. Therefore, we conducted experiments on speech-text alignment at the word level using the TIMIT (English) dataset and Yemba (a Cameroonian language). Our approach yields results comparable to those of SAMU-XLSR, a state-of-the-art method, and even surpasses it for the Yemba language in the task of word retrieval, while using far fewer resources, demonstrating its power, frugality, and efficiency.</p>
+      <hr />
+      <h3>14. Auditing Bayesian Graph Alignment: Diagnostic Comparisons and Reference Failure</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23232">2609.23232</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23232.pdf">link</a></li>
+      <li>Published: 2026-09-20 07:19 JST</li>
+      <li>Updated: 2026-09-20 07:19 JST</li>
+      <li>Authors: Melika Gorgi, Kourosh Mirsohi</li>
+      <li>Categories: stat.AP, cs.LG, stat.CO, stat.ME</li>
+      <li>Score: 10.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Bayesian graph alignmentにおいて、alignment scoreの収束が対応確率の正確さを保証しない点を、240組の新規な厳密グラフ対と追加の大規模事例で検証した。複数のサンプラーと診断法を比較した結果、診断はサンプラーや評価対象によって有効性が異なり、どの手法も一貫して優位ではなかった。</p>
+      <p><strong>新規性</strong> assignmentに敏感な監査指標の有効性を示しつつ、有限計算予算や参照解の一致だけでは正確性の証拠にならない限界を明らかにした。</p>
+      <p><strong>Tags:</strong> Bayesian graph alignment, diagnostics, MCMC, posterior marginals, graph matching</p>
+      <p><strong>Abstract</strong> Bayesian graph alignment estimates correspondence probabilities, but convergence of an alignment-score trace need not imply accurate correspondence marginals. We audit this gap on 240 new exact graph pairs from four source families, 240 larger pairs with 20-100 vertices, and a separate 60-case exact implementation check. Under an explicit edge-flip likelihood, we compare three samplers and score, marginal, indicator, categorical, and classifier-based diagnostics. Marginal disagreement improves error discrimination over score R-hat for the exact informed sampler, but its improvement for vanilla local sampling is uncertain. Assignment-based R* and short indicator panels are competitive; no diagnostic dominates across samplers and endpoints. At larger sizes, diagnostics predict subsequent marginal changes, not posterior error, and classification performance depends on the drift threshold. Disjoint-window and held-out-chain checks attenuate but preserve positive associations. Only 22 of 240 original reference sets pass an agreement screen. On forty failure-selected cases, eightfold SMC particle escalation does not resolve disagreement, whereas additional rejuvenation helps. Longer informed runs remain unstable. An elementary feasible-alignment bound demonstrates severely unrepresentative SMC and informed-chain scores in concentrated 100-vertex cases, independently of approximate reference consensus. We also exhibit common-start chains with near-zero disagreement despite exact marginal error near .967. These results support assignment-sensitive auditing while identifying limits of finite budgets, diagnostic rankings, and reference agreement as evidence of accuracy.</p>
+      <hr />
+      <h3>15. Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.23321">2609.23321</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.23321.pdf">link</a></li>
+      <li>Published: 2026-09-20 12:16 JST</li>
+      <li>Updated: 2026-09-20 12:16 JST</li>
+      <li>Authors: Tao Zhang, Bin Liao, Tao Zhou, Yanping Liu</li>
+      <li>Categories: cs.DC, cs.AI, cs.LG</li>
+      <li>Score: 10.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、Alibabaの実運用拡散モデル推論データセットGenTD26を用いて、LoRAアダプタの共起ネットワークをグラフ理論的に解析し、静的構造と動的変化の両面から特徴を調べている。共起ネットワークは非常に疎で使用頻度はヘビーテール分布を示し、最初のアダプタ導入には実行遅延の66.1%のオーバーヘッドがある一方、その後の限界コストは小さいことが示された。</p>
+      <p><strong>新規性</strong> 実運用の拡散モデル推論におけるLoRAアダプタの共起・資源競合・時間変化を、データ駆動で体系的に定量化し、トップk共起統計に基づく事前ロード戦略を提案した点が新しい。</p>
+      <p><strong>Tags:</strong> LoRA, diffusion model, inference service, co-occurrence network, resource management</p>
+      <p><strong>Abstract</strong> Low-rank adaptation (LoRA) has become a key technology for serving large-scale personalized large language models and diffusion models in the cloud. However, the co-occurrence patterns, resource contention relationships, and evolutionary regularities of adapters under production inference workloads have not been systematically or quantitatively studied. Based on GenTD26, Alibaba's production diffusion model inference dataset, this paper adopts a graph-theoretic framework to construct an adapter co-occurrence network and conducts a characterization from both static structure and dynamic evolution. Our main findings are as follows. (1) The co-occurrence network is extremely sparse, and adapter usage frequency follows a significant heavy-tailed distribution. (2) Introducing the first adapter incurs a 66.1% execution-latency overhead, with diminishing marginal costs afterwards. (3) Co-occurrence relationships are driven by base models: in 90.6% of multi-adapter requests, all adapters share the same dominant base model; 66.2% of significant co-occurrence edges connect same-model adapter pairs; and in 85.8% of multi-adapter requests, all adapter pairs form significant co-occurrence edges. (4) The adapter ecosystem exhibits a core-periphery bipolar structure, with a weekly Jaccard similarity of 0.696 at the model level and a churn rate of 54.5% for the top-10 hottest models within a 12-hour window. Based on these findings, we propose a preloading strategy built on top-k co-occurrence statistics; offline experiments show that it covers 81.0% of test-set co-occurrence pairs at k=3, and sensitivity analyses across frequency thresholds and time windows verify the robustness of the conclusions. These results provide a data-driven basis for cache preloading, adaptive scheduling, and GPU memory management in LoRA inference services.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
