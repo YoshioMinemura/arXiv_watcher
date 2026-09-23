@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-09-23 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-09-23</h1>
+        <p class="hero-copy">Generated at 2026-09-23 10:26 JST. Run ID: <code>c0450c92-954a-424b-b12c-635353052165</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>10</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-09-23</h1>
+      <p>Generated at: 2026-09-23 10:26 JST Run ID: c0450c92-954a-424b-b12c-635353052165</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 10</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. On the Lexical Superstition of Large Language Models for Code Comprehension: Re-evaluation on Code of Low Lexical Quality</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26388">2609.26388</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26388.pdf">link</a></li>
+      <li>Published: 2026-09-22 22:27 JST</li>
+      <li>Updated: 2026-09-22 22:27 JST</li>
+      <li>Authors: Xin Shen, San-Zhuo Xi, Yali Du, Ming Li</li>
+      <li>Categories: cs.SE, cs.CL, cs.LG</li>
+      <li>Score: 29.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、コード理解タスクにおいて大規模言語モデルが識別子名などの語彙的手がかりに過度に依存する「lexical superstition」を検証した。意味を保ったまま識別子を置換するFace/Offを用いて複数モデルを評価した結果、識別子情報が減る、あるいは誤誘導されるほど性能が低下し、誤った名前の意味に引きずられる傾向が広く確認された。</p>
+      <p><strong>新規性</strong> 意味保存的な識別子リネーム枠組みFace/Offを導入し、コードの構造を保ったまま語彙的手がかりへの過剰依存を系統的に再評価した点が新規である。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, コード理解, 識別子名, 語彙バイアス, プログラム解析</p>
+      <p><strong>Abstract</strong> Recent advances in large language models (LLMs) have made them widely used for code-related tasks. Identifier names are statistically informative in naturally occurring code, but their information is not always reliable. We investigate whether current LLMs assign disproportionate weight to lexical cues when renaming preserves program structure. We introduce Face/Off, a semantics-preserving identifier-renaming framework, and evaluate progressive naming conditions across multiple models and code-comprehension tasks. Within this framework, lexical overemphasis is pervasive across the evaluated models and primary tasks: performance generally decreases as identifier information is removed or made misleading, and outputs are often directed toward the meanings suggested by misleading names. The pattern persists under representative prompt- and fine-tuning-based interventions, suggesting that lexical overemphasis is an entrenched problem. A type-inference control confirms a boundary: naming effects are smaller when the answer is locally recoverable without the target name. These results do not imply that identifiers are unhelpful; rather, they reveal a systematic vulnerability in how current LLMs balance lexical cues against program structure. Our findings motivate evaluations and modeling methods that preserve the benefits of natural code regularities while keeping conclusions grounded in accurate, formalized code semantics.</p>
+      <hr />
+      <h3>2. PACT: From Credit Assignment to Critic Alignment</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26355">2609.26355</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26355.pdf">link</a></li>
+      <li>Published: 2026-09-22 21:58 JST</li>
+      <li>Updated: 2026-09-22 21:58 JST</li>
+      <li>Authors: Jiayan Fu, Hang Xu, Yong Zhang, Zhaokai Luo, Yao Hu, Dongyan Zhao, Mu Chuan</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 29.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの強化学習におけるトークンレベルのcredit assignmentを、Completeness・Prefix Consistency・Neutralityという3条件で一意に定義できることを示し、既存手法の信号との関係を整理している。さらに、この観点からOn-Policy DistillationやRLOO、GAEの性質を説明し、actor更新後にcriticを整合させるPolicy Aligned Critic Training（PACT）を提案する。</p>
+      <p><strong>新規性</strong> トークンレベルのcreditを3つの規則性条件で一意に特徴づけ、その理解に基づいてactor-then-criticの更新順序を持つPACTを導入した点。</p>
+      <p><strong>Tags:</strong> reinforcement learning, large language models, credit assignment, actor-critic, policy gradient</p>
+      <p><strong>Abstract</strong> Reinforcement learning has become a central component of large language model (LLM) post-training, yet token-level credit lacks a generally accepted mathematical definition, leaving its relationship to commonly used training signals unclear. We formulate three regularity conditions, namely Completeness, Prefix Consistency, and Neutrality, and prove that they uniquely determine token-level credit. This characterization provides a unified basis for explaining phenomena across existing algorithms and guides the development of an improved actor-critic training procedure. Through this lens, an ideal teacher in On-Policy Distillation (OPD) acts as an implicit critic, yielding an expected policy gradient proportional to that induced by token-level credit. Response-level REINFORCE Leave-One-Out (RLOO) signals match the expected policy-gradient contribution of token-level credit despite their coarser granularity. We further establish approximate credit sparsity under bounded outcome rewards and show how intermediate critic errors in Generalized Advantage Estimation (GAE) can become comparable to the underlying credit. These motivate Policy Aligned Critic Training (PACT), which adopts an Actor-then-Critic update order to apply importance sampling correction to critic training and better align the critic with the updated policy. In agentic mathematical reasoning, PACT achieves 72.87% average accuracy across four benchmarks, outperforming GRPO and PPO by 8.80 and 13.16 percentage points, respectively. On SWE-bench Verified, PACT achieves a pass rate of 67.4%, outperforming PPO, GRPO, and SAO by 2.4, 2.0, and 3.8 percentage points, respectively.</p>
+      <hr />
+      <h3>3. EADC: Evaluation of Advanced and Deep-level Compliance in Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26175">2609.26175</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26175.pdf">link</a></li>
+      <li>Published: 2026-09-22 21:00 JST</li>
+      <li>Updated: 2026-09-22 21:00 JST</li>
+      <li>Authors: Yan Zhang, Ruien Li, Yaoyao Peng, Wanxin Ren, Yijia Zhang, Wusheng Zhang, Guangwen Yang</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 28.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの法令・規制順守を評価するための新しいベンチマークEADCを提案する。AIコンプライアンス知識グラフと法務専門家のレビューを組み合わせ、偏り、差別、プライバシー、価値観などを含む4,435件超のQAペアからなるデータセットを構築し、従来手法では捉えにくい文脈依存の長期的なリスク連鎖を評価する。</p>
+      <p><strong>新規性</strong> 抽象的な法規制ルールを構造化された多関係グラフに写像し、専門家監修のもとで深層的なコンプライアンスリスクを含む adversarial シナリオを自動生成・評価できる点が新しい。</p>
+      <p><strong>Tags:</strong> LLM評価, コンプライアンス, ベンチマーク, AI法規制, 知識グラフ</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) have been used in various industries. However, ensuring their compliance with complex laws and regulatory frameworks remains a great challenge. Existing evaluation paradigms mainly rely on static benchmarks that suffer from three severe limitations: First, the compliance rules being used do not comply with the requirements of Artificial Intelligence (AI) laws and regulations; Second, they only handle apparent, explicit compliance risks, leaving implicit and covert compliance risks undetected; Third, they fail to track the systematic propagation of risks along logical dependency chains or evaluate compliance within nuanced, context-based real-world scenarios. To bridge this critical gap, we introduce EADC, a novel advanced evaluation benchmark of LLMs based on an AI compliance knowledge graph and AI compliance legal experts. By mapping abstract legal rules into structured logical multi-relational graphs, our framework enables automated, evolving agents to distill and synthesize highly sophisticated adversarial scenarios. This compliance benchmark is reviewed and corrected by human AI legal experts throughout the whole process. The resulting dataset (4,435+ QA pairs) provides an extensive, multi-dimensional taxonomy covering critical regulatory frontiers, including bias and discrimination, fairness, personal privacy protection, and values. Crucially, our compliance dataset moves beyond shallow string-matching by incorporating contextual long-horizon interactions and logic-driven hazard chains, capturing deeply embedded compliance anomalies that bypass traditional filters. Experiment evaluations demonstrate that our framework exposes critical regulatory blind spots in state-of-the-art LLMs, offering a rigorous, AI laws and regulations-aligned benchmark to safeguard high-level and deep compliance in the application of LLMs.</p>
+      <hr />
+      <h3>4. CompKV: Compensation-Aware KV Selection for Long-Context LLM Inference</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26300">2609.26300</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26300.pdf">link</a></li>
+      <li>Published: 2026-09-22 21:11 JST</li>
+      <li>Updated: 2026-09-22 21:11 JST</li>
+      <li>Authors: Zhen Huang, Ruizhe Yao, Danyi Liu, Xinrui Chen, Shuwei Li, Siru Zhong, Zijian Cao, Yushan Lai, Mingming Guo, Weijie Zheng, Haohuan Fu</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> CompKVは、長文コンテキスト推論におけるKVキャッシュのメモリ帯域ボトルネックに対し、疎な注意計算と補償機構を組み合わせた手法です。従来はトークン選択と未選択部分への補償が分離されていましたが、本手法はブロック単位で補償誤差を考慮して選択を最適化し、RULERとLongBench-Proで評価した疎ベースラインの中で最良の性能を示しました。</p>
+      <p><strong>新規性</strong> 補償後の誤差が大きくなるトークンを優先的に選ぶ、補償認識型の疎注意フレームワークを初めて提案した点です。</p>
+      <p><strong>Tags:</strong> LLM推論, KVキャッシュ, 疎注意, 長文コンテキスト, 効率化</p>
+      <p><strong>Abstract</strong> Despite their strong performance, large language models (LLMs) are bottlenecked by KV cache memory traffic during long-context inference. Sparse attention is widely used to accelerate LLM inference by computing exact attention over a selected subset of tokens. To recover the contribution of tokens excluded from exact attention, recent methods apply coarse-grained compensation to the omitted attention tail. However, existing methods typically select tokens based on attention mass and only then compensate for the unselected tokens. This decoupled design overlooks their interaction: selection should prioritize tokens that would leave the largest compensation error if omitted. To address this limitation, we introduce CompKV, the first compensation-aware sparse attention framework that divides tokens into blocks and explicitly optimizes selection for the downstream compensation mechanism. Our theoretical analysis shows that the residual left by block-level mean compensation is governed by both block attention mass and within-block logit variation. We approximate this residual using compact block-level statistics, yielding a deployable selection criterion. We further develop an efficient asynchronous implementation. Experiments on RULER and LongBench-Pro show that CompKV performs best among the evaluated sparse baselines while delivering up to a $6.85\times$ self-attention speedup over full attention.</p>
+      <hr />
+      <h3>5. CQ4OE: A benchmark for assessing LLM-assisted ontology generation from competency questions</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26029">2609.26029</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26029.pdf">link</a></li>
+      <li>Published: 2026-09-22 20:32 JST</li>
+      <li>Updated: 2026-09-22 20:32 JST</li>
+      <li>Authors: Jiayi Li, Ziyuan Wang, Daniel Garijo, María Poveda-Villalón</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、コンピテンシークエスチョン（CQ）からのオントロジー生成に対するLLM支援手法を評価するためのベンチマークCQ4OEを提案する。CQごとにクラス・プロパティ・公理への対応関係を明示したCQ駆動のゴールドOWLオントロジーを構築し、term-levelのCQ2Termとontology-levelのCQ2Ontoという2つの評価タスクを定義した。</p>
+      <p><strong>新規性</strong> CQとオントロジー要素の対応を明示したプロヴェナンス付きゴールドOWLオントロジーを整備し、語彙予測とオントロジー構造生成を分けて評価できるベンチマークを提示した点が新規である。</p>
+      <p><strong>Tags:</strong> ontology engineering, competency questions, LLM evaluation, benchmark, OWL</p>
+      <p><strong>Abstract</strong> Ontology generation from Competency Questions (CQs) is a central yet labor-intensive phase of Ontology Engineering. While large language models (LLMs) offer promising automation capabilities, current evaluations remain fragmented. Task formulations are heterogeneous, gold standards often lack fine-grained CQ provenance, metrics conflate lexical overlap with structural and logical adequacy, and reference ontologies are not always explicitly designed around the evaluation CQs. Here, we address these limitations with CQ4OE, a benchmark for the systematic and reproducible evaluation of LLM-based ontology generation from CQs. For each ontology in the benchmark, we build a CQ-driven gold OWL ontology with explicit provenance linking each CQ to the classes, properties, and axioms required to answer it. From this resource, we define two complementary evaluation tasks. CQ2Term supports term-level evaluation of CQ-specific class and property prediction over 99 CQs, and CQ2Onto supports ontology-level evaluation over 118 CQs, including hierarchy, property modeling, and axiom-level structure. We demonstrate CQ4OE with experiments using nine LLMs under zero-shot, iterative, and multi-agent generation strategies, showing that LLMs recover explicit vocabulary terms more reliably than creating ontologies, particularly in property modeling, hierarchy construction, and axiom generation.</p>
+      <hr />
+      <h3>6. On the security and privacy of LLMs in Mobility</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26295">2609.26295</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26295.pdf">link</a></li>
+      <li>Published: 2026-09-22 21:09 JST</li>
+      <li>Updated: 2026-09-22 21:09 JST</li>
+      <li>Authors: Mauro Conti, Lorenzo Perinello, Umberto Salviati</li>
+      <li>Categories: cs.CR, cs.AI</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、モビリティ分野におけるLLMの利用状況と、それに伴うサイバーセキュリティ、プライバシー、信頼性の課題を調査したサーベイである。欧州AI Actの要件に基づいて9つの技術分類を導出し、既存研究が主に交通応用とGPT/Llama系モデルに集中する一方で、セキュリティやプライバシー、ライフサイクル全体の安全性への配慮が不足していることを示した。</p>
+      <p><strong>新規性</strong> 欧州AI Actの要求をもとに9つの技術分類で研究を整理し、モビリティ向けLLM研究の性能重視と規制適合性の乖離を体系的に可視化した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM, mobility, security, privacy, AI Act</p>
+      <p><strong>Abstract</strong> The mobility sector is undergoing a paradigm shift driven by advances in Generative Artificial Intelligence. With a global market valued at approximately 2.9 trillion dollars annually, considering only cars, the integration of these technologies has the potential to impact more than 1.5 billion vehicles worldwide. As Large Language Models (LLMs) are increasingly adopted in mobility, concerns about cybersecurity, privacy, and reliability emerge. Accordingly, this paper surveys current applications and assesses these challenges. Since the European AI Act classifies transportation AI as high risk, we derive nine technical classes from its requirements to assess current research and future deployments. Our findings show that research mainly studies GPT and Llama models (over 50\% of reviewed works) and traffic applications while largely neglecting security, privacy, and reliability. This gap extends to AI Act compliance: among 35 reviewed works, only one includes a partial vulnerability assessment and one a partial risk management system. We identify a clear gap between strong optimization performance and regulatory adherence, suggesting compliance is limited less by technology than by a focus on static performance over lifecycle safety, and underscoring an urgent need for security-by-design in safety-critical intelligent transportation systems.</p>
+      <hr />
+      <h3>7. Combining Hierarchical Cognitive Process with Process Supervision for Interpretable Scene Safety Understanding</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26399">2609.26399</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26399.pdf">link</a></li>
+      <li>Published: 2026-09-22 22:34 JST</li>
+      <li>Updated: 2026-09-22 22:34 JST</li>
+      <li>Authors: Zhiyun Jiang, Hanyong Wang, Binbin Liang, Yu Xie, Zhengjie Wang, Menglong Yang, Wei Li</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、シーンの安全性理解において、直接的な安全レベル予測ではなく、人間の認知過程に対応した階層的な推論とプロセス監督を組み合わせる枠組みを提案する。マルチステップ推論とプロセスラベルを持つ高品質データセットを構築し、LLMの安全推論能力向上と中間推論の分析を可能にした。実験により、従来法よりも解釈性と性能の両面で優れることを示した。</p>
+      <p><strong>新規性</strong> 階層的な認知構造に基づくシーン安全理解データセットと、LoRA・MoEを用いたモジュール型プロセス監督フレームワークを統合した点が新規である。</p>
+      <p><strong>Tags:</strong> scene safety understanding, process supervision, LLM, interpretability, multi-step reasoning</p>
+      <p><strong>Abstract</strong> Scene safety understanding plays a life-or-death role in situational awareness in various critical domains. Traditional methods that rely on learning direct mappings between scenes and safety levels often lack interpretability, limiting their reliability in critical applications. An effective approach to overcoming this challenge lies in interpreting human cognitive processes and equipping machine models with analogous cognitive capabilities. This work explores an effective way of integrating scene safety cognitive process modeling and process supervision. Specifically, we first construct a hierarchical cognitive safety structure, which motivates the development of a novel, high-quality scene safety understanding dataset based on multi-step reasoning with process labels. This dataset serves both as a benchmark and a resource to improve the safety reasoning capabilities of Large Language Models (LLMs), while also enabling a granular analysis of intermediate reasoning steps through information flow and saliency-based techniques. Building upon this foundation, we introduce a modular and flexible process supervision framework that reflects the hierarchical nature of human cognition. This framework leverages LLMs as the core architecture and incorporates Low-Rank Adaptation(LoRA) and Mixture-of-Experts (MoE) strategies to enable specialization and collaboration among expert modules, each tasked with specific sub-processes of the overall reasoning chain. Systematic experimental evaluations and analyses confirm that our framework exhibits superior interpretability and performance characteristics compared to traditional approaches.</p>
+      <hr />
+      <h3>8. Disaggregated Quantization: Specializing LLM Prefill and Decode</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26333">2609.26333</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26333.pdf">link</a></li>
+      <li>Published: 2026-09-22 21:44 JST</li>
+      <li>Updated: 2026-09-22 21:44 JST</li>
+      <li>Authors: Andrei Panferov, Maximilian Kleinegger, Sweta Priyadarshi, Tijmen Blankevoort, Dan Alistarh</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Prefillとdecodeでは有効な量子化手法が異なることに着目し、計算形式・重み・配置を段階ごとに分けて最適化する「disaggregated quantization (DQ)」を提案している。Qwen 3やGemma 3で、decode時のactivation量子化を外すことでdecode重視タスクの精度を改善し、さらにprefill専用の重みを学習することで、2〜3-bit decodeでも精度を保ちながらprompt処理を高速化できることを示した。</p>
+      <p><strong>新規性</strong> prefillとdecodeを別々に最適化する量子化設計を導入し、decode用checkpointを変えずにprefill専用重みやSSDオフロードを組み合わせて速度と精度を両立した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM量子化, prefill, decode, 推論高速化, モデル圧縮</p>
+      <p><strong>Abstract</strong> Prefill and decode reward different approaches to quantization: low-precision arithmetic accelerates prompt processing, while compact weights reduce memory traffic during generation. We propose "disaggregated quantization" (DQ), which specializes computation formats, weights and storage placement to both of these phases. On Qwen 3 and Gemma 3, removing activation quantization specifically on decode improves accuracy on decode-heavy tasks without increasing inference cost. Training separate compute-native prefill weights accelerates prompt processing relative to weight-only inference while matching or exceeding its accuracy at 2-3-bit decode on both decode-heavy and prefill-heavy tasks. With released Qwen3.8-27B GGUF decoders, training an NVFP4 prefiller improves 1-bit accuracy by 32.5 points on MMLU-Pro and 35.3 on MMMU-Pro without modifying the decode checkpoint. To accommodate the additional checkpoint on a single device, offloaded disaggregated prefill (ODP) streams its weights from SSD, amortizing loading over prompt length. On the same 27B model, ODP delivers a 1.78x time-to-first-token speedup over the weight-only baseline at 8K prompt length in llama.cpp. We evaluate accuracy under disaggregated serving in vLLM and further validate shared-weight format disaggregation through post-training quantization on models up to 2.8T parameters.</p>
+      <hr />
+      <h3>9. xWhyL: Causal Interactive Learning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26037">2609.26037</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26037.pdf">link</a></li>
+      <li>Published: 2026-09-22 20:40 JST</li>
+      <li>Updated: 2026-09-22 20:40 JST</li>
+      <li>Authors: Nicholas Tagliapietra, Florian Peter Busch, Moritz Willig, Matej Zečević, Lavdim Halilaj, Juergen Luettin, Kristian Kersting</li>
+      <li>Categories: cs.LG, cs.AI, stat.ML</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、説明を因果推論の学習信号として利用し、観測データだけでは難しい因果モデル学習を補完するための枠組みxWhyLを提案する。さらに、誤った信念に基づく説明がデータと衝突する状況を「Causal Tug-of-War」として定式化し、誤指定された説明を受け入れずに拒否できる条件を示す。実装としてCausal Interactive Learning (CIL) を提示し、専門家の説明が因果発見を効率的に支援しうることを示す。</p>
+      <p><strong>新規性</strong> 説明を因果学習の入力として扱う理論枠組みを構築し、観測データに加えて説明から因果モデルを学ぶ点が新しい。</p>
+      <p><strong>Tags:</strong> causal inference, explainable AI, learning theory, causal discovery</p>
+      <p><strong>Abstract</strong> Explanations are central to causal reasoning, and cognitive science has long established that the human drive to explain is itself a mechanism for learning about causality. Despite this, learning from those abductive signals is largely ignored in artificial intelligence. While explainable AI (XAI) increasingly draws on causal models to generate explanations, the converse direction about what explanations can do for causality remains largely unexplored. To fill this gap, we propose xWhyL, a formal framework connecting causality and XAI by learning causal models from explanations. We develop a mathematical theory that translates explanations into a learning signal complementary to observational data, and demonstrate how it enables overcoming the limits of observational causal discovery. As explanations can be derived from incorrect beliefs and clash with data, a tension we call the Causal Tug-of-War, we prove conditions under which our framework rejects misspecified explanations rather than absorbing them. Our practical instantiation, Causal Interactive Learning (CIL), shows how expert explanations can efficiently support causal discovery and distinguish correct from incorrect explanations.</p>
+      <hr />
+      <h3>10. Target alignment, dilution and forecast selection when cross-sectional forecasts share a common target</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.26303">2609.26303</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.26303.pdf">link</a></li>
+      <li>Published: 2026-09-22 21:12 JST</li>
+      <li>Updated: 2026-09-22 21:12 JST</li>
+      <li>Authors: Masoud Soleimani</li>
+      <li>Categories: econ.EM, cs.LG, q-fin.ST, stat.ME</li>
+      <li>Score: 10.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、同じ標準化された実現値に対して評価されるクロスセクション予測について、各予測が共通ターゲットに整合する成分と、それと無相関な成分に厳密に分解できることを示す。これにより、予測誤差相関は多様性の指標として不十分であり、等ウェイト結合の優位性や予測者追加の効果は、真の改善と単なる希薄化に分けて考える必要があることを論じる。</p>
+      <p><strong>新規性</strong> 共通ターゲットを持つ予測の評価において、整合成分と希薄化を分離する選択規則を提案し、予測者追加がもたらす見かけの改善を識別可能にした点が新しい。</p>
+      <p><strong>Tags:</strong> forecast combination, cross-sectional prediction, target alignment, model selection, dilution</p>
+      <p><strong>Abstract</strong> Forecasters often score the same units per date against one standardized realized outcome. We show that every standardized forecast splits exactly into a component aligned with this common target and a component uncorrelated with it. Three consequences follow: forecast-error correlation largely mirrors forecast correlation and is therefore a poor measure of diversity; an equally weighted combination beats a no-information forecast only when average alignment is large relative to the combination's dispersion; and the gain from adding a forecaster separates into genuine improvement and mere dilution, which equal-weight admission can mistakenly reward. We develop a cautious selection rule, study it in simulations, and apply it to language-model forecasts of US equity rankings and mechanical signals ranking exchange-traded funds. Selection removes most dilution losses, but no combination beats the no-information forecast.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
