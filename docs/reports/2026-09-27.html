@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-09-27 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-09-27</h1>
+        <p class="hero-copy">Generated at 2026-09-27 10:22 JST. Run ID: <code>29910672-a883-4798-9860-48679317327d</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>14</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-09-27</h1>
+      <p>Generated at: 2026-09-27 10:22 JST Run ID: 29910672-a883-4798-9860-48679317327d</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 14</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. The Alignment Illusion in Multimodal Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30210">2609.30210</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30210.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:42 JST</li>
+      <li>Updated: 2026-09-25 02:42 JST</li>
+      <li>Authors: Hong-Han Wang, Yuntao Wang, Hu Ding</li>
+      <li>Categories: cs.CV, cs.LG</li>
+      <li>Score: 36.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> マルチモーダル大規模言語モデルにおける層ごとの視覚・テキスト類似度は、必ずしも内容レベルのクロスモーダル統合を示さないことを、視覚ストリームへの制御介入で検証した研究です。13種類のMLLMで、視覚トークンをノイズに置き換えると精度は大きく低下する一方、CKAやSVCCAなどの標準的なスカラー指標は破損したストリームを一貫して識別できませんでした。</p>
+      <p><strong>新規性</strong> 共有された言語モデル経路による重み起因の類似を切り分けるため、上位2つの主成分角コサインの差である principal-angle gap (PA gap) を提案し、従来指標よりも視覚破損下で精度変化に整合的であることを示した点です。</p>
+      <p><strong>Tags:</strong> multimodal large language models, cross-modal alignment, representation similarity, visual corruption, principal-angle gap</p>
+      <p><strong>Abstract</strong> Layer-wise visual-text similarity in Multimodal Large Language Models (MLLMs) is widely interpreted as evidence that the language model progressively integrates visual content into a shared representation space. This reading rests on the assumption that scalar alignment scores reflect content-level cross-modal interaction. To test this assumption, we apply controlled interventions to the visual stream. Across 13 MLLMs from five families spanning 0.5B to 72B parameters, replacing projector-output visual tokens with Gaussian noise sharply reduces task accuracy, yet four standard scalar measures (CKA, SVCCA, MIR, and the leading principal-angle cosine) fail to consistently separate the corrupted stream from the original. We call this failure the alignment illusion and trace it to the shared language-model pathway: anisotropic MLP down-projections pull visual and text tokens toward common output directions, producing weight-induced alignment. Because this component is essentially one-dimensional, we introduce the principal-angle gap (PA gap), defined as the difference between the top two principal-angle cosines, which separates weight-induced similarity from multi-directional visual structure. Under graded visual corruption, the PA gap tracks task accuracy more consistently than the scalar scores we consider; under a structured but irrelevant image, it further exposes regimes in which internal geometry and task accuracy come apart. Internal visual-text alignment in MLLMs is therefore best read as a geometric diagnostic of the visual stream inside the language model rather than a direct proxy for content-level cross-modal interaction, and is most informative when calibrated by controlled task evidence.</p>
+      <hr />
+      <h3>2. SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30192">2609.30192</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30192.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:33 JST</li>
+      <li>Updated: 2026-09-25 02:33 JST</li>
+      <li>Authors: Xinyue Zeng, Jiawei Zhang, Yujun Yan, Dawei Zhou</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 24.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 長期ホライズン推論における疎報酬環境では、局所的には妥当でも構造的に不安定な分岐へ誘導される探索バイアスと、深さに伴って小さな誤差が蓄積する累積バイアスが問題になると述べています。著者らはこれを説明する理論枠組みとして Symbolic Closure Analysis を導入し、構造的ガイダンスを与える SAGE を提案しています。</p>
+      <p><strong>新規性</strong> SAGE は、代数的スパース化と双曲空間による構造的ガイダンスを組み合わせ、探索バイアスと累積バイアスを同時に緩和する点が新規です。</p>
+      <p><strong>Tags:</strong> long-horizon reasoning, large language models, sparse reward, structural guidance, hyperbolic embedding</p>
+      <p><strong>Abstract</strong> Long-horizon reasoning remains a central challenge for large language models (LLMs) under sparse-reward regimes. We argue that this brittleness arises from two biases induced by complex reasoning spaces: an exploration bias, where models are drawn toward locally plausible but structurally unstable branches, and a compounding bias, where small local deviations accumulate across depth and suppress rare rewards. We introduce Symbolic Closure Analysis (SCA) as a theoretical lens characterizing how branching structures and sparse rewards induce these biases in long-horizon reasoning with local admissibility, and as a design principle for structural priors in less formal reasoning tasks. Motivated by this analysis, we propose SAGE (Structural Admissibility-Guided Exploration), a unified framework that injects structural guidance to alleviate exploration bias and compounding bias in long-horizon reasoning. SAGE combines two complementary structural guidance: algebraic sparsification, which projects locally admissible candidates onto operator-indexed algebraic subspaces to suppress spurious branching and mitigate exploration bias, and hyperbolic structural guidance, which embeds reasoning states into a negatively curved space to provide dense depth-wise signals and mitigate compounding bias. Across 12 benchmarks and 7 model families, SAGE outperforms competitive baselines. In particular, SAGE achieves up to an 8-fold improvement on the Andrews-Curtis problem, an open real-world long-horizon task. Code is available at: https://github.com/Susan571/SAGE-NeurIPS2026.</p>
+      <hr />
+      <h3>3. PrivDrift: Auditing User-Secret Leakage Under Topic Drift in Active LLM Conversations</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30094">2609.30094</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30094.pdf">link</a></li>
+      <li>Published: 2026-09-25 01:39 JST</li>
+      <li>Updated: 2026-09-25 01:39 JST</li>
+      <li>Authors: Luciano Maldonado</li>
+      <li>Categories: cs.AI, cs.CL, cs.CR</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、会話中にユーザーが開示した機密情報が、話題が別の方向に移った後でもLLMから再び引き出せるかを調べるためのベンチマークPrivDriftを提案する。1,000件の多ターン対話で評価した結果、3つのLLMにおいて対話レベルの漏えいは38.7%〜54.6%と高く、モデルや秘密の種類、説得の強さによって大きく変動した。</p>
+      <p><strong>新規性</strong> 話題ドリフト後のユーザー秘密の再抽出可能性を、継続対話における持続的なプライバシーリスクとして体系的に監査するベンチマークPrivDriftを導入した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, privacy, benchmark, topic drift, security</p>
+      <p><strong>Abstract</strong> Large language models increasingly operate as persistent assistants in user-facing, shared-session, and tool-augmented settings. When users disclose sensitive information during an active conversation, that information may remain behaviorally recoverable through later prompts even after the dialogue shifts to unrelated topics. We introduce \textbf{PrivDrift}, a benchmark for auditing whether user-disclosed secrets remain recoverable after conversational topic drift and persuasion-based probing. PrivDrift contains 1{,}000 controlled multi-turn dialogues with seeded secrets, content-dense drift turns, and standardized extraction probes. Across three LLMs with extended context windows, dialogue-level hybrid leakage remains substantial, ranging from 38.7\% to 54.6\%, and varies strongly by model, secret type, and persuasion intensity. Within the tested drift window, additional topic drift does not reliably reduce leakage, suggesting that privacy risk in active LLM contexts should be evaluated as a persistent behavioral failure mode rather than only as training-data memorization or immediate jailbreak behavior.</p>
+      <hr />
+      <h3>4. GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30147">2609.30147</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30147.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:11 JST</li>
+      <li>Updated: 2026-09-25 02:11 JST</li>
+      <li>Authors: Arunabh Srivastava, Mohammad A., Khojastepour, Srimat Chakradhar, Sennur Ulukus</li>
+      <li>Categories: cs.AI, cs.CL, cs.LG, cs.MA</li>
+      <li>Score: 20.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> GRASPは、複雑なタスクに対して高品質な自然言語実行可能計画を生成するための、戦略認識型の多段階プランニング枠組みです。グローバルな方針の事前整理、局所的な代替戦略の探索、独立した多基準評価を分離して行うことで、直接的なLLMプランナより高い性能を示しています。</p>
+      <p><strong>新規性</strong> 計画生成・修正・評価をコンテキスト分離された専用モジュールに分解し、マクロ方針の事前コンパイルと独立評価を組み合わせた点が新規です。</p>
+      <p><strong>Tags:</strong> LLM planning, multi-stage framework, strategic planning, natural language executable plans, agentic AI</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) typically exhibit a performance profile where reliability degrades as task complexity increases. We address the challenge of generating high-quality natural language executable plans for complex tasks by introducing $\textbf{GRASP}$, a strategy-aware, multi-stage planning framework. GRASP decouples the planning pipeline across specialized, context-isolated modules: it pre-compiles global macro-guidelines (GenPlan), explores alternative localized strategies within isolated context windows (RevPlan), and independently evaluates trajectories using a multi-criteria discriminator (VerPlan). Empirical evaluations show that GRASP consistently establishes a new state-of-the-art frontier across diverse datasets, yielding substantial accuracy gains over direct LLM planners on Natural Plan Calendar Scheduling ($\sim$12.4$\%$$\uparrow$), ZebraLogic ($\sim$30.8$\%$$\uparrow$), and SciBench Math. Crucially, under multi-task scaling-where standard planners suffer immediate performance collapse-GRASP completely flattens the multi-task degradation penalty. In interleaved dual-task environments, GRASP achieves an absolute accuracy gain of up to 16.7$\%$ over direct LLM planners. Furthermore, by isolating context and enforcing strict macro-regularization, GRASP outperforms frontier reasoning models (such as GPT-5-mini) by a margin of 14.5$\%$.</p>
+      <hr />
+      <h3>5. A Living Benchmark for Information Retrieval from Electronic Health Records</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30205">2609.30205</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30205.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:41 JST</li>
+      <li>Updated: 2026-09-25 02:41 JST</li>
+      <li>Authors: Jordan L. Cahoon, Chloe O. Stanwyck, Sulaiman Somani, Philip Chung, Kevin R Keet, Kameron C. Black, Andrea T. Fisher, Sarita Khemani, Jerry Liu, Stephen Ma, Saloni K. Maharaj, Rita M. Pandya, Eduardo Perez-Guerrero, Priyanka Pillai, Lisa Shieh, David J. H. Wu, James Xie, James C. McAvoy, Teresa Nguyen, Jessica Tran, Lucy Yin, Bridget Lin, Alison Callahan, Jason A. Fries, Nigam H. Shah, Emily Alsentzer</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 17.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、EHRから情報を検索する臨床向けLLMの評価のために、長期的なEHRノートから質問応答ペアを自動生成する枠組みを提案し、臨床医19名の検証を経て継続更新可能なベンチマークBRIEを構築した。9つのLLMと5つの推論戦略を評価した結果、特に複数文書・複数受診にまたがる情報統合が必要な質問で、重要な臨床情報の取りこぼしが多いことが示された。</p>
+      <p><strong>新規性</strong> 静的な手作業ベンチマークではなく、検証済みの自動生成器により継続的に更新でき、臨床推論のばらつきを反映した複数正解も扱える評価基盤を提示した点が新しい。</p>
+      <p><strong>Tags:</strong> electronic health records, information retrieval, benchmark, large language models, clinical evaluation</p>
+      <p><strong>Abstract</strong> Large language model (LLM)-based clinical assistants are increasingly being integrated into electronic health record (EHR) systems, transforming how clinicians retrieve and synthesize information from patient records. Their safety and utility depend on rigorous evaluation, yet existing benchmarks are manually curated, costly to update, and rapidly become obsolete with evolving technological advancements. We present a scalable framework that automatically generates question--answer pairs from longitudinal EHR notes. Nineteen clinicians validate the benchmark generator, producing the Benchmark for Retrieving Information in EHRs (BRIE), a continuously maintainable evaluation dataset. Across nine LLMs and five inference strategies, state-of-the-art systems frequently omit clinically important information, particularly for questions requiring synthesis across multiple documents and encounters. Because the generator itself is validated, BRIE supports evaluations that static benchmarks cannot, including the generation of multiple answers that reflect variation in clinician reasoning for robust performance assessment and continuously refreshing benchmark content to guard against leakage. Our results demonstrate that scalable benchmark generation enables rigorous, up-to-date evaluation of clinical LLMs as they are deployed in rapidly evolving healthcare settings.</p>
+      <hr />
+      <h3>6. R-DEIM Net: An Efficient Rationale-Augmented Dual-Expert Interaction Model for Paraphrase Detection</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30100">2609.30100</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30100.pdf">link</a></li>
+      <li>Published: 2026-09-25 01:44 JST</li>
+      <li>Updated: 2026-09-25 01:44 JST</li>
+      <li>Authors: Pushp, Vaibhav Prajapati, Himangshu Sarma</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> R-DEIM Netは、パラフレーズ検出において、トークン間の類似性を捉えるInteraction Expertと、根拠文を生成するReasoning Expertを組み合わせた76Mパラメータのデュアルエキスパートモデルです。Quora Question Pairsで10-fold CVにより90.07%のaccuracyと90.16%のF1を達成し、予測と同時に人間可読なrationaleも生成できます。</p>
+      <p><strong>新規性</strong> 生成した根拠文を再エンコードせず、そのdecoder hidden statesを分類用の補完特徴として利用することで、説明生成と高精度分類を両立した点が新規です。</p>
+      <p><strong>Tags:</strong> paraphrase detection, rationale generation, dual-expert model, BERT, Flan-T5</p>
+      <p><strong>Abstract</strong> Recent advances in paraphrase detection reveal a fundamental trade-off: large language models achieve high accuracy but require high computation, while efficient Siamese-BERT variants offer practical scalability with reduced transparency in rationale generation. We present R-DEIM Net, a 76M-parameter dual-expert architecture exploring whether moderate-scale models can achieve competitive accuracy on paraphrase detection while enabling human-readable rationale generation. The architecture combines two specialized components: an Interaction Expert that captures token-level similarity patterns through multi-scale 2D convolutions and attention head allowing variable input length, and a Reasoning Expert that uses a Flan-T5-small decoder to generate rationales as auxiliary supervision. Rather than re-encoding generated text, we extract and pool decoder hidden states as complementary features for classification. On the Quora Question Pairs dataset, R-DEIM Net achieves 90.07\% accuracy and 90.16\% F1-score via 10-fold cross-validation. This represents competitive performance with strong transformer-based baselines (e.g., MFAE BERT: 90.54\% accuracy) and recent large language model based approaches (LLaMA-70B) while using a substantially smaller parameter budget. The model generates rationales alongside predictions, providing potential for auxiliary human-readable descriptions.</p>
+      <hr />
+      <h3>7. Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30137">2609.30137</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30137.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:07 JST</li>
+      <li>Updated: 2026-09-25 02:07 JST</li>
+      <li>Authors: Edesio Alcoba, Kevin Rossell, Aman Gupta, Shao Tang, Jiwoo Hong, Pabel Carrillo-Mendoza, Wanderson Conceição Ferreira, Alvaro Tedeschi, Zayd Simjee, Shreya Rajpal, Bruno Finardi Hime, Christian Sousa, Luis Moneda, Herbert Fei, Daniel Silva, Rohan Ramanath</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、顧客対応AIエージェントを本番投入前に評価するための、仮説駆動型シミュレーション手法を提案する。Nubankの高頻度チャットサポートエージェントに適用し、シミュレーション評価と本番評価の相関が高いこと、またシミュレーションを用いた改善がライブA/BテストでtNPSや自己解決率の向上につながることを示した。</p>
+      <p><strong>新規性</strong> 実顧客に影響を与えずに、合成顧客とシミュレートされたツール出力で多段階のCXエージェントを事前スクリーニングできるワークフローを提示し、大規模なモデル・設定探索を可能にした点が新しい。</p>
+      <p><strong>Tags:</strong> customer experience agents, simulation, A/B testing, large language models, Nubank</p>
+      <p><strong>Abstract</strong> Customer experience (CX) agents use tools and large language models to address customer requests and guide conversational interactions with an organization's products. Improving these agents, especially in regulated industries, is difficult: they must detect intent, follow complex operational policies and use tools reliably. Manual end-to-end testing offers limited coverage, while live experiments expose customers to failures that can erode trust. We present a hypothesis-driven simulation workflow for screening candidate CX agents before deployment. Synthetic customers react to agent responses and simulated tool outputs enable multi-step agentic workflows without invoking production backends. We use the Snowglobe simulator on Nubank's Card Delivery agent and its expanded successor, Card Management - Nubank's highest-volume chat-support agent in Brazil. Across 4 deployed versions, simulated and production version-level binary evaluator scores show high correlation. Simulation-guided iteration increased transactional net promoter score (tNPS) by 36.69 points in a live A/B test. We also screened open-weight configurations in over 16,000 simulated conversations. In a subsequent live A/B test, the selected model increased self-service rate (SSR) by 8.82 percentage points to the highest level observed at Nubank, with no statistically significant change in tNPS. Simulation made broad exploration of models, reasoning settings, and prompts feasible without customer exposure, enabling production improvements that would have been impractical to pursue through live experimentation alone.</p>
+      <hr />
+      <h3>8. What, When, and How: Audio Description as Constrained Global Optimization</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30121">2609.30121</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30121.pdf">link</a></li>
+      <li>Published: 2026-09-25 01:56 JST</li>
+      <li>Updated: 2026-09-25 01:56 JST</li>
+      <li>Authors: Igor Sterner, Mirella Lapata, Alex Lascarides, Frank Keller</li>
+      <li>Categories: cs.CL, cs.CV</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、映画の音声解説（Audio Description, AD）生成を、何を述べるか・いつ述べるか・どのように短く表現するかの3つの意思決定を含む制約付き最適化問題として定式化した。提案手法は、LLMで視覚要素の提案・根拠付け・重要度推定・圧縮生成を行い、その後MILPで時間制約の下で説明文を選択・配置する。REFRAMEDで評価し、対話や時間的制約を考慮した配置と内容選択で既存のプロンプトベースLLMより優れ、narrative QAと時間的整合性指標で新たなSOTAを達成した。</p>
+      <p><strong>新規性</strong> AD生成を「何を・いつ・どう話すか」の結合最適化として扱い、LLMと混合整数線形計画を組み合わせて時間制約下での選択とスケジューリングを行う点が新しい。</p>
+      <p><strong>Tags:</strong> audio description, constrained optimization, large language models, mixed-integer linear programming, video-to-text</p>
+      <p><strong>Abstract</strong> Audio Description (AD) makes movies accessible to blind and visually impaired audiences by narrating visual information in gaps between dialogue. Existing automatic AD systems largely treat generation as a local video-to-text problem, assuming that the content to describe and its temporal location are already provided. Realistic AD instead requires coupled decisions about what visual information is narratively important, when it can be spoken without interfering with dialogue, and how it should be formulated to fit within the available time. We formalize AD generation as a constrained optimization problem over these three decisions. Our hybrid system uses large language models to propose and ground visual elements, estimate their salience to the narrative, and generate compressed realizations. A mixed-integer linear program then jointly selects and schedules descriptions across a scene subject to temporal constraints. When evaluated on REFRAMED, a benchmark for realistic AD of movies, our approach makes better decisions than prompted LLMs about what to describe and when to describe it, establishing a new SOTA on narrative QA and temporally grounded metrics. Ablations show that explicit temporal constraints drive gains in placement, while salience estimation controls how much narratively useful content is retained. Improvements are concentrated on temporal and narrative measures rather than n-gram overlap, although a significant gap to professional describers remains.</p>
+      <hr />
+      <h3>9. Search-Aware Reinforcement Learning for Multi-Component Query Understanding in Roblox Game Search</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30177">2609.30177</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30177.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:26 JST</li>
+      <li>Updated: 2026-09-25 02:26 JST</li>
+      <li>Authors: Nayoung Choi, Shengjian Chen, Xiaokai Wei, Wenzheng Zhang, Daiyao Yi, Rachit Pareek, Vincent Su, Michelle Gong, Jinho D. Choi</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、Robloxの検索におけるQuery Understandingを、意図分類やクエリ拡張などの複数コンポーネントからなる生成問題として扱い、検索エンジンとの相互作用を反映した強化学習で最適化する枠組みを提案する。まず教師-生徒のSFTでスキーマに沿った初期方策を学習し、その後、各コンポーネントごとに役割に応じた報酬でRLを行うことで、下流検索品質の向上を目指す。</p>
+      <p><strong>新規性</strong> 単一の最終検索結果に対する報酬ではなく、各QUコンポーネントの運用上の役割に対応した報酬で個別最適化するsearch-aware RLを導入した点が新しい。</p>
+      <p><strong>Tags:</strong> query understanding, reinforcement learning, search systems, Roblox, large language models</p>
+      <p><strong>Abstract</strong> Query understanding (QU) plays a critical role in production search systems, translating raw user queries into search execution plans that drive downstream retrieval and ranking. While large language models (LLMs) have enabled QU to be framed as a structured multi-task generation problem (e.g., intent classification, query expansion), optimizing such models to produce search-engine-coupled outputs remains challenging: static, label-based supervision fails to capture how each component actually interacts with the underlying search pipeline to affect downstream performance. We present a search-aware reinforcement learning (RL) framework for QU based on a distill-then-RL paradigm. Teacher-student supervised fine-tuning (SFT) first yields a well-formed, schema-compliant policy initialization. The RL stage then optimizes each QU component with rewards derived from live interaction with the search engine, tailored to that component's operational role, rather than a single reward tied to the final search outcome. Experiments on Roblox search show that this component-specific optimization improves both per-component utility and downstream search quality, raising NDCG@20 by 8.9 points over the SFT policy and by 3.5 points over training with a single end-to-end reward.</p>
+      <hr />
+      <h3>10. Learning and interpreting policies for simultaneous entanglement requests in quantum networks</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30157">2609.30157</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30157.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:16 JST</li>
+      <li>Updated: 2026-09-25 02:16 JST</li>
+      <li>Authors: Leon Rode, Sumeet Khatri, Supartha Podder</li>
+      <li>Categories: quant-ph, cs.LG</li>
+      <li>Score: 12.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、量子ネットワークにおける複数のエンタングルメント要求を同時に扱うためのスケジューリング問題を、強化学習として定式化し、DQNとMPNNを用いて方策を学習する手法を提案する。物理的に妥当な複数のネットワークトポロジーで、既存ヒューリスティクスより低いリンク生成確率でも高い成功率を維持できることを示し、さらにハードウェア制約付き配置でも同様の優位性を確認した。</p>
+      <p><strong>新規性</strong> 量子ネットワークの同時エンタングルメント要求に対して、DQN+MPNNによる方策学習と、LLMを用いた方策解釈・ヒューリスティクス抽出を組み合わせ、性能と解釈可能性の両方を示した点が新しい。</p>
+      <p><strong>Tags:</strong> quantum networks, reinforcement learning, entanglement scheduling, DQN, interpretable policy</p>
+      <p><strong>Abstract</strong> Future quantum networks will make use of entanglement to perform numerous tasks, such as sending quantum information over long distances, distributed quantum computing, and quantum sensing. In general, these tasks will need to be performed simultaneously in various regions of a network, while minimizing resources and latency. We will thus require policies for scheduling link-level entanglement resources, and using the link-level entanglement to create various forms of multipartite entanglement required for every task. In this work, we address this problem using reinforcement learning. We formulate a Markov Decision Process for the problem and use double deep Q-networks (DQN) with Message Passing Neural Networks (MPNNs), experience replay buffers, and curriculum training to obtain policies. The key physical parameter is the probability of link-level entanglement generation, i.e., the link activation probability. We show that our policies maintain 100% success for up to 71% lower link activation probability than the baseline heuristics for a set of physically relevant network topologies. We then examine an additional constraint where experiment (task) placements are restricted to specific hardware types and demonstrate a similar advantage in performance over heuristics, with our policy maintaining at least an 80% success rate for up to a 59% lower link activation probability. Finally, we explore methods to interpret the learned policy by defining metrics enabling conclusions to be drawn about the model's behavior and by tasking a large language model (LLM) to derive a novel heuristic given example actions taken by the DQN-trained policy. We find that the LLM heuristic performs similarly to the DQN-trained policy in performance, indicating a promising method for interpretable policy extraction for large quantum networks, where direct training becomes computationally expensive.</p>
+      <hr />
+      <h3>11. LLM Agents Can Easily Tamper With Their Own Traces</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30266">2609.30266</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30266.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:59 JST</li>
+      <li>Updated: 2026-09-25 02:59 JST</li>
+      <li>Authors: Jeremy Qin, David Schmotz, Derck Prinzhorn, Luca Beurer-Kellner, Ameya Prabhu, Maksym Andriushchenko</li>
+      <li>Categories: cs.CR, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMエージェントの実行トレースが自己改ざんされうることを示し、非同期監視や監査が前提とする「トレースは改ざんされない」という仮定が成り立たないことを明らかにした。Claude Code、Codex、Antigravity、Open Code、Grok Build などのローカルLLMエージェントでは、ほとんどのハーネスでエージェント自身がトレース削除を要求するとガードレールを回避でき、外部攻撃者による誘導も可能だった。</p>
+      <p><strong>新規性</strong> エージェントが自分の実行トレースを削除・改ざんできる具体的な失敗を実証し、独立した外部インターセプト機構によるログ保全の必要性を示した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM agents, trace integrity, security, monitoring, audit</p>
+      <p><strong>Abstract</strong> Asynchronous monitoring, incident investigations, and compliance audits primarily rely on agent traces to reconstruct what happened. These analyses assume that LLM agents cannot tamper with their own execution traces. We show that local LLM agents such as Claude Code, Codex, Antigravity, Open Code and Grok Build fail to enforce this boundary. All tested harnesses, except Muse Code, allowed agents to delete their traces when asked, without triggering monitor guardrails. We also validate that external attackers can exploit this gap to induce trace deletion. Finally, we show that trace tampering behavior emerges naturally in frontier models, when agents try to improve their rewards. We advise practitioners to ensure trace logging happens through an independent interception mechanism outside of the agent's control, preserving trace integrity even in cases of full host compromise. Overall, our findings identify a concrete failure of trace integrity in agent infrastructure which can be used to conceal misaligned behaviors like scheming or sabotage.</p>
+      <hr />
+      <h3>12. ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30184">2609.30184</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30184.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:29 JST</li>
+      <li>Updated: 2026-09-25 02:29 JST</li>
+      <li>Authors: Sriram Kannan, Swetha Saseendran, Vishnu Vardhan Reddy Kandi, Leslie Barrett, Madhavan Seshadri, Enrico Santus</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 11.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、米国の雇用差別 शिकायतに含まれる複雑な事象列を扱うため、5W1Hに基づくスキーマ、法務ドメインモデル、LLMによる構造化生成を組み合わせて、CourtListenerの訴状から文書レベルのEvent Knowledge Graphs（EKGs）を構築するARGUSを提案する。抽出した事実文からチャンク単位のイベントグラフを作成し、参加者・時間・因果構造を統合して文書表現にまとめる。評価では、グラフ構造の分類器が生テキストや線形化ベースラインを上回り、EKGのみの検索が文書スコープのQAを改善した。</p>
+      <p><strong>新規性</strong> 法務文書の事実関係を、役割を意識した文書レベルEKGとしてソースに基づいて構築し、下流の分類とQAで有効性を示した点が新しい。</p>
+      <p><strong>Tags:</strong> event knowledge graph, legal NLP, information extraction, claim classification, question answering</p>
+      <p><strong>Abstract</strong> U.S. employment-discrimination complaints describe complex event sequences that are not explicitly captured by lexical or embedding-based representations alone. We present ARGUS, a source-grounded pipeline that combines a 5W1H-inspired schema, legal-domain models, and LLM-based structured generation to construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints. ARGUS extracts fact-bearing statements, builds chunk-level event graphs with participant, temporal, and causal structure, and merges them into document-level representations. We evaluate graph quality through human and multi-model assessment and test downstream utility on claim classification and legal QA. The graph-structured classifier outperforms raw and linearized baselines on the held-out set, and EKG-only retrieval improves document-scoped QA, while open-retrieval gains remain limited by low first-stage candidate recall. These results suggest that EKGs are most useful for organizing and reasoning over evidence once relevant material has been retrieved.</p>
+      <hr />
+      <h3>13. SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30238">2609.30238</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30238.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:55 JST</li>
+      <li>Updated: 2026-09-25 02:55 JST</li>
+      <li>Authors: Wenhao Li, Zhibin Wu, Chong Xiao, Qiangchang Wang</li>
+      <li>Categories: cs.CL, cs.CV, cs.MM</li>
+      <li>Score: 10.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、欠損のあるマルチモーダル感情分析において、言語・視覚・音響モダリティから人間の感情を推定するためのSemMSAを提案する。LLMを用いて高レベルな潜在意味表現を構築し、モダリティ再構成や複雑な融合に頼らずに、部分的に観測された情報から頑健な感情推定を行う。</p>
+      <p><strong>新規性</strong> Cross-modal Semantic RefinementとCross-modal Spectral Alignmentにより、明示的なテキスト復号やアンカーモダリティに依存せず、潜在意味と全モダリティをスペクトル整合する点が新規である。</p>
+      <p><strong>Tags:</strong> multimodal sentiment analysis, incomplete data, large language models, spectral alignment, cross-modal learning</p>
+      <p><strong>Abstract</strong> Recent research on Multimodal Sentiment Analysis (MSA) has focused on learning from language, visual, and acoustic modalities with incomplete data to infer human sentiment. Most studies typically compensate for missing information by reconstructing modality features or designing complicated fusion mechanisms. However, these methods still suffer from spurious generation and noisy guidance due to the lack of high-level semantic grounding in partially observed multimodal evidence. To address these issues, we propose SemMSA, a latent semantic-aided framework that constructs rich sentiment-relevant semantics with LLMs, fully integrating with all modalities via anchor-free spectral alignment. It mainly consists of Cross-modal Semantic Refinement (CSR) and Cross-modal Spectral Alignment (CSA). Specifically, CSR first adaptively extracts visual and acoustic representations by corresponding adapters to form a unified multimodal prefix with language in the frozen LLM embedding space. It then iteratively produces continuous discriminative semantic states through a token-efficient latent refinement process without decoding explicit text. Next, CSA simultaneously aligns the refined semantics with all modalities by enhancing the dominant spectral component of their kernel Gram matrix. This captures global nonlinear dependencies among all representations without relying on a predefined anchor modality. In addition, an instance-level spectral separation constraint preserves cross-sample discriminability and mitigates representation collapse. Extensive experiments on SIMS, MOSI, and MOSEI benchmarks demonstrate that SemMSA achieves state-of-the-art performance.</p>
+      <hr />
+      <h3>14. Multimodal Thinking with Renderable Programs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.30130">2609.30130</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.30130.pdf">link</a></li>
+      <li>Published: 2026-09-25 02:03 JST</li>
+      <li>Updated: 2026-09-25 02:03 JST</li>
+      <li>Authors: Sunli Chen, Ding Zhong, Ziqiao Ma, Jiaxin Liu, Zeyuan Yang, Hao Zhang, Lie Lu, Joyce Chai, Chuang Gan</li>
+      <li>Categories: cs.CV, cs.CL</li>
+      <li>Score: 10.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、視覚と言語を統合した推論において、画像を推論過程に組み込むための枠組みSVGLMを提案する。SVGLMは、ラスタ画像や潜在表現ではなくSVGプリミティブを用いることで、画像生成をよりコンパクトかつ解釈可能に扱えるようにする。</p>
+      <p><strong>新規性</strong> SVGを画像記述とテキスト指示の両方として利用し、VLMに推論中の画像生成能力を与える点が新規である。</p>
+      <p><strong>Tags:</strong> vision-language model, SVG, multimodal reasoning, image generation, interpretable representation</p>
+      <p><strong>Abstract</strong> Current vision-language models (VLMs) excel at visual content understanding and text-based reasoning, yet their structure limits the advancement of incorporating images into the reasoning chain. Though Omnimodal models have made efforts in unifying text and image generation, they focus on visual tasks in the open-domain, lacking tractability due to rasterized or latent representations of images. We introduce SVGLM, a framework that uses scalable vector graphics (SVG) primitives to connect text and image in reasoning tasks. We exploit the duality of SVG as both image description and text instructions, yielding a more compact, interpretable solution to equip general VLMs with the capability of generating images within the reasoning process. We provide a large curated dataset of SVG-based image editing dataset, as well as the paradigm to tune open-source VLMs. Experiments on a mathematical reasoning benchmark demonstrate that SVGLM achieves strong SVG generation power as well as think-with-image intelligence. Our results highlight SVG as a suitable medium for building more robust digital domain agents, bridging the gap between text-based thinking and pixel-based images.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
