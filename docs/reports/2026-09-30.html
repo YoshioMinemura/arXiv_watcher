@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-09-30 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-09-30</h1>
+        <p class="hero-copy">Generated at 2026-09-30 11:03 JST. Run ID: <code>150f7ec6-1174-48b1-87c9-82cece389f02</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>14</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-09-30</h1>
+      <p>Generated at: 2026-09-30 11:03 JST Run ID: 150f7ec6-1174-48b1-87c9-82cece389f02</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 14</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Probability is Not Enough: Exploring and Counting Divergent Tokens for Reasoning Uncertainty Quantification in LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38070">2609.38070</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38070.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:33 JST</li>
+      <li>Updated: 2026-09-30 02:33 JST</li>
+      <li>Authors: Feiyang Li, Shengjing Liu, Qi Zhan, Sijie Cheng, Weiqing Wang, Hongwen Chen, Yuxuan Yang, Wen Wang, Yile Wang, Hui Huang</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 32.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルの推論における不確実性を定量化するため、従来のトークン確率に代わる信頼度指標を検討し、2つのモデルが同じ推論軌跡上で強く分岐するトークン数を数える Divergent Token Confidence (DTC) を提案している。複数モデルと6つの数学ベンチマークで、DTCの分岐トークン数は正解率と負の相関を示し、確率ベースや言語化ベースの手法より較正性能が改善した。</p>
+      <p><strong>新規性</strong> 次トークン分布間のJensen-Shannon divergenceを用いて分岐トークンを特定し、その個数だけで推論の不確実性を推定する点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, uncertainty quantification, calibration, chain-of-thought, reasoning</p>
+      <p><strong>Abstract</strong> As the chain-of-thought reasoning capabilities of large language models improve, evaluating and calibrating their reasoning confidence is becoming increasingly important for quantifying the uncertainty of their answers. Current methods for estimating the confidence of large language models are generally based on probabilities of selected key tokens, but the underlying mechanism remains unclear. Our pilot study finds that replacing selected token probabilities with coarse substitutes can also improve calibration, motivating us to further explore effective signals of model confidence. We introduce Divergent Token Confidence (DTC), a framework that estimates confidence by counting tokens at which two models strongly disagree during decoding. DTC identifies these divergent tokens using the Jensen-Shannon divergence between next-token distributions evaluated along the same reasoning trajectory. We find that their count is almost negatively associated with answer accuracy, thereby serving as a simple yet effective signal for uncertainty quantification. DTC supports both white-box and black-box evaluation using auxiliary models, without explicit training and affecting the generation process. Experiments across multiple model families and six mathematical benchmarks demonstrate improved calibration over probability-based and verbalized baselines. Under white-box evaluation, the count-only estimator achieves an average expected calibration error of 13.0%, compared with 32.7%-42.4% for standard full-sequence confidence methods. In black-box settings, it also improves calibration over the original verbalized scores. For example, mean expected calibration error falls from 32.1%-40.2% to 13.7%-16.3% on DeepSeek-V3.2. These findings provide new insights for improving reasoning uncertainty quantification in large language models. The code is released at https://github.com/szu-tera/DTC.git.</p>
+      <hr />
+      <h3>2. Dr. OPD: Learning What to Follow for Optimal On-Policy Distillation of Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38025">2609.38025</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38025.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:07 JST</li>
+      <li>Updated: 2026-09-30 02:07 JST</li>
+      <li>Authors: Zhenyu Wang, Tianze Wang, Linjun Zhang, Yifan Hu</li>
+      <li>Categories: cs.LG, cs.AI, cs.CL, math.OC</li>
+      <li>Score: 24.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、自己生成応答に対して強い教師のトークン単位の密な監督を用いる on-policy distillation (OPD) において、すべての教師信号を同等に扱う従来法の問題を指摘する。提案手法 Dr. OPD は、学生性能を最大化するようにトークンごとの重みを最適化する双レベル最適化として定式化し、重み更新と学生更新を交互に行う効率的な解法を示す。数学とコードの蒸留実験で既存手法を一貫して上回り、特に強い教師から弱い学生への設定で性能向上を示した。</p>
+      <p><strong>新規性</strong> トークンごとの教師信号の重要度を学習して重み付けする、最適化ベースの on-policy distillation を提案した点が新しい。</p>
+      <p><strong>Tags:</strong> on-policy distillation, knowledge distillation, large language models, bilevel optimization, token weighting</p>
+      <p><strong>Abstract</strong> On-policy distillation (OPD) trains a student on its own generated responses using dense, token-level supervision from a stronger teacher. Vanilla OPD treats all teacher signals equally, assuming that the teacher's supervision is equally important for every token. However, teacher signals at different tokens may have very different effects on the student's performance: some correct important reasoning errors, while others have little effect on the final answer. Motivated by this observation, we introduce Dr. OPD (OPD Done Right), which defines the optimal weighted OPD to maximize the student's performance. We formulate Dr. OPD as a bilevel optimization problem in which the student learns from weighted teacher supervision, while the weights are selected to maximize the expected reward of the resulting student. To solve Dr. OPD, we develop an efficient iterative solver that updates the token weights and student policy alternatively. At each round, it updates weights in closed form and then takes one gradient step on the resulting weighted OPD objective. Under regularity conditions, we show that this weighted update achieves a higher expected reward than a vanilla OPD update. Empirically, across strong-to-weak and same-size distillation on math and code, Dr. OPD consistently outperforms all evaluated baselines. In particular, in the strong-to-weak distillation setting, Dr. OPD improves average math performance by $9.7$ points over vanilla OPD, and enables the smaller student to surpass its larger teacher.</p>
+      <hr />
+      <h3>3. Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38177">2609.38177</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38177.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:59 JST</li>
+      <li>Updated: 2026-09-30 02:59 JST</li>
+      <li>Authors: Jaewoo Jung, Hyeonseo Yu, Honggyu An, Jisang Han, Mungyeom Kim, Minkyeong Jeon, Heeseong Shin, Wonjun Moon, Federico Tombari, Daniel Barath, Marc Pollefeys, Seungryong Kim, Sunghwan Hong</li>
+      <li>Categories: cs.CV, cs.CL</li>
+      <li>Score: 24.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Multi-view画像から3D世界を推論する際、既存のMLLMは視点間の情報統合が難しいという課題に対し、本研究は人間の空間推論を模して、粗い3Dレイアウトを先に構成してから回答するImagine3D-LLMを提案する。画像トークンの後ろに学習可能な要約トークンを追加し、それをコンパクトな3D Gaussian Splatting表現へ復元するよう学習しつつ、次トークン予測も同時に最適化する。これにより、3D理解と空間推論の複数ベンチマークで既存手法を上回る性能を示す。</p>
+      <p><strong>新規性</strong> 細かな画素対応や明示的な3D幾何の注入ではなく、学習可能な要約トークンから粗い3D表現を再構成させることで、モデルに3D-awareな信号を広く伝播させる点が新しい。</p>
+      <p><strong>Tags:</strong> multimodal large language model, 3D reasoning, multi-view images, Gaussian Splatting, spatial understanding</p>
+      <p><strong>Abstract</strong> Reasoning about the 3D world from multi-view images remains a fundamental challenge for Multimodal Large Language Models (MLLMs). While modern MLLMs handle single-image inputs effectively, they struggle to integrate evidence across viewpoints into a coherent 3D understanding. A growing body of work attempts to close this gap by injecting 3D awareness into MLLMs, either by boosting fine-grained pixel-level cross-view correspondence or by fusing features from 3D geometry foundation models, yet a substantial gap to human reasoning persists. In this work, we revisit human spatial reasoning, which suggests that rather than relying on fine-grained geometry cues, humans roughly identify common objects across views, infer the relative geometry between viewpoints, and assemble a coarse 3D layout of the scene. Inspired by this process, we introduce Imagine3D-LLM, an MLLM that learns to assemble a similar compact 3D representation of the scene and conditions its answer on this representation. Concretely, we append a small set of learnable summary tokens after the image tokens, decode them into a compact 3D Gaussian Splatting representation supervised by a photometric reconstruction loss, and train jointly with the standard next-token prediction objective. Notably, although only the summary tokens receive direct reconstruction supervision, this objective also induces stronger cross-frame correspondence within the LLM's underlying image features, suggesting that learning to reconstruct propagates 3D-aware signals throughout the model. As a result, Imagine3D-LLM consistently outperforms prior approaches across multiple spatial reasoning and 3D understanding benchmarks, suggesting that imagining the scene can be more effective than being told its pixel-wise geometry.</p>
+      <hr />
+      <h3>4. Gender bias across LLMs is common and highly heterogenous</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38036">2609.38036</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38036.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:11 JST</li>
+      <li>Updated: 2026-09-30 02:11 JST</li>
+      <li>Authors: Edoardo Bolzoni, Valerio Capraro</li>
+      <li>Categories: cs.CL, cs.AI, cs.CY, cs.HC</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、9社の10個のLLMを対象に、ステレオタイプ文への性別帰属と、危機回避のための加害行為に関する道徳判断という2つの課題で性別バイアスを調べた。その結果、性別関連バイアスは多くのモデルで確認された一方で、方向や大きさはモデル間で大きく異なり、正反対の挙動を示すものもあった。</p>
+      <p><strong>新規性</strong> 複数ベンダーの10モデルを横断して、性別バイアスが「一般的だが非常に不均一」であることを示し、監査を単発ではなく継続的な多ベンダー प्रक्रियाとして捉える必要性を示した。</p>
+      <p><strong>Tags:</strong> gender bias, LLM, bias audit, moral judgment, stereotype</p>
+      <p><strong>Abstract</strong> Understanding gender biases in large language models (LLMs) is increasingly important as these systems become embedded in decision-support tools with real consequences. Prior research has focused only on a small set of models, leaving open the extent to which gender biases are common and heterogeneous across LLMs. We address this gap across ten models released between April 2025 and June 2026, spanning nine vendors, using two paradigms: gender attribution to stereotyped phrases (Study 1) and moral judgment of abuse or torture against a woman or a man to prevent a catastrophic outcome (Study 2). In Study 1, two of ten models attributed masculine-stereotyped phrases to female writers more often than the reverse, while three models showed the opposite pattern. In Study 2, several models converged on a male-disadvantaging asymmetry that was directionally consistent with a documented human tendency to protect female targets from harm, though the specific conditions under which this asymmetry emerged varied by model; three other models, by contrast, showed no variation across conditions. These results indicate that gender-related biases are common in LLMs. Their direction and magnitude, however, are highly heterogeneous, to the point that some models behave in diametrically opposite ways to others. Bias auditing should therefore be treated as an ongoing, multi-vendor process, rather than a one-time assessment.</p>
+      <hr />
+      <h3>5. Do LLM Agents Execute the Plans They Declare? From Planning-Mode Declaration to Pattern-Specific Execution</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38108">2609.38108</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38108.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:47 JST</li>
+      <li>Updated: 2026-09-30 02:47 JST</li>
+      <li>Authors: Subba Reddy Oota, Francisco Herrera, Jordi Cabot Sagrera, Marcos López de Prado, Shadab Khan</li>
+      <li>Categories: cs.AI, cs.LG</li>
+      <li>Score: 22.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMエージェントにおける「計画の宣言」と「実行」のずれを調べ、計画モードを宣言させたうえで決定的ルータが対応する実行器へ振り分ける Planning-as-Routing を提案する。4つのベンチマークと3つのLLMで、一般的なPlan+ReActは宣言した計画構造をしばしば維持できない一方、パターン特化型の実行器はその構造を保ち、タスク成功率も改善することを示した。</p>
+      <p><strong>新規性</strong> LLMが宣言した計画モードに応じて実行器を切り替える Planning-as-Routing を導入し、計画選択と忠実な実行を分離して評価した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM agents, planning, execution, benchmark, ReAct</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) enable agents to solve long-horizon tasks by generating a plan and then executing it in an environment. However, successful planning requires two distinct capabilities: selecting an appropriate plan for the task and executing it faithfully. Existing planner--executor systems can fail at either stage, while final task success alone cannot distinguish selection from execution failures. We therefore study the Plan Declaration--Execution Gap and introduce Planning-as-Routing, where an LLM declares one of four planning modes: Predefined, Sequential, Hierarchical, or Search, and a deterministic router dispatches the task to the corresponding pattern-specific executor. Across four benchmarks and three LLMs, we find three consistent patterns. First, generic Plan+ReAct often fails to preserve declared planning structure, especially for longer plans: across three benchmarks, only (22)--(45%) of trajectories preserve it, whereas pattern-specific executors enforce the intended structure. Second, planning-mode effectiveness varies across environments and models: Search performs best on ALFWorld, Hierarchical on SWE-bench, and the strongest pattern can vary across models within the same benchmark. Third, the largest gains come from execution: pattern-specific executors improve task success from (0.48) to (0.92) on ALFWorld and from (0.36) to (0.44) on SWE-bench Verified over Plan+ReAct. Current LLMs, however, do not reliably select the strongest mode for each task, although few-shot examples improve selection in some benchmark--model combinations. Overall, reliable agent planning requires both effective mode selection and faithful execution: routing substantially closes the execution gap, while task-specific mode selection remains open.</p>
+      <hr />
+      <h3>6. Explore Broadly, Reason Sharply: Push Small Models toward the Frontier via Sampling</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38104">2609.38104</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38104.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:45 JST</li>
+      <li>Updated: 2026-09-30 02:45 JST</li>
+      <li>Authors: Panagiotis Theodoropoulos, Nan Jiang, Xintong Duan, Ali Hasan, Yuriy Nevmyvaka, Evangelos A. Theodorou, Wei Deng</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 18.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMの推論性能を高めるための推論時サンプリング手法として、強いシャープ化による探索不足と弱いシャープ化による分布の拡散というトレードオフを扱う。複数の相互作用するレプリカを異なるシャープ化レベルで並列に走らせる Parallel Power Tempering を提案し、より多様な推論軌跡の探索と高確率応答の活用を両立させる。</p>
+      <p><strong>新規性</strong> 異なる power レベルのレプリカを並列に相互作用させる parallel tempering により、power-sharpened sampling の探索--活用トレードオフを推論時に緩和した点。</p>
+      <p><strong>Tags:</strong> LLM, reasoning, sampling, parallel tempering, inference-time optimization</p>
+      <p><strong>Abstract</strong> Power-sharpened sampling is an inference-time alternative to reinforcement-learning (RL) post-training for enhancing reasoning in large language models (LLMs). High-probability sequences are amplified under the base model without parameter updates or external rewards, avoiding the costly optimization and jagged generalization of RL. However, this approach faces a fundamental exploration--exploitation trade-off, as % strong sharpening restricts exploration, trapping samplers in plausible but incorrect reasoning trajectories, whereas weak sharpening leaves the answer distribution diffuse. To resolve this trade-off, we introduce \textbf{Parallel Power Tempering (PPT)}, instantiating power-sharpened LLM sampling via parallel tempering. Running multiple \emph{interacting} replicas in parallel at different sharpening levels allows lower-power replicas to explore diverse reasoning trajectories and higher-power chains to further exploit higher-likelihood responses favored by the sharpened target. Specifically, we tailor \method{} to inference-time sampling by mitigating a truncation bias, identified in prior power samplers, and investigate effective swap strategies under finite memory and compute budgets. Extensive experimentation shows that \method{} substantially improves single-chain power-sharpened sampling and outperforms RL-post-trained models, producing higher-quality reasoning traces and even achieving performance comparable to frontier models.</p>
+      <hr />
+      <h3>7. LongHarness Bench: Stress-Testing Language Model Harnesses for Long-Context Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38137">2609.38137</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38137.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:55 JST</li>
+      <li>Updated: 2026-09-30 02:55 JST</li>
+      <li>Authors: Quang Hieu Pham, Thuy Duong Nguyen, Jocelyn Qiaochu Chen, Xi Ye</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、長文脈でLMを動作させるためのハーネスを評価するベンチマーク「LongHarness Bench」を提案する。タスクは語彙検索や意味的マッチング、さらに局所・大域文脈をまたぐ戦略的推論を必要とし、精度だけでなく計算コストとのトレードオフも評価できるように設計されている。</p>
+      <p><strong>新規性</strong> 長文脈評価において、従来の精度中心の比較ではなく、同一モデルでもハーネスによって効率が大きく変わる点を示し、効率を重要な評価軸として明示した。</p>
+      <p><strong>Tags:</strong> long-context reasoning, language model harness, benchmark, efficiency evaluation, retrieval</p>
+      <p><strong>Abstract</strong> Language-model (LM) harnesses enable LMs to operate effectively over long contexts using additional compute. However, existing long-context evaluations are insufficient for distinguishing modern harnesses, reflected by saturated accuracy across harnesses and largely similar evaluation costs. In this paper, we introduce a benchmark for evaluating both the effectiveness and efficiency of long-context harnesses. Our tasks require diverse retrieval strategies, including lexical search and semantic matching, together with strategic and adaptive reasoning over global and local context. Much of the context is semantically relevant but only a small subset is useful at each step, creating both a challenging search problem and different accuracy--cost tradeoffs across processing strategies. For example, one task requires identifying every person satisfying several conditions using evidence scattered across documents; strategically checking the most selective condition first can narrow the search before verifying the remaining conditions. We evaluate multiple families of frontier language models with four state-of-the-art harnesses. Our benchmarks remain challenging even for strong model--harness combinations: the best reaches 68\% macro-average accuracy across four evaluation suites. More importantly, we find that the same underlying model can exhibit markedly different efficiency under different harnesses. Our results establish efficiency as an important axis for long-context evaluation and provide a testbed for developing harnesses that process context strategically rather than exhaustively.</p>
+      <hr />
+      <h3>8. Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38147">2609.38147</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38147.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:57 JST</li>
+      <li>Updated: 2026-09-30 02:57 JST</li>
+      <li>Authors: Paras Dahal, Anton Bakhtin, Taco Cohen, Zhengxing Chen, Carole-Jean Wu, Rob Fergus, Scott Yih, Gabriel Synnaeve, Ruslan Salakhutdinov, Sanjeev Arora, Jason Weston, Anirudh Goyal</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、長く複雑なタスクに対して、実行そのものを制御対象として扱う「agentic meta-reasoning」を提案する。コントローラが途中経過を要約し、次にどの作業を進めるかを選び、永続メモリを参照しながら計算資源を配分することで、長期的なエージェント推論を支える。</p>
+      <p><strong>新規性</strong> タスク実行の各段階での制御判断を明示的な推論過程として組み込み、履歴全体を再生せずにコンパクトな状態で意思決定する点が新しい。</p>
+      <p><strong>Tags:</strong> agentic inference, meta-reasoning, long-horizon reasoning, control policy, inference-time</p>
+      <p><strong>Abstract</strong> As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We introduce agentic meta-reasoning, an inference-time harness that makes these choices an explicit and structured reasoning process. Workers carry out the task-level computation, while a controller consolidates what the run has established, explores next options, assesses what each option is worth under the remaining budget, and dispatches the chosen work with context drawn from persistent memory. Between decisions the controller carries only a compact account of the run rather than replaying its full history. Our baselines span production coding agents and research harnesses, together with a Direct Control Agent using the same workers and compute budget allowance. On ProgramBench, which tests long-horizon agentic capability through program reconstruction, meta-reasoning achieves 71.5% with GPT-5.5 against 58.0% for Codex; with Opus 4.8 it achieves 67.2% against 65.5% for Claude Code. On the other benchmarks, spanning abstract reasoning, multi-domain long-horizon reasoning, and proof generation, it gains between 3.6 and 4.2 points over direct control, averaged across three frontier models. It keeps improving over the tested budget ranges where direct control plateaus, though its overhead can hurt at small budgets. Artifact-graph analysis reveals more reuse of earlier work, higher coverage of correct solutions in most settings, and nonuniform gains in final selection. These results indicate that spending computation on structured control becomes more important as agents scale to longer runs.</p>
+      <hr />
+      <h3>9. Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38106">2609.38106</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38106.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:46 JST</li>
+      <li>Updated: 2026-09-30 02:46 JST</li>
+      <li>Authors: Ganesh Pavan Kartikeya Bharadwaj Kolluri, Michael Kampouridis, Ravi Shekhar</li>
+      <li>Categories: cs.SD, cs.CL</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Speech-LLMの圧縮は実運用上重要だが、集約的なWERだけではデモグラフィック群ごとの影響を見落とす可能性がある。本研究はSLAM-ASRにおける音声エンコーダの剪定をFair-SpeechとCommon Voiceで系統的に調べ、剪定により群間格差が一様ではなく、最良群と最悪群の性能差が拡大することを示した。</p>
+      <p><strong>新規性</strong> 剪定後モデルの公平性を、集約WERではなく群別WERで評価し、最悪性能群の誤り率を明示的な判断基準にすべきだと示した点。</p>
+      <p><strong>Tags:</strong> speech-LLM, model pruning, fairness, WER, demographic disparity</p>
+      <p><strong>Abstract</strong> Speech-LLMs are expensive to run, making compression important for real-world deployment. However, compressed models are usually selected using aggregate word error rate (WER), which can hide how pruning affects different demographic groups. In this work, we systematically study the effect of audio encoder pruning on SLAM-ASR for different demographic groups. Using the Fair-Speech and Common Voice datasets, we found that the pruning does not affect all demographic groups equally; the gap between best- and worst-performing groups increases in fold. These disparities appear across all three encoder scales, but only the largest model initially hides them behind aggregate WER. LoRA adaptation improves WER for every group, but benefits groups already performing well more strongly and widens for certain groups. On Common Voice English, Danish, and Dutch, accent gaps persist but do not clearly widen, showing that the fairness effects of pruning vary across datasets and must be measured directly. Our findings suggest that for pruned models, deployment decisions should include per-group WER, with the worst-performing group's error rate as an explicit criterion.</p>
+      <hr />
+      <h3>10. Effective Dense Retrieval using Only In-Context Examples</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38099">2609.38099</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38099.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:44 JST</li>
+      <li>Updated: 2026-09-30 02:44 JST</li>
+      <li>Authors: Nour Jedidi, Abdul Basit Ali, Hang Li, Jimmy Lin</li>
+      <li>Categories: cs.IR, cs.CL</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、decoder-only LLMを強いdense retrieverとして使うために、追加学習なしで少数のin-context examplesだけを与えて表現を得る方法を提案する。提案手法RICEは、queryとdocumentのエンコーディングに共通の文脈を与えるようにLLMを条件付けし、prompt-basedなLLM埋め込みの精度を改善できることを示す。</p>
+      <p><strong>新規性</strong> 少数のin-context examplesのみを用いて、学習不要で高品質なdense表現をLLMから抽出するRICEを提案した点。</p>
+      <p><strong>Tags:</strong> dense retrieval, large language models, in-context learning, information retrieval</p>
+      <p><strong>Abstract</strong> Turning decoder-only large language models (LLMs) into strong dense retrievers typically requires some form of retriever training. In this paper, we ask whether LLMs can instead be prompted to produce effective representations for dense retrieval given only a few in-context examples. To answer this, we introduce RICE (Representations from In-Context Examples), a simple "training-free" approach that extracts high-quality dense representations from LLMs. To do so, RICE conditions the LLM on examples that provide a shared context for query and document encoding. Our results demonstrate that RICE embeddings can substantially improve the accuracy of prompt-based LLM embeddings, establishing it as a simple method to build LLM-based dense retrievers that do not require training. We release our code at https://github.com/nourj98/RICE.</p>
+      <hr />
+      <h3>11. NeuronEye: Query-Guided Visual Concept Activation for Vision-Language Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38098">2609.38098</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38098.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:44 JST</li>
+      <li>Updated: 2026-09-30 02:44 JST</li>
+      <li>Authors: Ruiyu Yan, Bowen Chen, Shaowen Wan, Lin Zhao</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> NeuronEyeは、VLMの中間表現から概念レベルの疎なニューロン語彙を構築し、言語クエリに応じて関連する視覚概念を選択的に活性化して推論を支援するプラグイン手法である。さらに、強い知覚方向を抑制して弱いが重要な手がかりを保つ仕組みも備え、凍結したVLMに対して単一の順伝播で動作する。</p>
+      <p><strong>新規性</strong> クエリに基づいて視覚概念を活性化・局在化し、抑制機構も併用して概念レベルの視覚推論を行う疎なニューロン語彙フレームワークを提案した点が新しい。</p>
+      <p><strong>Tags:</strong> vision-language model, sparse representation, visual reasoning, query-guided attention, concept activation</p>
+      <p><strong>Abstract</strong> Current vision-language models (VLMs) encode visual information in dense hidden states where object identity, spatial layout, and local attributes are implicitly entangled rather than explicitly disentangled, limiting their ability to isolate and modulate the specific visual evidence required by a given language query. Inspired by sparse population coding and top-down modulation in biological vision, we introduce NeuronEye, a plug-in framework that constructs a sparse, concept-level neuron vocabulary from intermediate VLM representations and selectively activates query-relevant visual concepts during inference. NeuronEye decomposes vision-token states into an overcomplete sparse basis organized by concept-level clusters, uses the language query to activate relevant clusters and localize the patches where selected concepts are expressed, and injects the focused evidence back into vision tokens. A complementary suppression mechanism attenuates dominant perceptual directions to preserve weaker but relevant cues. All operations run in a single forward pass over a frozen VLM backbone. On Qwen2.5-VL-7B, NeuronEye raises CV-Bench overall accuracy by +3.1 with gains of +9.5 on Distance, and improves BLINK Multi-view by +8.3, with similar trends on LLaVA-1.6-7B. These results suggest that sparse neuron vocabularies can serve not only as post-hoc interpretability tools but also as active interfaces for concept-level visual reasoning.</p>
+      <hr />
+      <h3>12. AdviSD: Learning to Advise Frontier LLMs via Targeted Multi-Turn Self-Distillation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38142">2609.38142</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38142.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:55 JST</li>
+      <li>Updated: 2026-09-30 02:55 JST</li>
+      <li>Authors: Rishabh Agrawal, Hejie Cui, Shasha Li, Shanchan Wu, Sercan Ö. Arık</li>
+      <li>Categories: cs.AI, cs.CL, cs.LG</li>
+      <li>Score: 13.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 小さな学習可能なアドバイザが、凍結された言語モデル実行器に自然言語の助言で介入する枠組みを扱い、タスク報酬に加えて完了済み対話からのフィードバックで助言を改善する方法を提案している。提案手法AdviSDは、結果ベースの強化学習と、フィードバック条件付きコピーからの選択的な自己蒸留を組み合わせ、実行器の尤度や追加ロールアウトを使わずに学習できる。実験では、BFCL-v3とEnvScalerで既存のadvisor-GRPOを上回り、分布外タスクや異なる実行器にも一般化・転移した。</p>
+      <p><strong>新規性</strong> 反省による修正候補のうち、助言の有用性差が大きいものを選択的に自己蒸留することで、すべての修正から学ぶよりも最終性能が向上することを示し、その選択規則をAdviSDとして実装した。</p>
+      <p><strong>Tags:</strong> LLM, self-distillation, reinforcement learning, multi-turn dialogue, advice generation</p>
+      <p><strong>Abstract</strong> A small trainable advisor can steer a frozen language-model executor using natural-language advice. In addition to learning from task rewards, the advisor can use feedback from completed interactions to improve its advice. However, a plausible correction need not change execution, yet learning from such corrections can still affect the advisor's future decisions in other contexts. In a shared-parameter model, we prove that such corrections can limit learning if their targets favor useful advice less strongly than those of other corrections. Keeping them less often than the rest improves the model's eventual performance compared to learning from every correction. Motivated by this, our method, Advisor Self-Distillation (AdviSD), pairs outcome-based reinforcement learning with self-distillation from a feedback-conditioned copy of the advisor selectively. Reflection proposes corrections, and the advisor scores the same recorded executor response with and without its issued advice, using the magnitude of the difference to select decisions for supervision. This approach does not require executor likelihoods or additional executor rollouts. Experiments with Qwen3-8B advisors for Gemini and Claude show that AdviSD outperforms advisor-GRPO by 4.2-6.4 percentage points on BFCL-v3 and by 3.9-5.1 score points on EnvScaler. The trained advisors generalize to out-of-domain tasks and transfer across different executor versions and model families. AdviSD also beats matched-count random selection, supporting the value of its selection rule.</p>
+      <hr />
+      <h3>13. Auditable Long-Term Memory: A Deterministic Retrieval Chain Measured at 479/475 of 500 on LongMemEval-S</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38021">2609.38021</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38021.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:04 JST</li>
+      <li>Updated: 2026-09-30 02:04 JST</li>
+      <li>Authors: Christopher J. Chanhnourack</li>
+      <li>Categories: cs.CL, cs.AI, cs.IR</li>
+      <li>Score: 12.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LongMemEval-S上で、ハイブリッド候補検索・再ランキング・coverage-firstなパケット生成・決定的な推論足場からなる監査可能な長期記憶システムを評価した。LLMは最終読者としてのみ用いられ、2回の500問評価で479/500と475/500を得たが、判定プロンプトや読者の違い、データ版の可能性などがあるため、既存結果との優劣や同等性は結論できない。</p>
+      <p><strong>新規性</strong> 最終読者を交換可能な部品として分離し、検索から判定までの各段階を監査可能・再採点可能な形で公開しつつ、長期記憶の性能を定量評価した点が新しい。</p>
+      <p><strong>Tags:</strong> long-term memory, information retrieval, LLM evaluation, auditable systems, benchmark</p>
+      <p><strong>Abstract</strong> We evaluate an auditable long-term memory system on LongMemEval-S. Its retrieval chain uses hybrid candidate retrieval, cross-encoder reranking, coverage-first packet compilation, and deterministic reasoning scaffolds; an LLM is used only as a replaceable final reader. The chain places all gold sessions in the candidate pool for 468/470 answerable questions and produces gold-complete packets for 462/470. With a Claude Opus reader called through an unpinned CLI alias, two 500-question passes score 479/500 and 475/500 under GPT-4o. The 72 answerable knowledge-update rows used a substantively modified scoring prompt whose effect under the official text has not been measured. The pair straddles Chronos High's published 478/500; differences in reader generation, scoring prompt, and possibly data version, plus within-system variance, establish neither superiority nor equivalence. A grok-4.6-high reader on the same packets scores 476/474, while a maximum-reasoning-effort agentic variant regresses to 461/465. The headline passes differ on eight verdict-flip rows. A second judge agrees with the headline judge on 493/500 rows (98.6%) in each pass and scores both passes 472/500; the official judge also flips three verdicts when re-scoring byte-identical pass-1 answers. Negative controls rejected a verifier that repaired three wrong drafts but broke eleven correct drafts. All components were developed on the same 500 questions, with no held-out evaluation or independent human adjudication; retrieval and scaffold method sources and transcript-derived audits are held; and the headline reader received extra operator context, its complete requests were not retained, and MCP tool availability is unresolved. We release materialized packets, scaffolds, reader outputs, judge verdicts, and controls for inspection and re-scoring.</p>
+      <hr />
+      <h3>14. A Spectral Theory of Distortion in LLM Graph Reconstruction: Sharp Bounds and Empirical Characterization</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2609.38161">2609.38161</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2609.38161.pdf">link</a></li>
+      <li>Published: 2026-09-30 02:59 JST</li>
+      <li>Updated: 2026-09-30 02:59 JST</li>
+      <li>Authors: Jianru Shen</li>
+      <li>Categories: cs.LG, cs.DM</li>
+      <li>Score: 10.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMによるグラフ再構成の評価で用いられるラプラシアン固有値のWasserstein距離について、その値が辺数変化に基づく上下界で挟まれることを示している。下界は辺数の純増減、上界は対称差に対応し、両者の差から「追加と削除が同時に起きた混合編集」を判定できることを示す。さらに、3つのオープンウェイトモデルによる135件の再構成実験で、これらの編集様式の違いを実証的に特徴づけている。</p>
+      <p><strong>新規性</strong> 集約的な距離指標だけでは見えない編集の種類を、スペクトル距離の鋭い上下界と残差により、報告済みの要約量だけから判定できる点が新規である。</p>
+      <p><strong>Tags:</strong> graph reconstruction, LLM evaluation, spectral graph theory, Wasserstein distance, distortion analysis</p>
+      <p><strong>Abstract</strong> Evaluations of graph reconstruction by language models typically report a single aggregate distance between the original and the reconstructed graph. We prove that for the Wasserstein distance between Laplacian spectra such a summary is bracketed by two edge counts, the net change in edge number from below and the symmetric difference from above, each scaled by $2/n$ where $n$ is the number of vertices. The bracket is sharp: its two ends coincide exactly when the reconstruction only adds edges or only deletes them, and on that class the distance is a rescaled edge count that says nothing about which edges changed. When the ends differ, the residual between the distance and the lower end is positive only if the reconstruction both invented and lost edges, which turns it into a certificate of mixed editing computable from the reported summaries alone. We characterize these regimes in 135 reconstructions produced by three open-weight models over 45 synthetic graphs. Seventy-seven outputs are one-sided and 29 mixed outputs have $X &gt; 0$, including cases where edge count is exactly preserved while nineteen edges were simultaneously invented and lost. The three models differ in editing policy, ranging from copying the input to attempting completion at the cost of large hallucination volume, a distinction that aggregate distortion does not reveal.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
