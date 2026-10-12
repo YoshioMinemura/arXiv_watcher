@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-10-12 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-10-12</h1>
+        <p class="hero-copy">Generated at 2026-10-12 11:18 JST. Run ID: <code>ccbfd289-1924-402c-8379-f69d1a0c655e</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>6</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-10-12</h1>
+      <p>Generated at: 2026-10-12 11:18 JST Run ID: ccbfd289-1924-402c-8379-f69d1a0c655e</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 6</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.13811">2610.13811</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.13811.pdf">link</a></li>
+      <li>Published: 2026-10-10 01:23 JST</li>
+      <li>Updated: 2026-10-10 01:23 JST</li>
+      <li>Authors: Meriem Terki, Nouhaila Innan, Minghao Shao, Muhammad Kashif, Alberto Marchisio, Muhammad Shafique</li>
+      <li>Categories: cs.LG, cs.CL, quant-ph</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> QTestBenchは、LLMが生成した量子コード向けテストスイートを、テスト自体を正解とみなさず独立したベンチマーク判定器と照合して評価するフレームワークである。PennyLaneのQHack課題8件とQiskit HumanEval課題10件で5つのLLMを評価し、生成されたテストはほぼ実行可能だが、正しい実装と誤った実装の識別性能は十分でないことを示した。</p>
+      <p><strong>新規性</strong> 量子ソフトウェアに対して、LLM生成テストの実行可能性ではなく「判別性能」を独立判定器との比較で評価する再現可能なベンチマークを提案した点が新しい。</p>
+      <p><strong>Tags:</strong> 量子ソフトウェア, 大規模言語モデル, テスト生成, ベンチマーク, コード評価</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) have shown strong results in classical code generation and are increasingly used to write the unit tests that safeguard that code. Whether they can do the same for quantum software is less clear, because quantum programs are probabilistic, depend on numerical tolerances, and are judged by domain-specific checkers, so a well-formed test can still disagree with the benchmark's verdict. Existing quantum benchmarks measure whether a model produces a correct solution, but not whether its tests can distinguish correct implementations from faulty ones. We introduce QTestBench, a framework that evaluates LLM-generated quantum test suites against independent benchmark checkers, never treating the tests themselves as ground truth. For each task, QTestBench prompts models to produce syntactic, semantic, and behavioral tests, injects candidate solutions at runtime, and compares each test verdict with the checker's label under three validation cohorts, each answering a distinct diagnostic question. We benchmark five LLMs on eight PennyLane QHack challenges and ten Qiskit HumanEval tasks. Generated suites almost always execute, but discrimination lags behind: the best generator reaches a test quality of 0.71 on QHack and 0.34 on Qiskit HumanEval, so executability alone overstates test quality. Oracle-verified synthetic mutants stabilize bug-detection estimates when natural faulty solutions are scarce, as on three of ten Qiskit tasks that yield none. QTestBench offers a reproducible, cross-framework benchmark for the trustworthiness of LLM-generated quantum tests.</p>
+      <hr />
+      <h3>2. Tracing and Taming Hallucinated Terms via Subsequence-Association Filtering and Breadth-Aware Selection for LLM Query Expansion</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.13810">2610.13810</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.13810.pdf">link</a></li>
+      <li>Published: 2026-10-10 01:22 JST</li>
+      <li>Updated: 2026-10-10 01:22 JST</li>
+      <li>Authors: Amit Kumar Jaiswal, Sagar Uprety, Prayag Tiwari</li>
+      <li>Categories: cs.IR, cs.CL</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMによるクエリ拡張は幻覚的な語を混入させ、ランキングノイズを増やす問題がある。本論文は、部分列関連性に基づいて各候補語の再現性を評価し、さらに被覆最大化の観点から保持語を選ぶ訓練不要・検索器非依存のSAFE-QEを提案する。TREC/BEIRで、nDCG@10をほぼ維持しつつ、支持されない拡張語の数を大きく削減できることを示した。</p>
+      <p><strong>新規性</strong> 幻覚的な拡張語を一律に除去するのではなく、生成の機構に基づくスコアリングと、広さと一貫性を両立する選択基準を組み合わせた点が新しい。</p>
+      <p><strong>Tags:</strong> query expansion, hallucination, LLM, information retrieval, faithfulness</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are now a standard source of query expansion terms but they hallucinate. They inject non existent entities and off-topic terms that add ranking noise and can hurt strong retrievers. Existing remedies such as corpus grounding, mutual verification and preference alignment treat hallucinated terms as an undifferentiated nuisance to be filtered by agreement heuristics, without a mechanistic account of why a given term appears or a principled criterion for how many terms to keep. We propose Subsequence-Association Filtered, breadth-aware query expansion (SAFE-QE), a training-free, retriever agnostic method that draws on the subsequence-association account of hallucination. We score each candidate expansion term by its corpus conditioned cross-context reproducibility, terms that reappear under randomised query contexts yet lack support in the pseudo-relevant set are flagged as products of dominant hallucinatory associations and down-weighted. Drawing on the characterisation of language generation as a trade-off between consistency (no hallucination) and breadth (coverage), we cast term selection as constrained coverage maximisation over the pseudo-relevant set, keeping a set that is approximately broad but consistent and stable across resampling. We also introduce the Hallucinated Expansion Term Rate, a query side faithfulness metric that counts injected expansion terms no relevant document supports. We evaluate our approach on benchmarked TREC and BEIR collections. Our SAFE-QE is statistically indistinguishable from generative and corpus-steered expansion on nDCG@10 while injecting fewer unsupported terms 4.3 per query against 27.8 for Query2doc and 57.5 for HyDE and on a strong learned sparse retriever, where every expansion method regresses. Faithfulness is therefore available at no measurable cost in ranking quality.</p>
+      <hr />
+      <h3>3. Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.13823">2610.13823</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.13823.pdf">link</a></li>
+      <li>Published: 2026-10-10 01:34 JST</li>
+      <li>Updated: 2026-10-10 01:34 JST</li>
+      <li>Authors: Oktie Hassanzadeh, Dharmashankar Subramanian</li>
+      <li>Categories: cs.DB, cs.AI</li>
+      <li>Score: 16.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Semantic query engine における LLM の判定は、同じ温度0設定でも実行ごとに変動しうることを、SemBench・LRO-Bench・UDA-Bench の再実行と 120万件のモデル呼び出しログ解析で示している。行レベルの出力変動はクエリ結果全体に増幅され、ベンチマーク上のシステム比較や実装推奨の一部は、実行回数の少なさによって結論が未確定になりうる。</p>
+      <p><strong>新規性</strong> 同一クエリの再実行による分散を大規模に定量化し、行の変動が結果全体へ増幅されることと、ベンチマーク報告・システム設計のための指針を導いた点が新規である。</p>
+      <p><strong>Tags:</strong> semantic query processing, LLM, benchmark analysis, run-to-run variance, database systems</p>
+      <p><strong>Abstract</strong> Semantic query engines ask a large language model (LLM) to judge individual rows, and benchmarks compare these engines on the quality of a few executions at temperature 0. We measure how much another execution changes. We re-execute the text and tabular workloads of SemBench, LRO-Bench, and UDA-Bench through their own harnesses, log every one of 1.2 million model calls, and reanalyze SemBench's published executions. At temperature 0, between 0.07% and 10.2% of rows change their operator output over five executions, depending on the model, and up to 24.0% on one task. Plans amplify these changes exponentially in the number of rows an answer exposes, as a possible-worlds model predicts: on UDA-Bench, a few percent of extracted values change, but about two thirds of the answers do. In SemBench's published results, 21% of text results change quality between executions, including on engines whose plans are deterministic. Several per-query system comparisons, and 16 of 28 tests of LRO-Bench's implementation recommendations, are not settled by the executions the benchmarks run. Changing rows are rows on which models disagree with each other; identical requests within one execution disagree as often as across executions; and one execution's decision margin or reasoning length predicts which rows change. Voting reduces the variance but does not remove it, and a calibrated cascade keeps its guarantee while the rows it returns change. We derive reporting rules for benchmarks and design rules for engines.</p>
+      <hr />
+      <h3>4. Task Context Shapes Component Roles in Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.13895">2610.13895</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.13895.pdf">link</a></li>
+      <li>Published: 2026-10-10 02:40 JST</li>
+      <li>Updated: 2026-10-10 02:40 JST</li>
+      <li>Authors: Sovesh Mohapatra, Dani S Bassett</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 12.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルでは複数タスクで同じ注意ヘッドが再利用されるが、本研究は固定されたモデル部品をタスク間で比較し、タスク文脈によってそれらの役割が変わることを示した。5つのオープンウェイトモデルで、タスク変更によりヘッドの影響の分配が変化し、同じヘッドが異なる事実に反応して後続層への影響も変わることが観測された。</p>
+      <p><strong>新規性</strong> 同一のグラフ事実に基づく介入を用いて、タスク前後の線形応答写像を構成し、タスク文脈が共有コンポーネントの応答先と後続への影響の両方を変えることを定量的に示した点。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 注意ヘッド, タスク文脈, 介入解析, 内部表現</p>
+      <p><strong>Abstract</strong> Large language models reuse the same attention heads across tasks, but identifying these shared heads does not explain what they do differently in each task. A natural source of inspiration is task-dependent interactions among shared brain regions, which motivate a network view of language-model computation. Here, we compare fixed model components across tasks using identical graph facts, statements specifying which directed connections are present. We measure how interventions affect attention heads and the activation state in later layers (influence), as well as the answer (importance). Task changes redistribute the influence in five open-weight models spanning four families and 1.5-14 billion parameters. In Gemma-2-9B and Qwen3-14B, an activation edit changes an early internal activation vector and switches which fact the model reads while the written instruction stays fixed. The same heads then respond to different graph facts and influence later components differently. For each prompt, we construct two linear response maps, one before the edit and one after it. Each map predicts a later head's response from a measured change in an earlier head. For a separate factual intervention, the map for the corresponding condition reduces mean squared prediction error by 53.6% in Gemma and 5.0% in Qwen compared with the average of the two maps. These findings show that task context changes both which graph facts the shared components respond to and how their outputs affect later computation. A network account may help explain how models use shared parameters to perform different computations. Measurements of task-dependent influence could also guide interventions intended to alter one behavior while preserving others.</p>
+      <hr />
+      <h3>5. SpatialASM: Internalizing Active Mentalization for Spatial Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.13832">2610.13832</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.13832.pdf">link</a></li>
+      <li>Published: 2026-10-10 01:39 JST</li>
+      <li>Updated: 2026-10-10 01:39 JST</li>
+      <li>Authors: Yuhong Liu, Shenxi Wu, Junyi Chi, Beichen Zhang, Xuanlang Dai, Jiaqi Wang, Yuhang Zang, Dahua Lin</li>
+      <li>Categories: cs.CV, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、複雑な空間推論において人間が行う「視点を切り替えて場面を再構成する」能力を、LVLMに内在化させるActive Spatial Mentalization (ASM) に着目している。SpatialASMは、訓練時の空間シミュレーションを通じて、視点計画と想像を促す明示的なASM軌跡と、視点取得タスクを用いて学習を行い、7つのベンチマークで空間推論性能を向上させつつ一般的な視覚能力を維持した。</p>
+      <p><strong>新規性</strong> 新規性は、allocentricな新規視点生成器を用いて、LVLMに対する視点計画・想像のためのASM軌跡と視点取得タスクを自動生成し、空間推論のための訓練時シミュレーションとして統合した点にある。</p>
+      <p><strong>Tags:</strong> 空間推論, Vision-Language Model, 視点取得, 視覚的推論, 訓練時シミュレーション</p>
+      <p><strong>Abstract</strong> When solving complex spatial reasoning tasks, ordinary humans naturally revisit the scenes from task-relevant viewpoints and mentally reconstruct the spatial layouts from those viewpoints. But can Large Vision-Language Models (LVLMs) proactively think in the same way? We term this ability Active Spatial Mentalization (ASM), an intrinsic component of visual intelligence that remains substantially underdeveloped in current LVLMs. To bridge this gap, we introduce SpatialASM, a scalable framework to internalize ASM into LVLMs through training-time spatial simulation. SpatialASM employs an allocentric novel-view generator to ground hypothetical viewpoints in visual evidence and produces two complementary forms of supervision: i) explicit ASM trajectories that teach LVLMs when and how to adaptively invoke view planning and imagination during spatial reasoning, and ii) automatically-constructed perspective-taking tasks that further strengthens viewpoint-conditioned scene imagination. On seven benchmarks spanning relatively perception-oriented spatial understanding to more challenging tasks requiring multi-image, cross-view and viewpoint-transformation reasoning, SpatialASM yields performance gain on LVLMs of four LVLM backbones in spatial reasoning while retaining their original general vision capabilities. The experimental results demonstrate that our approach improves average accuracy across the seven spatial benchmarks. And the synthesis of ASM trajectories provides a scalable pathway to alleviate the scarcity of spatial Chain-of-Thought (CoT) supervision for eliciting active viewpoint exploration and mental scene simulation.</p>
+      <hr />
+      <h3>6. OpenPA: Forced-alignment-free Multi-granular Pronunciation Assessment with Mixed-transcript Adaptation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.13826">2610.13826</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.13826.pdf">link</a></li>
+      <li>Published: 2026-10-10 01:35 JST</li>
+      <li>Updated: 2026-10-10 01:35 JST</li>
+      <li>Authors: Fu-An Chao, Bi-Cheng Yan, Berlin Chen</li>
+      <li>Categories: eess.AS, cs.CL, cs.SD, eess.SP</li>
+      <li>Score: 11.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> OpenPAは、forced alignmentを使わずにWhisperのcross-attentionを利用して、単語レベルと発話レベルの発音スコアを同時に予測する自動発音評価フレームワークである。mixed-transcript adaptationとadaptive substitution weightingにより、closed-responseとopen-responseの異なる転写形式を1つのモデルで扱える。speechocean762のみで学習し、in-domain条件とシミュレートされたopen-response条件で強い性能を示し、MultiPAでもzero-shotで性能を維持した。</p>
+      <p><strong>新規性</strong> forced alignment不要で、Whisperのcross-attentionを用いて単語・発話レベル評価を同時に行い、mixed-transcript adaptationで閉じた応答と自由応答を単一モデルで統合した点。</p>
+      <p><strong>Tags:</strong> automatic pronunciation assessment, forced alignment-free, Whisper, mixed-transcript adaptation</p>
+      <p><strong>Abstract</strong> Recent advances in automatic pronunciation assessment (APA) have driven a shift from scripted to free-form assessment. However, existing methods often rely on multi-stage pipelines with forced alignment and separate feature extractors, limiting their practicality across response settings. In light of this, we propose OpenPA, a novel APA framework that leverages Whisper's cross-attention mechanism to jointly predict word- and utterance-level pronunciation scores without forced alignment. Through mixed-transcript adaptation and adaptive substitution weighting, OpenPA accommodates heterogeneous transcripts across closed- and open-response settings within a single model. Trained solely on speechocean762, OpenPA achieves the strongest overall performance among evaluated systems under in-domain closed and simulated open-response conditions, while maintaining its performance zero-shot on MultiPA. An additional cross-task evaluation on oral-cancer speech suggests its potential applicability beyond non-native speech.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
