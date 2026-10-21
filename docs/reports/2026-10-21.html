@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-10-21 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-10-21</h1>
+        <p class="hero-copy">Generated at 2026-10-21 10:30 JST. Run ID: <code>cc1e58d3-3a76-4434-97b3-e5990dd64c83</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>13</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-10-21</h1>
+      <p>Generated at: 2026-10-21 10:30 JST Run ID: cc1e58d3-3a76-4434-97b3-e5990dd64c83</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 13</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. ACE-Compression: An Ability-Centric Evaluation of Compressed Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27913">2610.27913</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27913.pdf">link</a></li>
+      <li>Published: 2026-10-20 18:26 JST</li>
+      <li>Updated: 2026-10-20 18:26 JST</li>
+      <li>Authors: Jiahui Ning, Liang Chen, Yuchen Liang, Yi Zhang, Fenglei Fan</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 34.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、圧縮された大規模言語モデルの評価において、単なるタスク性能ではなく「どの能力が残り、どの能力が崩れるか」を調べる能力中心の評価枠組みACE-Compressionを提案する。4つの観点（手続き的推論、知識の根拠性と真偽性、社会的認知と感情理解、ペルソナ忠実性と文体一貫性）で、量子化と剪定を含む35以上の圧縮チェックポイントを評価した。</p>
+      <p><strong>新規性</strong> 圧縮後の平均性能ではなく、応用に直結する能力プロファイルを分解して評価する枠組みを導入し、量子化と剪定の違いを能力単位で診断できるようにした点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, model compression, evaluation, quantization, pruning</p>
+      <p><strong>Abstract</strong> Model compression makes large language models deployable, but today's evaluation tells an incomplete story. Standard practice measures retained task performance and stops there. This misses a critical fact: compression perturbs the distributed knowledge embedded across billions of weights, and task scores alone cannot reveal which underlying abilities survive and which quietly collapse. To solve this question, we introduce ACE-Compression, an ability-centric evaluation framework. Instead of asking only "does the compressed model still answer correctly?", we ask "which of its core abilities remain intact?" Our framework probes four deployment-facing dimensions: procedural reasoning and constraint execution, knowledge grounding and truthfulness, social cognition and affective understanding, and persona fidelity and stylistic consistency. Across more than 35 compressed checkpoints from six open-weight LLMs-covering quantization and pruning-we find that compression redistributes ability profiles. Coarse, local, and surface-level signals often persist, while fine-grained, long-tail, and context-dependent abilities become fragile. Quantization consistently outperforms pruning in retention, but the practical meaning of that gap depends entirely on which ability an application requires. Based on our findings, deployers can choose compression methods by the ability profile their application needs, not just by a leaderboard average. And algorithm designers gain diagnostic signals to build compression methods that preserve what matters. We believe that ACE-Compression turns compression from a black-box accuracy drop into an interpretable intervention-one we can measure, understand, and ultimately improve.</p>
+      <hr />
+      <h3>2. Hallucinations of Large Language Models in Cross-Language Code Translation: Phenomena and Mitigation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27868">2610.27868</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27868.pdf">link</a></li>
+      <li>Published: 2026-10-20 17:50 JST</li>
+      <li>Updated: 2026-10-20 17:50 JST</li>
+      <li>Authors: Yali Du, Yunji Zhang, Ming Li</li>
+      <li>Categories: cs.SE, cs.AI</li>
+      <li>Score: 27.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMによるクロスランゲージコード翻訳における幻覚を体系的に調査し、3つのベンチマーク、6つの言語ペア、7つのLLMを対象に、幻覚の種類・分布・発生傾向を分析している。幻覚は「Semantic Consistency Conflicts」「Factual Knowledge Conflicts」「Project Context Deviations」の3大カテゴリに整理され、13,919件を手動注釈して実行検証付きで特徴づけた。</p>
+      <p><strong>新規性</strong> コード翻訳に特化した幻覚の分類体系を提案し、BM25検索と分類体系に基づく反省的リファインメントを組み合わせた緩和手法HaluCodeTranを提示した点が新規である。</p>
+      <p><strong>Tags:</strong> code translation, hallucination, large language models, empirical study, mitigation</p>
+      <p><strong>Abstract</strong> Code translation converts source code from one programming language to another while preserving its functionality. Although Large Language Models (LLMs) have improved code translation, their outputs still contain hallucinations: generated code that conflicts with the source program, violates target-language facts, or introduces contextually inconsistent dependencies. These failures are especially harmful in translation because small semantic deviations can silently change program behavior. Existing hallucination studies mainly focus on natural-language generation or code generation, leaving the forms, distribution, and mitigation of hallucinations in cross-language code translation insufficiently characterized. This paper presents a systematic empirical study of LLM hallucinations in code translation. Across three benchmark datasets, six language pairs, and seven LLMs, we construct a taxonomy with three major categories: Semantic Consistency Conflicts, Factual Knowledge Conflicts, and Project Context Deviations. We manually annotate 13,919 hallucination cases and analyze how hallucination types vary across models, datasets, and language directions. Guided by the taxonomy, we further propose HaluCodeTran, a mitigation framework that combines BM25-based retrieval of relevant translation examples with taxonomy-aware reflective refinement. The study provides an execution-tested characterization of code-translation hallucinations and a practical baseline for building more reliable LLM-based code migration tools.</p>
+      <hr />
+      <h3>3. Why Do LLMs Accept Generics? Explaining Acceptability using Psycholinguistic and Model-Derived Factors</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27928">2610.27928</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27928.pdf">link</a></li>
+      <li>Published: 2026-10-20 18:40 JST</li>
+      <li>Updated: 2026-10-20 18:40 JST</li>
+      <li>Authors: Mervat Abassy, Zhaoxin Feng, Tatsuki Kuribayashi, Kentaro Inui, Emmanuele Chersoni</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMが一般化文（generics）を受容する理由を、心理言語学で提案されてきた要因とモデル由来の要因から分析した。12のモデルを用いた実験では、LLMは属性の一般性だけでなく、その属性が対象種をどれだけ識別するかも重視し、人間に近い形で両者を組み合わせる一方、顕著さ（strikingness）は考慮しないことが示された。</p>
+      <p><strong>新規性</strong> 人間の一般化文判断に関する心理言語学的要因が、LLMの評価にどの程度対応するかを体系的に検証し、さらに隠れ状態操作によって各要因が判断に因果的に影響しうることを示した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, psycholinguistics, generics, acceptability judgment, interpretability</p>
+      <p><strong>Abstract</strong> Psycholinguistic studies explore why humans accept some generic statements but reject others by showing that these judgments depend on more than how common a property is. People consider several other factors such as how well it sets the kind apart from others or whether it is characteristic of the kind. Inspired by the linguistic and cognitive literature, we explore to what extent factors from these studies explain how large language models (LLMs) judge generics. Our results with twelve models on a psycholinguistic dataset and on naturally occurring generics show that models weigh how common a property is against how well it distinguishes the kind, and combine the two much as people do, though less clearly. Like people, they favor characteristic properties, but unlike the accounts of human judgment, they ignore striking ones. What matters most to LLMs is whether a statement is factually true, and much of the influence of human factors reaches their ratings through that judgment. In six 7-9B models, shifting the hidden states along each factor's direction moves the judgment as the factor predicts.</p>
+      <hr />
+      <h3>4. Testing Associative Creativity in Humans and Multimodal LLMs with Difficult-to-Name Visual Stimuli</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27894">2610.27894</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27894.pdf">link</a></li>
+      <li>Published: 2026-10-20 18:13 JST</li>
+      <li>Updated: 2026-10-20 18:13 JST</li>
+      <li>Authors: Manar Ali, Lisa Gottschalk, Simeon Junker, Lisa Hudalla, Alon Fishman, Joana Cholin, Stefan Kopp, Hendrik Buschmeier, Sina Zarrieß</li>
+      <li>Categories: cs.CL, cs.CV</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、抽象的な視覚刺激に対する連想的創造性を、人間とマルチモーダル大規模言語モデル（MLLMs）で比較した。難易度を操作した2つのデータセットを用いて、独創性と有効性の観点から評価した結果、人間はMLLMsよりも多様で意味距離の大きい、より新規な表現を生成することが示された。</p>
+      <p><strong>新規性</strong> 難読な視覚刺激に対して、人間とMLLMsの連想的創造性を独創性・有効性の両面から系統的に比較し、難易度上昇に伴う表現の変化を分析した点が新しい。</p>
+      <p><strong>Tags:</strong> multimodal LLM, 創造性評価, 視覚刺激, 人間比較, 抽象画像</p>
+      <p><strong>Abstract</strong> We investigate associative creativity in descriptions of abstract visual stimuli by humans and multimodal large language models (MLLMs). While conceptual association is central to human communication, it remains unclear how humans and models adapt when visual stimuli become increasingly difficult to map onto familiar semantic concepts. We evaluate several state-of-the-art MLLMs and human participants along two dimensions of creativity, originality and effectiveness, using two datasets with controlled manipulations of difficulty. SilCC varies naming difficulty through progressively more complex combinations of abstract shapes, and PixCC varies difficulty through increasing levels of random visual noise. Results show that humans produce more diverse associative descriptions than MLLMs, including greater semantic distance, higher entropy, and more novel expressions relative to reference lexica. As difficulty increases, effectiveness declines in SilCC, and humans increasingly shift from holistic associations to descriptions of low-level visual properties in PixCC.</p>
+      <hr />
+      <h3>5. SliMOO: Interpretable Multi-Objective Evolutionary Search for LLM Depth Pruning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27812">2610.27812</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27812.pdf">link</a></li>
+      <li>Published: 2026-10-20 17:05 JST</li>
+      <li>Updated: 2026-10-20 17:05 JST</li>
+      <li>Authors: Guanchen Li, Yixing Xu, Xuanwu Yin, Dong Li, Emad Barsoum</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 21.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの深さ方向のプルーニングを単一スコアの順位付けではなく、多目的最適化として扱うべきだと主張し、SliMOOを提案する。SliMOOは単層除去のプロービングでタスクごとの層重要度マップを作り、それを事前知識としてNSGA-IIベースの進化的探索でプルーニングマスクを選択する。Llama-3.1とQwen3系で、既存のルールベース・貪欲法・スカラー化手法より良い多タスクのトレードオフを示した。</p>
+      <p><strong>新規性</strong> タスクごとの層寄与の違いを明示的に捉える重要度マップを用い、LLM深さプルーニングを解釈可能な多目的進化探索として定式化した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, depth pruning, multi-objective optimization, evolutionary search, interpretability</p>
+      <p><strong>Abstract</strong> As large language models (LLMs) grow more powerful, their scale makes them costly to serve. Depth pruning offers a practical route to efficiency by directly reducing memory and latency without hardware-specific support. However, we observe that transformer layers exhibit markedly different task-dependent layer contributions, whereas existing depth-pruning methods ignore this heterogeneity and thus tend to optimize for a narrow domain or benchmark rather than preserve broad capability. This suggests that LLM depth pruning should be formulated as a multi-objective optimization problem rather than a single-score ranking problem. We propose SliMOO, an interpretable multi-objective evolutionary search framework for LLM depth pruning. SliMOO first uses single-layer removal probing to construct a task-layer importance map, which provides an interpretable view of task-shared and task-specific layers and serves as a search prior. It then performs a Pareto-aware evolutionary search for pruning masks, where candidates are generated under the guidance of the task-layer prior, scored by their deviation from the dense model on each task, and retained through NSGA-II environmental selection. Across the Llama-3.1 and Qwen3 model families, SliMOO consistently achieves stronger multi-task trade-offs than rule-based, greedy, and scalarized baselines. For example, on Llama-3.1-70B at 25% sparsity, it improves the math-domain average from 24.33% to 34.40% and the code-domain average from 35.03% to 39.14%. Code will be made available at https://github.com/AMD-AGI/SliMOO.</p>
+      <hr />
+      <h3>6. CollabSciReM: Aligning Language Models for Scientific Conversations via Science-Aware Reward Decomposition</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27901">2610.27901</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27901.pdf">link</a></li>
+      <li>Published: 2026-10-20 18:18 JST</li>
+      <li>Updated: 2026-10-20 18:18 JST</li>
+      <li>Authors: Sasi Kiran Gaddipati, Gollam Rabby, Sören Auer</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 19.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、科学的な多ターン対話において、LLMが正確性・方法論的妥当性・論理的一貫性・効率性を同時に満たすことを目指し、会話品質・科学的厳密性・構造的効率に報酬を分解するCollabSciReMを提案する。さらに、300本の論文に基づく6次元評価のSciQualityを導入し、複数のLlama/Qwenモデルで科学非依存の報酬ベースラインより高い選好率と、専門家評価での新規性向上および幻覚の減少を示した。</p>
+      <p><strong>新規性</strong> セッション全体の報酬を科学的厳密性と会話品質、効率に分解する目標条件付き報酬枠組みを導入し、科学対話に特化した評価基準SciQualityを新たに構築した。</p>
+      <p><strong>Tags:</strong> LLM alignment, scientific conversation, reward decomposition, evaluation benchmark, multi-turn dialogue</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) are increasingly used as research collaborators for hypothesis refinement, methodological planning, and technical analysis across multi-turn interactions. In this setting, a useful assistant must be accurate, methodologically justified, logically consistent, and token-efficient. Current alignment approaches rarely achieve all of these together. Instruction-tuned models gain conversational quality through verbosity, and we show that science-agnostic general collaborative rewards compress responses at the expense of scientific rigor. We propose CollabSciReM, a goal-conditioned reward framework that decomposes the session-level reward into conversational quality, scientific rigor, and structural efficiency. We also introduce SciQuality, a pairwise evaluation of multi-turn research conversations grounded in 300 held-out scientific papers and scored on six dimensions: methodological soundness, justification, logical consistency, factual correctness, novelty, and responsiveness. Fine-tuned on 8.62K synthetic research conversations, CollabSciReM is preferred on SciQuality over a science-agnostic reward baseline trained on the same data for all four Llama and Qwen models, including a 65.3% win rate at matched response length. For the 7B and 8B models, CollabSciReM outperforms the science-agnostic reward baseline on the primary metric in 8 of 10 single- and multi-turn benchmark settings. In a blind study, domain experts rated CollabSciReM significantly higher on novelty than the general-reward variant and reported fewer hallucinated responses than both the general-reward variant and the base model.</p>
+      <hr />
+      <h3>7. Polarity Blindness in LLM Safety: A Systematic Study of Negation, Antonym Substitution, and Adversarial Framing</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27908">2610.27908</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27908.pdf">link</a></li>
+      <li>Published: 2026-10-20 18:22 JST</li>
+      <li>Updated: 2026-10-20 18:22 JST</li>
+      <li>Authors: Diego Miguel Lozano, Erik Derner, Juan Antonio Pérez-Ortiz, Nuria Oliver</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMの安全ガードレールが、否定や反意語置換のような極性を反転させる言語操作によって破られうる問題を「polarity blindness」として体系的に調べた。10種類の最先端LLMを英語・スペイン語・チェコ語で評価し、多くのモデルで有害意図の認識失敗が確認され、特に脆弱なモデルでは平均有害度が4.12に達した。</p>
+      <p><strong>新規性</strong> 否定・反意語置換・対照的な同義語置換を比較し、さらに敵対的なテキスト包装の影響も含めて、LLM安全性における極性反転への脆弱性を多言語・多モデルで系統的に示した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM安全性, 否定, 敵対的プロンプト, 多言語評価, 意味ロバスト性</p>
+      <p><strong>Abstract</strong> Negation remains a persistent challenge for language models across NLP tasks and modalities. We show that this weakness can undermine LLM safety guardrails through a structural vulnerability we term polarity blindness: the failure to recognize harmful intent after polarity-altering linguistic transformations. We study two forms of polarity inversion: grammatical negation and antonym replacement, and use synonym replacement as a polarity-preserving control. We further test whether an adversarial textual wrapper amplifies these failures. Using a 260-prompt benchmark across 10 state-of-the-art LLMs and 3 languages (English, Spanish, Czech), stratified by harmfulness potential and evaluated on a validated 0-5 harm scale, we find that polarity blindness affects most evaluated models, with mean harm scores reaching 4.12 for the most vulnerable model. The effect persists across typologically differing negation systems, suggesting that polarity blindness reflects a broader limitation in semantic robustness rather than a language- or grammar-specific failure.</p>
+      <hr />
+      <h3>8. RAG-NIMBF: A Non-Invasive, Modular Benchmarking Framework for Automated RAG Configuration Analysis</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27816">2610.27816</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27816.pdf">link</a></li>
+      <li>Published: 2026-10-20 17:08 JST</li>
+      <li>Updated: 2026-10-20 17:08 JST</li>
+      <li>Authors: Niclas Hart, Nicolas Weeger</li>
+      <li>Categories: cs.SE, cs.AI</li>
+      <li>Score: 16.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> RAG-NIMBFは、既存のRAGパイプラインに非侵襲的に接続できるモジュール型ベンチマークフレームワークであり、chunking、embedding、retrieval、reranking、prompting、生成モデルなどの設定空間を制御されたアブレーションと実験追跡で評価する。SQuAD上で複数の生成モデルを用いて検証し、LLMベースの回答品質、検索正確性、実行時間を組み合わせて比較することで、設定間の相互作用を可視化した。</p>
+      <p><strong>新規性</strong> 既存のRAG運用パイプラインを壊さずに接続できる非侵襲的な評価層として、RAG設定を再現可能で比較可能な実験に変換する点が新しい。</p>
+      <p><strong>Tags:</strong> RAG, benchmarking, evaluation framework, retrieval, LLM</p>
+      <p><strong>Abstract</strong> Retrieval-Augmented Generation (RAG) has become the dominant paradigm for grounding the outputs of large language models (LLM) in external knowledge. However, practitioners are faced with a vast configuration space comprising chunking, embedding, retrieval, reranking, prompting and generation models, and there is limited guidance on how these components interact. We present RAG-NIMBF, a modular benchmarking framework that attaches to existing RAG pipelines as a non-invasive evaluation layer. It evaluates the configuration space through controlled ablation with end-to-end experiment tracking. The evaluation combines LLM-based answer quality scores, retrieval correctness measures, and runtime indicators. This study validates the framework across multiple generation models on the SQuAD dataset. This process reveals non-obvious interactions and demonstrates how the experiments are tracked. The findings indicate that the retrieval balance of relevance and diversity substantially enhances the relevance and coverage of retrieved context in comparison to a conventional similarity search, with MMR raising nDCG@5 by +4 to +11 percentage points across the swept models. More detailed prompt instructions meaningfully increase how faithfully generated answers stick to the retrieved evidence, especially for capable and reasoning models (+10 to +13pp on Qwen3.6-27B, GPT-4o-mini and Qwen3.5-think, but negligible on the 20B generator). Overall, RAG-NIMBF transforms the configuration space of RAG into reproducible, comparable experiments. By attaching to existing production pipelines in a non-invasive way, it enables practitioners to systematically evaluate and improve deployed systems without disrupting existing workflows. This replaces ad hoc choices with evidence-based decisions.</p>
+      <hr />
+      <h3>9. From DQI to C-DQI: Automatic Codebook Generation and Evaluation for Measuring Computational Discourse Quality Index</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27937">2610.27937</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27937.pdf">link</a></li>
+      <li>Published: 2026-10-20 18:45 JST</li>
+      <li>Updated: 2026-10-20 18:45 JST</li>
+      <li>Authors: Esther Shizgal, Ron Keinan, Daniel Shtauber, Roee Tzvi Esquira, Ori Aronson, Matan Toledano, Or Rappel-Kroyzer, Liron Lavi, Renana Keydar, Ittai Bar-Siman-Tov, Reut Tsarfaty</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、議会討論の質を測るためのコードブックをLLMで自動生成・評価するための一連の手順を提案している。既存の理論主導型DQIに対し、トップダウン、ボトムアップ、ハイブリッドの各手法を比較し、外的な代理指標とモデル間一致度（IMA）で妥当性と信頼性を評価した。イスラエル議会の100本の議事録実験では、データ駆動型のスキーマが高いIMAを示しつつ妥当性も維持した。</p>
+      <p><strong>新規性</strong> LLMによるコードブック生成に対して、外的代理指標とモデル間一致度（IMA）を組み合わせた評価プロトコルを提案し、理論主導・データ駆動・ハイブリッドの比較を可能にした点が新しい。</p>
+      <p><strong>Tags:</strong> 議会討論, コードブック生成, 大規模言語モデル, 談話品質評価, 政治言説分析</p>
+      <p><strong>Abstract</strong> Effective democratic deliberation is vital for civic engagement and the health of legislative institutions. However, assessing parliamentary discourse quality is traditionally done using expert-scored, theory-based codebooks (CBs), which are rigid, labor-intensive, and prone to biases. While Large Language Models (LLMs) offer a scalable alternative for both schema induction and discourse annotation, ensuring schema quality and mitigating models' inherent bias remains a clear challenge. In this work, we propose a complete protocol for LLM-based codebook generation and evaluation. Starting from the widely accepted discourse quality Index (DQI), we compare top-down (theory-based), bottom-up (data-driven), and hybrid approaches for generating context-adapted schemas. To evaluate these schemas, we define an extrinsic proxy measure, validated by manual annotations, alongside an intrinsic inter-model agreement (IMA) metric, which leverages differing model biases to signal overall reliability. Our experiments on 100 Israeli parliament transcripts reveal that inductive, data-driven schemas achieve higher IMA than top-down methods while maintaining validity, demonstrating their potential for reliable, large-scale analysis of political discourse.</p>
+      <hr />
+      <h3>10. UvA-MT's Participation in the WMT26 General Translation Shared Task</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27852">2610.27852</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27852.pdf">link</a></li>
+      <li>Published: 2026-10-20 17:33 JST</li>
+      <li>Updated: 2026-10-20 17:33 JST</li>
+      <li>Authors: Di Wu, Sergey Troshin, Wafaa Mohammed, Seth Aycock, Evgeniia Tokarchuk, Vlad Niculae, Christof Monz</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、WMT 2026 General Machine Translation shared task の unconstrained track における UvA-MT の参加手法を報告している。23の翻訳方向すべてで、LLMを用いたテスト時手法として、refinement prompt を伴う sequential sampling により候補翻訳を生成し、さらに pairwise judge と round-robin voting で最良候補を選択した。</p>
+      <p><strong>新規性</strong> LLMを翻訳のテスト時に活用し、候補生成には sequential sampling、選択には pairwise judge による round-robin voting を組み合わせた点が新規である。</p>
+      <p><strong>Tags:</strong> 機械翻訳, 大規模言語モデル, テスト時推論, 候補選択, WMT</p>
+      <p><strong>Abstract</strong> This paper presents UvA-MT's submission to the WMT 2026 General Machine Translation shared task, competing in the unconstrained track across all 23 translation directions. This year, we fully leverage the test-time methods of Large Language Models (LLMs) for machine translation. Specifically, (1) we use sequential sampling with a refinement prompt to generate a pool of translation candidates for each source segment, a strategy shown to outperform traditional parallel sampling; and (2) we employ LLMs as pairwise judges to select the best candidate via a round-robin voting mechanism, with offline evaluation on the WMT25 benchmark showing a very clear improvement over point-wise best-of-N selection. Combined, these two strategies form our WMT26 submission.</p>
+      <hr />
+      <h3>11. SAPD: Learning from Agent Experience without Environment Interaction</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27847">2610.27847</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27847.pdf">link</a></li>
+      <li>Published: 2026-10-20 17:30 JST</li>
+      <li>Updated: 2026-10-20 17:30 JST</li>
+      <li>Authors: Juncheng Diao, Haibin Wang, Wei Shi, Yifan Ding, Qingbin Li, Rongxiang Weng, Xunliang Cai</li>
+      <li>Categories: cs.AI, cs.LG</li>
+      <li>Score: 14.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、実行可能な環境との新たな相互作用なしに、オフライン軌跡からLLMエージェントを学習させるためのStep-Advantage Policy Distillation（SAPD）を提案する。多段の軌跡を個別の意思決定文脈に分解してオンポリシー蒸留を行い、相対的なステップ優位度信号で学習を安定化する。ALFWorld、WebShop、Search-based QAで性能向上とSFTより少ない忘却、オンラインOPDより高速な学習を示した。</p>
+      <p><strong>新規性</strong> オフライン軌跡のみを用い、相対的ステップ優位度に基づく蒸留で環境再訪なしにLLMエージェントを学習可能にした点が新規である。</p>
+      <p><strong>Tags:</strong> LLM agents, offline learning, policy distillation, reinforcement learning, catastrophic forgetting</p>
+      <p><strong>Abstract</strong> Scaling the training of Large Language Model (LLM) agents typically requires a large collection of executable environments, whose construction, maintenance, and operation constrain the expansion of training experience. Existing offline trajectories offer an opportunity to reuse interaction experience, yet effectively refining the current policy without revisiting these environments remains challenging: supervised fine-tuning (SFT) can lead to catastrophic forgetting, while online reinforcement learning requires real-time interaction with the environment. To address this challenge, we propose Step-Advantage Policy Distillation (SAPD), a method for learning from offline trajectories using relative step advantages. SAPD decomposes multi-turn trajectories into individual decision contexts for on-policy distillation, allowing the student to generate responses conditioned on recorded histories, and introduces relative step advantage signals to stabilize training. The entire process requires neither new environment observations nor additional multi-turn interactions. Experiments on ALFWorld, WebShop, and Search-based QA show that SAPD improves performance across different teacher configurations, mitigates catastrophic forgetting compared with SFT, and runs at least $4.7\times$ faster per training step than online OPD. We will release our code soon.</p>
+      <hr />
+      <h3>12. From Tokens to Files: Multi-Granularity Detection and Localization of AI-Involved Code</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27863">2610.27863</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27863.pdf">link</a></li>
+      <li>Published: 2026-10-20 17:45 JST</li>
+      <li>Updated: 2026-10-20 17:45 JST</li>
+      <li>Authors: Yue Xu, Xiyang Wang, Hui Liu, Bolei He</li>
+      <li>Categories: cs.SE, cs.CL, cs.LG</li>
+      <li>Score: 11.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、AIが関与したコードをファイル単位だけでなく、行・ブロック・トークン単位でも検出・局所化する手法を提案する。凍結したコード言語モデルに対して人間由来・機械由来の2つの低ランク適応器を学習し、そのトークンごとの対数尤度比を局所的なAI証拠として利用する。</p>
+      <p><strong>新規性</strong> ファイル全体の単一スコアに集約する従来法と異なり、トークンレベルの証拠を行・ブロック・ファイルへ段階的に集約して、AI関与箇所の局所化まで行う点が新規である。</p>
+      <p><strong>Tags:</strong> code generation, AI authorship detection, localization, large language models, code analysis</p>
+      <p><strong>Abstract</strong> The increasing use of large language models for code generation calls for methods that distinguish purely human-written code from AI-involved code: files in which any part, however small, was generated or substantially modified by a model. Beyond flagging such files, we aim to localize the lines or blocks attributable to AI. Existing approaches compress a file into a single score, from surface stylistic features or a global code representation, which averages away the evidence when only a few blocks are AI-involved. We propose a framework that models AI authorship at the token level and predicts at the line, block, and file levels. A frozen code language model is equipped with two low-rank adapters, trained separately on machine-written and human-written files; their per-token log-likelihood ratio provides local evidence of AI authorship. Lightweight heads aggregate this evidence within lines and blocks, using the surrounding code context, and their local predictions are aggregated into a file-level decision. We train on mixed-authorship files built from human originals and their AI-generated or AI-modified counterparts, including continuation and fill-in-the-middle scenarios. On an internal test set of 11,773 AI-involved files across six generation regimes against 2,541 human files, our method reaches 72.4 macro F1 at a 1% FPR operating point. With no adaptation, it reaches 62.5 line-level F1 on HybridCodeAuthorship, an external human-AI co-writing benchmark with no training split, above the 56 its own paper reports as the best line-level result. On 19,445 human-written files from repositories created before 2022, the false-positive rate stays between 0.55% and 0.81% under the transported 1% threshold, so the operating point holds on real human code.</p>
+      <hr />
+      <h3>13. Staged Continual Adaptation of Multimodal Foundation Models for Japanese Financial Documents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.27904">2610.27904</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.27904.pdf">link</a></li>
+      <li>Published: 2026-10-20 18:19 JST</li>
+      <li>Updated: 2026-10-20 18:19 JST</li>
+      <li>Authors: Genshin Kakimoto, Atsushi Yanagisawa</li>
+      <li>Categories: cs.AI, cs.CL, cs.CV</li>
+      <li>Score: 10.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 日本語の金融文書を対象に、8.4Bパラメータのマルチモーダル基盤モデルを未調整状態から3段階の後学習で追跡し、各段階が金融知識と数値推論に与える影響を評価した研究です。結果として、段階ごとの効果は単純に足し合わせられず、数学のみの蒸留は先に獲得した金融知識を上書きしうる一方、ドメイン調整は新規獲得よりも既存能力の回復に寄与することが示されました。</p>
+      <p><strong>新規性</strong> 各後学習段階の寄与が非加法的であり、最適なチェックポイントがタスク依存であることを実証し、段階追加よりもチェックポイント保持や学習順序設計の重要性を示した点が新規です。</p>
+      <p><strong>Tags:</strong> multimodal foundation model, continual adaptation, Japanese financial documents, post-training, catastrophic forgetting</p>
+      <p><strong>Abstract</strong> Staged post-training of multimodal foundation models chains vision-language alignment, reasoning distillation, and domain tuning, yet how each phase trades capabilities against the others remains under-characterised. Tracking an 8.4B-parameter model from an un-fine-tuned baseline through three training phases on Japanese financial documents (evaluated on five text-input benchmarks), we find the phases interact non-additively: math-only distillation overwrites the financial knowledge acquired earlier even as procedural math skill survives, and the domain phase repairs more than it installs. A skip-phase ablation is best for domain knowledge but forfeits numerical-reasoning gains, so per-phase contributions are not decomposable and the best checkpoint is task-dependent, with implications for checkpoint retention and scheduling rather than added stages.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
