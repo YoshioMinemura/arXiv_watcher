@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-10-22 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-10-22</h1>
+        <p class="hero-copy">Generated at 2026-10-22 10:27 JST. Run ID: <code>8e5e5e63-4c28-4d75-80d6-720ed5573dcd</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>10</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-10-22</h1>
+      <p>Generated at: 2026-10-22 10:27 JST Run ID: 8e5e5e63-4c28-4d75-80d6-720ed5573dcd</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 10</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Parallel Thinking for Large Language Model with Path Diversity</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29501">2610.29501</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29501.pdf">link</a></li>
+      <li>Published: 2026-10-21 18:51 JST</li>
+      <li>Updated: 2026-10-21 18:51 JST</li>
+      <li>Authors: Jiaru Qian, Yihong Dong, Xue Jiang, Chun-Wah Hsu, Zhi Jin, Ge Li</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 32.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLMの並列推論において強化学習を用いると推論経路が似通ってしまうモード崩壊が起こり、並列に仮説を保持する利点が損なわれる問題を指摘する。これに対し、複数の推論経路の接頭辞類似度を罰することで異なる推論戦略を促す Diverse Parallel Thinking (DPT) を提案し、複数の推論ベンチマークで有効性を示した。</p>
+      <p><strong>新規性</strong> 並列推論経路の接頭辞類似度を罰することで、RLベースの並列思考に経路多様性を直接導入した点が新規である。</p>
+      <p><strong>Tags:</strong> large language models, parallel reasoning, reinforcement learning, path diversity</p>
+      <p><strong>Abstract</strong> Parallel thinking has emerged as a promising paradigm for enhancing the reasoning capabilities of Large Language Models (LLMs) by exploring multiple reasoning paths simultaneously. However, we identify that parallel thinking via Reinforcement Learning (RL) typically suffers from the mode collapse of reasoning paths, where parallel thinking trajectories degenerate into similar ones. This homogeneity undermines the fundamental motivation of parallel thinking, that is, maintaining multiple hypotheses concurrently to prevent premature loss into a suboptimal solution. In this paper, we propose Diverse Parallel Thinking (DPT), a simple yet effective RL approach for parallel thinking designed to encourage path diversity. DPT rewards the model to develop distinct reasoning strategies by penalizing the prefix similarity of parallel thinking paths, thereby enhancing a more comprehensive exploration of the reasoning space. We conduct various experiments and analyses across multiple reasoning benchmarks to demonstrate the effectiveness of DPT. Results show that DPT successfully outperforms previous parallel thinking methods, achieving state-of-the-art performance over baselines. We validate path diversity as a key element to improve parallel thinking. Our code is available at https://github.com/JiaruQian/DPT.</p>
+      <hr />
+      <h3>2. Omnilingual-MsASR: Benchmarking Multimodal, Multilingual, Long-Form Multi-Speaker ASR of Omni Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29455">2610.29455</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29455.pdf">link</a></li>
+      <li>Published: 2026-10-21 18:11 JST</li>
+      <li>Updated: 2026-10-21 18:11 JST</li>
+      <li>Authors: Yuan Ge, Pei Zhang, Xize Cheng, Lingzhou Mu, Mingyang Wang, Jin Xu, Baosong Yang, Shengxiang Gao, Jingbo Zhu, Zhengtao Yu, Tong Xiao</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 30.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、長時間・多話者・多言語の動画におけるMsASR能力を評価するため、6言語・最大30分・最大20話者を含むベンチマークOmnilingual-MsASRを提案する。音声と映像の両入力を用いて、モデルのクロスモーダル整合性や補完的手がかりの活用能力も評価する。主要なomni-modal LLMの評価では性能上のボトルネックが大きく、tcpWERが100%を超える場合も多かった。</p>
+      <p><strong>新規性</strong> 長時間・多話者・多言語のMsASRを、音声と映像の両方を用いて評価できるベンチマークを新たに構築した点が新規である。</p>
+      <p><strong>Tags:</strong> speech recognition, multimodal learning, multilingual, benchmark, multi-speaker</p>
+      <p><strong>Abstract</strong> Omni-modal large language models (LLMs) have achieved remarkable progress in audio and video understanding. However, existing models struggle with long-form, multi-speaker videos, especially in understanding the entire video and recognizing who says what and when. To characterize the capability limit of current omni LLMs and guide future model development, we introduce Omnilingual-MsASR, a multilingual, multimodal benchmark for long-form Multi-speaker Automatic Speech Recognition (MsASR) covering six languages, recordings up to 30 minutes, and scenarios with up to 20 speakers. Omnilingual-MsASR provides parallel audio and video inputs to evaluate models' cross-modal consistency and their ability to exploit complementary cues across modalities. Extensive evaluations of leading omni-modal LLMs reveal substantial performance bottlenecks, while their tcpWERs frequently exceed 100%. These findings highlight fine-grained temporal localization, speaker disambiguation, and cross-modal synergy as key challenges for future omni-modal foundation models. Our work is available at https://github.com/QwenLM/Omnilingua-Bench/tree/main/Omnilingua-MSpeaker.</p>
+      <hr />
+      <h3>3. Keeping Time vs. Understanding Time: Neither Alone Explains Temporal Reasoning in LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29507">2610.29507</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29507.pdf">link</a></li>
+      <li>Published: 2026-10-21 18:58 JST</li>
+      <li>Updated: 2026-10-21 18:58 JST</li>
+      <li>Authors: Auss Abbood, Fernando Martínez-Plumed, José Hernández-Orallo, Nigel Collier</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 時間推論は「時間計算」と「時間意味理解」に分けられると考えられてきたが、本研究はその二分法の妥当性を直接検証し、ベンチマーク上ではそのような一貫した能力が見られないことを示した。微調整の効果は主に同一データセット内に限られ、同じモード内の別データセットへの転移はほとんど起きなかった。また、性能を支える主因は量的・論理的推論ではなく知識であることが示された。</p>
+      <p><strong>新規性</strong> 時間推論ベンチマークが「算術」と「意味理解」の明確な二分法を実際には捉えておらず、モデルは主に時間に関する知識を記憶していることを実証的に示した点が新しい。</p>
+      <p><strong>Tags:</strong> temporal reasoning, LLM, benchmark analysis, transfer learning, cognitive evaluation</p>
+      <p><strong>Abstract</strong> Temporal reasoning is widely assumed to decompose into two modes: temporal arithmetic (date and time calculations), and temporal semantics (understanding temporal and causal relations). This dichotomy shapes how benchmarks are designed, how models are trained, and how progress is measured, yet its empirical validity has never been directly tested. We provide two lines of evidence that challenge it. First, we test whether tasks labelled as arithmetic or semantic by the benchmarks support transferable gains within their purported mode. Finetuning on these subsets yields predominantly dataset-specific gains ($+6.8$ to $+23.1$ percentage points), while transfer to a different dataset in the same mode ranges from $-3.2$ to $+1.1$ percentage points. Across the two benchmark families used in the transfer analysis, this pattern provides little evidence of coherent, transferable temporal abilities. Second, using cognitive-demand-based model evaluation, we examine which capabilities actually drive performance on these benchmarks. We find that quantitative and logical reasoning, the assumed proxies for temporal arithmetic and temporal semantics, are not the primary drivers; knowledge is. Together, these findings show that current temporal reasoning benchmarks do not cleanly realise the arithmetic-semantics distinction and instead largely reward models for remembering how time typically works.</p>
+      <hr />
+      <h3>4. Mitigating Query Shortcuts in Chain-of-Thought with Context-Aware Decoding</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29518">2610.29518</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29518.pdf">link</a></li>
+      <li>Published: 2026-10-21 19:05 JST</li>
+      <li>Updated: 2026-10-21 19:05 JST</li>
+      <li>Authors: Shin'ya Yamaguchi</li>
+      <li>Categories: cs.CL, cs.AI, cs.LG</li>
+      <li>Score: 21.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Chain-of-Thought（CoT）では、生成された推論文よりもクエリ固有のショートカットに依存して最終回答が決まる場合があるため、本研究は context-aware decoding を CoT に適用した Rationale Contrastive Decoding（RCD）を提案し、その有効性を検証した。5つの推論ベンチマークで標準的な CoT より精度が向上し、介入分析でも最終回答が rationale の内容により依存することが示された。</p>
+      <p><strong>新規性</strong> CoT の推論時に、rationale あり・なしの条件付き次トークン分布を対比することで、学習不要でクエリショートカットを抑える RCD を提案した。</p>
+      <p><strong>Tags:</strong> Chain-of-Thought, contrastive decoding, large language models, reasoning, query shortcuts</p>
+      <p><strong>Abstract</strong> While Chain-of-Thought (CoT) prompting improves the reasoning performance of large language models (LLMs), recent studies have shown that final answers do not always depend on the generated rationales. In particular, LLMs may rely on query-specific shortcuts rather than the information provided by their reasoning steps. In this paper, we investigate whether context-aware decoding (CAD), an existing contrastive decoding method, can mitigate such shortcut behavior when applied to CoT reasoning. We study this application as Rationale Contrastive Decoding (RCD), which contrasts the next-token distributions conditioned on the query with and without its rationale, amplifying tokens whose likelihood increases due to the rationale. We provide a theoretical interpretation of this decoding rule via a KL-regularized reward-maximization objective. Experiments across five reasoning benchmarks demonstrate that RCD improves answer accuracy over standard CoT. Furthermore, intervention analyses using ground-truth and random rationales reveal that RCD increases the behavioral dependence of final answers on the rationale content. Our findings suggest that contrastive decoding offers a simple, training-free approach to mitigating query shortcuts.</p>
+      <hr />
+      <h3>5. OmniSimulator: Aligning Small Language Models for Authentic Heterogeneous Behavior Modeling</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29472">2610.29472</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29472.pdf">link</a></li>
+      <li>Published: 2026-10-21 18:30 JST</li>
+      <li>Updated: 2026-10-21 18:30 JST</li>
+      <li>Authors: Jiawei Chen, Ruoxi Xu, Boxi Cao, Zhuoqun Li, Ruotong Pan, Yunfei Zhang, Zhirui Yang, Jingyan Chen, Tingting Gao, Han Li, Yaojie Lu, Xianpei Han, Le Sun, Xiangyu Wu, Hongyu Lin</li>
+      <li>Categories: cs.CL, cs.AI, cs.LG</li>
+      <li>Score: 21.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、短尺動画プラットフォーム環境における現実的なユーザーシミュレーションのために、小規模LLMを対象とした訓練枠組みOmniSimulatorを提案する。5次元の構造化スキーマに基づく行動志向の推論を導入し、実ユーザーの履歴から高品質な訓練データ9,881件を構築して、表面的な相関ではなく行動要因に基づく予測を学習させる。</p>
+      <p><strong>新規性</strong> 教師モデルで生成した高品質な推論トレースを、5次元の行動志向スキーマに沿って小規模モデルへ学習させる点が新規である。</p>
+      <p><strong>Tags:</strong> user simulation, small language models, behavior modeling, reasoning traces, short-video platforms</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) have shown great potential as general-purpose user simulators for interactive systems. Prior studies have demonstrated that training on high-quality data can substantially improve model reasoning and downstream task performance. However, the upper bound of user simulation is still constrained by the model's reasoning paradigm: native chain-of-thought often degenerates into shallow pattern matching and fails to adequately model the behavioral factors underlying real user decisions. In this paper, we propose OmniSimulator, a novel training framework designed to improve the predictive ability of small LLMs for realistic user simulation on short-video platform environments. Specifically, OmniSimulator organizes behavior-oriented reasoning through a structured schema with five dimensions, carefully selects data from real user-behavior scenarios, and introduces a teacher model to generate high-quality reasoning traces under the proposed schema, helping small models learn behavior-relevant reasoning patterns rather than relying on superficial behavioral correlations. Based on this process, we construct 9,881 high-quality training instances from three months of historical interaction trajectories of 200 real users, averaging about 50 distilled examples per user. Experimental results show that OmniSimulator improves the average score of Qwen3-8B by 34.33%, achieves performance competitive with Claude-Sonnet-4.5, and supports smaller-scale, self-hosted deployment. These results suggest that learning structured behavior-oriented reasoning patterns is a promising direction towards scalable and high-fidelity LLM-based user simulation.</p>
+      <hr />
+      <h3>6. Beyond the Vote: When Do LLMs Add Value to Retrieval-Based Tabular Classification?</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29520">2610.29520</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29520.pdf">link</a></li>
+      <li>Published: 2026-10-21 19:06 JST</li>
+      <li>Updated: 2026-10-21 19:06 JST</li>
+      <li>Authors: Ziquan Wang, Yuxuan Nie, Jian Ma, Yingjie Li</li>
+      <li>Categories: cs.IR, cs.CL</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、タブular分類における retrieval-based in-context learning で、LLM推論が同じ近傍例に対する直接的な投票より有益かを19データセットで比較した。結果として、候補近傍を増やすと全手法の精度は向上するが、平均精度では距離重み付き最近傍投票（Distance-KNN）が常に最良であり、LLMの利点は近傍のラベル一致度が低い場合に限定的に現れる。</p>
+      <p><strong>新規性</strong> 同一の検索近傍を用いてLLMと距離重み付き投票を直接比較し、LLMが追加的な予測価値を持つ条件を、ラベル一致度とクエリとの距離の観点から体系的に明らかにした。</p>
+      <p><strong>Tags:</strong> tabular classification, retrieval-based ICL, LLM, nearest-neighbor voting, distance-weighted retrieval</p>
+      <p><strong>Abstract</strong> Retrieval-based in-context learning (ICL) enables large language models (LLMs) to predict tabular labels from similar examples, but it remains unclear whether LLM inference improves on direct voting over those same examples. We address this question by comparing four general-purpose LLMs with distance-weighted nearest-neighbor voting (Distance-KNN) using identical retrieved neighbors across 19 tabular classification datasets. With the number of demonstrations fixed, enlarging the retrieval candidate pool improves accuracy for all predictors, yet Distance-KNN achieves the highest mean accuracy at every pool size. More detailed analyses reveal that LLM gains are concentrated where retrieved neighbors exhibit low label consensus and vary across models. These gains further depend on the average feature-space distance to the test query: under low label consensus, some LLMs outperform Distance-KNN in close and intermediate neighborhoods, but all fall behind on average in the most distant group. Complementary experiments on the number of demonstrations, prompt formulation, retrieval representation, and label-balanced demonstration selection largely preserve the overall findings. These results characterize when LLM inference adds predictive value beyond distance-weighted voting in retrieval-based tabular ICL.</p>
+      <hr />
+      <h3>7. TenetBench: A Clause-Anchored Russian Corpus for Evaluating Language Models against Professional Codes of Ethics</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29477">2610.29477</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29477.pdf">link</a></li>
+      <li>Published: 2026-10-21 18:32 JST</li>
+      <li>Updated: 2026-10-21 18:32 JST</li>
+      <li>Authors: Yegor Anichkov, Valery Vinogradov, Andrey Furov, Marina Polukoshko, Sergey Bolovtsov</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> TenetBenchは、15のロシア語の職業倫理規定に反する依頼と、その正当な言い換えを対応づけた3,433件のコーパスで、言語モデルが専門職の倫理規範に反する内容を生成するかを評価するために作られた。人手検証では、対立するタスクの妥当性が高く、モデル判定も注釈ラベルと高い一致を示した。14種類のモデル・推論設定を評価した結果、多くのモデルが警告なしに矛盾する内容を生成し、より順守的なモデルは拒否しつつ正当な依頼には応答する傾向が見られた。</p>
+      <p><strong>新規性</strong> 倫理規定の条文にアンカーした自動生成パイプラインにより、職業ごとの規範違反を条項単位で評価できるコーパスを構築した点が新規である。</p>
+      <p><strong>Tags:</strong> language models, ethics, benchmark, corpus, Russian</p>
+      <p><strong>Abstract</strong> Codes of professional ethics guide and restrict specialists, who increasingly work with assistants built on large language models. Such an assistant can breach the user's code, or help the user breach it, without the user noticing. Evaluations reporting broad categories of harm cannot show how often this happens or which provision is breached. TenetBench pairs 3,433 requests conflicting with clauses of fifteen Russian-language professional codes with benign twins that differ only in the legitimacy of what is asked. An automated pipeline generates the tasks from the text of a code, so the corpus grows with every code added and a provision yields new tasks on every run. It also produced tasks and human-validated verdicts from two English codes of other jurisdictions. In human validation of the frozen pipeline, specialists rated 0.995 of the conflicting tasks plausible, and the model judge agreed with the adjudicated label at Gwet's AC1 of at least 0.894 on 1,860 elements. We evaluated fourteen model and reasoning-mode combinations on whether they produce the conflicting text, decline or warn. Eleven of the fourteen produce conflicting content on most such requests, mostly without a warning, and nearly three warnings in four accompany conflicting content. The models that conform more do so by declining while still serving the legitimate twin, and enabling reasoning halved the refusals of two models. We hope the dataset and pipeline will help evaluate how language models observe professional norms and let diagnostic datasets be built for particular professions and organisations.</p>
+      <hr />
+      <h3>8. DynaWeave: Learning to Adapt through Dynamic Scenario Synthesis</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29443">2610.29443</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29443.pdf">link</a></li>
+      <li>Published: 2026-10-21 18:03 JST</li>
+      <li>Updated: 2026-10-21 18:03 JST</li>
+      <li>Authors: Xuan Yang, Chunxiao Liu, Hongsheng Xin, Hao Xu, Ning Miao</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMエージェントが外部要因で計画を崩される状況に対応するため、静的なタスクを検証可能な動的シナリオへ変換する自動合成フレームワークDynaWeaveを提案している。DAGと実行エンジンでイベントを管理し、発生したイベントに応じて評価項目を更新する動的検証器を備える。36環境で2,095本の軌跡を収集してQwen3.5を微調整し、Gaia2・CostBench・ToolMazeで性能向上を示した。</p>
+      <p><strong>新規性</strong> 静的タスクを、外生イベントを含む検証可能な動的シナリオへ自動変換し、発生したイベントにのみ対応して評価を更新する枠組みを導入した点が新しい。</p>
+      <p><strong>Tags:</strong> LLMエージェント, 動的シナリオ合成, ツール利用, 強化学習/微調整, 評価フレームワーク</p>
+      <p><strong>Abstract</strong> Large language model (LLM) agents increasingly use tools to complete tasks in stateful environments. However, many training environments remain largely static apart from changes caused by the agent's own actions, whereas external events introduced by other users, services, or sudden contingencies in real environments can invalidate ongoing plans. To address this gap, we introduce DynaWeave, an automated synthesis framework that transforms existing static tasks into verifiable dynamic scenarios. The framework generates exogenous events relevant to each task, covering changes in task requirements, environment state, and external information. It uses directed acyclic graphs (DAGs) to represent dependencies between events and an execution engine to activate them during agent interaction. A dynamic verifier revises only the evaluation checks affected by events that actually occur and retains all other checks. Using DynaWeave, we collect 2,095 verified interaction trajectories across 36 environments and use them for supervised fine-tuning of Qwen3.5 models. Experiments on Gaia2, CostBench, and ToolMaze show that DynaWeave achieves consistent improvements in overall performance across all three evaluated model sizes, increasing the task completion rate on CostBench by 67.34 percentage points and even exceeding the performance of Gemini-3.1-Pro-Preview on ToolMaze. These results support dynamic scenario synthesis as a practical approach to training agents to adapt to changing environments. Our code is available at https://github.com/Miaow-Lab/DynaWeave.</p>
+      <hr />
+      <h3>9. WRDO: Weighted Refusal Direction Optimization in Aligned Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29555">2610.29555</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29555.pdf">link</a></li>
+      <li>Published: 2026-10-21 19:42 JST</li>
+      <li>Updated: 2026-10-21 19:42 JST</li>
+      <li>Authors: Grigoriy Evseev, Vladimir Solodkin, Dmitry Bylinkin, Daniil Medyakov, Vladimir Aletov, Aleksandr Beznosikov</li>
+      <li>Categories: cs.LG, cs.CL</li>
+      <li>Score: 12.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 整列済み大規模言語モデルの拒否挙動は、単一の残差ストリーム方向への介入で崩れやすいことが知られている。本研究は、プロンプトごとの拒否方向を学習された重みで統合するWRDOを提案し、複数のオープンウェイトモデルと評価器で従来の単一方向法より有効な介入が可能であることを示す。さらに、同じ最適化手法を逆向きに用いて、拒否を失ったモデルの拒否挙動を回復する設定も検討する。</p>
+      <p><strong>新規性</strong> プロンプト別の拒否方向を一様平均ではなく学習重み付きで集約し、拒否表現の操作をより柔軟かつ効果的にする点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, refusal behavior, representation steering, activation intervention, model alignment</p>
+      <p><strong>Abstract</strong> Aligned large language models are trained to comply with benign requests while refusing harmful ones. However, recent work shows that this refusal behavior is fragile and can often be disrupted by simple activation- or weight-space interventions. In particular, refusal has been shown to be largely mediated by a single residual-stream direction, typically computed as a difference-of-means vector between harmful and harmless prompts. However, this standard construction aggregates heterogeneous harmful prompts into one uniform average, potentially conflating distinct refusal-related phenomena. In this work, we study whether refusal interventions can be strengthened by learning how to combine prompt-specific refusal directions. We propose Weighted Refusal Direction Optimization (WRDO), a procedure that constructs a composite refusal direction from a bank of per-prompt directions using learned aggregation weights. This approach allows different harmful prompts to contribute unequally to the final intervention direction. We evaluate WRDO against prior single-direction methods on three open-weight language models using three guard judges and HarmBench as an external evaluator. We further measure the effect of the intervention on general model capability through standard utility benchmarks. Finally, we investigate a defense-oriented setting in which the same optimization machinery is used in reverse to restore refusal behavior in an abliterated model checkpoint. Our results show that weighted aggregation provides a more effective and flexible mechanism for manipulating refusal representations.</p>
+      <hr />
+      <h3>10. RCSD: Reinforcement and Continual Learning for Domain-Specific Speculative Decoding</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.29527">2610.29527</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.29527.pdf">link</a></li>
+      <li>Published: 2026-10-21 19:16 JST</li>
+      <li>Updated: 2026-10-21 19:16 JST</li>
+      <li>Authors: Mingkang Liu, Weiming Meng, Peipei Jiao, Jiawei Zhang, Tianyuan Liu, Junyan Li, Lichen Pang</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 11.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、speculative decoding における draft model の学習を、ターゲットモデルの分布模倣ではなく「受理長の最大化」というシステム目的に合わせる RCSD を提案する。推論中に自然に得られる受理・拒否シーケンスから暗黙の preference pair を構成し、target に整合するトークンを罰しない masked loss を用いる。</p>
+      <p><strong>新規性</strong> 推論時に得られる受理/拒否の履歴を学習信号として再利用し、acceptance length を直接改善する reinforcement と continual learning を組み合わせた点が新規である。</p>
+      <p><strong>Tags:</strong> speculative decoding, large language models, reinforcement learning, continual learning, inference acceleration</p>
+      <p><strong>Abstract</strong> Speculative decoding accelerates large language model inference by employing a compact draft model to propose candidate tokens that are verified in parallel by a target model. Conventional training relies on soft-label distillation, which forces the draft model to mimic the target's full output distribution, including high-entropy regions that degrade acceptance rates and increase early rejection risk. We propose RCSD (Reinforcement and Continual Learning for Speculative Decoding), a training framework that aligns draft model optimization with the system-level objective of maximizing acceptance length. RCSD leverages naturally occurring accepted and rejected sequences during speculative inference to construct implicit preference pairs, with masked loss to avoid penalizing target-aligned tokens. Evaluated across multiple benchmarks, RCSD improves average acceptance length by 35% over HASS and achieves 1.35x faster end-to-end inference than HASS on practical workloads, without compromising generation quality.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
