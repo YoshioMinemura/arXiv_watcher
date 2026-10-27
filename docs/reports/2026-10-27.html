@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-10-27 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-10-27</h1>
+        <p class="hero-copy">Generated at 2026-10-27 11:01 JST. Run ID: <code>0325ef11-bf85-4b58-9834-2a0a67a740f0</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>17</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-10-27</h1>
+      <p>Generated at: 2026-10-27 11:01 JST Run ID: 0325ef11-bf85-4b58-9834-2a0a67a740f0</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 17</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Beyond Belief: Evaluating and Mitigating LLM Susceptibility to Misinformation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.33962">2610.33962</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.33962.pdf">link</a></li>
+      <li>Published: 2026-10-25 09:26 JST</li>
+      <li>Updated: 2026-10-25 09:26 JST</li>
+      <li>Authors: Emran Kanaan, Jiho Lee, Ibrahim Odat, Soroush Vosoughi, Weicheng Ma</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> ツール利用型LLMが外部情報の信頼性をどう判断し、その判断が実際の行動にどれだけ反映されるかを、偽通知と過去の攻撃例を用いて評価した研究です。多くのモデルは「信頼できない」と評価した情報でも有害なツール呼び出しを行い、事前の信頼性評価そのものが行動を変えることも示されました。</p>
+      <p><strong>新規性</strong> 信頼性評価の有無がLLMの行動に影響する点を明示し、誤情報対策は有害行動だけでなく正当なタスク達成との両面で評価すべきだと示したことです。</p>
+      <p><strong>Tags:</strong> LLM, misinformation, tool use, robustness, evaluation</p>
+      <p><strong>Abstract</strong> Tool-using large language models (LLMs) must decide whether external information warrants action. We investigate whether their expressed credibility judgments reliably indicate behavioral resistance to misinformation. We evaluate five LLMs on 196 constructed false notices paired with legitimate counterparts and 204 archived attacks adapted to simulated tool use. When asked to act on the constructed notices, models issue harmful tool calls in 27%--99% of cases they have rated untrustworthy. Removing the preliminary rating step increases harmful execution by 15 percentage points on average, showing that credibility elicitation itself changes the behavior being evaluated. Interventions that improve credibility discrimination do not consistently yield safer actions. A simple forewarning significantly reduces harmful execution in four of five models, but neither tested generated-example prebunk outperforms it in the main evaluation. These reductions can also compromise legitimate task completion. Supervised fine-tuning on generated false notices reduces harmful execution on held-out archived attacks under the rating-first protocol, with model-dependent utility costs and weaker protection without rating elicitation. Our findings motivate evaluating misinformation defenses through both harmful actions and legitimate task completion, while accounting for the behavioral effects of the evaluation protocol.</p>
+      <hr />
+      <h3>2. What Makes a Question Curious? Measuring Model Curiosity in Human-LLM Interactions</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.33950">2610.33950</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.33950.pdf">link</a></li>
+      <li>Published: 2026-10-25 08:33 JST</li>
+      <li>Updated: 2026-10-25 08:33 JST</li>
+      <li>Authors: Angana Borah, Rachana Ramchandar, Inderjeet Nair, Rada Mihalcea</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、人間-LLM対話における「モデルの好奇心」を、知識のギャップや前提、代替案を引き出す認識論的な質問として定義し、理論に基づく分類法を提案している。4つの会話データセットでは、好奇心に基づく質問は全体の17〜28%と少ない一方、その後のユーザー応答がより探索的・認識論的に豊かになる傾向が示された。さらに人手評価により、特に助言・創作・研究の文脈で探索を促しうることが確認された。</p>
+      <p><strong>新規性</strong> 一般的な質問と区別して、LLMの「好奇心」を理論的に定義し、対話データと人手評価でその有用性を測定した点が新しい。</p>
+      <p><strong>Tags:</strong> human-LLM interaction, question asking, curiosity, dialogue analysis, epistemic questions</p>
+      <p><strong>Abstract</strong> Large language models increasingly act as partners in everyday communication. In these interactions, useful assistance may require not only answering, but also asking the right questions that surface knowledge gaps, assumptions, and alternatives. In this study, we refer to such epistemic question-asking as model curiosity, and introduce a theory-grounded taxonomy that distinguishes curiosity-oriented questions from generic model questioning. Across four conversation datasets, we find that curiosity-oriented questions remain rare (17-28% of all questions), but are associated with more exploratory and epistemically rich subsequent user responses, with varying patterns across datasets. We further conduct a human study to evaluate the usefulness of model curiosity, finding that curiosity can encourage exploration, especially in advice, creative, and research contexts. These findings have implications for building LLMs that ask more selectively to support deeper exploration and human-AI collaboration.</p>
+      <hr />
+      <h3>3. Reversible Pseudonymisation of Documents Sent to External LLMs: an Open Bilingual Benchmark and an Engine</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34012">2610.34012</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34012.pdf">link</a></li>
+      <li>Published: 2026-10-25 11:50 JST</li>
+      <li>Updated: 2026-10-25 11:50 JST</li>
+      <li>Authors: Vladimir Beskorovainyi</li>
+      <li>Categories: cs.CL, cs.CR</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 外部LLMに送る文書に対する可逆的な仮名化について、ロシア語と英語の公開ベンチマークを用いて既存5ツールと正規表現ベースラインを比較し、さらに2つの有力ツールを組み合わせた公開エンジンを提案している。評価では、外部データセット上で既存ツールはいずれも事前に定めた閾値を満たさず、保持文書では提案エンジンが両言語で検出閾値を満たし、特に英語ではプレースホルダ復元率も高かった。一方で、ロシア語では姓の屈折処理の問題により名前プレースホルダの復元率が閾値未達だった。</p>
+      <p><strong>新規性</strong> 既存ツールの公開ベンチマークと、2つの強い手法を統合した可逆的仮名化エンジンを、事前公開された評価計画に基づいて両言語で検証した点が新規である。</p>
+      <p><strong>Tags:</strong> pseudonymization, LLM safety, benchmark, information masking, multilingual</p>
+      <p><strong>Abstract</strong> Professionals send working documents to external large language models. A common safeguard is reversible pseudonymisation: personal data are replaced with placeholders before the request and restored locally in the answer. We present an open benchmark of five existing open tools and a regular-expression baseline on Russian and UK English, and an open engine built on the two strongest tools. The benchmark excludes each tool's own authors' dataset from its verdict, compares the engine with each tool on identical datasets for detection, reports masking precision, and tests on a held-out set of synthetic documents whose files, hashes, decision rules, run plan and stopping rule were published before any run. Two local LLMs test whether placeholders survive. All evaluation data are synthetic, and the benchmark was run by the author of the engine; code, data, predictions and raw answers are released. On external datasets no existing tool meets all predefined thresholds: in UK English the identifier and leak thresholds are not met, in Russian the identifier threshold is borderline. On the last held-out set of 1,000 documents per language, the best existing tools leave a whole value visible in 61% (Russian) and 58% (UK) of documents. On these documents, from the generator it was developed on, the engine does so in 0.3% [0.1; 0.9] and 0.2% [0.1; 0.7], leaves any part of a value visible in 0.8% and 0.2%, and meets all detection thresholds in both languages. In UK English it also restores at least 99% of its placeholders after 760 answers. In Russian it restores only 94.6% [93.6; 95.6] of name placeholders, against a 99% threshold, mainly because the inflection it borrows from pii-guard produces wrong surname forms. The engine was developed over six earlier held-out sets from the same generator; real documents were not tested.</p>
+      <hr />
+      <h3>4. Improving Reasoning with Rollout Agreement for Group-Based Policy Optimization</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34951">2610.34951</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34951.pdf">link</a></li>
+      <li>Published: 2026-10-26 16:19 JST</li>
+      <li>Updated: 2026-10-26 16:19 JST</li>
+      <li>Authors: Sohyun Son, Yerim Hong, Jaeyun Park, Mujeen Sung</li>
+      <li>Categories: cs.LG, cs.CL</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、RLVRにおける正解ロールアウト間の多様性が、必ずしも有用な別解法を意味せず、未解決の誤りを含む場合があることを、GRPOで学習したモデルの正解トレース比較から示した。これに基づき、正解ロールアウト群内の推論レベルの一致度を報酬に加えるRoARを提案し、数理推論ベンチマークでGRPO系手法より高い性能と低いスパリアス推論率を示した。</p>
+      <p><strong>新規性</strong> 既存のオンポリシー・ロールアウト群だけから推論レベルの一致度を算出し、追加の人手ラショナルや別途学習したプロセス評価器なしにGRPOへ組み込むRoARを提案した。</p>
+      <p><strong>Tags:</strong> reinforcement learning, reasoning, policy optimization, math reasoning, rollout agreement</p>
+      <p><strong>Abstract</strong> Recent methods for Reinforcement Learning with Verifiable Rewards (RLVR) use rollout diversity to improve reasoning performance or training efficiency. Despite these gains, the extent to which differences among correct-answer rollouts reflect useful alternative reasoning or unresolved errors remains poorly understood. We investigate this question through a blind paired analysis of a model trained with Group Relative Policy Optimization (GRPO), comparing the highest- and lowest-agreement correct-answer traces for the same problem. Across 126 pairs, low-agreement traces have more spurious reasoning than high-agreement traces (35% vs. 22%), including internal inconsistencies and misuse of problem conditions. Based on these findings, we propose RoAR (Rollout-Agreement Reward), which adds reasoning-level agreement to GRPO's rewards for verified-correct rollouts. RoAR computes this signal from existing on-policy rollout groups, requiring no human-written rationales, additional sampling, or separately trained process evaluator. On five mathematical reasoning benchmarks, the 1.5B GRPO-RoAR model reaches 55.5% mean pass@1 under zero-shot evaluation using 7K training examples, exceeding GRPO and GRPO-CARE by 6.0 and 5.5 percentage points. A separate blind audit of 100 problems answered correctly by all four 1.5B models finds spurious rates of 18% for GRPO-RoAR, 32% for GRPO, 27% for GRPO-CARE, and 37% for DRA-GRPO. Our findings identify reasoning validity as an important consideration when using rollout differences to guide learning. Our code is available at https://github.com/ldi-kyunghee/RoAR.</p>
+      <hr />
+      <h3>5. FATE-5: Faithful Alignment of Trait Expression for Continuous Big Five Personality Control</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34889">2610.34889</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34889.pdf">link</a></li>
+      <li>Published: 2026-10-26 15:08 JST</li>
+      <li>Updated: 2026-10-26 15:08 JST</li>
+      <li>Authors: Gunhee Cho, Hongyeob Kim, Yun-Gyung Cheong</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 20.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルにおけるBig Five性格特性の制御では、特性表現の強さと自然な対話生成の両立が課題である。FATE-5は、性格表現の学習と自然さの整合を分離した2段階フレームワークで、対話監督と調査票目的で連続ソフトプロンプトを学習し、その後に対話品質と性格一致の両方を用いた選好整合を行う。</p>
+      <p><strong>新規性</strong> Big Fiveの連続的な性格制御に対し、性格エンコードと自然さ整合を分離した2段階学習を提案し、強い特性表現と高い対話自然性の両立を示した。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 性格制御, Big Five, ソフトプロンプト, 選好整合</p>
+      <p><strong>Abstract</strong> Controlling personality in large language models is important for building conversational agents that can be customized to different users and interaction settings. However, existing personality control methods often face a tradeoff between strong trait expression and natural dialogue generation. We introduce FATE-5, Faithful Alignment of Trait Expression for the Big Five, a two-stage framework that separates personality encoding from naturalness alignment. FATE-5 first learns continuous soft prompt representations of Big Five profiles using dialogue supervision and an auxiliary survey objective. It then improves dialogue naturalness through preference alignment based on both dialogue quality and personality agreement. Across three language model backbones, FATE-5 maintains strong trait expression while achieving substantially higher dialogue naturalness than other trait-strong methods. On held-out questionnaires, it achieves monotonicity correlations of 0.97-0.99 and recovery RMSE of 8.9-12.4, substantially improving over the evaluated baselines. These results demonstrate effective continuous personality control while maintaining natural conversational behavior.</p>
+      <hr />
+      <h3>6. BriLLM-MetaPred: A Representation-Prediction Unity Language Model with Adaptive Self-Measurement</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34018">2610.34018</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34018.pdf">link</a></li>
+      <li>Published: 2026-10-25 12:08 JST</li>
+      <li>Updated: 2026-10-25 12:08 JST</li>
+      <li>Authors: Junyuan Liu, Hongyue Lin, Jiale Hong, Yi Zhao, Hai Zhao</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 19.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、数学的なAGI理論に基づくMetaPredフレームワークを言語モデルとして実装したBriLLM-MetaPredを提案する。単一の連続的に進化する動的状態を、文脈表現と予測の読み出しの両方に用い、自己測定によって内部整合性と自己教師信号を維持する。実装は同規模のGPTベースラインと同等の予測性能を示し、MetaPredの工学的実現可能性の初期証拠を与える。</p>
+      <p><strong>新規性</strong> 文脈表現と予測読出しを単一の動的状態に統合し、自己測定で学習と推論を結合するMetaPredを言語モデルとして初めて実装した点が新しい。</p>
+      <p><strong>Tags:</strong> language model, self-supervision, representation learning, AGI theory, machine learning framework</p>
+      <p><strong>Abstract</strong> We present BriLLM-MetaPred, the first engineering implementation of the MetaPred machine-learning framework established by a mathematical theory of AGI, instantiated for language modeling. The theory argues that MetaPred is both necessary and sufficient as a machine-learning primitive for general cognition. Taking this theoretical conclusion as a design premise, we report an implementation of the primitive for language modeling. A single continuously evolving dynamical state serves as both the context representation and the state from which predictions are read out. Continuous measurement of its own state reduces finite-depth inconsistency, maintains internal consistency, and provides an endogenous dynamical self-supervision signal in fixed-point form. The single dynamical state of MetaPred intrinsically couples training and inference. MetaPred therefore exhibits symmetry across almost all key elements of machine learning, an intuitive and observable property of the mathematical optimum over the space of all machine-learning paradigms. BriLLM-MetaPred is neither another recurrent language model nor an extension of BriLLM. It provides a bridge between two prior contributions: the construction and motivation of the MetaPred primitive provided by AGI theory, and the SiFu learning paradigm provided by BriLLM (Zhao et al., 2025). The latter's node-signal-flow design enables the primitive to run on available software and hardware accelerators. Our implementation of BriLLM-MetaPred achieves predictive performance comparable to a GPT baseline of the same size. This provides initial evidence for the engineering feasibility of the MetaPred framework established by the mathematical theory of AGI. MetaPred is the first machine-learning paradigm derived entirely from mathematical theory rather than assembled and incrementally improved through human design---and perhaps the last such paradigm.</p>
+      <hr />
+      <h3>7. Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.33956">2610.33956</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.33956.pdf">link</a></li>
+      <li>Published: 2026-10-25 09:00 JST</li>
+      <li>Updated: 2026-10-25 09:00 JST</li>
+      <li>Authors: Haoyu Zhao, Sitian Tu, Yuxuan Huang, Huichi Zhou, Zhangyue Yin, Jiahao Huang, Jingyuan Xu, Tianmiao Shi, Jin Shi, Nianxi Zhang, Yangmiao Zhang, Zhuolang Chan, Huiyan Hu, Chenchao Sheng, Yaqing Luo, Yue Chen, Huaxiu Yao, Meng Fang, Jun Wang</li>
+      <li>Categories: cs.LG, cs.AI, cs.CL, cs.CV</li>
+      <li>Score: 17.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMエージェントが長期的な経験を通じて改善していく能力を評価するためのベンチマーク Continual Learning Exam（CLE）を提案する。CLEは、12職種領域・89職種にまたがる120の人手作成タスクを5段階のラダー構造にした600レベルからなり、後続レベルは前段階の経験を前提としている。</p>
+      <p><strong>新規性</strong> 個別タスクの性能ではなく、経験の蓄積による改善そのものを測る大規模ベンチマークを構築し、フィードバックと再試行の効果も比較した点が新しい。</p>
+      <p><strong>Tags:</strong> continual learning, LLM agents, benchmark, experiential learning, evaluation</p>
+      <p><strong>Abstract</strong> Continual learning is the ability of LLM agents to improve over time by acquiring, refining, and applying knowledge from experience while retaining useful prior knowledge. It is essential for agents learning over long time horizons, yet current evaluations largely assess individual task performance rather than improvement through accumulated experience. We introduce Continual Learning Exam (CLE), a large-scale benchmark developed by 50+ domain experts to measure experience-driven improvement in realistic professional workflows. CLE comprises 120 human-authored tasks, each organised as a five-level ladder, yielding 600 levels spanning 89 professional roles across 12 occupational domains. Agents must pass each level to unlock the next, with later levels building on experience accumulated during earlier assignments. An evaluation agent assesses each submission against human-authored rubrics. We compare a single-submission setting with one that provides diagnostic feedback after failure and allows one revision. Across 17 harness-model configurations using frontier LLMs, feedback and revision yield a median completion gain of 5.3 percentage points. Yet the best-performing system clears only 47.7% of levels and completes all five levels in just 23.3% of tasks, highlighting the difficulty of sustained learning from experience for existing frontier LLMs. As such, the dataset can also be used to post-train LLMs to strengthen their continual learning capabilities.</p>
+      <hr />
+      <h3>8. Fed-Universe: A Semantic-Geometric-Topological-Human (S-G-T-H) Stack for Negotiated Alignment in Federated Systems</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34009">2610.34009</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34009.pdf">link</a></li>
+      <li>Published: 2026-10-25 11:43 JST</li>
+      <li>Updated: 2026-10-25 11:43 JST</li>
+      <li>Authors: Ting Xu, Henry Leung</li>
+      <li>Categories: cs.AI, cs.LG</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 従来の連合学習が全体平均を最適化することで少数派を抑圧しやすい問題に対し、本研究はFed-UniverseというS-G-T-H（Semantic-Geometric-Topological-Human）アーキテクチャを提案しています。セマンティック変換、幾何学的品質保証、トポロジカルな多目的制御、認知双子による意図整合を通じて、分散環境での「交渉的な整合」を実現する枠組みを示しています。</p>
+      <p><strong>新規性</strong> 少数派更新を幾何学的・トポロジカルに保持しつつ、人間の意図整合まで含めた連合学習の多層的な整合フレームワークを提案し、シミュレーションで少数ノードの性能改善を示した点が新規です。</p>
+      <p><strong>Tags:</strong> federated learning, heterogeneity, multi-objective optimization</p>
+      <p><strong>Abstract</strong> Conventional federated learners implicitly optimize for global means, creating a "one-size-fits-all" paradigm that inevitably suppresses the minority under cross-site heterogeneity. To bridge this critical gap, we present Fed-Universe, a generalizable Semantic-Geometric-Topological-Human (S-G-T-H) architecture that transforms passive averaging into an active negotiation for decentralized alignment. The S-layer deploys an edge-capable LLM as a semantic surrogate to translate heterogeneous inputs into standardized patient profile prompts. The G-layer enforces geometric quality assurance (GQA) via a mapping f: Theta -&gt; Q from the statistical parameter space to a physically interpretable quality domain, employing a cosine similarity gate to retain minority updates based on physical geometry rather than statistical proximity. The T-layer executes topological Pareto control, identifying a sensitivity-based knee point (lambda_k) to balance multi-objective aggregation without majority degradation. Finally, the H-layer operationalizes a cognitive twin dynamic to mirror the user's real-time psychological state, dynamically adapting human-computer interaction modes via active intent alignment. To ground this theoretical architecture empirically, we validated the S-G-T core on a binational synthetic clinical network simulation. This proof-of-concept demonstrated a "zero-sum escape": a minority node (&lt;3% data volume) achieved utility parity (loss reduction from 0.857 to 0.340) alongside dominant hubs. Our Fed-Universe framework is being expanded along two focused pillars: institutional multimodal alignment (Fed-Ultra) and individual cognitive intent alignment (Fed-Human).</p>
+      <hr />
+      <h3>9. The Target Agent Is Its Own Best Critic but a Poor Proposer: Self-Improved Red Teaming</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34965">2610.34965</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34965.pdf">link</a></li>
+      <li>Published: 2026-10-26 16:34 JST</li>
+      <li>Updated: 2026-10-26 16:34 JST</li>
+      <li>Authors: Mintong Kang, Stephen Rawls, Melissa Kazemi Rad, Jian Ni, Bo Li</li>
+      <li>Categories: cs.CR, cs.AI</li>
+      <li>Score: 16.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 自動レッドチーミングにおける「批判」と「攻撃案生成」の役割を分離し、自己批判と外部批判、自己提案と外部提案の効果を比較した。結果として、自己批判は実行文脈に基づくため有効だが、自己提案は攻撃目的の自覚により拒否や抑制が起きやすく、役割分離型の構成が高い攻撃成功率を示した。</p>
+      <p><strong>新規性</strong> 批判と提案の2役割を独立に切り分け、自己批判は有利だが自己提案は不利であることを実証し、役割分離型レッドチーミングを提案した。</p>
+      <p><strong>Tags:</strong> red teaming, large language models, adversarial prompts, agent systems, security</p>
+      <p><strong>Abstract</strong> Automatic red teaming increasingly relies on large language models (LLMs) to iteratively diagnose failed attacks and propose improved adversarial prompts or injections. Although prior work strengthens this loop through prompt engineering and search-harness design, the mechanisms underlying its two core roles, criticism and attack proposal, has not been explored. To further investigate the core roles and therefore improve red teaming effectiveness, we disentangle two design choices: whether criticism is generated by the target session itself (self-criticism) or by a separately instantiated critic (external criticism), and whether that criticism is translated into the next attack by the target session (self-proposal) or by a separate attacker (external proposal). Through our analysis, we find that self-criticism is more effective because it is grounded in the target's live execution context, including observations, constraints, and available reasoning; removing reasoning reduces downstream attack success by 6%-17%. In contrast, self-proposal is substantially less effective because awareness of the adversarial objective induces explicit refusal and non-refusal sandbagging. These findings motivate a role-separated red-teaming approach: the target session diagnoses why an attack failed, while a separately instantiated attacker generates the next proposal. On DTAP-BENCH, spanning Telecom, Workflow, CRM, and Code domains, under both direct misuse and indirect threat models, as well as multiple agent frameworks, this configuration achieves 63.2% overall attack success rate (ASR), much higher than baselines. Our results show that effective automatic red teaming depends not only on model capability and search strategy, but also on how execution context and adversarial responsibility are distributed across model sessions.</p>
+      <hr />
+      <h3>10. SimPOTrans: Self-Adaptation for Offline-to-Simultaneous Speech Translation via Reinforcement Learning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.35042">2610.35042</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.35042.pdf">link</a></li>
+      <li>Published: 2026-10-26 17:54 JST</li>
+      <li>Updated: 2026-10-26 17:54 JST</li>
+      <li>Authors: Haotian Tan, Hiroki Ouchi, Sakriani Sakti</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> SimPOTransは、オフライン音声翻訳モデルを強化学習によって対話型の同時音声翻訳へ自己適応させる枠組みです。合成されたread/write軌跡や明示的な遅延最適化を使わず、部分的な音声入力に対する翻訳行動を報酬化することで、低遅延と翻訳品質の両立を目指します。</p>
+      <p><strong>新規性</strong> オフライン音声翻訳モデルを、外部の決定ポリシーや合成軌跡なしに同時翻訳へ自己適応させる2段階の強化学習後学習パイプラインを提案した点です。</p>
+      <p><strong>Tags:</strong> simultaneous speech translation, reinforcement learning, offline speech translation, large language models, latency-quality trade-off</p>
+      <p><strong>Abstract</strong> Simultaneous speech translation (SimulST) aims to translate ongoing speech with low latency while preserving translation quality. Recent studies have adopted large language models (LLMs) for SimulST and formulated it as a multi-turn dialogue task for efficient generation, achieving state-of-the-art performance. However, existing dialogue-style SimulST approaches typically rely on specialized training schemes to acquire simultaneous translation behavior, either using synthesized read/write trajectories, which may provide suboptimal training signals, or jointly optimizing translation quality and latency, whose competing objectives may cause optimization instability. In this paper, we introduce SimPOTrans, a reinforcement learning (RL) framework that enables offline speech translation models to self-adapt to dialogue-style SimulST. Through a simple two-stage RL post-training pipeline, SimPOTrans rewards an offline model for exhibiting translation behaviors beneficial to simultaneous scenarios when given partial speech inputs, thereby enabling offline-to-simultaneous self-adaptation without synthesized read/write trajectories or explicit latency optimization. At inference time, SimPOTrans requires no external decision policy and enables flexible quality--latency control by simply adjusting the chunk size of speech input. Experiments on the ACL 60/60 and MCIF benchmarks across three language directions (En$\rightarrow$De, En$\rightarrow$Zh, and En$\rightarrow$Ja) demonstrate that SimPOTrans outperforms several strong baselines, achieving a superior quality--latency trade-off.</p>
+      <hr />
+      <h3>11. RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34875">2610.34875</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34875.pdf">link</a></li>
+      <li>Published: 2026-10-26 14:45 JST</li>
+      <li>Updated: 2026-10-26 14:45 JST</li>
+      <li>Authors: Balamurugan Paramasivam, Sudalai Rajkumar</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> RubriXは、ルーブリックの各レベル説明を生成せずに判定する非自己回帰型のルーブリック評価器です。LoRA適応したエンコーダで入力と各レベル説明を埋め込み、コサイン類似度のsoftmaxから各レベルの確率を出すことで、ルーブリックが長くなっても低遅延で判定できます。</p>
+      <p><strong>新規性</strong> 生成型LLMを判定器として使う代わりに、埋め込み類似度ベースの非自己回帰アーキテクチャでルーブリック評価を高速化し、レベル数や説明長に対する計算コスト増を抑えた点が新規です。</p>
+      <p><strong>Tags:</strong> rubric evaluation, non-autoregressive, contrastive language model, LLM judge, efficiency</p>
+      <p><strong>Abstract</strong> Rubric-based evaluation asks which level of a rubric a response meets. It is usually done by prompting a large language model (LLM) as a judge, which needs a generative call per judgment and reads every level description, so its cost grows with the rubric. We present RubriX, a rubric judge whose architecture is inspired by contrastive language models (CLM): a LoRA-adapted encoder embeds the input and each level description, and a softmax over scaled cosine similarities gives a probability for every level without text generation. Trained on public rubric data and proprietary synthetic data, RubriX reaches 75.4% exact accuracy on held-out rubrics, against 57.1% for TypeSafe's Jev and 49.8% for a Qwen3-8B judge. On eight human-labelled benchmark sets it is within 6 percentage points of Jev's accuracy on most of them, while Jev keeps a larger lead on two and ranks responses best on average; against the results reported in the G-Eval paper, RubriX outperforms G-Eval with GPT-3.5 on every SummEval dimension and both QAGS subsets. With level embeddings cached, RubriX's latency stays at about 28 ms per judgment as level descriptions grow from 10 to 3,000 tokens, while Jev's (approximate network time subtracted) rises from 44 ms to 211 ms and the Qwen3-8B judge's from 32 ms to 516 ms, making RubriX 7.7x faster than Jev and 18.8x faster than the Qwen3-8B judge at 3,000 tokens per level.</p>
+      <hr />
+      <h3>12. End-to-End MXFP8 Reinforcement Learning on Blackwell: What Matching Buys, When It Pays Off, and How It Fails</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34915">2610.34915</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34915.pdf">link</a></li>
+      <li>Published: 2026-10-26 15:41 JST</li>
+      <li>Updated: 2026-10-26 15:41 JST</li>
+      <li>Authors: Wengee Zhang</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルの強化学習における低精度演算として、Blackwell B200上でMXFP8を学習側とロールアウト側の両方に適用したend-to-end RLを評価した研究である。学習器とサンプラの精度グリッドを揃えるとKLが低下し、MoEでは速度改善が見られる一方、短い系列の密な設定では遅くなるなど、性能は条件依存である。</p>
+      <p><strong>新規性</strong> MXFP8 RLを実運用に近い構成で実装し、精度の一致がもたらす効果、速度が得られる条件、そして同期不整合などの失敗条件を定量的に整理した点が新規である。</p>
+      <p><strong>Tags:</strong> reinforcement learning, low-precision arithmetic, MXFP8, large language models, Blackwell GPU</p>
+      <p><strong>Abstract</strong> Low-precision arithmetic can make reinforcement learning (RL) for large language models cheaper, but RL requires the sampler and the learner to agree. Several frameworks now run FP8 on both sides. We implement end-to-end MXFP8 RL in verl (Megatron/Transformer Engine training; vLLM and SGLang rollout; dense and MoE models) and measure on B200 GPUs, with Qwen3-8B and Qwen3-30B-A3B, what this design buys, when it is faster, and how it fails. (1) Matching. For an MXFP8 learner, a sampler on the learner's grid is more consistent than a higher-precision BF16 sampler: in one engine at fixed weights, train-rollout KL is 11% lower with half of the sampler's linear layers on the grid and 16% lower with all of them, and the synchronized weights we checked equal the learner's FP8 forward weights byte for byte. On the MoE model, an FP8 pipeline whose sampler uses another grid has twice the shared-grid pipeline's KL from the first step. Without a quantized KV cache, BF16 end to end remains 2.5-10x more consistent. (2) Speed. MXFP8 training adds a fixed cost per micro-batch and saves a per-token cost, so in our dense setting it pays off only above about 4.5k tokens per micro-batch; a micro-batch sweep on identical data confirms the per-micro-batch cost, and a trace shows the GPU waiting for the host for most of the added time. End to end, MXFP8 cuts MoE step time by 10.7% and generation time by 24%, and slows a short-sequence dense workload by 5%. (3) Correctness. We state seven conditions every weight synchronization must preserve and checks that test them against the live engine. Each of the seven failures we met on hardware broke one condition, five silently; the checks caught two at their first opportunity, each missed by the other checks, and CPU fault-injection tests reproduce five. All runs are single-seed and at most 60 steps long; we make no claim about final model quality.</p>
+      <hr />
+      <h3>13. Multiscale Policy Optimization for Long-Horizon LLM Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.35013">2610.35013</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.35013.pdf">link</a></li>
+      <li>Published: 2026-10-26 17:22 JST</li>
+      <li>Updated: 2026-10-26 17:22 JST</li>
+      <li>Authors: Tao Ren, Hui Yang, Jia Deng, Tingyang Chen, Qiyao Wang, Shuo Tang, Ziyang Zeng, Yuhua Jiang, Guanghao Li, Huatong Song, Yining Li, Yifan Luo, Kunbao Ding, Feng Chang, Chuan Hao, Ran Tao, Bryan Dai, Jiafeng Liang, Jinyang Jiang</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 長期的なLLMエージェントは、各アクションをトークン単位で生成しつつ、環境とは完全なassistant turn単位で相互作用する。本研究は、critic値が主にturn間で変化することに着目し、turnを基点にしながらトークンへ細かく報酬を配分する最適化手法を提案する。</p>
+      <p><strong>新規性</strong> Multiscale Policy Optimization（MPO）は、Multiscale Advantage Estimation（MAE）とturnレベルの重要度サンプリングを組み合わせ、credit assignmentと方策更新をturnスケールに整合させた点が新しい。</p>
+      <p><strong>Tags:</strong> LLM agents, reinforcement learning, policy optimization, credit assignment, long-horizon tasks</p>
+      <p><strong>Abstract</strong> Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.</p>
+      <hr />
+      <h3>14. PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.34921">2610.34921</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.34921.pdf">link</a></li>
+      <li>Published: 2026-10-26 15:50 JST</li>
+      <li>Updated: 2026-10-26 15:50 JST</li>
+      <li>Authors: Jinyuan Hu, Yilei Jiang, Chen Tang, Minghong Cai, Xinran Liu, Xiangyu Yue</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、視覚言語モデルの物理的因果推論を改善するために、モデルが提案した実行可能な世界を物理シミュレータで検証しながら自己進化する枠組みPhysEvolveを提案する。各ラウンドで世界プログラムと課題を生成し、決定的な物理エンジンが反実仮想分岐をシミュレーションして、解答付きの視覚タスクを自動生成する。</p>
+      <p><strong>新規性</strong> 外部の真理として物理エンジンを用い、モデル提案の世界を検証しつつ反実仮想データを自動生成して学習する、verifier-groundedな自己進化枠組みを導入した点。</p>
+      <p><strong>Tags:</strong> physical reasoning, vision-language models, counterfactual learning, simulation, self-evolution</p>
+      <p><strong>Abstract</strong> Physical reasoning underpins how embodied systems understand and act in the physical world, yet vision-language models (VLMs) remain unreliable on questions about dynamics and physical causality. Progress is critically constrained by the scarcity of grounded counterfactual training data, as observational videos capture only the factual trajectory that occurred. The self-evolving paradigm offers a route beyond fixed datasets by enabling models to construct their own training problems. Extending this paradigm to physics, however, requires an external source of truth that can both validate model-proposed environments and verify alternative physical outcomes under intervention. We introduce \physevolve{}, a verifier-grounded self-evolving framework that trains VLMs for causal physical reasoning from model-proposed executable worlds and simulation-authored tasks. At each round, a shared VLM proposes executable world programs and evidence schemas; a deterministic physics engine freezes each valid world, simulates matched baseline and body-elided counterfactual branches, and synthesizes discrete, answer-bound visual tasks. Exact verifier feedback from task solving updates both the shared policy via GRPO and an adaptive curriculum over physical intents. Starting from Qwen3-VL-8B-Instruct, \physevolve{} achieves targeted gains across PhysBench, CausalPhys, and ContPhy without human intervention data, improving PhysBench Throwing by $8.8$ points and ContPhy Counterfactual Removal and Goal-Pit by $7.4$ and $24.4$ points. These gains concentrate on interaction-sensitive and altered-world questions, demonstrating zero-shot transfer of causal principles to unseen complex dynamics (cloth, fluid, soft bodies) and real-world video.</p>
+      <hr />
+      <h3>15. Rethinking Evaluation for Principled Generalization Using a Kripkean Challenge to Meaning as Use</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.35111">2610.35111</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.35111.pdf">link</a></li>
+      <li>Published: 2026-10-26 18:52 JST</li>
+      <li>Updated: 2026-10-26 18:52 JST</li>
+      <li>Authors: Niyar R Barman, Omar Naim, Nicholas Asher</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 11.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、大規模言語モデルが前提とする「意味は使用によって決まる」という見方に対し、Kripkeのウィトゲンシュタイン解釈に基づく規則追従の問題を提示し、有限の使用履歴だけでは未来の拡張に対する唯一の規則を定められないと論じる。これにより、OOD一般化だけでなくNLP評価の見方も再考し、固定的な使用例や局所的頑健性のベンチマークだけでは意味的能力を十分に示せないと主張する。</p>
+      <p><strong>新規性</strong> 規則と概念を原理的なドメイン拡張下で評価するために、抽象化と再帰という2つの能力を中心に据えた評価枠組みと実験パラダイムを提案している。</p>
+      <p><strong>Tags:</strong> large language models, evaluation, generalization, Wittgenstein, Kripke</p>
+      <p><strong>Abstract</strong> Large language models operationalize an intuitive, view of meaning as use. We argue that it faces a rule-following challenge. Using Kripke's interpretation of Wittgenstein, we argue that finite histories of use do not determine a unique rule for future extension. This reframes the debate about OOD generalization but also about NLP evaluation; benchmarks that measure performance on fixed use cases or local robustness, we argue, do not by themselves establish semantic competence. To evaluate whether models preserve rules and concepts under principled domain extension, we propose to evaluate two capacities, central to this ability: abstraction and recursion; and we offer an experimental paradigm for testing both.</p>
+      <hr />
+      <h3>16. Useful Diversity or Hallucinated Variety? Persona-Conditioned Synthetic Query Generation for E-Commerce Search</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.35102">2610.35102</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.35102.pdf">link</a></li>
+      <li>Published: 2026-10-26 18:43 JST</li>
+      <li>Updated: 2026-10-26 18:43 JST</li>
+      <li>Authors: Filippos Ventirozos, Tom Armitage, Mahmoud Oshagh, Peter A. Appleby, Matthew Shardlow</li>
+      <li>Categories: cs.CL, cs.IR</li>
+      <li>Score: 10.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、冷スタートのEコマース検索における合成クエリ生成を対象に、6つのLLMと9種類のペルソナ条件付きプロンプトで生成した118,098件の合成ペアを評価した。結果として、IPIP性格バンドルは4つの比較すべてでパーサF1を改善し、構文条件付けは実トラフィックに近づける一方で語彙的多様性も生むことが示された。</p>
+      <p><strong>新規性</strong> 合成クエリと人手クエリの分布差を測るsKLを、ラベルなしでパーサF1を予測する代理指標として提案し、さらに幻覚的な生成の割合を人手確認で分析した点が新しい。</p>
+      <p><strong>Tags:</strong> e-commerce search, synthetic data, persona prompting, semantic parsing, LLM evaluation</p>
+      <p><strong>Abstract</strong> Synthetic supervision can bootstrap semantic parsers in new search domains, but prompt-induced diversity is useful only when generations are faithful to the structured intent. We explore this for cold-start e-commerce search: 118,098 synthetic pairs produced by 6 LLMs with 9 persona-conditioned prompt families on a 47-field UK automotive schema, against 1,214 human-annotated and 15,304 production queries. We show that the IPIP personality bundle improves parser F1 in all four matched contrasts (Holm-corrected $p&lt;.001$), and all three bundles have a positive main effect over the complete $2^3$ grid. Syntax conditioning is the axis that moves generations towards real traffic. It also induces lexical diversity. Alignment sKL, the divergence between von Mises-Fisher distributions fitted to synthetic and human-annotated queries, is an unlabelled proxy for parser F1 ($ρ=-0.917$ against human queries written for simulated shopper scenarios, lower is closer). An LLM committee, checked against a blinded author pass, triages the 927 queries missed by every parser and labels 37% as hallucinated. Dropped constraints dominate. The four syntax-bearing families have the largest hallucinated shares, 38 to 42%, while IPIP alone has the lowest at 28%.</p>
+      <hr />
+      <h3>17. From Questions to Queries to Insights: A Schema-Grounded Agentic Workflow for Natural-Language Crash Data Analysis</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2610.35054">2610.35054</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2610.35054.pdf">link</a></li>
+      <li>Published: 2026-10-26 18:01 JST</li>
+      <li>Updated: 2026-10-26 18:01 JST</li>
+      <li>Authors: Jingwen Zhu, Keshu Wu, Steven T. Parker, Bin Ran, David A. Noyce</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 10.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、交通事故データベースに対して自然言語の質問から安全分析を行うための、完全ローカルでスキーマに基づくエージェント型ワークフローCrashDB-QAを提案する。質問解釈、SQL生成・検証、実行、結果説明を分担する構成で、データ辞書と安全分析の慣例を用いてクエリ構築を支援し、途中結果の記録により監査可能性も確保する。</p>
+      <p><strong>新規性</strong> データ辞書と安全分析の慣例に基づいてクエリ生成を地に足のついた形で行い、さらに質問・クエリ・実行結果の整合性を検証して修復する拡張を備えた、ローカル実行可能なエージェント型分析ワークフローを示した点が新しい。</p>
+      <p><strong>Tags:</strong> 自然言語処理, SQL生成, 交通事故分析, エージェント, データベース</p>
+      <p><strong>Abstract</strong> Transportation agencies maintain extensive crash databases to identify safety priorities, evaluate countermeasures, and guide resource allocation. Making these data accessible to practitioners requires flexible ways to translate analytical questions into reliable results. Existing dashboards support predefined analyses, while additional requests often depend on specialists who understand database queries, coded fields, and agency conventions. This study presents CrashDB-QA, a fully local, schema-grounded agentic workflow that enables natural-language analysis of crash databases. Specialized components interpret questions, generate and validate read-only SQL, execute queries, and explain the results. A shared knowledge base grounds query construction in the agency's data dictionary and safety-analysis conventions, while recorded intermediate outputs support inspection and auditing. An optional extension, CrashDB-QA+, checks the alignment among the question, query, and execution result and supplies evidence for iterative repair. We evaluate the workflow on a frozen snapshot of 4.4 million Wisconsin crash records using a new benchmark of 300 questions across ten analytical categories and nine local open-weight models. Domain grounding substantially improves query accuracy, and a code-specialized 7B model provides the best accuracy-latency balance among the tested models. Compositional analyses remain more difficult than routine retrieval, particularly comparisons between groups or periods. Verification improves performance when the Judge uses authoritative field definitions and the Refiner receives execution evidence, whereas additional checking alone offers no consistent benefit. These findings demonstrate the potential of locally deployed, domain-grounded workflows to broaden access to crash analysis and identify the reasoning and verification capabilities needed for reliable use.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
