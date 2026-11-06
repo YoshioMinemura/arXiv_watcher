@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-11-06 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-11-06</h1>
+        <p class="hero-copy">Generated at 2026-11-06 12:22 JST. Run ID: <code>40597a3d-6d48-457d-b13c-7a5b88669529</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>16</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-11-06</h1>
+      <p>Generated at: 2026-11-06 12:22 JST Run ID: 40597a3d-6d48-457d-b13c-7a5b88669529</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 16</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Computation, not weight access: large language models as auditors of clinical prediction networks</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07847">2611.07847</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07847.pdf">link</a></li>
+      <li>Published: 2026-11-05 20:28 JST</li>
+      <li>Updated: 2026-11-05 20:28 JST</li>
+      <li>Authors: Zhiyu Liu, Xinyu Yang</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 30.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、臨床予測ネットワークの監査において、重みそのものへの直接アクセスよりも、適切な計算手段とプロンプト設計が重要であることを示した。シミュレーションした患者コホート上の小規模ネットワークを用い、LLMが埋め込まれた関係や偏りをどの程度検出・修復できるかを比較した。</p>
+      <p><strong>新規性</strong> 重みを与えるだけの条件と、計算ツールを介して予測を扱う条件を分離して評価し、ブラックボックスでもホワイトボックスと同等に監査できる場合があることを示した。</p>
+      <p><strong>Tags:</strong> large language models, clinical prediction, model auditing, neural networks, simulation</p>
+      <p><strong>Abstract</strong> Frontier large language models (LLMs) have been reported to read, edit and write the weights of small neural networks, raising the prospect of auditing clinical prediction models from their files alone. Public demonstrations, however, mixed reading raw weights with running code. We separated these conditions in internally pre-specified simulation experiments. Tanh networks of 105 to 38,401 weights were trained on simulated cohorts of patients with subarachnoid haemorrhage, each with a planted relationship or none, and one network was trained on labels that under-recorded deaths in a subgroup. GPT-6 Astra and four other GPT models answered single prompts under a default or an explicit system instruction, either with the weights in the prompt and no tools, or with a calculation-only tool that exposed the weights (white box) or only the network's predictions (black box). Without tools, Astra recovered planted relationships in 353-weight networks but became unreliable at 3,457 weights, and under the default instruction it declined 11 of 12 audit and repair tasks as unidentifiable; the explicit instruction removed these refusals. With the tool, it recovered the planted relationship in all 29 runs on networks of up to 38,401 weights, raised no false alarm in 15 runs on null networks, and found the biased subgroup in 6 of 6 runs. Black-box access performed as well as white-box access, and other GPT-6 models read as accurately. A well-designed script matched the comparator models on the audit and the best LLM repair. For auditing these networks, what mattered was computation and elicitation, not access to the weights.</p>
+      <hr />
+      <h3>2. TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07962">2611.07962</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07962.pdf">link</a></li>
+      <li>Published: 2026-11-05 21:58 JST</li>
+      <li>Updated: 2026-11-05 21:58 JST</li>
+      <li>Authors: Yifan Luo, Zhengying Liu, Yang Yuan, Zhilin Yang, Andrew Chi-Chih Yao</li>
+      <li>Categories: cs.AI, cs.CL</li>
+      <li>Score: 27.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> TCSExamは、理論計算機科学（TCS）の研究全体を対象にした統一ベンチマークで、定理証明、ソルバ実装、構成問題、未解決予想への直接的な挑戦を評価します。100課題のFull版と20課題のLite版を用いて複数のLLMエージェントを比較し、Lite版が少ない試行数でもFull版と強く整合することを示しました。</p>
+      <p><strong>新規性</strong> TCS研究の幅広い成果と長期的な未解決問題への進展を同一枠組みで評価できる、検証可能な統合ベンチマークTCSExamを提案した点が新規です。</p>
+      <p><strong>Tags:</strong> benchmark, theoretical computer science, large language models, theorem proving, evaluation</p>
+      <p><strong>Abstract</strong> Can large language models (LLMs) advance theoretical computer science and resolve its long-standing open conjectures? To study progress toward this goal, we introduce TCSExam, a unified framework and benchmark covering the full range of TCS research. It evaluates theorem proving, solver engineering, and constructions alongside direct attempts to resolve open conjectures, capturing both concrete research accomplishments and progress toward long-standing research goals. TCSExam-Full contains 100 expert-reviewed tasks, with submissions checked by the Lean kernel or an executable task checker. TCSExam-Lite selects 20 tasks, five per track, reducing the number of task attempts by 80% at the same per-attempt budget. We evaluate eight agents on Full and nine on Lite. The TCSExam Index combines all four tracks: GPT-6 Astra leads Full (71.9), and Opus 5.5 leads Lite (72.3). Full and Lite rankings are strongly aligned across eight shared agents (Spearman's $ρ=0.93$), supporting Lite as a compact, discriminative benchmark. The evaluations yield improved solver outputs and mathematical constructions, together with independently verified special cases and bounds from open-conjecture attempts. TCSExam provides an extensible framework with task sources, Docker build recipes, and evaluation tools for reproducible use.</p>
+      <hr />
+      <h3>3. Do Recommenders Need to Think in Words? Latent Reasoning for Efficient LLM-Based Recommendation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07866">2611.07866</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07866.pdf">link</a></li>
+      <li>Published: 2026-11-05 20:43 JST</li>
+      <li>Updated: 2026-11-05 20:43 JST</li>
+      <li>Authors: Hongyang Su, Beibei Kong, Lei Cheng, Chengxiang Zhuo, Zang Li</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 26.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMベースの推薦では、推論時にChain-of-Thoughtなどのテキスト的な推論を生成するため、1件ごとの推薦コストが高くなる問題を扱う。提案手法LatentRecは、推論時の推論テキストを使わず、学習時の段階的なヘッド監督で潜在的な推論を学習させ、推論時にはモジュールを外しても精度を維持できる。Amazonの3ベンチマークで、CoT蒸留ベースラインよりHR@10を相対4.0〜5.0%改善し、batch=1で18.3倍低い遅延を達成した。</p>
+      <p><strong>新規性</strong> 推論時のCoT生成を不要にし、学習時の逐次的な監督だけで潜在推論を獲得させ、推論時には追加モジュールを捨てられる点が新しい。</p>
+      <p><strong>Tags:</strong> recommendation systems, LLM, latent reasoning, chain-of-thought, efficiency</p>
+      <p><strong>Abstract</strong> LLM-based recommender systems increasingly generate chain-of-thought (CoT) text before each item prediction to activate the LLM's reasoning capacity, costing tens to hundreds of extra tokens per recommendation at inference. We ask whether inference-time reasoning artifacts (textual or latent) can be replaced by training-time supervision alone, without loss of accuracy. We propose LatentRec, a framework for LLM-based generative recommendation that replaces inference-time reasoning artifacts with training-time per-step head supervision. LatentRec has three components. A 2.5M-parameter Continuous Thought Module iterates K latent reasoning steps over the LLM's hidden state during training. Soft Token Selection bridges the ~14x norm gap between hidden states and input embeddings. A Per-step Reasoning Loss (PRL) supervises every intermediate state through the LLM's prediction head against the first token of the target Semantic ID. The trained LLM retains this accuracy without the module at inference, so the module can be discarded at deployment. On three Amazon benchmarks, LatentRec improves HR@10 by 4.0-5.0% (relative) over a CoT-distilled baseline at 18.3x lower latency (batch=1). Per-step training supervision consistently improves accuracy across three datasets, paid once at training rather than at every recommendation.</p>
+      <hr />
+      <h3>4. How Far Can Lightweight LLMs Go in Intent-to-SLO Translation?</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07982">2611.07982</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07982.pdf">link</a></li>
+      <li>Published: 2026-11-05 22:12 JST</li>
+      <li>Updated: 2026-11-05 22:12 JST</li>
+      <li>Authors: Sabbir Ahmed, Hazem Abbas, Salimur Choudhury</li>
+      <li>Categories: cs.NI, cs.CL</li>
+      <li>Score: 24.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、意図ベースネットワーキングにおける自然言語のintentをSLOへ変換するタスクについて、10個の軽量LLMを5次元で評価した。716件のintentを用いた実験では、最良構成で strict F1 0.943 を達成し、無効なintentの多くを拒否できた一方、ゼロショットでは性能が低く、言い換えに対する頑健性が課題として残った。</p>
+      <p><strong>新規性</strong> 10B未満の軽量オープンLLMがintent-to-SLO変換をどこまで信頼性高く担えるかを、性能・無効intent検出・幻覚・エネルギー・頑健性の5観点から体系的に検証した点が新しい。</p>
+      <p><strong>Tags:</strong> intent-based networking, SLO translation, lightweight LLM, hallucination, energy efficiency</p>
+      <p><strong>Abstract</strong> Intent-based networking (IBN) promises QoS provisioning in which the network derives the configuration from operator-stated goals. Its first step, translating a natural-language intent into enforceable service-level objectives (SLOs) grounded in a live snapshot of the network state, increasingly relies on large language models (LLMs). These large models add cost and energy to the management loop and typically require multi-GPU, cloud-hosted infrastructure. Can lightweight open LLMs take over this step dependably? We answer this question with a five-dimensional evaluation of ten LLMs with &lt;10B parameters from five families, under four prompting setups, on 716 placement intents. We evaluate translation performance, intent validation, hallucination, energy impact, and robustness to diverse phrasing. The best configurations translate intents with a strict F1 of 0.943 and reject up to 191 of 195 invalid intents. With few-shot reasoning, the strongest models hallucinate unsupported QoS requirements in only about one response in a hundred, whereas the zero-shot setup struggles. A translated intent costs 0.044-0.148 Wh of GPU energy without reasoning, and added energy cost for reasoning pays off for the weaker models. Furthermore, we show that realistic rephrasing lowers the rejection of invalid intents in 15 of 16 configurations for the best-performing models, leaving robust intent validation as a key open challenge for reliable IBN. Our code and data are available: https://github.com/ggck43/intent2slo.</p>
+      <hr />
+      <h3>5. Circe: Training-Free LLM Self-Evaluation via Component Interaction Consistency</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07948">2611.07948</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07948.pdf">link</a></li>
+      <li>Published: 2026-11-05 21:45 JST</li>
+      <li>Updated: 2026-11-05 21:45 JST</li>
+      <li>Authors: Shuyi Miao, Zheng Li, Xu Xie, Linrui Xu, Fei Shen, Xiaoyu Du, Tat-Seng Chua</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 23.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、参照答案や再サンプリングを使わずにLLMの応答の正しさを自己評価する訓練不要手法Circeを提案する。内部信号として注意更新とFFN出力変化の整合性を測るCICと、層間の表現軌跡を捉えるRGを用い、外部信号として生成トークンの尤度からLCを算出して統合する。5つのLLMと6ベンチマークで、正誤判別性能が既存手法より良いことを示した。</p>
+      <p><strong>新規性</strong> 注意機構の更新と後続層のFFN出力変化の方向整合性を測るcomponent interaction consistency (CIC)を導入し、内部計算の相互作用を自己評価に利用した点が新しい。</p>
+      <p><strong>Tags:</strong> LLM self-evaluation, reference-free evaluation, internal signals, attention-FFN interaction, correctness scoring</p>
+      <p><strong>Abstract</strong> As large language models (LLMs) are increasingly deployed in real-world applications, evaluating the correctness of their responses is crucial for reliable use. However, such evaluation is challenging because reference answers are rarely available in practice. Existing reference-free methods mainly rely on output signals, which may assign high scores to incorrect responses and thus do not necessarily reflect correctness. This motivates exploring the model's internal computation for complementary correctness signals. Recent studies exploit internal states, but they mainly analyze hidden-state trajectories across layers, which record only the combined updates of attention and feed-forward networks (FFNs) and overlook how these components interact. We therefore propose Circe, a training-free self-evaluation method that assesses a response using both internal and external signals, without reference answers or repeated sampling. For internal signals, we first introduce component interaction consistency (CIC), which measures the directional alignment between attention updates in earlier layers and attention-induced FFN output changes in later layers. We further incorporate representation geometry (RG) to characterize normalized displacement and angular changes along layerwise hidden-state trajectories. For the external signal, we convert the mean negative log-likelihood of generated tokens into a bounded likelihood confidence (LC) score. Finally, we fuse CIC, RG, and LC into a unified correctness score. Experiments on five LLMs and six benchmarks across four domains show that our method distinguishes correct from incorrect responses more effectively than existing baselines, and generalizes to multilingual, multimodal, and open-world settings.</p>
+      <hr />
+      <h3>6. Compression Through a Context Lens: Evaluating Adaptation, Quantization, and Distillation in Arabic Legal LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07988">2611.07988</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07988.pdf">link</a></li>
+      <li>Published: 2026-11-05 22:15 JST</li>
+      <li>Updated: 2026-11-05 22:15 JST</li>
+      <li>Authors: Md. Rafiul Biswas, George Mikros, Wajdi Zaghouani</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 19.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、サウジアラビア法務ベンチマークArabLegalEvalを用いて、アラビア語法務LLMにおける圧縮手法の影響を、文脈付き評価と文脈なし評価の両方で検証した。文脈を除くとベースモデルで最大27ポイントの精度差が生じ、4bit量子化ではメモリ使用量を64〜71%削減しつつ、no-contextのMCQ精度変化は-3.2〜+1.6ポイントに収まった。</p>
+      <p><strong>新規性</strong> 法務LLMの適応・量子化・蒸留の効果を、文脈付き/なしの評価プロトコル差という観点から比較し、文脈なし評価が圧縮の影響を補完的に捉える有用な指標であることを示した。</p>
+      <p><strong>Tags:</strong> LLM圧縮, アラビア語, 法務NLP, 量子化, 知識蒸留</p>
+      <p><strong>Abstract</strong> Model compression can facilitate the deployment of large language models in resource-constrained legal settings, but its effects on domain-specific performance may depend on the evaluation protocol. We investigate this issue using ArabLegalEval, a Saudi Arabic legal benchmark, under both with-context and no-context evaluation. The former provides supporting legal passages, while the latter assesses performance without external context. Removing the context produces accuracy gaps of up to 27 percentage points for the base model. We examine three stages: domain adaptation, quantization, and knowledge distillation across FANAR-9B, JAIS-8B, and Qwen2.5-7B. Four-bit quantization reduces model memory by 64-71%, with changes in no-context MCQ accuracy ranging from -3.2 to +1.6 percentage points. Distillation produces more variable results, with accuracy generally declining as student size decreases. A Qwen2.5-7B student distilled from FANAR achieves 76.6% no-context accuracy, compared with 77.2% for its teacher. Our findings suggest that no-context evaluation provides a useful complement to context-supported testing when assessing the effects of adaptation and compression on Arabic legal language models.</p>
+      <hr />
+      <h3>7. Adaptive Semantic Branching: Disagreement-Localized Cross-Trajectory Regeneration for Reasoning Candidate Expansion</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07918">2611.07918</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07918.pdf">link</a></li>
+      <li>Published: 2026-11-05 21:29 JST</li>
+      <li>Updated: 2026-11-05 21:29 JST</li>
+      <li>Authors: Jeong-Yoon Kim, Tae-Yoon Lee</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、同一問題に対して得られた複数の推論軌跡の「不一致」を利用し、別の解候補を生成する訓練不要の推論手法 Adaptive Semantic Branching（ASB）を提案する。軌跡を最終回答ごとにクラスタリングし、動的計画法で推論ステップを整列したうえで、分岐点付近の短い推論窓を再利用して新たな解を生成する。</p>
+      <p><strong>新規性</strong> 推論軌跡間の分岐が生じる局所的な不一致点を特定し、そこから他軌跡の部分推論を条件にした再生成を行う点が新しい。</p>
+      <p><strong>Tags:</strong> 推論, 候補生成, 軌跡再利用, 訓練不要, MATH</p>
+      <p><strong>Abstract</strong> Reasoning trajectories generated for the same problem often arrive at conflicting answers. These disagreements reveal alternative intermediate decisions that can be reused to explore new solutions. We introduce Adaptive Semantic Branching (ASB), a training-free inference procedure that turns cross-trajectory disagreement into targeted candidate generation. ASB first groups independently sampled trajectories by extracted final answer, selects a representative from each group, and aligns their reasoning steps with a monotonic dynamic program. A persistent-divergence objective identifies the point at which initially similar reasoning paths develop different continuations. For each selected directed pair, ASB retains the source trajectory's textual prefix, extracts a short reasoning window from a competing donor trajectory, and generates a fresh solution conditioned on both. A diversity-aware policy allocates up to three additional generations according to the answer-cluster structure. In a 500-problem MATH evaluation with Qwen2.5-7B-Instruct, ASB increases oracle candidate coverage from 445/500 (89.0%) with seven initial samples to 455/500 (91.0%), recovering correct candidates for 10 of the 55 initially uncovered problems. The method uses 576 additional generation calls across the evaluation set, averaging 8.152 calls per problem. We provide a precise specification of the branching operator, alignment objective, generation policy, and experimental configuration.</p>
+      <hr />
+      <h3>8. Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.08006">2611.08006</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.08006.pdf">link</a></li>
+      <li>Published: 2026-11-05 22:31 JST</li>
+      <li>Updated: 2026-11-05 22:31 JST</li>
+      <li>Authors: Daria Guseva, Olga Mitrofanova</li>
+      <li>Categories: cs.CL, cs.HC</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、テキストと音声の両方を対象にした自動キーフレーズ抽出（KE）について、理論的背景と実用的手法を包括的に整理したレビューである。統計的手法、ハイブリッド手法、機械学習、構造的手法に加え、LLMを用いたキーフレーズ生成や自動コーパス注釈、音声KEにおける転写ベース手法とエンドツーエンド手法の課題を比較している。</p>
+      <p><strong>新規性</strong> 分散していたテキスト・音声のKE研究を統一的な分析枠組みで整理し、LLM時代への移行と音声KEの現在の課題を体系的に位置づけた点が新規性である。</p>
+      <p><strong>Tags:</strong> keyphrase extraction, LLM, speech processing, text mining, survey</p>
+      <p><strong>Abstract</strong> The exponential growth of textual and audiovisual information has made the task of automatic keyphrase extraction (KE) increasingly significant. This article provides a comprehensive analysis of contemporary theoretical approaches and practical solutions for KE across both text and speech modalities. The primary contribution of this work is its systematic synthesis of these often-disparate research strands into a unified analytical framework, highlighting the evolution of the field from statistical methods towards large language models (LLMs) and end-to-end speech processing. We examine the stages of KE, the characteristics of keyphrases in written and spoken language, and terminological nuances. Various methods for automatic KE are discussed and analyzed in detail: statistical, hybrid, machine learning-based, and structural. The review dedicates substantial attention to emerging paradigms, including keyphrase generation using LLMs, and provides a detailed overview of methodologies and challenges in automatic corpus annotation. Furthermore, we specifically analyze current directions and inherent difficulties in KE for spoken language, comparing transcript based and end-to-end acoustic approaches. This synthesis leads us to conclude that the field is moving towards a more integrated, context-aware paradigm. Future progress will depend on addressing key challenges such as data scarcity for low-resource languages, effective multimodal fusion, and the nuanced evaluation of generative KE systems.</p>
+      <hr />
+      <h3>9. Towards Foundation Decision Models: Drex</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07854">2611.07854</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07854.pdf">link</a></li>
+      <li>Published: 2026-11-05 20:31 JST</li>
+      <li>Updated: 2026-11-05 20:31 JST</li>
+      <li>Authors: Nischay Dhankhar, Alisher Amantay, Zhanibek Datbayev, Darkhan Akhmetov, Yash Shah, Nurmukhamed Ubaidullayev, Raman Saparkhan, Dos Baha, Abulhair Saparov</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、選択肢に対する確率分布を直接出力する「decision model」として、Drexという4種類のオープンモデル群を提案する。学習には教師あり微調整とRLAF、さらにMaxでは視覚チューニングを組み合わせ、オプション順序に対する頑健性も改善している。</p>
+      <p><strong>新規性</strong> Autoregressive decodingを使わずに、質問と選択肢から直接確率分布を返すオープンなdecision model群を提示し、RLAFと整合性損失で精度と頑健性を高めた点が新しい。</p>
+      <p><strong>Tags:</strong> decision model, large language models, reinforcement learning, open source, robustness</p>
+      <p><strong>Abstract</strong> Autoregressive approaches with large language models, such as long chain-of-thought reasoning, have become the default for new AI applications because they reach higher accuracy on a wide range of tasks. In production, however, they give inconsistent answers, require parsing of outputs, and add cost and latency. Decision models address this: given a question and a set of options supplied by the user, they return a probability distribution over the options without autoregressive decoding. We present Drex, a family of four open decision models with 8B (DLM), 9B (v1.5), 35B with 3B active (v2.0), and 27B (Max) parameters. Each request consists of a state (a document, record, or agent context, optionally with images) and questions about it, each asking for a choice among options, a yes/no judgment, or a score on an ordered scale. Training combines supervised fine-tuning with reinforcement learning from adjusted feedback (RLAF), plus vision tuning for Max. Ablations show that RLAF improves accuracy and that consistency losses improve robustness to option order. On Decision Index 0.4.1, Max sets a new state of the art among the decision models we compare (67.52 on the public suite vs. 60.70 for Jev 1.14.0). On Decision Bench v4, it is statistically tied with d3-turbo and GPT-6 Sol and trails Claude Opus 5.5 by 1.6 points, and it has the highest accuracy among decision models on DecideBench. Max answers a typical request in 183 ms, against about 2.0 s for GPT-6 Sol and 3.5 s for Claude Opus 5.5, and its outputs are stable under option reordering. All four models are open source: https://github.com/nace-ai/drex-decision-models</p>
+      <hr />
+      <h3>10. Structure from Collision via Hypothesis-Space Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07900">2611.07900</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07900.pdf">link</a></li>
+      <li>Published: 2026-11-05 21:20 JST</li>
+      <li>Updated: 2026-11-05 21:20 JST</li>
+      <li>Authors: Takuhiro Kaneko</li>
+      <li>Categories: cs.CV, cs.AI, cs.GR, cs.LG, cs.RO</li>
+      <li>Score: 13.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、衝突による表面変形の観測から物体内部の空洞などの隠れた構造を推定するStructure from Collision（SfC）を扱う。従来の密度ベース手法では空洞の位置を直接最適化しにくい問題があるため、本手法は隠れた空洞を明示的な仮説として表現し、まず勾配不要の大域探索で候補を選び、その後に微分可能シミュレーションで局所的に精密化する。</p>
+      <p><strong>新規性</strong> SfCを密度推定ではなく仮説空間推論として定式化し、勾配不要の大域探索と勾配ベースの局所精緻化を組み合わせた点が新しい。</p>
+      <p><strong>Tags:</strong> structure from collision, hidden structure reconstruction, hypothesis-space reasoning, differentiable simulation, robotics</p>
+      <p><strong>Abstract</strong> Knowledge of the hidden interior structure of an object, including the presence and location of cavities, is essential for predictive simulation, robotic manipulation, and nondestructive inspection. However, such cavities leave no direct signature on the static visible surface, making collision-induced deformation one of the few cues used to infer their presence. Structure from Collision (SfC) addresses this problem by recovering the hidden interior structure of an object from multiview observations of a collision event. SfC is challenging for two reasons: hidden cavities are only indirectly observable through surface motion, and voids correspond to the absence of material, making direct optimization using standard density representations difficult. The density-based SfC baseline inherits both difficulties. Surface-matching gradients do not directly indicate the cavity location, while density gradients can be weak or uninformative inside or near void regions. Therefore, we reformulate SfC as hypothesis-space reasoning, representing hidden cavities as explicit structural hypotheses whose variables encode available structural assumptions rather than relying on implicit density updates. A global stage performs gradient-free optimization over this hypothesis space using forward-only material point method (MPM) simulation. A local stage then refines the selected hypothesis as a Lagrangian particle system through gradient-based optimization using differentiable MPM simulation. On the SfC benchmark, our method improves hidden-structure reconstruction and future prediction over the density-based SfC baseline. Interior-topology stress tests and robustness analyses characterize its scope and limitations. The project page is available at https://www.kecl.ntt.co.jp/people/kaneko.takuhiro/projects/sfc-hypothesis/.</p>
+      <hr />
+      <h3>11. ChemE-as-Code: An Open-Source Platform for Agentic AI in Chemical Engineering</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07947">2611.07947</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07947.pdf">link</a></li>
+      <li>Published: 2026-11-05 21:45 JST</li>
+      <li>Updated: 2026-11-05 21:45 JST</li>
+      <li>Authors: Artur M. Schweidtmann</li>
+      <li>Categories: cs.AI</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> ChemE-as-Codeは、LLMベースのAIエージェントが化学工学の作業を実行し、エンジニアがそれを検証できるオープンソース環境を提供する。計算はLLMの外で実行され、各値の出典や版管理を追跡でき、ファイル単位・行単位で不整合や古い結果を自動検出する仕組みを備える。アモニアの事例では、エージェントが基本設計パッケージを作成したが、チェック機能はルールでカバーした問題のみを検出し、人間のレビューを補助する位置づけである。</p>
+      <p><strong>新規性</strong> 化学工学向けに、LLMエージェント、外部計算、Gitベースの機械可読な設計ファイル、整合性チェックを統合したオープンソース基盤を提示した点が新しい。</p>
+      <p><strong>Tags:</strong> 化学工学, LLMエージェント, オープンソース, 設計検証, プロセスシミュレーション</p>
+      <p><strong>Abstract</strong> ChemE-as-Code provides an open-source environment in which AI agents built on large language models (LLMs) can carry out chemical engineering work and engineers can check it. Its calculation tools range from catalysis through process simulation to plant layout, HAZOP and life cycle assessment, and skills tell a general-purpose agent how to use them. Engineering files are linked, machine-readable and versioned in Git; calculations run outside the LLM, each value records its origin, and automated checks report inconsistencies and out-of-date results by file and line. In an illustrative ammonia case, agents developed a written task into a preliminary basic-engineering package (simulation files, P&amp;IDs, layout, HAZOP, datasheets, relief) for USD 224 of API cost in the design sessions. Planted faults and engineering changes show that the checks find what their rules cover and miss the rest, so they guide human review rather than replace it. No independent engineer has reviewed the design.</p>
+      <hr />
+      <h3>12. Which Signals of Code Correctness Survive Distribution Shift? Hidden-State and Causal Predictors of Program and Verdict Correctness</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07876">2611.07876</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07876.pdf">link</a></li>
+      <li>Published: 2026-11-05 20:57 JST</li>
+      <li>Updated: 2026-11-05 20:57 JST</li>
+      <li>Authors: Viola Campos, Thomas Klassert, Adrian Ulges</li>
+      <li>Categories: cs.SE, cs.LG</li>
+      <li>Score: 12.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、コードの正しさを外部実行なしで予測する6種類の手法を、ベンチマーク間・言語間の分布シフト下で比較した。対象は「モデル自身の判定が信頼できるか」と「プログラム自体が正しいか」の2つで、出力確率・サンプル・隠れ状態に基づく予測器の頑健性を評価している。</p>
+      <p><strong>新規性</strong> コードに対して因果的局在化に基づく新しい予測法を適用し、特に判定の正しさにおいて言語シフト下で頑健性向上を示した点が新しい。</p>
+      <p><strong>Tags:</strong> code correctness, distribution shift, hidden states, causal localization, LLM evaluation</p>
+      <p><strong>Abstract</strong> Large language models increasingly judge code, yet without external feedback such judgments are unreliable, and verifying them by executing tests or by extended reasoning is costly. Instead, execution-free correctness predictors use signals from the model's output probabilities, sampled solutions, or hidden states to identify judgments that warrant further verification. However, these predictors may degrade under distribution shifts when generalizing across projects and languages. We compare six execution-free predictors from four families on Qwen3-Coder-30B and gpt-oss-20b under benchmark shift between LiveCodeBench and BigCodeBench and language shift across Python, C++ and Java. We evaluate two targets: whether the model's own verdict on a program can be trusted, and whether the program itself is correct. Besides established approaches, we adapt two novel causal localization methods to code, which have been shown to be more robust out-of-distribution on natural language tasks. For verdict correctness, causal localization improves robustness to language shift. For Qwen3-Coder a probe on the causally localized subspace stays 0.09 AUROC ahead of output confidence under language shift (0.11 in distribution), significantly outperforming the best non-causal predictor by 0.04 AUROC on average. This advantage, however, does not generalize consistently to gpt-oss or to benchmark shift. For program correctness, predictors transfer more successfully between benchmarks, largely by identifying problems on which the model tends to fail. However, their ability to rank candidates within the same problem is limited.</p>
+      <hr />
+      <h3>13. ZeroRAG: Adaptive Semantic Peer Routing for Decentralized Retrieval-Augmented Generation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07928">2611.07928</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07928.pdf">link</a></li>
+      <li>Published: 2026-11-05 21:33 JST</li>
+      <li>Updated: 2026-11-05 21:33 JST</li>
+      <li>Authors: Petru Neague, Quinten Stokkink, Martijn de Vos, Rafael Pires, Mathis Randl, Anne-Marie Kermarrec, Johan Pouwelse</li>
+      <li>Categories: cs.DC, cs.AI, cs.IR, cs.NI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> ZeroRAGは、中央集権的な文書ストアや全体調整を使わずに、ピア間のオーバーレイ上で意味的なクエリルーティングを行う分散RAGのルーティング層です。各ピアは文書を保持したまま、近傍広告と最近のクエリキャッシュという軽量な局所状態だけを持ち、best-first walk によりクエリを関連性の高いピアへ段階的に誘導します。実世界の3つのワークロードで、既存の分散手法より再現率と通信量の面で優れ、中央集権型ストアに近い性能を示しました。</p>
+      <p><strong>新規性</strong> グローバルなデータ構造や中央調停なしに、局所状態だけで意味的クエリルーティングとネットワークの自己組織化を実現する分散RAGルーティング層を提案した点が新規です。</p>
+      <p><strong>Tags:</strong> decentralized RAG, semantic routing, peer-to-peer, document retrieval, distributed systems</p>
+      <p><strong>Abstract</strong> Retrieval-augmented generation (RAG) is a standard approach to enhance the reliability of large language model (LLM) outputs by retrieving documents relevant to a query and supplying them in the LLM prompt. Today's RAG systems collect, index, and serve these documents from centralized stores. In practice, however, documents are owned by organizations, devices, and individuals who cannot or will not surrender custody of them to a central party, e.g., because of privacy, copyright or regulatory compliance. Existing modern decentralized retrieval techniques either reintroduce a coordinating authority, or rely on a global data structure that requires continuous network-wide coordination (e.g., DHTs). We present ZeroRAG, a decentralized routing layer for document retrieval in RAG that performs semantic query routing across an overlay of peers with- out global data structures or centralized orchestration. Documents remain with the peers that own them, and each peer keeps only lightweight local state: a bounded set of neighbor advertisements and a cache of recently routed queries. Using these, ZeroRAG steers each query through a best-first walk that progressively rewires the overlay toward semantically relevant neighbors, so recall improves over time as the network self-organizes. We evaluate ZeroRAG using three real-world workloads and two decentralized baselines. We find that ZeroRAG outperforms baselines in terms of recall and required network messages, approaches the recall and LLM answer accuracy of a centralized document store, self-heals after catastrophic peer failures, and scales to 100 000 peers.</p>
+      <hr />
+      <h3>14. THG-Omni: Traceable Human-Centric Graph Supervision for Video Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07836">2611.07836</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07836.pdf">link</a></li>
+      <li>Published: 2026-11-05 20:15 JST</li>
+      <li>Updated: 2026-11-05 20:15 JST</li>
+      <li>Authors: Jisheng Dang, Kai Wei, Ronghao Lin, Bimei Wang, Hong Peng, Wei-Shi Zheng, Bin Hu, Qi Tian, Tat-Seng Chua</li>
+      <li>Categories: cs.CV, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> THG-Omniは、動画質問応答において答えだけでなく、どの参加者・出来事・時間区間が根拠になるかを明示的に扱う人間中心のグラフ監督フレームワークです。SAM 3の参加者トラックとQwen3-VLによる時系列注釈を組み合わせ、空間・時間情報を持つ構造化グラフから学習させることで、属性、行動、感情、相互作用、タイミングの推論を促します。IntentBenchやNExT-QAで一貫した性能向上を示し、予測グラフが回答に有用な証拠を保持できることも確認しています。</p>
+      <p><strong>新規性</strong> 参加者トラックと時系列注釈を統合した人間中心のグラフ監督により、動画推論の根拠を識別可能な形で学習・推論に組み込んだ点が新規です。</p>
+      <p><strong>Tags:</strong> video reasoning, graph supervision, human-centric, multimodal learning, question answering</p>
+      <p><strong>Abstract</strong> Omni-modal models can answer questions about video, but their predictions rarely show which participant, event, or interval supports an answer. Moreover, answer-level supervision alone does not teach a model to interpret structured video evidence. To systematically mitigate this issue, we present THG-Omni, a human-centric graph-supervision framework that links Segment Anything Model~3 participant tracks with temporally grounded Qwen3-VL annotations. Candidate semantic claims are checked against the source video and available audio before they are used to construct training questions, while track geometry provides explicit spatial and temporal supervision. The resulting questions teach an omni-modal reasoning model to interpret participant attributes, actions, affect, interactions, and their timing from a structured graph. At inference, THG-Omni uses a predicted graph constructed from the evaluation video. Experiments on IntentBench show consistent improvements over the unadapted backbone across social reasoning, emotion understanding, and deception perception. On NExT-QA, THG-Omni achieves 89.54\% accuracy with the matched graph, compared with 85.10\% without graph input. Further validation experiments show that compact graph input achieves 78.22\% accuracy, compared with 78.02\% using the full graph and 77.58\% without graph input. A complementary diagnostic demonstrates that the predicted graph preserves evidence useful for answering questions even without the source video and audio. Together, these findings show that THG-Omni improves human-centric video reasoning while grounding its evidence in identifiable participants and events. Our codes are available at https://anonymous.4open.science/r/review-n94hhfcwp5666/</p>
+      <hr />
+      <h3>15. Instantiating the Knowledge Plane</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07827">2611.07827</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07827.pdf">link</a></li>
+      <li>Published: 2026-11-05 20:09 JST</li>
+      <li>Updated: 2026-11-05 20:09 JST</li>
+      <li>Authors: Francisco Pereira, Justine Sherry, Pratiksha Thaker</li>
+      <li>Categories: cs.NI, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、Clarkらが提案したKnowledge Planeを、推論と非構造化コミュニケーションを備えたエージェント的な大規模言語モデルによって実現できる可能性があると論じている。従来は単一ドメイン内の自動化にとどまり、ドメイン間の問題は人手対応が中心だったが、LLMにより分散・協調的なネットワーク管理の実現が期待される。</p>
+      <p><strong>新規性</strong> Knowledge Planeの実現手段としてエージェント的LLMを位置づけ、特に分散・多エージェント・競争協調環境で新たに生じる研究課題を整理している点が新しい。</p>
+      <p><strong>Tags:</strong> Knowledge Plane, 大規模言語モデル, ネットワーク管理, マルチエージェント, 分散システム</p>
+      <p><strong>Abstract</strong> In 2003, Clark et al. proposed the "Knowledge Plane", a layer of intelligent agents that share rich information about network state in order to collaboratively manage the Internet across administrative boundaries. The technology of the day lacked the two capabilities it demanded most: reasoning and unstructured communication. Thus, automated network management has remained largely confined to single domains, while interdomain problems are still resolved by human operators on the phone. We argue that agentic large language models can finally unlock the potential of the Knowledge Plane, but that doing so will require solving new research problems that arise particularly in this decentralized, multi-agent, coopetitive setting that have received limited attention in the literature thus far.</p>
+      <hr />
+      <h3>16. QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.07976">2611.07976</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.07976.pdf">link</a></li>
+      <li>Published: 2026-11-05 22:08 JST</li>
+      <li>Updated: 2026-11-05 22:08 JST</li>
+      <li>Authors: Yingjie Tan, Haiquan Qiu, Quanming Yao, Manyi Zhong, Xianzhi Yu, Yaqing Wang</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 10.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> DeepSearch LLMエージェントでは、検索結果を逐次コンテキストに保持するとトークン消費と遅延が増えるため、著者らはQuery-Relevant Attention Entropy (QRAE) によるオンライン圧縮を提案した。QRAEは、クエリに関連する注意のエントロピーを用いて保持すべき取得チャンクを選別し、曖昧なチャンクは候補キャッシュに残して後で再評価できる。複数のベンチマークと推論モデルで、成功率を平均2.35ポイント改善し、遅延とトークン使用量をそれぞれ平均30%、45%削減した。</p>
+      <p><strong>新規性</strong> 追加の生成的圧縮や注意演算子の変更なしに、クエリ関連の注意エントロピーで保持チャンクをオンライン選別する点が新しい。</p>
+      <p><strong>Tags:</strong> DeepSearch, context compression, attention entropy, LLM agents, retrieval</p>
+      <p><strong>Abstract</strong> DeepSearch LLM agents repeatedly search and carry retrieved sources into subsequent reasoning steps. This expanding context increases token consumption and latency, although many results do not contribute to later reasoning. We propose Query-Relevant Attention Entropy (QRAE), an online context compression method that uses sparse evidence-assessment heads to decide which intact retrieved chunks should persist across reasoning steps. It scores bounded candidate batches through paired prefills: a query-free control suppresses shared attention responses, while normalized entropy measures the breadth of the positive response within each chunk. High-scoring chunks enter a persistent evidence whitelist and are included in the reasoning context. Uncertain chunks remain outside the reasoning context but are retained in a candidate cache, where they can be retrieved for later reevaluation. QRAE requires neither an additional generative compression pass nor modification of the attention operator. Across multiple DeepSearch benchmarks and reasoning models, QRAE improves task success by an average of 2.35 percentage points and reduces end-to-end latency and reported token usage by an average of 30% and 45%, respectively. These benefits generalize to a model with nearly 100B parameters.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
