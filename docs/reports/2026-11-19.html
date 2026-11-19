@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-11-19 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-11-19</h1>
+        <p class="hero-copy">Generated at 2026-11-19 13:06 JST. Run ID: <code>bb0f4fc5-c9f7-499d-9d82-f929425d2060</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>9</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-11-19</h1>
+      <p>Generated at: 2026-11-19 13:06 JST Run ID: bb0f4fc5-c9f7-499d-9d82-f929425d2060</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 9</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24846">2611.24846</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24846.pdf">link</a></li>
+      <li>Published: 2026-11-19 03:08 JST</li>
+      <li>Updated: 2026-11-19 03:08 JST</li>
+      <li>Authors: Jiashu Li, Tianyu Gao, Qinglong Liu, Jinping Wang, Ye Wei, Zhiqiang Gao</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 46.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='mathematical' (+9.0)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、数学的推論を単一の能力として扱うのではなく、原子的な推論スキルの組み合わせとして利用する枠組み Atomic MathReasoner（AMR）を提案する。AMRは、能力別LoRAエキスパートと軽量ルータを用いて、問題ごとに適切なスキル構成を選択し、推論時の高コストな最適化なしに性能向上を実現する。</p>
+      <p><strong>新規性</strong> 原子的な推論スキルの組み合わせを、問題インスタンス単位で選択するルーティング枠組みを導入し、事前学習済みの専門家群を効率的に活用できる点が新規である。</p>
+      <p><strong>Tags:</strong> 数学的推論, 大規模言語モデル, LoRA, ルーティング, 能力分解</p>
+      <p><strong>Abstract</strong> Most existing approaches enhance mathematical reasoning in large language models (LLMs) as a monolithic capability, despite the fact that different mathematical problems require different reasoning skills. Recent work has explored a more fine-grained perspective by decomposing mathematical reasoning into atomic skills and developing specialized modules for individual capabilities. However, how to effectively utilize these atomic abilities remains underexplored. To address this challenge, we propose Atomic MathReasoner (AMR), an instance-level framework for composing atomic reasoning skills. AMR first trains a library of capability-specific LoRA experts and performs gradient-free optimization over held-out validation subsets to discover a diverse set of low-loss composition prototypes. It evaluates the preference of each prototype using the token-level negative log-likelihood of reference solutions, filters ambiguous assignments through a confidence margin, and distills the resulting pseudo-labels into a lightweight router. During inference, the router selects an appropriate composition prototype for each problem, enabling problem-specific utilization of atomic skills without costly online optimization. Experiments on the AtomicMath benchmark across general and mathematics-specialized LLMs demonstrate consistent improvements. On Qwen2.5-Math-Instruct-7B, AMR increases average field accuracy from 64.4% to 68.1% at Level 1 and from 59.3% to 63.7% at Level 2, while improving average logical reasoning performance from 39.4% to 46.8%. These results demonstrate that effectively composing specialized atomic skills provides a promising approach to strengthening mathematical reasoning in LLMs.</p>
+      <hr />
+      <h3>2. Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24877">2611.24877</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24877.pdf">link</a></li>
+      <li>Published: 2026-11-19 03:24 JST</li>
+      <li>Updated: 2026-11-19 03:24 JST</li>
+      <li>Authors: Zhiyu Liu, Xinyu Yang</li>
+      <li>Categories: cs.LG, cs.AI</li>
+      <li>Score: 30.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、臨床予測モデルに対してLLMがクエリのみで監査できるかを、意図的に欠陥を埋め込んだブラインド試験で検証した。GPT-6 Astraはモデルの挙動を高い精度で近似し、72回中69回で埋め込まれた欠陥を検出した一方、報告された問題の多くは追加検証が必要であることも示された。</p>
+      <p><strong>新規性</strong> LLMによるブラックボックス臨床予測モデル監査を、事前登録された判定規則と植え込み欠陥を用いて定量的に評価し、クエリのみで高精度に欠陥検出できることを示した点。</p>
+      <p><strong>Tags:</strong> large language models, clinical prediction models, black-box auditing, model explainability, machine learning</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are used to explain clinical prediction models, on the promise that they can say what a model computes, find its faults and even reveal new knowledge in it. We tested the three promises where the answers could be checked. From the International Stroke Trial we trained four kinds of model (logistic regression, explainable boosting machine, gradient-boosted trees, neural network) for two outcomes on patients randomised earlier, planted one flaw in each of 24 copies (an under-predicted subgroup, a reversed risk factor or an implausible step) and mixed them with the 8 clean models. GPT-6 Astra audited each model three times, blind, through a tool that only returned the model's predictions; the judging rules were committed before any run and applied by program. Its surrogate models, with a median of 128 terms, reproduced the audited models' log-odds with a mean $R^2$ of 0.976 (0.959 for an additive surrogate of 42 terms fitted by an analyst). It found the planted flaw in 69 of 72 runs (96%; 95% CI 80% to 99%); a script written for the purpose found all 24. It also reported many more problems: 60% of 1,089 checkable reports failed the pre-specified check against the model's average behaviour; post hoc, most of these were real but small steps, and 15% of the checkable reports were not found in the model. Of 601 unexpected relationships it read out of the clean models, 11% held in patients randomised later (random pairs 6%; a regression scan's shorter list of its strongest candidates, 28%); after a check on the training data, 33% against 30%. With query access alone, an LLM can describe a black-box model faithfully and find nearly every planted flaw, as a purpose-written script also did; its reports of problems must be checked on the model and its discoveries on data.</p>
+      <hr />
+      <h3>3. Jailbreak Detection on Large Language Models via Contrastive Prototype Structures</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24936">2611.24936</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24936.pdf">link</a></li>
+      <li>Published: 2026-11-19 03:56 JST</li>
+      <li>Updated: 2026-11-19 03:56 JST</li>
+      <li>Authors: Yan Qiu, Yuanyuan Li</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 26.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、大規模言語モデルに対する jailbreak や有害プロンプトの検出を、追加の下流分類器を学習せずに行う手法 JDPI を提案する。JDPI は有害・安全の二値ラベルからプロトタイプを構築し、相対的なプロトタイプ距離に基づいて判定する。4つのベンチマークで、対照学習による微調整により検出精度が向上し、既存ベースラインと同等以上の ROC-AUC を示した。</p>
+      <p><strong>新規性</strong> 二値ラベルのみを用いて、分類器を別途学習せずにプロトタイプ距離で jailbreak 検出を行う点が新規である。</p>
+      <p><strong>Tags:</strong> large language models, jailbreak detection, contrastive learning, prototype inference, safety detection</p>
+      <p><strong>Abstract</strong> Jailbreak attempts and harmful prompts remain a challenge for the safe deployment of large language models. We study whether contrastively learned representations can support safety detection without training an additional downstream classifier. We propose Jailbreak Detection with Prototype Inference (JDPI), which uses binary safety labels to construct harmful and benign prototypes and makes predictions from relative prototype distances. JDPI uses only binary safety labels for encoder adaptation, prototype construction, and validation. In our setup, it uses fewer labeled examples than the classifier baseline (Method A) by avoiding the separate split used to train the downstream classifier. Across four benchmarks covering different input formats, contrastive fine-tuning improves JDPI's detection accuracy by 9.1-18.0 percentage points. Using the same encoder, JDPI achieves slightly higher ROC-AUC on one benchmark and stays within 0.017 of the baseline across all four. With dataset-specific adaptation, JDPI exceeds the released Llama Guard 3-8B baseline by 0.173-0.310 in ROC-AUC across the four benchmarks. In multi-turn replay on TomGibbs, JDPI uses accumulated user history as the conversation unfolds, achieving higher conversation-level accuracy than when it uses the current turn alone. Across 12 directed transfers, JDPI outperforms the classifier by an average of 1.59 percentage points in accuracy, demonstrating stronger cross-dataset robustness.</p>
+      <hr />
+      <h3>4. LLM-Guided Cyber-Physical Attack Path Identification in Smart Grids</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24765">2611.24765</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24765.pdf">link</a></li>
+      <li>Published: 2026-11-19 02:16 JST</li>
+      <li>Updated: 2026-11-19 02:16 JST</li>
+      <li>Authors: Amr Elshazly, Jesse Roberts, Rachad Atat, Muhammad Ismail</li>
+      <li>Categories: cs.CR, cs.AI</li>
+      <li>Score: 26.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、スマートグリッドのサイバー物理系における高影響な攻撃経路を、LLMを用いて効率的に特定する枠組みを提案する。トポロジー、STRIDE/MITRE ATT&amp;CKに基づく脅威モデリング、ならびにカスケーディング故障に基づく物理的影響の参照を統合し、既存のトポロジー駆動・脅威駆動・融合型手法と比較して評価している。</p>
+      <p><strong>新規性</strong> LLMに脅威モデリングを組み合わせ、カスケーディング故障由来の物理的参照に整合する攻撃経路を高速に推定する点が新規である。</p>
+      <p><strong>Tags:</strong> smart grid, cyber-physical security, large language models, attack path identification, MITRE ATT&amp;CK</p>
+      <p><strong>Abstract</strong> Identifying high-impact attack paths in cyber-physical power systems is critical for improving grid resilience. Existing methods typically rely on either structural topology analysis or simulation-based cascading-failure models. Topology-based approaches capture connectivity but lack adversarial reasoning, while simulation-driven methods are primarily suited for offline analysis and are less effective for rapid evaluation of evolving attack scenarios. As a result, identifying realistic attack paths that jointly capture topology, threat semantics, and physical impact remains challenging. This paper presents a physics-grounded framework for identifying cyber-physical attack paths using large language models (LLMs), with cascading-failure-derived impact rankings used as physics-grounded references. The framework integrates system topology, LLM-guided STRIDE and MITRE ATT&amp;CK threat modeling, and three baseline strategies for comparison: topology-driven, threat-driven, and fusion-based. Evaluation is performed using (i) critical-node overlap between LLM-inferred top-K rankings and cascading-failure-based ground truth; (ii) node-level similarity between LLM-inferred and reference paths; and (iii) path-level alignment capturing agreement in complete attack sequences. Results show that structured LLM-based threat modeling substantially improves alignment with physics-grounded references. In the cyber layer, critical-node overlap@3 increases from approximately 33% to as high as 100%, while node-level similarity reaches up to 65% and path-level alignment reaches up to 48%. In addition, the proposed framework reduces runtime by approximately 75--85% compared to the fusion-based baseline in the IEEE 14-bus system. These results suggest that LLM-guided attack path identification is a promising approach for efficient and impact-aware cyber-physical security analysis.</p>
+      <hr />
+      <h3>5. Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24849">2611.24849</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24849.pdf">link</a></li>
+      <li>Published: 2026-11-19 03:09 JST</li>
+      <li>Updated: 2026-11-19 03:09 JST</li>
+      <li>Authors: Eugene Agichtein, Charles L. A. Clarke, Kaustubh Dhole, William Stern</li>
+      <li>Categories: cs.IR, cs.CL</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、検索評価の関連性判定において、各文書ごとにLLMを呼び出す代わりに、トピックごとの実行可能なプログラムで判定を行うExecJudgesを提案する。提案手法は、ガイドラインを可読なプログラムに変換し、lexical matchingや既存NLPライブラリ、pool統計のみを用いて高速・再現可能・検査可能なラベル付けを実現する。</p>
+      <p><strong>新規性</strong> LLMに各文書の判定を直接させるのではなく、トピック単位の実行可能プログラムを生成して関連性ラベル付けを置き換える点が新規である。</p>
+      <p><strong>Tags:</strong> information retrieval, relevance labeling, LLM judges, program synthesis, TREC</p>
+      <p><strong>Abstract</strong> Large language model (LLM) judges have become a common way to create large-scale relevance judgments for retrieval evaluation. However, each judgment requires a potentially expensive call to a frontier model, and the judgments are hard to interpret and may not be reproducible. In this paper, we ask whether an LLM can write a readable program for each topic that replaces its per-document judgments. To address these issues, we propose ExecJudges, a method for generating fast, inspectable and scalable judges for automatic relevance labeling. Specifically, ExecJudges uses a frontier LLM to turn assessment guidelines into executable programs, which rely only on lexical matching, standard NLP libraries like parsers, and pool statistics. An ExecJudges-L variant also uses examples of human labels if available. We evaluate ExecJudges on seven TREC collections by comparing the produced labels with trained NIST assessors, frontier LLM judges, and recently proposed per-topic classifiers. Our results show that ExecJudges agrees with NIST assessors at the level of the Claude Sonnet 5.5 LLM judges on TREC DL 2019-2021. With a small number of human labels per topic, the ExecJudges-L variant agrees with NIST more than per-topic classifiers with the same labels on all seven collections, and either exceeds the agreement of LLM judges provided the same labels or is within about 0.05 of it in Krippendorff's alpha. The labels rank the official TREC DL runs with Kendall's tau of 0.87 to 0.94, and writing the programs incurs a one-time cost of $0.17 to $0.49 per topic, with no additional costs for grading. Our results suggest that ExecJudges offers a reproducible, inspectable, efficient and cost-effective alternative to LLM judges for labeling deep result pools for system evaluation or ranking improvements.</p>
+      <hr />
+      <h3>6. A Foundation Model to Measure and Predict Human Behaviour</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24830">2611.24830</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24830.pdf">link</a></li>
+      <li>Published: 2026-11-19 02:59 JST</li>
+      <li>Updated: 2026-11-19 02:59 JST</li>
+      <li>Authors: Haoran Ye, Tianrui Huo, Hangzhen Li, Xin Zhang, Guojie Song</li>
+      <li>Categories: cs.CL, cs.AI, cs.HC</li>
+      <li>Score: 16.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、人間の心理特性の測定、個人行動の予測、集団レベルの応答分布の整合を同時に行う基盤モデル Chiron を提案する。36の行動領域と78の社会科学実験にまたがる大規模データで学習・評価し、自己報告との一致度や個人行動予測、実験効果の再現において既存のLLMより良い性能を示した。</p>
+      <p><strong>新規性</strong> 心理構成概念の表現、個人行動予測、集団分布の人間統計への整合を一つのモデルで共同最適化した点が新規である。</p>
+      <p><strong>Tags:</strong> foundation model, human behavior, psychology, LLM, social science</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are increasingly used to infer psychological attributes, predict individual behaviour, and simulate human populations. However, despite generating plausible responses, they often misrepresent individuals and distort population statistics. Here we introduce Chiron, a foundation model to measure and predict human behaviour. We jointly fine-tune an LLM to represent psychological constructs, predict individual behaviour, and align population response distributions with human statistics. The training and evaluation data span 36 behavioural domains and 78 social science experiments, comprising 288,307 person records, 1,411,750 atomic behavioural decisions, and 99,953 psychometric assessments over 109 psychological constructs. In our evaluations, Chiron's psychological measurements agree more closely with human self-reports and exhibit fewer biases that undermine psychometric validity. It predicts individual behaviour more accurately than frontier LLMs (up to 28.4% relative improvement). In simulations of social science experiments, it more accurately captures the direction and magnitude of human experimental effects (82.2--94.3% lower effect-size estimation error). Together, these results establish Chiron as a unified computational instrument for measuring and predicting human behaviour.</p>
+      <hr />
+      <h3>7. Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24891">2611.24891</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24891.pdf">link</a></li>
+      <li>Published: 2026-11-19 03:34 JST</li>
+      <li>Updated: 2026-11-19 03:34 JST</li>
+      <li>Authors: Benjamin Novotny, Doug Szeto, Chang Wang, Shicheng Chen, George Zhihua Yuan, Bob Kamma, Michael Ge, John Xin Zhou, Andrea Olgiati</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLM推論における固定のディスパッチ率が、サービング容量の変動や生成長の不確実性により陳腐化する問題に対し、Cap-and-Trackを提案する。これは、容量上限を示す拒否応答を手がかりに、事前の出力長予測やフリート全体の再調整なしで、非同期に要求を追従させる方式である。</p>
+      <p><strong>新規性</strong> 拒否応答のみを用いて現在の受理上限を推定し、Capによる即時拒否とTrackによる追従制御を組み合わせて、変動する容量に適応するディスパッチ手法を実現した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM推論, リクエストディスパッチ, 容量適応, 非同期推論, キュー制御</p>
+      <p><strong>Abstract</strong> A fixed dispatch rate for LLM inference becomes stale as serving fleets resize and request sizes change. Generative output length is unknown at admission, and shared provider pools can lose capacity. We present Cap-and-Track, a design for asynchronous inference across provider capacity and internal GPUs. Meta's traffic shaper implements Cap-and-Track for post and live-video understanding. Refusals signal the backend's current admission ceiling. Durable priority queues hold excess work outside execution, including refused requests for retry. Cap is a fail-fast admission check at the saturated resource that refuses work before a long wait. Using only those refusals, the Track dispatcher probes upward and backs off. It follows the ceiling without output-length prediction or a fleet-level rate to retune. In a concurrent same-traffic production A/B, the shaper ran per-replica Cap plus Track. It served a classifier on 43% fewer H100s than its queued, fixed-rate precursor, though lower-priority work waited longer at backfill peaks. In steady-capacity real-engine replay, Track ran within 1% of the goodput of a fixed rate tuned above measured capacity, with about a quarter of that rate's refusal share. The shaper carries more than 300 million online requests and hundreds of terabytes of media a day. During a backfill, it handled 1.1 billion requests in its busiest 24 hours. Lessons include keeping queues inside inference engines just long enough to fill batches, steering dispatch by capacity refusals alone, keeping dispatch stateful, and sizing fleets by how long low-priority work can wait.</p>
+      <hr />
+      <h3>8. Who are you? The Personal Imitation Game</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24888">2611.24888</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24888.pdf">link</a></li>
+      <li>Published: 2026-11-19 03:32 JST</li>
+      <li>Updated: 2026-11-19 03:32 JST</li>
+      <li>Authors: Muhammad Rizky Wellyanto, Hajara-Yasmin Isa, Kexin Xue, Vishal Ravichandran, Wenpeng Lu, Jerry O. Talton, Ranjitha Kumar</li>
+      <li>Categories: cs.HC, cs.AI, cs.CL</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、一般的な人間らしさを問うチューリングの模倣ゲームより難しい課題として、特定個人を会話で再現できるかを問う「Personal Imitation Game」を提案している。30人の参加者で人間のベースラインを測定し、識別に使われる手がかりとして文体、性格特性、経歴情報を報告した。</p>
+      <p><strong>新規性</strong> 著者本人の10年分の個人的デジタル通信データを用いてLLMベースの個人模倣システムを構築し、欺瞞実験で友人や著者本人との比較を行った点が新しい。</p>
+      <p><strong>Tags:</strong> LLM, imitation game, personal AI, identity, privacy</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) now perform strongly on Alan Turing's 1950 Imitation Game, so we propose a harder challenge, the Personal Imitation Game, which asks whether a machine can replicate a specific individual in conversation rather than a generic human. Testing with 30 participants, we establish a human baseline and report the identity signals interrogators rely on: stylometric features, personality traits, and biographical facts. To demonstrate the framework, we design an LLM-based system that plays the game for one of the paper's authors, drawing on an autoethnographic dataset spanning ten years of personal digital communication. In a 20-person deception study, interrogators choose our system over the author's own friends in 7 of 10 rounds, and the author over our system in 13 of 20; neither rate is distinguishable from chance at this sample size. We consider design improvements, applications of personal AI agents, and implications for identity and privacy.</p>
+      <hr />
+      <h3>9. Ground, Iterate, Trace: Decomposing AI Research Ideation</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.24887">2611.24887</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.24887.pdf">link</a></li>
+      <li>Published: 2026-11-19 03:31 JST</li>
+      <li>Updated: 2026-11-19 03:31 JST</li>
+      <li>Authors: Samson Yu, Qiran Zou, Jing Yu Lim, Rushi Shah, Anirudh Goyal, Dianbo Liu</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 11.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルによる研究アイデア生成について、著者らは文献に基づく知識グラフ、反復的な発想、明示的な概念オペレータを組み合わせた Creative AI Researcher（CAR）を提案した。40件の研究トピックと2つの実行ベンチマークで評価し、CARは単発プロンプトや一部既存手法より方法論的新規性や実現可能性で良い結果を示した一方、明示的オペレータの追加が一貫した品質向上をもたらすとは結論づけていない。</p>
+      <p><strong>新規性</strong> 文献グラウンディング、反復生成、4種類の概念オペレータを統合し、各操作と参照文献を追跡可能な形で記録する研究アイデア生成フレームワークを提案した。</p>
+      <p><strong>Tags:</strong> 研究アイデア生成, 大規模言語モデル, 文献グラウンディング, 知識グラフ, ベンチマーク評価</p>
+      <p><strong>Abstract</strong> Large language models have been widely used to generate plausible research ideas, yet it remains unclear what makes automated ideation effective and how generated novel proposals arise from prior scientific work. We introduce the Creative AI Researcher (CAR), an agentic framework combining literature grounding, iterative development and explicit conceptual operators. CAR constructs a semantic knowledge graph from retrieved literature and equips an ideation agent with graph-retrieval tools and four operators: bisociation, analogy, exploration and elaboration. Each operator call is checked against structural acceptance conditions and recorded, producing a trace of intermediate transformations and declared literature sources. We evaluate CAR with two language-model backbones across 40 LiveIdeaBench research topics and two execution benchmarks. CAR achieves significantly higher methodological novelty (MN) than single-shot prompting and The AI Scientist. Its methodological novelty does not differ significantly from the Research Ideation Agent, while its feasibility scores are higher on both backbones. With a shared experiment executor, CAR achieves the highest pairwise win rate among the evaluated AI methods on FML-bench-Lite and BioXArena. In a ten-condition ablation study, MN point estimates favor CAR over one-step proposal on both backbones, but no MN contrast survives correction for multiple comparisons. The results do not establish a consistent quality benefit from explicit operators beyond free-form iteration. CAR makes the sequence of operations and declared literature sources inspectable, separating judged idea quality from procedural traceability.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
