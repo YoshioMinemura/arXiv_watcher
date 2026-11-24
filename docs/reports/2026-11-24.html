@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-11-24 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-11-24</h1>
+        <p class="hero-copy">Generated at 2026-11-24 15:55 JST. Run ID: <code>d8734b54-5aa6-498c-8556-49f219eb940e</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>9</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-11-24</h1>
+      <p>Generated at: 2026-11-24 15:55 JST Run ID: d8734b54-5aa6-498c-8556-49f219eb940e</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 9</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. SARA: An Auditor-in-the-Loop LLM Recommender for Sustainability Reports</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30839">2611.30839</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30839.pdf">link</a></li>
+      <li>Published: 2026-11-24 00:23 JST</li>
+      <li>Updated: 2026-11-24 00:23 JST</li>
+      <li>Authors: Lars Hillebrand, Thiago B. F. de Oliveira, Tim Dilmaghani, Mohamed Khaled, Writwick Das, Rafet Sifa</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> SARAは、企業のサステナビリティ報告書に対して、約1,700件の規制要件ごとに関連箇所を推薦し、適合性の判定も行う人間参加型のLLMレコメンダーです。Microsoft Wordのアドインとして提供され、監査担当者が最終判断を保持しながら、長文かつ複数回改訂される報告書の監査を支援します。</p>
+      <p><strong>新規性</strong> 固定された規制タクソノミー上で監査をコンテンツベース推薦として扱い、トピック予測によるフィルタリングでLLM照合のコストと実行時間を削減した点です。</p>
+      <p><strong>Tags:</strong> LLM, recommendation system, human-in-the-loop, sustainability reporting, auditing</p>
+      <p><strong>Abstract</strong> Auditing corporate sustainability reports requires assurance professionals to map a company-specific checklist drawn from roughly 1,700 regulatory requirements onto the relevant passages of lengthy, repeatedly revised draft reports and to judge compliance. We present SARA (Sustainability Reporting Assistant), a human-in-the-loop recommender system delivered as a Microsoft Word add-in that recommends, for each requirement, the passages addressing it and predicts a compliance verdict while keeping the auditor in full control. SARA casts auditing as content-based recommendation over a fixed regulatory taxonomy and makes per-requirement large language model (LLM) matching cheaper, faster, and more accurate through topic-prediction filtering: on expert-annotated reports, it reduces matching cost about sixfold and runtime by 42% versus feeding the full report to the LLM. It is in production use across PwC Germany's sustainability-assurance practice.</p>
+      <hr />
+      <h3>2. Trallie: from Free-Form Text to Structured Data with LLMs</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30773">2611.30773</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30773.pdf">link</a></li>
+      <li>Published: 2026-11-23 23:41 JST</li>
+      <li>Updated: 2026-11-23 23:41 JST</li>
+      <li>Authors: Vijayasri Iyer, Cristiano De Nobili, Mubashir Hussain Shah, Sébastien Bratières</li>
+      <li>Categories: cs.CL, cs.DB, cs.IR</li>
+      <li>Score: 22.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> Trallieは、自然言語の非構造データをLLMで構造化データへ変換するためのオープンソースフレームワークである。少数例または例なしのプロンプトベース抽出により、HTML・PDF・TXT・JSONなど多様な文書形式に対応し、文書集合からスキーマを自動推定して抽出を進められる。FDA 510(k)文書やSWDEのWebサイトで評価し、対象属性が与えられる場合は既報手法を上回り、属性を自動発見する設定でも競争力を示した。</p>
+      <p><strong>新規性</strong> 代表例や大規模なラベル付きデータに依存せず、LLMを用いてスキーマ推定から情報抽出までを一体的に行える点が新しい。</p>
+      <p><strong>Tags:</strong> information extraction, LLM, schema induction, structured data, open-source framework</p>
+      <p><strong>Abstract</strong> Trallie is an open-source framework that leverages large language models (LLMs) to perform information extraction (IE) from natural language sources with or without user guidance. Unlike conventional approaches that rely on extensive labeled datasets or domain-specific training, Trallie enables the conversion of unstructured data into structured formats with minimal or no representative examples. The framework is designed with three key objectives: (i) reducing manual annotation by harnessing prompt-based zero-shot and few-shot capabilities of modern LLMs, (ii) flexibly parsing diverse document formats (i.e., HTML, PDF, TXT, and JSON), and (iii) improving accessibility for non-expert users by automatically inducing schemas from document collections, which can then be refined for extraction. We evaluate Trallie with open-weight LLMs on FDA 510(k) documents and on movie and university websites from SWDE. It outperforms previously reported systems when the target attributes are provided for text extraction and is competitive when it must discover attributes for the schema automatically. The project is available at https://github.com/PiSchool/trallie</p>
+      <hr />
+      <h3>3. Transport-Safe Evaluation of LLM Agents: Trajectory-Dependent Judge Error and Anytime-Valid Auditing</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30742">2611.30742</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30742.pdf">link</a></li>
+      <li>Published: 2026-11-23 23:19 JST</li>
+      <li>Updated: 2026-11-23 23:19 JST</li>
+      <li>Authors: Yulliwas Ameur, Samia Bouzefrane, Soumya Banerjee</li>
+      <li>Categories: cs.AI, stat.ME</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMエージェントの評価では、LLMジャッジの誤りが軌跡に依存し、さらに成功・失敗で生成される軌跡が異なると、補正後の成功率や順位に偏りが生じうることを示している。著者らはこの偏りの厳密な漸近解析と、識別から同時順位付けまでの検証手順を与え、監査付きの推定や境界推定によって安全な評価を可能にする枠組みを提案する。</p>
+      <p><strong>新規性</strong> 軌跡依存のジャッジ誤差による評価バイアスを理論的に定式化し、AIPWと適応的監査、さらに任意停止に対して有効なe-process信頼列を組み合わせて、順位評価まで含む安全な監査手法を提示した。</p>
+      <p><strong>Tags:</strong> LLMエージェント評価, ジャッジバイアス, AIPW, 適応的監査, 信頼列</p>
+      <p><strong>Abstract</strong> Large language model (LLM) agents are often ranked by an LLM judge whose error rates are measured once and reused for every agent. The corrected success rates can then be biased when the judge's errors depend on the trajectory and agents differ in the trajectories they produce for successes or failures. We derive the exact asymptotic bias and give a chain of checks from identification to simultaneous ranks. On a four-agent semi-synthetic benchmark, a scalar correction with oracle calibration has maximum bias 0.245 and mean pointwise coverage 0.016, and never recovers the full ranking (0/250 replications). Augmented inverse-probability weighting (AIPW) with a uniform or a design-aware random audit keeps the maximum bias below 0.003, with mean pointwise coverage of 0.939 and 0.950. In a 48-cell stress test, effective target support rises only from 0.209 to 0.805 as calibration grows from 600 to 4,800 labels, while audited AIPW keeps a mean absolute error of 0.018-0.020. Without calibration support, or with judge dependence within an externally justified bound, we report valid bounds or sensitivity sets and carry them into rank sets. An e-process confidence sequence stays valid, for a stable target, under predictable adaptive auditing and arbitrary stopping.</p>
+      <hr />
+      <h3>4. Semantic-aware Decoding for Diverse Text-to-SQL under Schema Ambiguity</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30873">2611.30873</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30873.pdf">link</a></li>
+      <li>Published: 2026-11-24 00:43 JST</li>
+      <li>Updated: 2026-11-24 00:43 JST</li>
+      <li>Authors: Yuxuan Jiang, Anna Mitsopoulou, Apostolos Koukouvinis, Yannis Velegrakis, Georgia Koutrika</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 20.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 実世界のtext-to-SQLでは、質問が複数のスキーマ要素に対応しうるschema ambiguityが問題となり、下流の曖昧性解消のためにtop-k内で多様なSQL候補を出すことが重要です。本論文は、スキーマ要素間の意味的類似度に基づいてトークンのlogitを調整する学習不要のデコーディング手法SLAを提案し、LLMの出力の偏りを抑えて多様な解釈を促します。</p>
+      <p><strong>新規性</strong> スキーマ要素の意味的類似度を用いてlogitを調整する、学習不要・モデル非依存の多様化デコーディングSLAを提案した点です。</p>
+      <p><strong>Tags:</strong> text-to-SQL, schema ambiguity, diverse decoding, large language models</p>
+      <p><strong>Abstract</strong> Real-world text-to-SQL systems often face schema ambiguity, where a question can map to multiple plausible schema elements. To support downstream disambiguation, SQL generation systems should include diverse interpretations among their top-k predictions. However, large language models (LLMs) typically favor a single interpretation, producing highly skewed outputs. We propose Semantic-aware Logit Adjustment (SLA), a training-free decoding method that promotes diverse SQL generation by adjusting token logits based on semantic similarity between schema elements. Unlike prior approaches that rely on reasoning-intensive prompting or task-specific fine-tuning, SLA is efficient, model-agnostic, and easy to deploy. Experiments show that SLA consistently improves interpretation coverage over standard decoding and remains competitive with existing diversity-oriented methods at substantially lower inference cost.</p>
+      <hr />
+      <h3>5. What Quality Engineers Need to Know About Generative AI: Structured Data Extraction</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30778">2611.30778</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30778.pdf">link</a></li>
+      <li>Published: 2026-11-23 23:44 JST</li>
+      <li>Updated: 2026-11-23 23:44 JST</li>
+      <li>Authors: Fadel M. Megahed, Ying-Ju Chen, Yamin Dahwich, Zhao-Wei Chen, Lucas K. Hung, Arthur Carvalho, L. Allison Jones-Farmer, Ibrahim Yousif, Inez M. Zwetsloot</li>
+      <li>Categories: cs.CE, cs.CL</li>
+      <li>Score: 17.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、品質工学において大規模言語モデル（LLM）や視覚言語モデル（VLM）を用いた構造化データ抽出の活用方法を解説し、RとPythonでの実装例を示している。自動車リコール通知とarXiv論文を対象とした2つの公開アプリを通じて、抽出結果の実用性を示しつつ、人手による検証の重要性も示した。</p>
+      <p><strong>新規性</strong> LLM/VLMによる構造化抽出を品質工学の観点から整理し、公開アプリと評価結果を通じて実運用の形で示した点。</p>
+      <p><strong>Tags:</strong> structured data extraction, large language models, quality engineering, vision-language models, human validation</p>
+      <p><strong>Abstract</strong> In this expository paper, we explain how quality engineers can use large language models (LLMs) and vision-language models (VLMs) for structured data extraction. We introduce the relevant concepts, discuss structured extraction from a measurement-system perspective, and demonstrate its implementation in R and Python. We then present two freely available web-based applications (apps): (a) extracting information from automotive recall notices and (b) monitoring quality engineering research on arXiv. To ensure the accuracy of our AI-driven structured extraction, human evaluators validated the results. In the first app, four reviewers assessed information extracted from 30 recall notices using two models, with 98.6% of the 720 field-level ratings judged fully correct. In the second app, 21 authors evaluated information extracted from 45 of their arXiv papers. All paper summaries were rated mostly correct or correct, although the evaluations identified problems with some classification fields and mathematical expressions. These results demonstrate the practical potential of structured data extraction while emphasizing the need to validate the extracted information. We make both apps and their source code publicly available so that readers can adapt the approach to their own applications.</p>
+      <hr />
+      <h3>6. Unpacking the Evaluators: How Configuration Shapes the Evaluation of Alignment in Explainable AI</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30816">2611.30816</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30816.pdf">link</a></li>
+      <li>Published: 2026-11-24 00:08 JST</li>
+      <li>Updated: 2026-11-24 00:08 JST</li>
+      <li>Authors: Gizem Karagoz, Tanir Ozcelebi, Nirvana Meratnia</li>
+      <li>Categories: cs.AI, cs.CV</li>
+      <li>Score: 14.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>title matched keyword='alignment' (+6.0)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、XAIの整合性評価が人間中心の評価の代替として広く使われる一方で、GT表現、メトリクスの種類、soft/hardな定式化、閾値設定などの設計選択に強く依存することを指摘する。著者らは、これらを評価構成空間として定式化し、2D/3Dの合成・実データ上でXAI手法と評価設定の相互作用を体系的に分析した。</p>
+      <p><strong>新規性</strong> 局所エントロピーと境界質量比に基づくXAI出力の新しい分類法を導入し、整合性評価の結果が設定依存で大きく変わることを構造的に示した。</p>
+      <p><strong>Tags:</strong> Explainable AI, evaluation, alignment metrics, ground truth, threshold sensitivity</p>
+      <p><strong>Abstract</strong> Explainable AI (XAI) evaluation fundamentally requires human-centered evaluation, assessing whether explanations align with human reasoning and expert knowledge. However, such evaluations often require expert-driven manual validation and are difficult to scale, leading to the widespread use of alignment-based metrics, where attribution maps are compared against predefined ground-truth (GT) representations. Despite their popularity, alignment evaluations are implicitly bias towards multiple design choices made during the evaluation process, for example GT representations, metric families, metric formulations (soft vs. hard), and thresholding strategies. In this paper, we formalize alignment evaluation as a structured evaluation configuration space through which the influence of these design choices can be systematically analyzed. We further introduce a structured alignment evaluation framework that models interactions between XAI methods, GT representations, metric families, metric formulations, and thresholding strategies across 2D and 3D synthetic and real-world datasets. In addition, we propose a novel taxonomy of XAI output behavior based on local entropy and boundary mass ratio, enabling structured characterization of attribution patterns for alignment evaluation. Our experiments reveal systematic flows (triples of XAI-GT-metric configurations), showing that alignment outcomes provide distinct behavior patterns under certain configurations, such as soft/hard metric implementations. We further observe varying levels of threshold sensitivity across metric families and attribution structures. These findings demonstrate that alignment evaluation cannot be treated as a fixed or invariant measure of explanation quality, and provide practical guidance for designing more reliable and behavior-aware XAI evaluation protocols.</p>
+      <hr />
+      <h3>7. Object-Centric Differentiable Logic Networks for Abstract Visual Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30736">2611.30736</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30736.pdf">link</a></li>
+      <li>Published: 2026-11-23 23:13 JST</li>
+      <li>Updated: 2026-11-23 23:13 JST</li>
+      <li>Authors: Hanne Say Eren, Ana Ezquerro, Ozan Özdenizci</li>
+      <li>Categories: cs.LG, cs.CV</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、抽象的な視覚推論に対して、未教師ありの object-centric 知覚と論理ベースの記号推論を統合した Slot-Dwn を提案する。推論は Boolean 空間上で LUT を用いて行われ、視覚的なショートカットに依存しにくい構成で計算負荷を抑えている。各種ベンチマークで、極端な分布外条件下でも競争力のある性能と高速な収束を示した。</p>
+      <p><strong>新規性</strong> Multi-Head Differentiable Weightless Network により、LUT ベースの疎なルーティングを用いて、object-centric 知覚と論理推論を一体化した点が新規である。</p>
+      <p><strong>Tags:</strong> abstract visual reasoning, neuro-symbolic, object-centric learning, logic networks, out-of-distribution generalization</p>
+      <p><strong>Abstract</strong> Human visual intelligence enables efficient reasoning capabilities on abstract visual problems with bounded cognitive resources and minimal experience, and yields remarkable generalization to novel problems with its ability to draw relational analogies and modular abstractions. In contrast, deep learning models require exhaustive task-specific training on large datasets, making them prone to exploiting visual shortcuts and resulting in poor generalization. While neuro-symbolic approaches attempt to bridge this gap by decoupling perception from reasoning with dedicated computation units, existing solutions rely either on explicit rule supervision or parameter-heavy transformer architectures that reintroduce the computational inefficiencies they aim to solve. We introduce Slot-Dwn to address these limitations, a novel neuro-symbolic architecture that unifies unsupervised object-centric perception with logic-based symbolic reasoning. Our model utilizes a Multi-Head Differentiable Weightless Network (MH-DWN) that performs efficient reasoning entirely in Boolean space using look-up tables (LUTs). Our framework reduces visual perception complexity and introduces a LUT-based relational bottleneck with sparse input routing to minimize computational overhead. We evaluate Slot-Dwn across various abstract visual reasoning benchmark tasks targeting systematic rule generalization, sample-efficient anomaly detection, and multi-relational reasoning. We demonstrate that Slot-Dwn yields competitive performance with respect to the state-of-the-art, under extreme out-of-distribution regimes, while requiring up to 52% fewer trainable parameters, with significantly faster convergence.</p>
+      <hr />
+      <h3>8. Intent-Conditioned Argument Mediation for Tool-Using LLM Agents: Blocking Trusted-but-Unauthorized Arguments</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30745">2611.30745</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30745.pdf">link</a></li>
+      <li>Published: 2026-11-23 23:22 JST</li>
+      <li>Updated: 2026-11-23 23:22 JST</li>
+      <li>Authors: Yulliwas Ameur, Miqeas Pedro Mendes, Samia Bouzefrane</li>
+      <li>Categories: cs.AI, cs.CR</li>
+      <li>Score: 13.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMエージェントにおけるツール呼び出しで、信頼できるがユーザ意図に反する引数を防ぐための仲介層IntentFlowを提案している。意図契約とプロベナンス方針を用いて権限を伴う引数を検査し、合成ベンチマークや再実行実験で攻撃成功率の低下とベンignタスクへの影響の少なさを示した。</p>
+      <p><strong>新規性</strong> プロベナンスだけでは防げない「trusted-but-unauthorized」な引数を、ユーザ意図との整合性まで含めて仲介層で検査する点が新しい。</p>
+      <p><strong>Tags:</strong> LLM agents, tool use, security, provenance, intent mediation</p>
+      <p><strong>Abstract</strong> LLM agents turn a user's request and retrieved content into tool calls, and a call can reach the wrong recipient, endpoint, file or participant. Argument-level provenance blocks such values when they come from untrusted content, but accepts a trusted value that the user never requested. IntentFlow, a mediation layer between an unmodified planner and its tools, checks each authority-bearing argument against an intent contract and a provenance policy. On a synthetic benchmark of 200 attacks (oracle intent and injection labels, declared roles), attack success falls from 50.5% with provenance alone to 12.0% [8.2-17.2%]; every remaining success alters a content or payload field. IntentFlow wrongly blocks none of 200 paired benign tasks and 4 of 50 hard ones. On 50 trusted-but-unauthorized attacks, provenance-only mediation executes all 50 and IntentFlow none; a CaMeL-style check also blocks all 50 but rejects 16 of 50 benign tasks. On an offline AgentDojo-derived replay, IntentFlow blocks all 20 attacks at 75% benign success, as does a CaMeL-style check; a Progent-style allowlist blocks 19 and keeps all benign tasks. With one live planner and the same oracles, the mediator blocked all 17 corrupted calls proposed in 110 attacks.</p>
+      <hr />
+      <h3>9. Bridging the Semantic Gap from Natural Language Specifications to RTL with Layered Formal Guidance</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.30766">2611.30766</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.30766.pdf">link</a></li>
+      <li>Published: 2026-11-23 23:39 JST</li>
+      <li>Updated: 2026-11-23 23:39 JST</li>
+      <li>Authors: Yan Tan, Xiangchen Meng, Yangdi Lyu</li>
+      <li>Categories: cs.AR, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 自然言語仕様からRTLを生成する際のセマンティックギャップに着目し、LLMの信頼性が複雑な制御や時相的振る舞いを含む設計で低下する問題を指摘している。提案手法は、生成前の仕様拡張、生成後の整合性チェック、反例に基づく反復 सुधारを含む3層のFormal Guidanceで、自然言語とRTLの間に形式的性質を中間層として導入する。</p>
+      <p><strong>新規性</strong> 形式的性質を中間セマンティック層として用い、生成前後と反例駆動の3段階でLLMのRTL生成を誘導するLayered Formal Guidanceを提案した。</p>
+      <p><strong>Tags:</strong> RTL生成, 大規模言語モデル, 形式手法, 自然言語仕様, 検証</p>
+      <p><strong>Abstract</strong> While large language models (LLMs) have shown promise in generating register-transfer level (RTL) code from natural-language specifications, their reliability remains limited on designs with complex control logic and temporal behavior. This stems from a fundamental semantic gap: high-level natural language often leaves implementation-critical details underspecified, forcing LLMs to infer unstated assumptions. This paper presents Layered Formal Guidance, a novel framework that bridges this semantic gap by using formal properties as an intermediate semantic layer between natural-language specifications and RTL generation. Our framework applies formal guidance across three layers: property-driven specification augmentation before generation, property-consistency checking after generation, and counterexample-guided refinement after checking. Experiments on RTLLM benchmarks and various open-source IP designs demonstrate that our framework achieves higher functional correctness and lower sampled output-trace diversity. Furthermore, we show that Layered Formal Guidance can flexibly augment both general-purpose LLMs and domain-specific models to substantially improve their generation reliability.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
