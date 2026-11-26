@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arXiv Daily Digest - 2026-11-26 | arxiv-watcher</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="site-home" href="../index.html">arxiv-watcher reports</a>
+      <p class="site-subtitle">Daily arXiv digests published from GitHub Actions</p>
+    </header>
+
+    <section class="hero hero-compact">
+      <div>
+        <p class="eyebrow">Daily Report</p>
+        <h1>arXiv Daily Digest - 2026-11-26</h1>
+        <p class="hero-copy">Generated at 2026-11-26 13:58 JST. Run ID: <code>a8f52061-c1f1-4836-b98e-09fb7137e37e</code></p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Queries</span>
+          <strong>1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matched Papers</span>
+          <strong>12</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="report-card markdown-body">
+      <h1>arXiv Daily Digest - 2026-11-26</h1>
+      <p>Generated at: 2026-11-26 13:58 JST Run ID: a8f52061-c1f1-4836-b98e-09fb7137e37e</p>
+      <h2>Summary</h2>
+      <ul>
+      <li>Queries executed: 1</li>
+      <li>New matched papers: 12</li>
+      </ul>
+      <h2>Query: llm_math</h2>
+      <h3>1. Diverse Alternative Reasoning Traces for Hard Math Problems</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34928">2611.34928</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34928.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:59 JST</li>
+      <li>Updated: 2026-11-26 03:59 JST</li>
+      <li>Authors: Lukas Aichberger, Adam Golinski, Arno Blaas, Arwen Bradley, Jacob Springer, Mehrdad Farajtabar, Michael Kirchhof, Sinead Williamson</li>
+      <li>Categories: cs.CL, cs.AI, cs.LG</li>
+      <li>Score: 33.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='mathematical' (+4.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 大規模言語モデルの数学推論において、従来の受理済みトレース収集では難問で有効なトレースが不足しやすい問題に対し、DARTは棄却されたトレースを分解して不確実性の高い手順を特定し、そこから意図的に異なる代替候補を生成して新しい推論トレースを発掘する手法である。DeepMath-103Kでは、同数の生成トレース条件下でモンテカルロ法より37%多く問題を回収し、Llama-3.1-8B-Instructの事後学習でも複数ベンチマークで高い性能を示した。</p>
+      <p><strong>新規性</strong> 棄却された推論トレースを起点に、不確実性の高いステップへ多様な代替推論を生成して再探索するトレース採掘法を提案した点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, mathematical reasoning, trace mining, post-training, uncertainty</p>
+      <p><strong>Abstract</strong> Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare under independent Monte Carlo (MC) sampling. To address this, we propose Diverse Alternative Reasoning Traces (DART), a trace-mining method that starts from a rejected trace, decomposes it into reasoning steps, and ranks them by position-weighted uncertainty. It then generates deliberately distinct alternative candidates for highly ranked steps using reference-answer guidance and a meta-thought before completing the resulting traces. On greedy-unsolved DeepMath-103K problems, DART recovers 37% more problems than MC sampling at a matched number of generated traces. Its estimated generation cost per recovered problem is nearly identical, while its cost per accepted trace is 30% lower. Post-training Llama-3.1-8B-Instruct on traces mined by DART achieves the highest point estimate in five of six evaluations across MATH-500 and AIME benchmarks. These results demonstrate that revisiting rejected traces with DART can expand problem coverage and provide effective post-training data.</p>
+      <hr />
+      <h3>2. VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34819">2611.34819</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34819.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:03 JST</li>
+      <li>Updated: 2026-11-26 03:03 JST</li>
+      <li>Authors: Jiaming Luo, Jiacheng Ji, Haoan Jin, Xiaoning Sun, Qiuzhi Xiong, Yuxin Zhang, Hanhui Xu, Mengyue Wu</li>
+      <li>Categories: cs.CL</li>
+      <li>Score: 30.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、感情的に支援的な対話において、LLMが明示的な有害表現を避けるだけでなく、脆弱性に関わるリスクを認識し、関係性の姿勢を調整し、ユーザーの自律性を保ちながら文脈に応じた支援を行えるかを評価するための中国語ベンチマークVulnSafeを提案する。41のシナリオと2,050のプロンプト、シナリオ別ルーブリックにより、関係的安全性を5つの構成要素として測定し、禁止的な要件だけでなく能動的に行うべき応答も分離して評価する。</p>
+      <p><strong>新規性</strong> 関係的安全性を単なる拒否の成否ではなく、脆弱性認識から境界管理までを含む多次元の能力として定式化し、解釈可能な評価枠組みとして提示した点が新しい。</p>
+      <p><strong>Tags:</strong> large language models, safety evaluation, relational safety, benchmark, Chinese NLP</p>
+      <p><strong>Abstract</strong> Emotionally supportive interactions require large language models not only to avoid overtly harmful content, but also to recognize vulnerability-related risk, regulate their relational stance, preserve user agency, and provide context-appropriate support. Existing safety benchmarks often measure isolated violations, leaving unclear what underlying response competence their scores represent. We introduce VulnSafe, a Chinese capability assessment centered on Vulnerability-Aware Response Competence (VARC). VARC organizes relational safety into five complementary constructs: Risk Perception, Safety Preservation, Autonomy Protection, Supportive Response, and Boundary Management. Following an evidence-centered design, 41 scenarios elicit construct-relevant behavior through 2,050 balanced prompts and scenario-specific scoring rubrics. The assessment further separates proactive should-do behavior from prohibitive should-not behavior. Across eight representative LLMs, results show distinct competence profiles and larger disparities than prohibitive requirements. VulnSafe therefore makes relational safety interpretable as a multidimensional model capability rather than as refusal compliance alone.</p>
+      <hr />
+      <h3>3. Put the World Back: Timestamps Matter in Time Series Reasoning</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34848">2611.34848</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34848.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:23 JST</li>
+      <li>Updated: 2026-11-26 03:23 JST</li>
+      <li>Authors: Tingrui Huang, Yuanyuan Deng, Qingren Yao, Joaquin Vanschoren, Mykola Pechenizkiy, Songgaojun Deng</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 28.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、時系列推論におけるLLM評価では、イベントがすでに時系列に沿って整列されているため、モデルがタイムスタンプを使っているのか単なる近道をしているのか判別しにくいと指摘する。そこで、タイムスタンプを世界状態と数値観測・外部イベントを結びつける明示的な索引として捉え、診断プロトコルを提案した。310問の制御実験では、タイムスタンプを相対オフセットに置き換えたり削除しても高精度が保たれる一方、イベントと系列の整列を崩すと系統的な失敗が生じることを示した。</p>
+      <p><strong>新規性</strong> タイムスタンプを用いた推論と相関的ショートカットを区別するための診断プロトコルを提案し、既存の精度ベース評価では見えない挙動を明らかにした。</p>
+      <p><strong>Tags:</strong> time series reasoning, LLM evaluation, timestamps, diagnostic protocol, shortcut learning</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are increasingly applied to time series reasoning. However, current evaluations often give models events in chronological order and already matched to the time series. This makes it unclear whether models use timestamps to connect events with observations or simply take shortcuts. To expose this ambiguity, we reformulate time series reasoning from a world-to-series projection perspective, viewing timestamps as explicit indices that connect numerical observations and external events to shared world states. We identify three structures that timestamps can make explicit: temporal causal structure, time semantics, and event-series alignment. Building on this perspective, we develop a diagnostic protocol that distinguishes timestamp-grounded reasoning from correlational shortcuts, a distinction that accuracy-based benchmarks cannot make. Controlled interventions on 310 questions from two tasks show that high accuracy can persist when timestamps are replaced by relative offsets or removed, while breaking event-series alignment induces systematic failures. When context is pre-aligned, models barely need timestamps. When order is missing, they use dates to recall world knowledge. Without dates, they rely on correlational shortcuts and rarely notice incorrect timestamps. These findings show that high accuracy on pre-aligned, ordered inputs does not establish that a model uses timestamps to synchronize observations with the world. We release our code, model outputs, and trajectory labels at https://github.com/tingrui-huang/timestamps-matter.</p>
+      <hr />
+      <h3>4. A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34868">2611.34868</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34868.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:33 JST</li>
+      <li>Updated: 2026-11-26 03:33 JST</li>
+      <li>Authors: Joy Bose, Srinivas Adyapak</li>
+      <li>Categories: cs.CR, cs.AI, cs.CY</li>
+      <li>Score: 27.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='large language model' (+15.0)</li>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、通信分野における大規模言語モデル（LLM）の利用に伴うプライバシー、セキュリティ、倫理上の課題を整理したサーベイである。顧客対応、ネットワーク分析、運用支援などのユースケースを対象に、通信データの機微性と長期性に起因するリスクと対策を概観し、今後の研究課題を示している。</p>
+      <p><strong>新規性</strong> 通信分野に特化したLLMのリスク分類法を提示し、プライバシー・セキュリティ・倫理をユースケースと結び付けて整理した点が新しい。</p>
+      <p><strong>Tags:</strong> Large Language Models, Telecom, Privacy, Security, Ethics</p>
+      <p><strong>Abstract</strong> Large Language Models (LLMs) are increasingly integrated into telecommunications for customer service, network analytics, and operational support. While offering efficiency and innovation, their deployment raises critical privacy, security, and ethical challenges due to the uniquely sensitive and longitudinal nature of telecom data. This paper presents a survey of LLM risks and safeguards in telecom context. Our survey introduces a telecom-specific taxonomy linking privacy, security, and ethics with use cases and outlines open research challenges such as longitudinal data privacy, cross-border compliance, and scalable guardrails.</p>
+      <hr />
+      <h3>5. PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34785">2611.34785</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34785.pdf">link</a></li>
+      <li>Published: 2026-11-26 02:42 JST</li>
+      <li>Updated: 2026-11-26 02:42 JST</li>
+      <li>Authors: Bich Ngoc Doan, Hanna Yukhymenko, Imanol Schlag</li>
+      <li>Categories: cs.CL, cs.AI, cs.LG</li>
+      <li>Score: 20.75</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> PersonaFactoryは、既存のユーザープロンプトをユーザ視点でスタイル拡張するために、詳細なユーザーペルソナを生成して合成対話を作るエンドツーエンドのパイプラインである。74万件超の構造化ペルソナと、85言語にまたがる約124万件のペルソナ風対話を構築し、意図保持とスタイル自然性の両立を評価した。</p>
+      <p><strong>新規性</strong> 自由記述ではなく属性ベースの構造化ペルソナ表現により、各軸ごとの制御と高い意図保持を両立できる点が新しい。</p>
+      <p><strong>Tags:</strong> 大規模言語モデル, 合成データ, ペルソナ, スタイル制御, 多言語</p>
+      <p><strong>Abstract</strong> Large language models increasingly replace real people in the AI development pipeline, as they are used to generate training dialogues at scale and to drive alignment and evaluation. However, out-of-the-box models produce monolingual and stylistically flat texts as synthetic user prompts, failing to replicate the real user-AI communication mechanics. We present PersonaFactory, an end-to-end pipeline that generates detailed user personas and uses them to augment existing user prompts from their point of view, producing a bank of over 740000 structured synthetic personas detailing their background and communication behaviors, and a corpus of roughly 1.24 million persona-styled synthetic conversations spanning 85 languages. We evaluate the effect of personal features on style adoption and intent preservation, using an LLM-judge and heuristic metrics to assess augmentation fidelity together with the downstream impact on assistant persona control through training data. Results show that our structured, attribute-based style representation enables per-axis control and better intent preservation at comparable style fidelity than free-text persona descriptions used in existing methods. A human expert evaluation found the augmented conversations plausible, with favorable ratings for intent preservation, style naturalness, and multilingual authenticity. Finally, PersonaFactory conversations achieve comparable performance to original training data on capability benchmarks, are preferred on real user prompts at equal reply length, and adapt their reply style more closely to users without explicit steering.</p>
+      <hr />
+      <h3>6. RePace: Reasoning about Demonstration Speedup for Faster Vision-Language-Action Policies</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34864">2611.34864</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34864.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:30 JST</li>
+      <li>Updated: 2026-11-26 03:30 JST</li>
+      <li>Authors: Insup Lee, Hojin Jeon, Sunguk Shin, Seoungbin Bae, Taekwan Kim, Jinwoo Shin, Dongsu Han</li>
+      <li>Categories: cs.RO, cs.AI</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>summary matched keyword='alignment' (+3.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、視覚・言語・行動（VLA）方策の学習前にデモンストレーションを高速化することで、追加の速度選択モジュールなしにより速い方策を得る手法を提案する。提案手法RePaceは、各区間に固定の速度倍率を当てるのではなく、候補となる加速後の観測・行動対を比較し、言語モデルを用いて各ウィンドウの文脈と動作からエピソード全体の加速プロファイルを決定する。</p>
+      <p><strong>新規性</strong> 単一の区間に一律の速度倍率を与えるのではなく、視覚文脈と元の動作を踏まえて各部分ごとにどれだけ加速すべきかを推論して選ぶ点が新しい。</p>
+      <p><strong>Tags:</strong> vision-language-action, demonstration speedup, offline reasoning, robot learning, language model</p>
+      <p><strong>Abstract</strong> Since vision-language-action (VLA) policies can inherit the slow pace of human demonstrations, accelerating these demonstrations before fine-tuning can lead to faster VLA policies without an additional speed-selection module at deployment. Several offline speedup methods have focused on identifying segments that require less precision and assigning predefined speedup factors to the segments. However, even within a single segment, a speedup factor suitable for steady motion may be too high when precise alignment is required. To this end, this paper presents RePace, an offline reasoning framework that determines how much to accelerate each part of a demonstration. For the same recorded movement, RePace measures how much each candidate speedup factor shortens the sequence and compares the resulting observation-action pairs used for training. Given the task instruction, a pretrained language model uses the visual context and original motion of successive windows to interpret these candidate retiming effects and select a speedup profile for the complete episode. Experimental results demonstrate that RePace outperforms the baselines in overall task execution efficiency on both LIBERO and RoboCasa-Kitchen. On all three tasks with a gripper-equipped Franka Research 3 arm, RePace matches or exceeds the acceleration baselines in success rate and completes successful trials faster.</p>
+      <hr />
+      <h3>7. Proverbs As A Window On Collective Prescriptions</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34832">2611.34832</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34832.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:12 JST</li>
+      <li>Updated: 2026-11-26 03:12 JST</li>
+      <li>Authors: Tomás Lejarraga, Dirk U. Wulff, Ralph Hertwig</li>
+      <li>Categories: cs.CL, cs.CY</li>
+      <li>Score: 15.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='reasoning' (+3.8)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、約5万件の英語のことわざを対象に、LLMを用いてその話題分布と規範的な性質を定量化する枠組みを提案した。結果として、ことわざの多くは個人が制御できる領域では助言的であり、運命や死のような制御不能な事柄では記述的になりやすいことが示された。</p>
+      <p><strong>新規性</strong> ことわざに含まれる集団的な規範や助言を、大規模に定量化して文化的な「処方箋」の地図を作成した点が新しい。</p>
+      <p><strong>Tags:</strong> proverbs, large language models, computational linguistics, norms, quantitative analysis</p>
+      <p><strong>Abstract</strong> Proverbs, as repositories of traditional wisdom, have informed human reasoning for millennia. Yet the collective prescriptions they encode have remained largely unquantified. We introduce a computational framework to analyze nearly 50,000 English-language proverbs. Using large language models, validated against human judgments, we map the topical landscape of proverbs, assess their prescriptive power, and quantify their recommendations on key dimensions of human judgment and behavior. We find that most proverbs are prescriptive, offering guidance in domains under individual control, such as preparation and prudent action, whereas proverbs about uncontrollable circumstances, such as fate and mortality, tend to describe rather than prescribe. When prescriptive proverbs take a consistent stance, they favor caution over risk, long-term over short-term outcomes, honesty over deception, and kindness over malice, and show a moderate tendency toward suspicion over trust. On dimensions involving genuine trade-offs, especially autonomy versus compliance, proverbs provide contradicting advice rather than a single recommendation. This analysis provides a quantitative map of the collective prescriptions in a culture's proverbial wisdom, revealing a core of prudent, honest, and forward-looking guidance alongside varied advice where circumstances dictate the best course of action.</p>
+      <hr />
+      <h3>8. Routeability Before Routing: Routeability Audit Protocol (RAP) and RouteabilityBench for Audited LLM Model Selection</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34825">2611.34825</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34825.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:08 JST</li>
+      <li>Updated: 2026-11-26 03:08 JST</li>
+      <li>Authors: Yihang Lu, Denica Kjorvezir, Ana Gjorgjevikj, Carola Doerr, Tome Eftimov</li>
+      <li>Categories: cs.LG</li>
+      <li>Score: 14.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='llm' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> LLMルーティングは、各プロンプトに対して最も正答しやすいモデルを選ぶ手法だが、ベンチマークに十分な入力ごとの差がないと有効性を判断しにくい。本論文は、ベンチマークとモデル群のスコア行列が得られた後に実施する事後的な監査手順としてRAPとRouteabilityBenchを提案し、4つのベンチマークと66モデルでルーティング改善が単一最良モデルを一貫して上回らないことを示した。</p>
+      <p><strong>新規性</strong> ルーティング性能を議論する前に、そのベンチマークがそもそもルーティング可能かを監査するRAP/RouteabilityBenchを提案し、routeability診断を併記すべきだと示した点が新規である。</p>
+      <p><strong>Tags:</strong> LLM routing, benchmark audit, model selection, routeability, evaluation</p>
+      <p><strong>Abstract</strong> LLM routing aims to choose, for each prompt, which model in a portfolio is most likely to answer correctly. This only makes sense when the benchmark contains enough prompt-specific variation for different models to be best on different inputs. On coarse-scored LLM benchmarks, however, many models often tie for the best score, and the single best model may already leave little room for improvement. We therefore propose a routeability-first audit, instantiated as RAP and RouteabilityBench, a runnable claim-verification package. The audit is retrospective: it runs once the benchmark-portfolio score matrix exists and before router comparisons are interpreted as general evidence, rather than certifying a portfolio that has not yet been evaluated. Across four benchmarks and 66 LLMs, generic routing enhancements such as larger embedding sets, dimensionality reduction, selective abstention, clustering, and stronger regressors do not consistently outperform the single best model. The clearest positive evidence is concentrated in portfolio-dependent Omni-MATH settings, while GPQA, MMLU-Pro, and IFEval show different ways in which routing can remain hard or predictor-sensitive. Our practical recommendation is that routing gains should be reported together with routeability diagnostics, tied-best analysis, portfolio construction details, and family-corrected statistical tests.</p>
+      <hr />
+      <h3>9. Can image generation help visual reasoning? An empirical study</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34935">2611.34935</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34935.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:59 JST</li>
+      <li>Updated: 2026-11-26 03:59 JST</li>
+      <li>Authors: Xueyang Yu, Yifan Jing, Taiming Lu, Linrong Cai, Zhipeng Cai, Yunyang Xiong, Gabriel Sarch, Zhuang Liu</li>
+      <li>Categories: cs.LG, cs.CL, cs.CV</li>
+      <li>Score: 12.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>title matched keyword='reasoning' (+7.5)</li>
+      <li>category matched 'cs.CL' (+2.0)</li>
+      <li>primary_category matched 'cs.LG' (+3.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、視覚質問応答において生成画像が推論を助けるかを、13組の視覚言語モデルと画像生成器で実証的に検証した。その結果、平均精度は3.7ポイント低下し、10タスク中9タスクで性能が悪化した。</p>
+      <p><strong>新規性</strong> モデルが必要な補助画像を記述し、その生成画像を元画像と併用して回答する枠組みで、画像生成が視覚推論に与える影響を系統的に評価した点が新規である。</p>
+      <p><strong>Tags:</strong> 視覚言語モデル, 画像生成, 視覚推論, 実証研究, マルチモーダル</p>
+      <p><strong>Abstract</strong> Language models think in words; then multimodal models might think in images. We test whether a generated helper improves the answer to a visual question. A model describes the helper it needs and then answers using the original and generated images together. Across 13 vision-language model and generator pairs, generation lowers mean accuracy by 3.7 percentage points, with declines on nine of ten tasks. Two unified models, BAGEL and Janus-Pro-7B, each lose accuracy on eight tasks. On VSTAR, adding a generated image to the same planning hint lowers accuracy by 10.47 points. Repeated image edits yield different outcomes across tasks. ChartQAPro and MathVista stay below their no-generation baselines, while ERQA gains three points after ten edits.</p>
+      <hr />
+      <h3>10. Repairing the Trustworthiness of Distilled Language Models</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34831">2611.34831</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34831.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:12 JST</li>
+      <li>Updated: 2026-11-26 03:12 JST</li>
+      <li>Authors: Kumar Shubham, Devendra Vyas, Vidushi Agarwal, Jayin Khanna, Prathosh AP</li>
+      <li>Categories: cs.CL, cs.AI</li>
+      <li>Score: 12.50</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>primary_category matched 'cs.CL' (+4.0)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 知識蒸留で得られた小型言語モデルは、下流性能を保っていても信頼性が劣化することがあり、その修復は元の蒸留コーパスが使えない点や、直接の選好最適化が教師由来の能力を変えてしまう点で難しい。本研究は、代理データセットから曲率を推定するPBRFに基づくターゲット修復枠組みを提案し、選好・非選好応答ペアを用いる拡張も示すことで、下流性能を大きく損なわずに信頼性の改善を可能にした。</p>
+      <p><strong>新規性</strong> 元の蒸留コーパスに依存せず代理データセットでPBRFの曲率を推定し、さらに選好ベースの監督へ拡張して蒸留モデルの信頼性を局所的に修復できる点が新しい。</p>
+      <p><strong>Tags:</strong> knowledge distillation, language models, trustworthiness, preference optimization, model repair</p>
+      <p><strong>Abstract</strong> Knowledge distillation enables the deployment of large language models through smaller student models, but the compression process can introduce regressions in trustworthiness even when downstream performance is preserved. Repairing such failures is challenging because the original distillation corpus is often unavailable, while direct preference optimization may alter capabilities inherited from the teacher. We propose a targeted repair framework based on the proximal Bregman response function (PBRF) that addresses both limitations. We estimate the curvature required for PBRF using a surrogate proxy dataset, removing dependence on the original transfer corpus, and extend the framework to preference-based supervision through an odds-ratio objective. This enables the use of preferred and dispreferred response pairs while constraining changes to the distilled model. Our results show that the proposed approach improves targeted trustworthiness behaviors for both pre-training and post-training models while largely preserving downstream performance, providing a practical alternative to re-distillation or unconstrained preference optimization. Our experiment results show that across different distilled models, the trustworthy regression can be improved by up to 8% with less than 1% decrement in perplexity.</p>
+      <hr />
+      <h3>11. Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34770">2611.34770</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34770.pdf">link</a></li>
+      <li>Published: 2026-11-26 02:35 JST</li>
+      <li>Updated: 2026-11-26 02:35 JST</li>
+      <li>Authors: Alessandro Cantelli-Forti, Isabella Marasco, Hosam Alamleh, Giada Boschi, Michele Colajanni</li>
+      <li>Categories: cs.CR, cs.AI</li>
+      <li>Score: 12.25</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>summary matched keyword='llm' (+3.8)</li>
+      <li>category matched 'cs.AI' (+1.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本論文は、LLM時代のサイバー防御において、デコイの価値を「リアルさ」ではなく攻撃者にどれだけコストを払わせるかという観点で捉え直しています。各攻撃者ごとに一貫した永続状態を持たせることで、攻撃者には自分が侵入済みだと信じる世界を維持しつつ、LLMは明示的状態を描画するだけの制約付きレンダラとして使う枠組みを提案しています。</p>
+      <p><strong>新規性</strong> 新規性は、攻撃者ごとの永続状態を中核に据えた「Stateful Deception」を、Deception Exchange Rate (DER) としてコスト交換の原理で定式化した点です。</p>
+      <p><strong>Tags:</strong> cyber deception, LLM security, honeypot, adversarial cost, stateful systems</p>
+      <p><strong>Abstract</strong> Large language models (LLMs) are transforming the economics of intrusion by reducing the attacker's cost to scan and adapt, while tempting defenders into unbounded compute. We argue that cyber deception should be judged by the cost exchange it imposes, not by realism or detection, and that the primitive making that exchange favorable is adversary-specific persistent state. Rather than a honeypot that resets or merges sessions, each recognized adversary re-enters the world it believes it has compromised, kept coherent with its own past actions and isolated from every other adversary, while the language model acts only as a constrained renderer of explicit state, never as its store. We formalize the trade-off as a Deception Exchange Rate (DER), relating mission-weighted adversary effort burned to defender resources spent, and instantiate it in an SSH honeypot pairing Cowrie with a local LLM. In this paper, we focus on the defender-side evaluation of that exchange, while specifying, but not yet measuring, per-adversary state and the adversary side of the DER. Across five open-weight models, deterministic-layer and prompt optimizations cut per-session defender cost by around 63% against a naive all-LLM decoy.</p>
+      <hr />
+      <h3>12. Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering</h3>
+      <ul>
+      <li>arXiv: <a href="https://arxiv.org/abs/2611.34841">2611.34841</a></li>
+      <li>PDF: <a href="https://arxiv.org/pdf/2611.34841.pdf">link</a></li>
+      <li>Published: 2026-11-26 03:19 JST</li>
+      <li>Updated: 2026-11-26 03:19 JST</li>
+      <li>Authors: Masahiro Kato</li>
+      <li>Categories: cs.AI, cs.LG</li>
+      <li>Score: 11.00</li>
+      <li>Match reasons:</li>
+      <ul>
+      <li>summary matched keyword='large language model' (+7.5)</li>
+      <li>category matched 'cs.LG' (+1.5)</li>
+      <li>primary_category matched 'cs.AI' (+2.0)</li>
+      </ul>
+      </ul>
+      <p><strong>日本語要約</strong> 本研究は、LLMベースのアプリケーション向け知識ベースを、質問と期待回答に基づいて継続的に構造更新する Self-Structuring Learning を扱う。提案手法 Knowledge-Base Gradient Descent は、現在の知識ベースで生じる期待回答との差を診断し、構造編集を試行して損失が下がる編集を採用することで、知識ベースを再構築する。</p>
+      <p><strong>新規性</strong> 編集候補を確率的に扱うことで、各構造編集の損失変化を選択確率に関する導関数として表現し、相互作用する複数編集も一つの候補として評価できる点が新しい。</p>
+      <p><strong>Tags:</strong> knowledge base, large language models, question answering, graph schema, self-structuring learning</p>
+      <p><strong>Abstract</strong> We consider the problem of constructing knowledge bases for applications based on large language models, in which the structure of a knowledge base determines how an application can retrieve and connect the information needed to answer a question. We study Self-Structuring Learning, a setting in which questions and expected answers guide the construction of a persistent knowledge base whose editable structure can be a graph schema or the organization of linked knowledge documents. We propose Knowledge-Base Gradient Descent, which diagnoses discrepancies between expected answers and responses obtained through the current knowledge base. At each round, the method proposes a structural edit, rebuilds the knowledge base, and adopts the edit when the learning loss decreases. The retained structure is evaluated on other questions about the same sources. By randomizing over candidate edits, we express the loss change of an edit as a derivative with respect to the probability of selecting it, and we evaluate joint edits as single candidates because their changes interact. Schema Descent instantiates the method for graph schemas. In experiments on large documents, each a bundle of research papers, the updated knowledge cards and graph schemas obtain higher mean Answer F1 on held-out generated questions than their initial structures, with schema gains in every document. On human questions, mean F1 rises for schemas and falls for cards: the updated structures serve the kind of question they were learned from.</p>
+      <hr />
+    </article>
+  </main>
+</body>
+</html>
